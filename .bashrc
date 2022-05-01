@@ -115,43 +115,29 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
- alias con='expressvpn connect'
- alias dis='expressvpn disconnect'
- export k='/media/tvhead/Karen'
- alias gitpush='git add .; git commit -a -m"changes" ; git push'
- alias wow='wine /media/tvhead/Karen/vplus/WoW.exe'
- alias mop='wine /media/tvhead/Karen/games/mop/Wow.exe'
- alias open='xdg-open'
- alias updg='sudo apt -y update ; sudo apt -y upgrade'
- alias entry='vim /home/tvhead/Journal/entries/Entry-`date +%d%m%y%S`'
- alias note='vim /home/tvhead/Journal/notes/note-`date +%d%m%y%S`'
-# alias todo='vim /home/tvhead/Journal/todo/todo-`date +%d%m%y%S`'
-alias todo='open /home/tvhead/work/todosheet.ods'
- alias idea='vim /home/tvhead/Journal/ideas/idea-`date +%d%m%y%S`'
- alias del='rm -rf'
- #alias for saving all my system settings to a directory in my journal and
- #pushing them to github
- # put all settings into a folder and compress them
- alias savej='cd Journal;git add .; git commit -a -m"changes" ; git push'
- #strip meta data from photos ( still have to input what format )
- alias stripmeta='mogrify -strip'
- alias license='sudo strings /sys/firmware/acpi/tables/MSDM'
 
- alias tokens='cat ~/Journal/tokens.txt'
+alias ls='ls --color'
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+alias ls='ls -G'
 
-alias sbash='source ~/.bashrc'
-alias vbash='vim ~/.bashrc'
-alias wotlk='wine /media/tvhead/Karen/games/ChromieCraft_3.3.5a/Wow.exe'
-alias dn="cd $HOME/downloads" 
-export down="$HOME/downloads" 
-export chromie='/media/tvhead/Karen/games/ChromieCraft_3.3.5a/Interface/AddOns'
+export CLICOLOR=1
+# Change to your name, do not delete backslashes
+export PS1="buhfur\[\e[31m\] \[\e[m\]\[\e[31m\]:\[\e[m\]\[\e[31m\]:\[\e[m\] \[\e[32m\]\w\[\e[m\] \[\e[34m\]»\[\e[m\] "
 
-export LS_COLORS=$LS_COLORS:'di=0;36:' ; export LS_COLORS
+export LSCOLORS=cxgxfxexbxegedabagacad
 
-. "$HOME/.cargo/env"
+export EDITOR='vim'
+
+
+
+#personal alises 
+
+alias k='/media/buhfur/Karen'
+alias wotlk='wine /media/buhfur/Karen/games/wotlk/Wow.exe'
+
+#personal notes app 
+alias notes='python3 -m http.server --directory /home/buhfur/notes/'
+
+#personal exports 
+
+export WOTLK='/media/buhfur/Karen/games/wotlk'
