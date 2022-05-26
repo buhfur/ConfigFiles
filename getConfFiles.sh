@@ -1,2 +1,2 @@
 #ls -dl $HOME/.[^.]* 
-cp $HOME/.[^.]* ./
+cp -v $HOME/.[^.]* ./

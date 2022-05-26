@@ -11,1357 +11,1836 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/p!
+~MSle0/\'
 
 # Last Substitute Search Pattern:
-~MSle0&phaases
+~MSle0~&Plugin
 
 # Last Substitute String:
-$phases
+$Plug
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1651446768,,"wq"
+|2,0,1653606263,,"wq"
 :w
-|2,0,1651446767,,"w"
-:syntax on
-|2,0,1651445411,,"syntax on"
-:saveas server.py
-|2,0,1651445322,,"saveas server.py"
-:savas server.py
-|2,0,1651445314,,"savas server.py"
-:W
-|2,0,1651445292,,"W"
-:q!
-|2,0,1651442396,,"q!"
+|2,0,1653606221,,"w"
+:so %
+|2,0,1653604725,,"so %"
+:so 5
+|2,0,1653604723,,"so 5"
 :q
-|2,0,1651442395,,"q"
-:saveas main.py
-|2,0,1651430676,,"saveas main.py"
-:savas main.py
-|2,0,1651430671,,"savas main.py"
-:ew
-|2,0,1651430650,,"ew"
-:ww
-|2,0,1651382742,,"ww"
+|2,0,1653604586,,"q"
+:so 54 
+|2,0,1653604535,,"so 54 "
+:PlugInstall
+|2,0,1653602528,,"PlugInstall"
+:so %r
+|2,0,1653602521,,"so %r"
+:%s/Plugin/Plug
+|2,0,1653602485,,"%s/Plugin/Plug"
+:saveas myhash.go
+|2,0,1653602029,,"saveas myhash.go"
+:q!
+|2,0,1653601973,,"q!"
 :we
-|2,0,1651382735,,"we"
-:set nonumber
-|2,0,1651373263,,"set nonumber"
-:set nu
-|2,0,1651373254,,"set nu"
-:set number off
-|2,0,1651373233,,"set number off"
-:number off
-|2,0,1651373230,,"number off"
-:set number 
-|2,0,1651373227,,"set number "
-:w]
-|2,0,1651373194,,"w]"
-:savas eliLillyCoverLetter.txft
-|2,0,1651372981,,"savas eliLillyCoverLetter.txft"
-:wwq
-|2,0,1651364689,,"wwq"
-:saveas blingtron/README.md
-|2,0,1651364687,,"saveas blingtron/README.md"
-:! mkdir blingtron
-|2,0,1651364676,,"! mkdir blingtron"
-:! mkdir 
-|2,0,1651364630,,"! mkdir "
-:Lw
-|2,0,1651364440,,"Lw"
-:%s/phaases/phases
-|2,0,1651364091,,"%s/phaases/phases"
-:%s/layer/phases
-|2,0,1651364076,,"%s/layer/phases"
-:%s/layer/phaases
-|2,0,1651364070,,"%s/layer/phaases"
-:"w
-|2,0,1651363764,,"\"w"
-:make pdf
-|2,0,1651273582,,"make pdf"
-:make
-|2,0,1651273566,,"make"
-:make pdfg
-|2,0,1651273563,,"make pdfg"
-:e urls.txt
-|2,0,1651271556,,"e urls.txt"
-:e app.py 
-|2,0,1651267788,,"e app.py "
-:e test-input/words_alpha.txt
-|2,0,1651267056,,"e test-input/words_alpha.txt"
-:bd
-|2,0,1651266947,,"bd"
-:source %
-|2,0,1651266945,,"source %"
-:e ~/.vimrc
-|2,0,1651266826,,"e ~/.vimrc"
-:!python3 
-|2,0,1651266787,,"!python3 "
+|2,0,1653601390,,"we"
+:q1
+|2,0,1653538982,,"q1"
 :e test.py 
-|2,0,1651266757,,"e test.py "
-:bn
-|2,0,1651263401,,"bn"
-:e templates/index.html
-|2,0,1651263376,,"e templates/index.html"
-:w'
-|2,0,1651262963,,"w'"
-:wj
-|2,0,1651262933,,"wj"
-:bw
-|2,0,1651262884,,"bw"
-:e inde
-|2,0,1651262881,,"e inde"
-:e .gitignore
-|2,0,1651262607,,"e .gitignore"
-:e app.py
-|2,0,1651262511,,"e app.py"
-:e testCreds.py
-|2,0,1651262473,,"e testCreds.py"
-:e creds.json
-|2,0,1651262336,,"e creds.json"
+|2,0,1653538974,,"e test.py "
+:so % 
+|2,0,1653435418,,"so % "
+:so r5
+|2,0,1653435416,,"so r5"
+:make
+|2,0,1653435249,,"make"
+:make %:r 
+|2,0,1653435244,,"make %:r "
+:e main.c
+|2,0,1653435128,,"e main.c"
+:s
+|2,0,1653432556,,"s"
+:wqw
+|2,0,1653428842,,"wqw"
+:saveas README.md 
+|2,0,1653428682,,"saveas README.md "
+:saveas dht.md 
+|2,0,1653428649,,"saveas dht.md "
+:pwd
+|2,0,1653428583,,"pwd"
+:!w
+|2,0,1653289489,,"!w"
+:w]
+|2,0,1653255926,,"w]"
+:2w
+|2,0,1652898479,,"2w"
+:saveas $HOME/entries/bullshit.txt
+|2,0,1652898476,,"saveas $HOME/entries/bullshit.txt"
+:saveas $HOME/bullshit.txft
+|2,0,1652898461,,"saveas $HOME/bullshit.txft"
+:b
+|2,0,1652842320,,"b"
+:wwq
+|2,0,1652841564,,"wwq"
+:saveas $HOME/projects/pdfprospector/%
+|2,0,1652839351,,"saveas $HOME/projects/pdfprospector/%"
+:saveas $HOME/projects/pdfprospector
+|2,0,1652839345,,"saveas $HOME/projects/pdfprospector"
+:! mkdir $HOME/projects/pdfprospector
+|2,0,1652839334,,"! mkdir $HOME/projects/pdfprospector"
+:Lw
+|2,0,1652839079,,"Lw"
+:ws
+|2,0,1652838995,,"ws"
+:wqall 
+|2,0,1652837534,,"wqall "
+:qq
+|2,0,1652837526,,"qq"
+:so 
+|2,0,1652834277,,"so "
+:set nu!
+|2,0,1652834244,,"set nu!"
+:set nu1
+|2,0,1652834241,,"set nu1"
+:set nonu 
+|2,0,1652834230,,"set nonu "
+:nonumber
+|2,0,1652833978,,"nonumber"
+:set nonumber
+|2,0,1652833972,,"set nonumber"
+:set number
+|2,0,1652833963,,"set number"
+:saveas redditpost 
+|2,0,1652833393,,"saveas redditpost "
+:e read.c
+|2,0,1652572635,,"e read.c"
+:.q!
+|2,0,1652572525,,".q!"
+:bd
+|2,0,1652572520,,"bd"
+:tabnew main.c
+|2,0,1652571939,,"tabnew main.c"
 
 # Search String History (newest to oldest):
-?/p!
-|2,1,1651445989,47,"p!"
-?/usr/bin/env python
-|2,1,1651430477,47,"usr/bin/env python"
+? Plugin
+|2,1,1653602485,,"Plugin"
 ? @$
-|2,1,1651382612,,"@$"
-?/interests
-|2,1,1651376435,47,"interests"
-?/Intro
-|2,1,1651374496,47,"Intro"
-?/I
-|2,1,1651374340,47,"I"
-?/data
-|2,1,1651373441,47,"data"
-?/other
-|2,1,1651373384,47,"other"
-??Layer
-|2,1,1651364097,63,"Layer"
-?/layer
-|2,1,1651364095,47,"layer"
-? phaases
-|2,1,1651364091,,"phaases"
-? layer
-|2,1,1651364076,,"layer"
-?/game
-|2,1,1651363892,47,"game"
-?/frei
-|2,1,1651363508,47,"frei"
-?/req
-|2,1,1651267276,47,"req"
-?/rewq
-|2,1,1651267273,47,"rewq"
-?/req	
-|2,1,1651267272,47,"req	"
-?/usernames
-|2,1,1651264510,47,"usernames"
-?/Search
-|2,1,1651264135,47,"Search"
-?/ui
-|2,1,1651264013,47,"ui"
-?/Check
-|2,1,1651263296,47,"Check"
-?/check
-|2,1,1651263292,47,"check"
-?/check 
-|2,1,1651263283,47,"check "
-?/Join
-|2,1,1651262910,47,"Join"
-?/JOin
-|2,1,1651262906,47,"JOin"
-?/debug
-|2,1,1651259218,47,"debug"
-?/app.
-|2,1,1651259184,47,"app."
-?/GIT
-|2,1,1651258796,47,"GIT"
-?/GIHUT
-|2,1,1651258794,47,"GIHUT"
-?/a>
-|2,1,1651256997,47,"a>"
-?/svg>
-|2,1,1651256997,47,"svg>"
-?/section
-|2,1,1651256646,47,"section"
-? \<section\>
-|2,1,1651254386,,"\\<section\\>"
-?/Design 
-|2,1,1651254028,47,"Design "
-?/Desing
-|2,1,1651254024,47,"Desing"
-?/Design
-|2,1,1651253951,47,"Design"
-?/Email
-|2,1,1651253827,47,"Email"
-?/static
-|2,1,1651253655,47,"static"
-?/static 
-|2,1,1651253651,47,"static "
-?/staitc
-|2,1,1651253647,47,"staitc"
-?/style
-|2,1,1651253599,47,"style"
-?/input
-|2,1,1651253108,47,"input"
-?/inpu
-|2,1,1651253105,47,"inpu"
-?/username
-|2,1,1651253001,47,"username"
-?/style 
-|2,1,1651252784,47,"style "
-?/\/js
-|2,1,1651251675,47,"\\/js"
-?/index
-|2,1,1651251629,47,"index"
-?/stati
-|2,1,1651251403,47,"stati"
-?/script
-|2,1,1651250815,47,"script"
-?/index.
-|2,1,1651250132,47,"index."
+|2,1,1653427904,,"@$"
+?/\'
+|2,1,1652840939,47,"\\'"
+?/\
+|2,1,1652840932,47,"\\"
+?/} 
+|2,1,1652840898,47,"} "
+?/number
+|2,1,1652834284,47,"number"
+?/* Character variable to read the content of file */
+|2,1,1652561398,47,"* Character variable to read the content of file */"
+? }
+|2,1,1652561398,,"}"
+?/* Pointer to the file */
+|2,1,1652561398,47,"* Pointer to the file */"
+?/test.txt", "w+");
+|2,1,1652561352,47,"test.txt\", \"w+\");"
+?/ans
+|2,1,1652507417,47,"ans"
+? \<x_off\>
+|2,1,1652507105,,"\\<x_off\\>"
+? amt_of_answers
+|2,1,1652304532,,"amt_of_answers"
+? min_amt_of_answers
+|2,1,1652304503,,"min_amt_of_answers"
+? letter_count
+|2,1,1652304463,,"letter_count"
+? min_wlen
+|2,1,1652303205,,"min_wlen"
+?/min_wlne
+|2,1,1652303193,47,"min_wlne"
+?/max_
+|2,1,1652303155,47,"max_"
+?/color
+|2,1,1652301727,47,"color"
+?/level_data
+|2,1,1652228995,47,"level_data"
+?/leveldata
+|2,1,1652228992,47,"leveldata"
+?/args
+|2,1,1652153155,47,"args"
+?/{_
+|2,1,1652151104,47,"{_"
+?/{_ 
+|2,1,1652151102,47,"{_ "
+?/{- 
+|2,1,1652151098,47,"{- "
+?/{ 
+|2,1,1652151096,47,"{ "
+?/_
+|2,1,1652151081,47,"_"
+?/appData
+|2,1,1652150858,47,"appData"
+?/appdat
+|2,1,1652150854,47,"appdat"
+?/api
+|2,1,1652149027,47,"api"
+? \<from\>
+|2,1,1652048977,,"\\<from\\>"
 
 # Expression History (newest to oldest):
 
 # Input Line History (newest to oldest):
+@mv test.html data.html
+|2,3,1652149015,,"mv test.html data.html"
 
 # Debug Line History (newest to oldest):
 
 # Registers:
 "0	CHAR	0
-	$HOME/.[^.]* 
-|3,0,0,0,1,0,1651446712,"$HOME/.[^.]* "
-"1	LINE	0
-	'''
-|3,0,1,1,1,0,1651445585,"'''"
-"2	LINE	0
-	firefox 
-|3,0,2,1,1,0,1651445429,"firefox "
-"3	LINE	0
-	#!/usr/bin/sh
-|3,0,3,1,1,0,1651445305,"#!/usr/bin/sh"
-"4	LINE	0
-	#open up the notes app in firefox 
-|3,0,4,1,1,0,1651445302,"#open up the notes app in firefox "
-"5	LINE	0
-	#start up the http server 
-|3,0,5,1,1,0,1651445301,"#start up the http server "
-"6	LINE	0
-	SERVER_IP = '127.0.0.1'
-|3,0,6,1,1,0,1651445300,"SERVER_IP = '127.0.0.1'"
-"7	LINE	0
-	
-	import PySimpleGUIQt
-	
-	
-	  window = sg.Window('Window Title', layout)
-|3,0,7,1,5,0,1651430476,"","import PySimpleGUIQt","","","  window = sg.Window('Window Title', layout)"
-"8	LINE	0
-	set-option -g prefix C-b
-|3,0,8,1,1,0,1651383176,"set-option -g prefix C-b"
-"9	LINE	0
-	##################################
-	# TMUX CUSTOM CONFIGURATION FILE #
-	##################################
 	#
-	# Remap prefix to Screens
-	#set -g prefix C-a
-	#bind C-a send-prefix
-	#unbind C-b
-	# Quality of life stuff
-	set -g history-limit 50000
-	set -g allow-rename off
-	set -g mouse on
-	bind-key j command-prompt -p "join pane from:" "join-pane -s '%%'"
-	bind-key s command-prompt -p "join pane to:" "join-pane -t '%%'"
+|3,0,0,0,1,0,1653427904,"#"
+"1	LINE	0
+	# What i've learned so far  
+|3,0,1,1,1,0,1653604906,"# What i've learned so far  "
+"2	LINE	0
+	                        exec "!~/.vim/markdown.pl % > %.html &"
+|3,0,2,1,1,0,1653604558,"                        exec \"!~/.vim/markdown.pl % > %.html &\""
+"3	LINE	0
+	nnoremap <S-o> O<Esc>
+|3,0,3,1,1,0,1653603111,"nnoremap <S-o> O<Esc>"
+"4	LINE	0
+	#!/usr/bin/env python3 
+|3,0,4,1,1,0,1653602055,"#!/usr/bin/env python3 "
+"5	LINE	0
+	func! CompileRunGcc()
 	
-	# Search Mode VI (default is emac)
-	set-window-option -g mode-keys vi
-	# git clone https://github.com/tmux-plugins/tmux-logging.git
-	run-shell /opt/tmux-logging/logging.tmux
+	  if &filetype == 'c'
+	          exec "!gcc -Wall -g % -o %<"
+	          exec "!time %<"
+	  elseif &filetype == 'cpp'
+	          exec "!g++ % -o %<"
+	          exec "!time ./%<"
+	  elseif &filetype == 'java'
+	          exec "!javac %"
+	          exec "!time java -cp %:p:h %:t:r"
+	  elseif &filetype == 'sh'
+	          exec "!time bash %"
+	  elseif &filetype == 'python'
+	          exec "!time python3 %"
+	  elseif &filetype == 'html'
+	            exec "!firefox % &"
+	  elseif &filetype == 'go'
+	            exec "!go build %<"
+	            exec "!time go run %"
+	  elseif &filetype == 'md'
+	            exec "!pandoc -s -o %.html %"
+	            "pandoc -o output.html input.txt
+	            exec "!firefox %"
+	  elseif &filetype == 'rs'
+	            exec "!cargo build %<"
+	            exec "!cargo run %<"
+	  endif
+	  endfunc
 	
-	# Plugins
+|3,0,5,1,30,0,1653435373,"func! CompileRunGcc()","","  if &filetype == 'c'","          exec \"!gcc -Wall -g % -o %<\"","          exec \"!time %<\"","  elseif &filetype == 'cpp'","          exec \"!g++ % -o %<\"","          exec \"!time ./%<\"","  elseif &filetype == 'java'","          exec \"!javac %\"","          exec \"!time java -cp %:p:h %:t:r\"","  elseif &filetype == 'sh'","          exec \"!time bash %\"","  elseif &filetype == 'python'",>36
+|<"          exec \"!time python3 %\"","  elseif &filetype == 'html'","            exec \"!firefox % &\"","  elseif &filetype == 'go'","            exec \"!go build %<\"","            exec \"!time go run %\"","  elseif &filetype == 'md'","            exec \"!pandoc -s -o %.html %\"","            \"pandoc -o output.html input.txt","            exec \"!firefox %\"","  elseif &filetype == 'rs'","            exec \"!cargo build %<\"","            exec \"!cargo run %<\"","  endif","  endfunc",>2
+|<""
+"6	LINE	0
+	  exec "!clear"
+|3,0,6,1,1,0,1653435147,"  exec \"!clear\""
+"7	LINE	0
+	//my shitty attempt at making a distributed hash table without 
+	// any other extra help
 	
-	# Uses the default terminal color scheme for text
-	set -g default-terminal "screen-256color"
+	//set constant size for each block 
+	// block in this function is the contents of the message 
 	
-	#### COLOUR (Solarized dark)
+	int32 MAX_BLOCK = 5000  
+	func put_h(block ) { 
+	        //sends the key to successor server 
 	
-	# default statusbar colors
-	set-option -g status-style fg=yellow,bg=black #yellow and base02
+	} 
 	
-	# default window title colors
-	set-window-option -g window-status-style fg=brightblue,bg=default #base0 and default
-	#set-window-option -g window-status-style dim
+	//key length is 160 bits 
+	put_h(block) int32 {
+	        // makes key with hash function, sends to server for storage  
 	
-	# active window title colors
-	set-window-option -g window-status-current-style fg=brightred,bg=default #orange and default
-	#set-window-option -g window-status-current-style bright
+	}
+	//block needs to be signed here 
+	put_s(block , pubkey ) ;  // stores and updates a signed block  
 	
-	# pane border
-	set-option -g pane-border-style fg=black #base02
+	//i'm gonna guess that block is the size of memory for each chunk 
+	func main(){ 
+	   fmt.Println('weropiahwepioqwehjr'); 
+	} 
+|3,0,7,1,24,0,1653435013,"//my shitty attempt at making a distributed hash table without ","// any other extra help","","//set constant size for each block ","// block in this function is the contents of the message ","","int32 MAX_BLOCK = 5000  ","func put_h(block ) { ","        //sends the key to successor server ","","} ","","//key length is 160 bits ","put_h(block) int32 {","        // makes key with hash function, sends to server for storage  ","","}",>34
+|<"//block needs to be signed here ","put_s(block , pubkey ) ;  // stores and updates a signed block  ","","//i'm gonna guess that block is the size of memory for each chunk ","func main(){ ","   fmt.Println('weropiahwepioqwehjr'); ","} "
+"8	LINE	0
+	import "fmt"
+	//my shitty attempt at making a distributed hash table without 
+	// any other extra help
 	
-	# message text
-	set-option -g message-style fg=brightred,bg=black #orange and base01
+	//set constant size for each block 
+	// block in this function is the contents of the message 
 	
-	# pane number display
-	set-option -g display-panes-active-colour blue #blue
-	set-option -g display-panes-colour brightred #orange
+	int32 MAX_BLOCK = 5000  
+	func put_h(block ) { 
+	        //sends the key to successor server 
 	
-	# clock
-	set-window-option -g clock-mode-colour green #green
-|3,0,9,1,50,0,1651382835,"##################################","# TMUX CUSTOM CONFIGURATION FILE #","##################################","#","# Remap prefix to Screens","#set -g prefix C-a","#bind C-a send-prefix","#unbind C-b","# Quality of life stuff","set -g history-limit 50000","set -g allow-rename off","set -g mouse on","bind-key j command-prompt -p \"join pane from:\" \"join-pane -s '%%'\"",>70
-|<"bind-key s command-prompt -p \"join pane to:\" \"join-pane -t '%%'\"","","# Search Mode VI (default is emac)","set-window-option -g mode-keys vi","# git clone https://github.com/tmux-plugins/tmux-logging.git","run-shell /opt/tmux-logging/logging.tmux","","# Plugins","","# Uses the default terminal color scheme for text","set -g default-terminal \"screen-256color\"","","#### COLOUR (Solarized dark)","","# default statusbar colors",>66
-|<"set-option -g status-style fg=yellow,bg=black #yellow and base02","","# default window title colors","set-window-option -g window-status-style fg=brightblue,bg=default #base0 and default","#set-window-option -g window-status-style dim","","# active window title colors","set-window-option -g window-status-current-style fg=brightred,bg=default #orange and default","#set-window-option -g window-status-current-style bright","","# pane border",>50
-|<"set-option -g pane-border-style fg=black #base02","","# message text","set-option -g message-style fg=brightred,bg=black #orange and base01","","# pane number display","set-option -g display-panes-active-colour blue #blue","set-option -g display-panes-colour brightred #orange","","# clock","set-window-option -g clock-mode-colour green #green"
+	} 
+	
+	//key length is 160 bits 
+	put_h(block) int32 {
+	        // makes key with hash function, sends to server for storage  
+	
+	}
+	//block needs to be signed here 
+	put_s(block , pubkey ) ;  // stores and updates a signed block  
+	
+	//i'm gonna guess that block is the size of memory for each chunk 
+	func main(){ 
+	   fmt.Println('weropiahwepioqwehjr'); 
+	} 
+|3,0,8,1,25,0,1653434992,"import \"fmt\"","//my shitty attempt at making a distributed hash table without ","// any other extra help","","//set constant size for each block ","// block in this function is the contents of the message ","","int32 MAX_BLOCK = 5000  ","func put_h(block ) { ","        //sends the key to successor server ","","} ","","//key length is 160 bits ","put_h(block) int32 {",>72
+|<"        // makes key with hash function, sends to server for storage  ","","}","//block needs to be signed here ","put_s(block , pubkey ) ;  // stores and updates a signed block  ","","//i'm gonna guess that block is the size of memory for each chunk ","func main(){ ","   fmt.Println('weropiahwepioqwehjr'); ","} "
+"9	LINE	0
+	alias gp='git add . && git commit -am "changes" && git push' 
+|3,0,9,1,1,0,1653432611,"alias gp='git add . && git commit -am \"changes\" && git push' "
+"w	CHAR	0
+	627
+<wwbiTODO::wjjkjwwwwlwhxjjhxjjhxjjxjjxjjx;wkkkkkkkkkkjkwillhli{data.kkkkjjjV5djk5dju4djO<button >€kbuuujk$a€kb>,€kb€kb>€kb€kb {% €kb€kb€kb{% for x €kb€kb€kb _ €kb€kbletter in data.€kb['€kb€kb['letters']} €kb€kb %R'€kb€kb} no{% enfor *€kb%] €kb€kb€kb%} :wkkkojki	€kb€ýaA							<button > €kb {{ letter }} </button> ;wjjjjkkbbciwendrofr€kbfor ;wx:w€ýatggggjjjk$Ra, r€kb€kb€kb€kb€kba, €kb€kb€kbe, request :wbbb/argsirquest rqe€kb€kbequest €kb.;w;wcpan€kbu;wjjkkkjjkbbi($a)a.jsoin()json():wbbbbwwhDxbBx:wjkkkjjjjjjjkkkkkoprint(levl	prin(levt(levle€kb€kbel_data) €ýa
+|3,0,32,0,1,0,1652153323,>626
+|<"wwbiTODO::wjjkjwwwwlwhxjjhxjjhxjjxjjxjjx;wkkkkkkkkkkjkwillhli{data.kkkkjjjV5djk5dju4djO<button >€kbuuujk$a€kb>,€kb€kb>€kb€kb {% €kb€kb€kb{% for x €kb€kb€kb _ €kb€kbletter in data.€kb['€kb€kb['letters']} €kb€kb %R'€kb€kb} \no{% enfor *€kb%] €kb€kb€kb%} :wkkkojki	€kb€ýaA							<button > €kb {{ letter }} </button> ;wjjjjkkbbciwendrofr€kbfor ;wx:w€ýatggggjjjk$Ra, r€kb€kb€kb€kb€kba, €kb€kb€kbe, request :wbbb/argsirquest rqe€kb€kbequest €kb.;w;wcpan€
+|<kbu;wjjkkkjjkbbi($a)a.jsoin()json():wbbbbwwhDxbBx:wjkkkjjjjjjjkkkkkoprint(levl	prin(levt(levle€kb€kbel_data) €ýa"
 ""-	CHAR	0
-	 
-|3,1,36,0,1,0,1651446765," "
+	LTS 
+|3,1,36,0,1,0,1653605955,"LTS "
 
 # File marks:
-'0  2  17  ~/ConfigFiles/getConfFiles.sh
-|4,48,2,17,1651446768,"~/ConfigFiles/getConfFiles.sh"
-'1  2  31  ~/ConfigFiles/getConfFiles.sh
-|4,49,2,31,1651446749,"~/ConfigFiles/getConfFiles.sh"
-'2  1  12  ~/ConfigFiles/getConfFiles.sh
-|4,50,1,12,1651446583,"~/ConfigFiles/getConfFiles.sh"
-'3  1  12  ~/ConfigFiles/getConfFiles.sh
-|4,51,1,12,1651446583,"~/ConfigFiles/getConfFiles.sh"
-'4  1  12  ~/ConfigFiles/getConfFiles.sh
-|4,52,1,12,1651446583,"~/ConfigFiles/getConfFiles.sh"
-'5  1  12  ~/ConfigFiles/getConfFiles.sh
-|4,53,1,12,1651446583,"~/ConfigFiles/getConfFiles.sh"
-'6  1  4  ~/ConfigFiles/getConfFiles.sh
-|4,54,1,4,1651446539,"~/ConfigFiles/getConfFiles.sh"
-'7  1  4  ~/ConfigFiles/getConfFiles.sh
-|4,55,1,4,1651446539,"~/ConfigFiles/getConfFiles.sh"
-'8  1  4  ~/ConfigFiles/getConfFiles.sh
-|4,56,1,4,1651446539,"~/ConfigFiles/getConfFiles.sh"
-'9  1  4  ~/ConfigFiles/getConfFiles.sh
-|4,57,1,4,1651446539,"~/ConfigFiles/getConfFiles.sh"
+'0  2  5  ~/ConfigFiles/getConfFiles.sh
+|4,48,2,5,1653606263,"~/ConfigFiles/getConfFiles.sh"
+'1  2  0  ~/ConfigFiles/getConfFiles.sh
+|4,49,2,0,1653606247,"~/ConfigFiles/getConfFiles.sh"
+'2  1  0  ~/ConfigFiles/getConfFiles.sh
+|4,50,1,0,1653606235,"~/ConfigFiles/getConfFiles.sh"
+'3  1  0  ~/ConfigFiles/getConfFiles.sh
+|4,51,1,0,1653606235,"~/ConfigFiles/getConfFiles.sh"
+'4  1  0  ~/ConfigFiles/getConfFiles.sh
+|4,52,1,0,1653606235,"~/ConfigFiles/getConfFiles.sh"
+'5  1  0  ~/ConfigFiles/getConfFiles.sh
+|4,53,1,0,1653606235,"~/ConfigFiles/getConfFiles.sh"
+'6  20  7  ~/entries/distros.md
+|4,54,20,7,1653606222,"~/entries/distros.md"
+'7  4  8  ~/entries/entry2.md
+|4,55,4,8,1653604914,"~/entries/entry2.md"
+'8  4  8  ~/entries/entry2.md
+|4,56,4,8,1653604914,"~/entries/entry2.md"
+'9  1  0  ~/entries/entry2.md
+|4,57,1,0,1653604877,"~/entries/entry2.md"
 
 # Jumplist (newest first):
--'  2  17  ~/ConfigFiles/getConfFiles.sh
-|4,39,2,17,1651446768,"~/ConfigFiles/getConfFiles.sh"
+-'  2  5  ~/ConfigFiles/getConfFiles.sh
+|4,39,2,5,1653606263,"~/ConfigFiles/getConfFiles.sh"
 -'  1  0  ~/ConfigFiles/getConfFiles.sh
-|4,39,1,0,1651446760,"~/ConfigFiles/getConfFiles.sh"
--'  2  31  ~/ConfigFiles/getConfFiles.sh
-|4,39,2,31,1651446749,"~/ConfigFiles/getConfFiles.sh"
+|4,39,1,0,1653606260,"~/ConfigFiles/getConfFiles.sh"
+-'  2  0  ~/ConfigFiles/getConfFiles.sh
+|4,39,2,0,1653606247,"~/ConfigFiles/getConfFiles.sh"
 -'  1  0  ~/ConfigFiles/getConfFiles.sh
-|4,39,1,0,1651446680,"~/ConfigFiles/getConfFiles.sh"
--'  1  12  ~/ConfigFiles/getConfFiles.sh
-|4,39,1,12,1651446583,"~/ConfigFiles/getConfFiles.sh"
--'  1  4  ~/ConfigFiles/getConfFiles.sh
-|4,39,1,4,1651446539,"~/ConfigFiles/getConfFiles.sh"
+|4,39,1,0,1653606237,"~/ConfigFiles/getConfFiles.sh"
 -'  1  0  ~/ConfigFiles/getConfFiles.sh
-|4,39,1,0,1651446514,"~/ConfigFiles/getConfFiles.sh"
--'  1  7  ~/ConfigFiles/getConfFiles.sh
-|4,39,1,7,1651446494,"~/ConfigFiles/getConfFiles.sh"
--'  70  4  ~/.bashrc
-|4,39,70,4,1651445997,"~/.bashrc"
--'  70  4  ~/.bashrc
-|4,39,70,4,1651445997,"~/.bashrc"
--'  70  4  ~/.bashrc
-|4,39,70,4,1651445997,"~/.bashrc"
--'  70  4  ~/.bashrc
-|4,39,70,4,1651445997,"~/.bashrc"
--'  70  4  ~/.bashrc
-|4,39,70,4,1651445997,"~/.bashrc"
--'  70  4  ~/.bashrc
-|4,39,70,4,1651445997,"~/.bashrc"
--'  70  4  ~/.bashrc
-|4,39,70,4,1651445997,"~/.bashrc"
--'  70  4  ~/.bashrc
-|4,39,70,4,1651445997,"~/.bashrc"
--'  70  4  ~/.bashrc
-|4,39,70,4,1651445997,"~/.bashrc"
--'  70  4  ~/.bashrc
-|4,39,70,4,1651445997,"~/.bashrc"
--'  70  4  ~/.bashrc
-|4,39,70,4,1651445997,"~/.bashrc"
--'  70  4  ~/.bashrc
-|4,39,70,4,1651445997,"~/.bashrc"
--'  70  4  ~/.bashrc
-|4,39,70,4,1651445997,"~/.bashrc"
--'  70  4  ~/.bashrc
-|4,39,70,4,1651445997,"~/.bashrc"
--'  70  4  ~/.bashrc
-|4,39,70,4,1651445997,"~/.bashrc"
--'  70  4  ~/.bashrc
-|4,39,70,4,1651445997,"~/.bashrc"
--'  70  4  ~/.bashrc
-|4,39,70,4,1651445997,"~/.bashrc"
--'  70  4  ~/.bashrc
-|4,39,70,4,1651445997,"~/.bashrc"
--'  70  4  ~/.bashrc
-|4,39,70,4,1651445997,"~/.bashrc"
--'  70  4  ~/.bashrc
-|4,39,70,4,1651445997,"~/.bashrc"
--'  70  4  ~/.bashrc
-|4,39,70,4,1651445997,"~/.bashrc"
--'  70  4  ~/.bashrc
-|4,39,70,4,1651445997,"~/.bashrc"
--'  70  4  ~/.bashrc
-|4,39,70,4,1651445997,"~/.bashrc"
--'  70  4  ~/.bashrc
-|4,39,70,4,1651445997,"~/.bashrc"
--'  70  4  ~/.bashrc
-|4,39,70,4,1651445997,"~/.bashrc"
--'  70  4  ~/.bashrc
-|4,39,70,4,1651445997,"~/.bashrc"
--'  70  4  ~/.bashrc
-|4,39,70,4,1651445997,"~/.bashrc"
--'  70  4  ~/.bashrc
-|4,39,70,4,1651445997,"~/.bashrc"
--'  70  4  ~/.bashrc
-|4,39,70,4,1651445997,"~/.bashrc"
--'  70  4  ~/.bashrc
-|4,39,70,4,1651445997,"~/.bashrc"
--'  70  4  ~/.bashrc
-|4,39,70,4,1651445997,"~/.bashrc"
--'  70  4  ~/.bashrc
-|4,39,70,4,1651445997,"~/.bashrc"
--'  70  4  ~/.bashrc
-|4,39,70,4,1651445997,"~/.bashrc"
--'  70  4  ~/.bashrc
-|4,39,70,4,1651445997,"~/.bashrc"
--'  70  4  ~/.bashrc
-|4,39,70,4,1651445997,"~/.bashrc"
--'  70  4  ~/.bashrc
-|4,39,70,4,1651445997,"~/.bashrc"
--'  70  4  ~/.bashrc
-|4,39,70,4,1651445997,"~/.bashrc"
--'  70  4  ~/.bashrc
-|4,39,70,4,1651445997,"~/.bashrc"
--'  70  4  ~/.bashrc
-|4,39,70,4,1651445997,"~/.bashrc"
--'  70  4  ~/.bashrc
-|4,39,70,4,1651445997,"~/.bashrc"
--'  70  4  ~/.bashrc
-|4,39,70,4,1651445997,"~/.bashrc"
--'  70  4  ~/.bashrc
-|4,39,70,4,1651445997,"~/.bashrc"
--'  70  4  ~/.bashrc
-|4,39,70,4,1651445997,"~/.bashrc"
--'  70  4  ~/.bashrc
-|4,39,70,4,1651445997,"~/.bashrc"
--'  70  4  ~/.bashrc
-|4,39,70,4,1651445997,"~/.bashrc"
--'  70  4  ~/.bashrc
-|4,39,70,4,1651445997,"~/.bashrc"
--'  70  4  ~/.bashrc
-|4,39,70,4,1651445997,"~/.bashrc"
--'  70  4  ~/.bashrc
-|4,39,70,4,1651445997,"~/.bashrc"
--'  70  4  ~/.bashrc
-|4,39,70,4,1651445997,"~/.bashrc"
--'  70  4  ~/.bashrc
-|4,39,70,4,1651445997,"~/.bashrc"
--'  70  4  ~/.bashrc
-|4,39,70,4,1651445997,"~/.bashrc"
--'  70  4  ~/.bashrc
-|4,39,70,4,1651445997,"~/.bashrc"
--'  70  4  ~/.bashrc
-|4,39,70,4,1651445997,"~/.bashrc"
--'  70  4  ~/.bashrc
-|4,39,70,4,1651445997,"~/.bashrc"
--'  70  4  ~/.bashrc
-|4,39,70,4,1651445997,"~/.bashrc"
--'  70  4  ~/.bashrc
-|4,39,70,4,1651445997,"~/.bashrc"
--'  70  4  ~/.bashrc
-|4,39,70,4,1651445997,"~/.bashrc"
--'  70  4  ~/.bashrc
-|4,39,70,4,1651445997,"~/.bashrc"
--'  70  4  ~/.bashrc
-|4,39,70,4,1651445997,"~/.bashrc"
--'  70  4  ~/.bashrc
-|4,39,70,4,1651445997,"~/.bashrc"
--'  70  4  ~/.bashrc
-|4,39,70,4,1651445997,"~/.bashrc"
--'  70  4  ~/.bashrc
-|4,39,70,4,1651445997,"~/.bashrc"
--'  70  4  ~/.bashrc
-|4,39,70,4,1651445997,"~/.bashrc"
--'  70  4  ~/.bashrc
-|4,39,70,4,1651445997,"~/.bashrc"
--'  11  0  ~/.bashrc
-|4,39,11,0,1651445981,"~/.bashrc"
--'  11  0  ~/.bashrc
-|4,39,11,0,1651445981,"~/.bashrc"
--'  11  0  ~/.bashrc
-|4,39,11,0,1651445981,"~/.bashrc"
--'  11  0  ~/.bashrc
-|4,39,11,0,1651445981,"~/.bashrc"
--'  11  0  ~/.bashrc
-|4,39,11,0,1651445981,"~/.bashrc"
--'  11  0  ~/.bashrc
-|4,39,11,0,1651445981,"~/.bashrc"
--'  11  0  ~/.bashrc
-|4,39,11,0,1651445981,"~/.bashrc"
--'  11  0  ~/.bashrc
-|4,39,11,0,1651445981,"~/.bashrc"
--'  11  0  ~/.bashrc
-|4,39,11,0,1651445981,"~/.bashrc"
--'  11  0  ~/.bashrc
-|4,39,11,0,1651445981,"~/.bashrc"
--'  11  0  ~/.bashrc
-|4,39,11,0,1651445981,"~/.bashrc"
--'  11  0  ~/.bashrc
-|4,39,11,0,1651445981,"~/.bashrc"
--'  11  0  ~/.bashrc
-|4,39,11,0,1651445981,"~/.bashrc"
--'  11  0  ~/.bashrc
-|4,39,11,0,1651445981,"~/.bashrc"
--'  11  0  ~/.bashrc
-|4,39,11,0,1651445981,"~/.bashrc"
--'  11  0  ~/.bashrc
-|4,39,11,0,1651445981,"~/.bashrc"
--'  11  0  ~/.bashrc
-|4,39,11,0,1651445981,"~/.bashrc"
--'  11  0  ~/.bashrc
-|4,39,11,0,1651445981,"~/.bashrc"
--'  11  0  ~/.bashrc
-|4,39,11,0,1651445981,"~/.bashrc"
--'  11  0  ~/.bashrc
-|4,39,11,0,1651445981,"~/.bashrc"
--'  11  0  ~/.bashrc
-|4,39,11,0,1651445981,"~/.bashrc"
--'  11  0  ~/.bashrc
-|4,39,11,0,1651445981,"~/.bashrc"
--'  11  0  ~/.bashrc
-|4,39,11,0,1651445981,"~/.bashrc"
--'  11  0  ~/.bashrc
-|4,39,11,0,1651445981,"~/.bashrc"
--'  11  0  ~/.bashrc
-|4,39,11,0,1651445981,"~/.bashrc"
--'  11  0  ~/.bashrc
-|4,39,11,0,1651445981,"~/.bashrc"
--'  11  0  ~/.bashrc
-|4,39,11,0,1651445981,"~/.bashrc"
--'  11  0  ~/.bashrc
-|4,39,11,0,1651445981,"~/.bashrc"
+|4,39,1,0,1653606235,"~/ConfigFiles/getConfFiles.sh"
+-'  20  7  ~/entries/distros.md
+|4,39,20,7,1653606222,"~/entries/distros.md"
+-'  20  7  ~/entries/distros.md
+|4,39,20,7,1653606222,"~/entries/distros.md"
+-'  20  7  ~/entries/distros.md
+|4,39,20,7,1653606222,"~/entries/distros.md"
+-'  20  7  ~/entries/distros.md
+|4,39,20,7,1653606222,"~/entries/distros.md"
+-'  20  7  ~/entries/distros.md
+|4,39,20,7,1653606222,"~/entries/distros.md"
+-'  20  7  ~/entries/distros.md
+|4,39,20,7,1653606222,"~/entries/distros.md"
+-'  20  7  ~/entries/distros.md
+|4,39,20,7,1653606222,"~/entries/distros.md"
+-'  20  7  ~/entries/distros.md
+|4,39,20,7,1653606222,"~/entries/distros.md"
+-'  1  0  ~/entries/distros.md
+|4,39,1,0,1653605906,"~/entries/distros.md"
+-'  1  0  ~/entries/distros.md
+|4,39,1,0,1653605906,"~/entries/distros.md"
+-'  1  0  ~/entries/distros.md
+|4,39,1,0,1653605906,"~/entries/distros.md"
+-'  1  0  ~/entries/distros.md
+|4,39,1,0,1653605906,"~/entries/distros.md"
+-'  1  0  ~/entries/distros.md
+|4,39,1,0,1653605906,"~/entries/distros.md"
+-'  1  0  ~/entries/distros.md
+|4,39,1,0,1653605906,"~/entries/distros.md"
+-'  1  0  ~/entries/distros.md
+|4,39,1,0,1653605906,"~/entries/distros.md"
+-'  1  0  ~/entries/distros.md
+|4,39,1,0,1653605906,"~/entries/distros.md"
+-'  4  8  ~/entries/entry2.md
+|4,39,4,8,1653604914,"~/entries/entry2.md"
+-'  4  8  ~/entries/entry2.md
+|4,39,4,8,1653604914,"~/entries/entry2.md"
+-'  4  8  ~/entries/entry2.md
+|4,39,4,8,1653604914,"~/entries/entry2.md"
+-'  4  8  ~/entries/entry2.md
+|4,39,4,8,1653604914,"~/entries/entry2.md"
+-'  4  8  ~/entries/entry2.md
+|4,39,4,8,1653604914,"~/entries/entry2.md"
+-'  4  8  ~/entries/entry2.md
+|4,39,4,8,1653604914,"~/entries/entry2.md"
+-'  4  8  ~/entries/entry2.md
+|4,39,4,8,1653604914,"~/entries/entry2.md"
+-'  4  8  ~/entries/entry2.md
+|4,39,4,8,1653604914,"~/entries/entry2.md"
+-'  4  8  ~/entries/entry2.md
+|4,39,4,8,1653604914,"~/entries/entry2.md"
+-'  4  8  ~/entries/entry2.md
+|4,39,4,8,1653604914,"~/entries/entry2.md"
+-'  4  8  ~/entries/entry2.md
+|4,39,4,8,1653604914,"~/entries/entry2.md"
+-'  4  8  ~/entries/entry2.md
+|4,39,4,8,1653604914,"~/entries/entry2.md"
+-'  4  8  ~/entries/entry2.md
+|4,39,4,8,1653604914,"~/entries/entry2.md"
+-'  4  8  ~/entries/entry2.md
+|4,39,4,8,1653604914,"~/entries/entry2.md"
+-'  4  8  ~/entries/entry2.md
+|4,39,4,8,1653604914,"~/entries/entry2.md"
+-'  4  8  ~/entries/entry2.md
+|4,39,4,8,1653604914,"~/entries/entry2.md"
+-'  1  0  ~/entries/entry2.md
+|4,39,1,0,1653604879,"~/entries/entry2.md"
+-'  1  0  ~/entries/entry2.md
+|4,39,1,0,1653604879,"~/entries/entry2.md"
+-'  1  0  ~/entries/entry2.md
+|4,39,1,0,1653604879,"~/entries/entry2.md"
+-'  1  0  ~/entries/entry2.md
+|4,39,1,0,1653604879,"~/entries/entry2.md"
+-'  1  0  ~/entries/entry2.md
+|4,39,1,0,1653604879,"~/entries/entry2.md"
+-'  1  0  ~/entries/entry2.md
+|4,39,1,0,1653604879,"~/entries/entry2.md"
+-'  1  0  ~/entries/entry2.md
+|4,39,1,0,1653604879,"~/entries/entry2.md"
+-'  1  0  ~/entries/entry2.md
+|4,39,1,0,1653604879,"~/entries/entry2.md"
+-'  1  0  ~/entries/entry2.md
+|4,39,1,0,1653604879,"~/entries/entry2.md"
+-'  1  0  ~/entries/entry2.md
+|4,39,1,0,1653604879,"~/entries/entry2.md"
+-'  1  0  ~/entries/entry2.md
+|4,39,1,0,1653604879,"~/entries/entry2.md"
+-'  1  0  ~/entries/entry2.md
+|4,39,1,0,1653604879,"~/entries/entry2.md"
+-'  1  0  ~/entries/entry2.md
+|4,39,1,0,1653604879,"~/entries/entry2.md"
+-'  1  0  ~/entries/entry2.md
+|4,39,1,0,1653604879,"~/entries/entry2.md"
+-'  1  0  ~/entries/entry2.md
+|4,39,1,0,1653604879,"~/entries/entry2.md"
+-'  1  0  ~/entries/entry2.md
+|4,39,1,0,1653604879,"~/entries/entry2.md"
+-'  1  0  ~/entries/entry2.md
+|4,39,1,0,1653604877,"~/entries/entry2.md"
+-'  1  0  ~/entries/entry2.md
+|4,39,1,0,1653604877,"~/entries/entry2.md"
+-'  1  0  ~/entries/entry2.md
+|4,39,1,0,1653604877,"~/entries/entry2.md"
+-'  1  0  ~/entries/entry2.md
+|4,39,1,0,1653604877,"~/entries/entry2.md"
+-'  1  0  ~/entries/entry2.md
+|4,39,1,0,1653604877,"~/entries/entry2.md"
+-'  1  0  ~/entries/entry2.md
+|4,39,1,0,1653604877,"~/entries/entry2.md"
+-'  1  0  ~/entries/entry2.md
+|4,39,1,0,1653604877,"~/entries/entry2.md"
+-'  1  0  ~/entries/entry2.md
+|4,39,1,0,1653604877,"~/entries/entry2.md"
+-'  1  0  ~/entries/entry1.md
+|4,39,1,0,1653604871,"~/entries/entry1.md"
+-'  1  0  ~/entries/entry1.md
+|4,39,1,0,1653604871,"~/entries/entry1.md"
+-'  1  0  ~/entries/entry1.md
+|4,39,1,0,1653604871,"~/entries/entry1.md"
+-'  1  0  ~/entries/entry1.md
+|4,39,1,0,1653604871,"~/entries/entry1.md"
+-'  1  0  ~/entries/entry1.md
+|4,39,1,0,1653604871,"~/entries/entry1.md"
+-'  1  0  ~/entries/entry1.md
+|4,39,1,0,1653604871,"~/entries/entry1.md"
+-'  1  0  ~/entries/entry1.md
+|4,39,1,0,1653604871,"~/entries/entry1.md"
+-'  1  0  ~/entries/entry1.md
+|4,39,1,0,1653604871,"~/entries/entry1.md"
+-'  1  0  ~/entries/entry1.md
+|4,39,1,0,1653604871,"~/entries/entry1.md"
+-'  1  0  ~/entries/entry1.md
+|4,39,1,0,1653604871,"~/entries/entry1.md"
+-'  1  0  ~/entries/entry1.md
+|4,39,1,0,1653604871,"~/entries/entry1.md"
+-'  1  0  ~/entries/entry1.md
+|4,39,1,0,1653604871,"~/entries/entry1.md"
+-'  1  0  ~/entries/entry1.md
+|4,39,1,0,1653604871,"~/entries/entry1.md"
+-'  1  0  ~/entries/entry1.md
+|4,39,1,0,1653604871,"~/entries/entry1.md"
+-'  1  0  ~/entries/entry1.md
+|4,39,1,0,1653604871,"~/entries/entry1.md"
+-'  1  0  ~/entries/entry1.md
+|4,39,1,0,1653604871,"~/entries/entry1.md"
+-'  1  0  ~/entries/entry1.md
+|4,39,1,0,1653604871,"~/entries/entry1.md"
+-'  1  0  ~/entries/entry1.md
+|4,39,1,0,1653604871,"~/entries/entry1.md"
+-'  1  0  ~/entries/entry1.md
+|4,39,1,0,1653604871,"~/entries/entry1.md"
+-'  1  0  ~/entries/entry1.md
+|4,39,1,0,1653604871,"~/entries/entry1.md"
+-'  1  0  ~/entries/entry1.md
+|4,39,1,0,1653604871,"~/entries/entry1.md"
+-'  1  0  ~/entries/entry1.md
+|4,39,1,0,1653604871,"~/entries/entry1.md"
+-'  1  0  ~/entries/entry1.md
+|4,39,1,0,1653604871,"~/entries/entry1.md"
+-'  1  0  ~/entries/entry1.md
+|4,39,1,0,1653604871,"~/entries/entry1.md"
+-'  1  0  ~/entries/entry1.md
+|4,39,1,0,1653604871,"~/entries/entry1.md"
+-'  1  0  ~/entries/entry1.md
+|4,39,1,0,1653604871,"~/entries/entry1.md"
+-'  1  0  ~/entries/entry1.md
+|4,39,1,0,1653604871,"~/entries/entry1.md"
+-'  1  0  ~/entries/entry1.md
+|4,39,1,0,1653604871,"~/entries/entry1.md"
+-'  1  0  ~/entries/entry1.md
+|4,39,1,0,1653604871,"~/entries/entry1.md"
+-'  1  0  ~/entries/entry1.md
+|4,39,1,0,1653604871,"~/entries/entry1.md"
+-'  1  0  ~/entries/entry1.md
+|4,39,1,0,1653604871,"~/entries/entry1.md"
+-'  1  0  ~/entries/entry1.md
+|4,39,1,0,1653604871,"~/entries/entry1.md"
+-'  1  0  ~/entries/entry1.md
+|4,39,1,0,1653604871,"~/entries/entry1.md"
+-'  1  0  ~/entries/entry1.md
+|4,39,1,0,1653604871,"~/entries/entry1.md"
+-'  1  0  ~/entries/entry1.md
+|4,39,1,0,1653604871,"~/entries/entry1.md"
+-'  1  0  ~/entries/entry1.md
+|4,39,1,0,1653604871,"~/entries/entry1.md"
+-'  1  0  ~/entries/entry1.md
+|4,39,1,0,1653604871,"~/entries/entry1.md"
+-'  1  0  ~/entries/entry1.md
+|4,39,1,0,1653604871,"~/entries/entry1.md"
+-'  1  0  ~/entries/entry1.md
+|4,39,1,0,1653604871,"~/entries/entry1.md"
 
 # History of marks within files (newest to oldest):
 
 > ~/ConfigFiles/getConfFiles.sh
-	*	1651446767	0
-	"	2	17
-	^	2	18
-	.	2	17
-	+	1	21
-	+	1	1
-	+	2	0
-	+	3	0
-	+	2	17
+	*	1653606262	0
+	"	2	5
+	^	2	6
+	.	2	5
+	+	2	5
 
-> ~/.bashrc
-	*	1651445995	0
-	"	70	4
-	^	139	68
-	.	139	67
-	+	129	19
-	+	125	18
-	+	130	0
-	+	135	28
-	+	136	57
-	+	143	45
-	+	138	19
-	+	139	67
-
-> ~/notes/server.py
-	*	1651445595	0
-	"	10	2
-	^	15	0
-	.	3	0
-	+	1	10
-	+	2	43
-	+	8	7
-	+	2	22
-	+	2	0
-	+	2	10
-	+	1	9
-	+	4	59
-	+	5	25
-	+	6	0
-	+	2	9
-	+	8	3
-	+	10	34
-	+	12	4
-	+	13	2
-	+	19	10
-	+	15	0
-	+	8	0
-	+	3	0
-
-> ~/notes/.bashrc
-	*	1651445019	0
-	"	1	0
-
-> ~/blingtron/README.md
-	*	1651444878	0
-	"	73	0
-	^	73	0
-	.	1	0
-	+	82	6
-	+	78	20
-	+	74	30
-	+	66	22
-	+	66	29
-	+	56	32
-	+	47	39
-	+	65	21
-	+	57	0
-	+	58	0
-	+	48	0
-	+	49	0
-	+	67	0
+> ~/entries/distros.md
+	*	1653606221	0
+	"	20	7
+	^	20	8
+	.	20	7
+	+	2	3
 	+	1	0
-	+	22	91
-	+	45	0
-	+	25	2
-	+	13	40
-	+	14	0
-	+	19	0
-	+	16	0
-	+	19	0
-	+	17	79
-	+	18	21
-	+	24	28
-	+	26	75
-	+	44	0
-	+	27	6
-	+	31	66
-	+	37	52
-	+	35	38
-	+	36	77
-	+	37	0
-	+	40	33
-	+	40	0
-	+	43	0
-	+	85	6
-	+	85	60
-	+	85	0
-	+	83	0
-	+	84	0
-	+	83	1
-	+	90	158
-	+	90	157
-	+	90	80
-	+	95	68
-	+	95	42
-	+	99	47
-	+	101	44
-	+	90	80
-	+	87	5
-	+	90	79
-	+	90	80
-	+	89	0
-	+	100	12
-	+	87	4
-	+	90	80
-	+	94	0
-	+	93	0
-	+	99	0
-	+	95	0
-	+	99	0
-	+	101	86
-	+	105	0
-	+	91	20
-	+	92	11
-	+	90	9
-	+	91	9
-	+	92	42
-	+	95	0
-	+	95	61
-	+	96	80
-	+	97	25
-	+	98	10
-	+	99	0
-	+	101	0
-	+	102	36
-	+	103	10
-	+	92	35
-	+	107	0
-	+	108	0
-	+	109	0
-	+	111	0
-	+	1	0
-
-> ~/50projects50days/drink-water/script.js
-	*	1651440123	0
-	"	13	4
-
-> ~/blingtron/src/main.py
-	*	1651437153	0
-	"	31	0
-	^	1	22
-	.	1	21
-	+	1	21
-
-> ~/blingtron/src/main
-	*	1651430362	0
-	"	1	0
-
-> ~/test.py
-	*	1651430009	0
-	"	1	22
-	^	1	23
-	.	1	22
-	+	19	72
-	+	6	0
-	+	2	0
-	+	7	0
-	+	3	0
-	+	1	22
-
-> ~/Downloads/qbittorrent-4.4.2/README.md
-	*	1651428938	0
-	"	1	0
-
-> ~/.tmux.conf
-	*	1651383180	0
-	"	8	0
-	^	8	0
-	.	8	0
-	+	2	43
-	+	2	0
-	+	2	23
-	+	2	0
-	+	2	24
-	+	2	43
-	+	2	23
-	+	2	15
-	+	2	0
-	+	2	17
-	+	2	0
-	+	2	34
-	+	2	16
-	+	2	0
-	+	2	13
-	+	2	0
-	+	2	17
-	+	2	0
-	+	2	23
-	+	33	0
-	+	2	0
-	+	1	0
-	+	44	0
-	+	1	0
-	+	2	0
-	+	7	23
-	+	8	0
-
-> ~/projects/pandoc_resume/markdown/resume.md
-	*	1651376660	0
-	"	5	48
-	^	5	49
-	.	5	49
-	+	8	5
-	+	8	14
-	+	8	8
-	+	8	40
-	+	8	15
-	+	5	0
-	+	8	8
-	+	8	7
-	+	8	39
-	+	8	78
-	+	8	37
-	+	8	5
-	+	8	38
-	+	8	5
-	+	5	36
-	+	8	5
-	+	8	18
-	+	29	13
-	+	8	5
-	+	5	40
-	+	5	41
-	+	6	0
-	+	5	60
-	+	8	5
-	+	10	0
-	+	9	0
-	+	23	46
-	+	30	0
-	+	25	83
-	+	5	49
-
-> ~/projects/pandoc-job-application/file-watcher.ps1
-	*	1651375907	0
-	"	1	0
-
-> ~/coverLetter
-	*	1651375644	0
-	"	28	12
-	^	28	13
-	.	28	12
-	+	12	11
-	+	1	0
-	+	9	15
-	+	2	0
-	+	1	13
-	+	3	13
-	+	7	22
-	+	12	105
-	+	12	0
-	+	12	168
-	+	12	261
-	+	12	181
-	+	12	0
-	+	13	95
-	+	13	97
-	+	13	3
-	+	16	98
-	+	16	173
-	+	5	38
-	+	6	0
-	+	4	0
-	+	16	173
-	+	13	0
-	+	18	96
-	+	19	0
-	+	19	101
-	+	19	100
-	+	19	98
-	+	20	98
-	+	20	149
-	+	20	180
-	+	20	178
-	+	22	295
-	+	24	280
-	+	28	12
-
-> ~/.bash
-	*	1651372416	0
-	"	1	0
-
-> ~/ideas
-	*	1651363196	0
-	"	8	38
-	^	8	39
-	.	8	39
-	+	19	6
-	+	15	20
-	+	11	30
-	+	10	22
-	+	10	29
-	+	9	32
-	+	8	39
-
-> ~/projects/pandoc_resume/make: *** [Makefile
-	*	1651273591	0
-	"	1	0
-
-> ~/Projects/urls.txt
-	*	1651272141	0
-	"	1	119
-	^	1	120
-	.	1	65
-	+	1	65
-
-> ~/Projects/fillform.py
-	*	1651271551	0
-	"	8	31
-	^	8	32
-	.	8	31
-	+	8	13
-	+	3	10
-	+	8	24
-	+	9	0
-	+	7	38
-	+	8	1
-	+	8	31
-
-> ~/Projects/cherry.py
-	*	1651270533	0
-	"	11	32
-	^	11	33
-	.	11	32
-	+	1	22
-	+	8	25
-	+	11	32
-
-> ~/Projects/webass.py
-	*	1651270202	0
-	"	1	22
-	^	1	23
-	.	1	22
-	+	15	8
-	+	2	0
-	+	7	0
-	+	9	0
-	+	13	0
-	+	1	22
-
-> ~/GhRegistry/app.py
-	*	1651267897	0
-	"	39	21
-	^	39	22
-	.	39	21
-	+	30	50
-	+	30	5
-	+	30	42
-	+	30	46
-	+	9	49
-	+	30	0
-	+	13	55
-	+	13	24
-	+	13	0
-	+	7	11
-	+	15	30
-	+	15	42
-	+	15	29
-	+	15	18
-	+	30	0
-	+	30	50
-	+	30	1
-	+	30	62
-	+	30	12
-	+	30	66
-	+	30	0
-	+	30	52
-	+	30	24
-	+	30	0
-	+	30	13
-	+	30	0
-	+	30	13
-	+	30	0
-	+	30	14
-	+	30	1
-	+	30	0
-	+	30	27
-	+	30	20
-	+	30	0
-	+	30	60
-	+	30	0
-	+	30	23
-	+	30	41
-	+	30	59
-	+	30	0
-	+	30	8
-	+	30	12
-	+	30	32
-	+	30	51
-	+	30	73
-	+	30	41
-	+	30	0
-	+	1	0
-	+	16	0
-	+	15	0
-	+	20	29
-	+	19	16
-	+	20	12
-	+	19	35
-	+	30	0
-	+	3	0
-	+	4	0
-	+	5	0
-	+	30	0
-	+	30	4
-	+	30	0
-	+	12	0
-	+	9	0
-	+	8	50
-	+	40	37
-	+	4	34
-	+	36	31
-	+	37	24
-	+	39	21
-
-> ~/GhRegistry/templates/index.html
-	*	1651267786	0
-	"	19	4
-	^	1	4
-	.	7	0
-	+	24	25
-	+	24	39
-	+	24	47
-	+	24	39
-	+	24	47
-	+	24	33
-	+	24	54
-	+	24	33
-	+	24	137
-	+	24	50
-	+	24	77
-	+	24	82
-	+	24	0
-	+	24	43
-	+	24	16
-	+	24	43
-	+	24	37
-	+	24	0
-	+	24	85
-	+	24	0
-	+	24	83
-	+	24	0
-	+	24	14
-	+	24	0
-	+	24	26
-	+	24	37
-	+	24	35
-	+	24	26
-	+	24	134
-	+	24	3
-	+	24	132
-	+	24	0
-	+	24	6
-	+	24	0
-	+	24	130
-	+	24	86
-	+	24	0
-	+	24	109
-	+	24	0
+	+	3	30
 	+	25	0
-	+	23	10
-	+	1	3
-	+	7	0
+	+	22	0
+	+	11	1
+	+	21	0
+	+	10	0
+	+	12	26
+	+	20	7
 
-> ~/GhRegistry/test-input/words_alpha.txt
-	*	1651267056	0
-	"	1	0
-
-> ~/GhRegistry/test.py
-	*	1651267039	0
-	"	6	0
-	^	5	43
-	.	5	42
+> ~/entries/entry2.md
+	*	1653604912	0
+	"	4	8
+	.	4	0
+	+	1	0
+	+	3	0
+	+	1	0
+	+	3	2
+	+	3	3
 	+	4	0
-	+	5	0
+
+> ~/entries/entry1.md
+	*	1653604869	0
+	"	1	0
+	^	13	0
+	.	12	3
+	+	1	1
+	+	3	0
+	+	5	23
 	+	6	0
-	+	5	0
-	+	8	5
-	+	9	7
-	+	10	9
-	+	11	5
-	+	15	0
-	+	14	29
-	+	5	42
+	+	7	0
+	+	11	2
+	+	1	0
+	+	2	0
+	+	11	12
+	+	14	0
+	+	12	3
+
+> ~/entries/entry
+	*	1653604730	0
+	"	1	0
 
 > ~/.vimrc
-	*	1651266945	0
-	"	55	9
-	^	45	2
-	.	55	0
-	+	19	30
-	+	22	18
-	+	24	0
-	+	23	13
-	+	24	16
-	+	57	88
+	*	1653604726	0
+	"	55	0
+	^	54	40
+	.	54	39
+	+	75	0
+	+	28	29
+	+	26	12
 	+	26	0
-	+	43	3
-	+	45	1
-	+	38	0
-	+	36	0
-	+	35	0
+	+	27	0
+	+	26	28
+	+	26	0
+	+	1	0
+	+	15	34
+	+	17	16
+	+	4	34
+	+	26	19
+	+	26	1
+	+	26	19
+	+	26	2
+	+	26	0
+	+	18	14
+	+	26	0
+	+	4	0
+	+	11	0
+	+	4	34
+	+	11	0
+	+	26	0
+	+	56	130
+	+	28	0
+	+	29	0
+	+	45	34
 	+	41	0
-	+	47	0
-	+	48	0
-	+	50	0
-	+	52	0
-	+	54	0
-	+	55	0
+	+	75	0
+	+	75	27
+	+	78	0
+	+	76	13
+	+	74	65
+	+	72	41
+	+	26	0
+	+	1	0
+	+	2	21
+	+	2	0
+	+	5	21
+	+	5	0
+	+	11	26
+	+	12	20
+	+	13	17
+	+	14	27
+	+	15	34
+	+	16	39
+	+	17	0
+	+	78	0
+	+	78	20
+	+	77	59
+	+	78	0
+	+	51	38
+	+	53	40
+	+	52	67
+	+	53	44
+	+	54	39
 
-> ~/GhRegistry/j
-	*	1651263401	0
-	"	1	0
+> ~/entries/bullshit.md
+	*	1653604479	0
+	"	15	69
+	^	15	70
+	.	15	69
+	+	3	0
+	+	1	9
+	+	2	0
+	+	7	1
+	+	15	69
 
-> ~/GhRegistry/'
-	*	1651263347	0
-	"	1	0
-
-> ~/GhRegistry/.gitignore
-	*	1651262609	0
-	"	1	0
-	^	3	0
+> ~/entries/NERD_tree_1
+	*	1653604439	0
+	"	5	0
 	.	1	0
-	+	1	10
+	+	1	0
+
+> ~/entries/friends
+	*	1653604090	0
+	"	1	0
+	^	1	0
+
+> ~/projects/buhfurHash/myhash.go
+	*	1653603927	0
+	"	8	0
+	^	8	1
+	.	8	0
+	+	11	0
+	+	7	9
+	+	6	0
+	+	2	12
+	+	4	0
+	+	2	10
+	+	1	0
+	+	2	0
+	+	1	0
+	+	6	14
+	+	8	0
+
+> /usr/share/vim/vim82/doc/options.txt
+	*	1653602393	0
+	"	24	13
+
+> ~/projects/Hash-Tables/basic_hashtable/test.py
+	*	1653601972	0
+	"	4	0
+	^	1	0
+	.	4	0
+	+	1	0
+	+	4	0
+
+> ~/projects/Hash-Tables/basic_hashtable/b_hashtables
+	*	1653539049	0
+	"	1	0
+
+> ~/projects/Hash-Tables/basic_hashtable/b_hashtables.py
+	*	1653538947	0
+	"	32	0
+
+> ~/projects/Hash-Tables/Pipfile
+	*	1653536798	0
+	"	1	0
+
+> ~/projects/Hash-Tables/basic_hashtable/b_hashtables_tests.py
+	*	1653536779	0
+	"	1	0
+
+> ~/notes/life/canada.md
+	*	1653450081	0
+	"	47	10
+	^	47	11
+	.	47	10
+	+	5	62
+	+	16	12
+	+	11	61
+	+	22	30
+	+	33	65
+	+	33	62
+	+	37	55
+	+	38	0
+	+	42	14
+	+	44	0
+	+	45	0
+	+	44	13
+	+	45	0
+	+	47	0
+	+	46	0
+	+	47	10
+
+> ~/dht/main.c
+	*	1653435435	0
+	"	6	0
+	^	1	1
+	.	1	0
+	+	24	0
+	+	4	0
+	+	1	0
+
+> ~/dht/main.go
+	*	1653435090	0
+	"	11	0
+	^	10	15
+	.	10	14
+	+	3	1
+	+	3	11
+	+	3	0
+	+	2	0
+	+	3	0
+	+	5	31
+	+	16	3
+	+	11	8
+	+	7	0
+	+	9	0
+	+	11	0
+	+	10	14
+
+> ~/notes/.git/config
+	*	1653434626	0
+	"	1	0
+	^	7	42
+	.	7	41
+	+	10	16
+	+	12	24
+	+	7	41
+
+> ~/notes/changes
+	*	1653433928	0
+	"	1	40
+	^	1	41
+	.	1	40
+	+	1	40
+
+> ~/AintPaint/.git/config
+	*	1653433038	0
+	"	11	1
+
+> ~/.bashrc
+	*	1653432632	0
+	"	150	58
+	.	151	0
+	+	150	0
+	+	154	29
+	+	156	0
+	+	144	5
+	+	156	46
+	+	157	0
+	+	154	18
+	+	156	0
+	+	150	16
+	+	155	45
+	+	160	0
+	+	151	0
+
+> ~/.bahrc
+	*	1653432464	0
+	"	1	0
+
+> ~/notes/dht/recipes/greentea.md
+	*	1653430370	0
+	"	18	53
+	^	18	54
+	.	18	53
+	+	7	24
+	+	14	0
+	+	12	77
+	+	14	14
+	+	4	42
+	+	15	26
+	+	18	6
+	+	15	27
+	+	15	51
+	+	18	53
+
+> ~/notes/README.md
+	*	1653430278	0
+	"	1	0
+	^	22	2
+	.	1	0
+	+	18	27
+	+	16	35
+	+	19	0
+	+	14	9
+	+	13	10
+	+	1	43
+	+	9	0
+	+	8	8
+	+	9	26
+	+	11	72
+	+	25	0
+	+	23	4
+	+	24	4
+	+	23	73
+	+	24	9
+	+	22	1
+	+	1	0
+
+> ~/notes/dht
+	*	1653428778	0
+	"	1	0
+
+> ~/notes/NERD_tree_2
+	*	1653428667	0
+	"	4	0
+	.	1	0
+	+	1	0
+
+> /media/buhfur/Karen/games/vanilla/realmlist.wtf
+	*	1653370182	0
+	"	1	0
+	^	1	1
+	.	1	0
+	+	1	25
 	+	2	0
 	+	1	0
 
-> ~/GhRegistry/creds.json
-	*	1651262515	0
-	"	7	3
-	^	7	3
-	.	7	3
-	+	4	10
-	+	9	4
-	+	5	0
-	+	4	10
-	+	9	5
-	+	4	2
-	+	9	5
-	+	10	0
-	+	3	0
-	+	4	0
-	+	6	3
-	+	7	3
-
-> ~/GhRegistry/testCreds.py
-	*	1651262506	0
-	"	6	0
-	^	9	19
-	.	9	18
-	+	8	18
-	+	6	42
-	+	5	0
-	+	8	27
-	+	8	1
-	+	6	11
-	+	8	33
-	+	6	22
-	+	3	7
-	+	6	22
-	+	8	20
-	+	10	0
-	+	8	8
-	+	10	0
-	+	9	18
-
-> ~/GhRegistry/.vimrc
-	*	1651259869	0
+> /media/buhfur/Karen/downloads/$wow/realmlist.wtf
+	*	1653370111	0
 	"	1	0
 
-> ~/GhRegistry/.creds.json
-	*	1651258962	0
+> /media/buhfur/Karen/downloads/realmlist.wtf
+	*	1653370096	0
 	"	1	0
+
+> /media/buhfur/Karen/games/vanilla/rel
+	*	1653360175	0
+	"	1	0
+
+> /etc/profile
+	*	1653289494	0
+	"	28	34
+	^	28	35
+	.	28	34
+	+	28	34
+
+> ~/dht/env.go
+	*	1653289179	0
+	"	11	0
 	^	11	1
-	.	10	0
-	+	9	0
-	+	4	6
-	+	7	29
-	+	8	18
-	+	10	0
+	.	11	0
 	+	11	0
-	+	10	0
 
-> ~/.token
-	*	1651258768	0
+> ~/dht/main.co
+	*	1653288602	0
+	"	1	0
+
+> ~/dht/go.mod
+	*	1653288447	0
 	"	1	1
 	^	1	2
 	.	1	1
 	+	1	1
 
-> ~/GhRegistry/.env
-	*	1651258645	0
-	"	1	0
+> ~/projects/bug.c
+	*	1653285557	0
+	"	6	14
+	^	15	2
+	.	6	17
+	+	3	33
+	+	13	18
+	+	15	1
+	+	6	17
 
-> ~/GhRegistry/static/list.js
-	*	1651258010	0
-	"	1	3
-	^	1	4
-	.	1	4
+> ~/rust-learn/Cargo.toml
+	*	1653258406	0
+	"	4	40
+	^	5	0
+	.	5	0
+	+	7	20
+	+	9	0
+	+	7	18
+	+	8	0
+	+	4	41
 	+	5	0
-	+	1	4
 
-> ~/GhRegistry/static/js
-	*	1651257731	0
+> ~/rust-learn/tood
+	*	1653256044	0
 	"	1	0
 
-> ~/GhRegistry/.tmux
-	*	1651253261	0
+> ~/rust-learn/main.rs
+	*	1653255932	0
 	"	1	0
 
-> ~/GhRegistry/static/style.css
-	*	1651253131	0
-	"	105	2
-
-> ~/GhRegistry/templates/index
-	*	1651252591	0
+> ~/test.rs
+	*	1653255867	0
 	"	1	0
-
-> ~/GhRegistry/index.html
-	*	1651252246	0
-	"	1	0
-	^	24	22
-	.	24	21
-	+	29	10
-	+	1	3
-	+	7	0
-	+	19	6
-	+	25	6
-	+	24	45
-	+	21	91
-	+	24	21
-
-> ~/GhRegistry/index.htmk
-	*	1651252241	0
-	"	1	0
-
-> ~/GhRegistry/index.
-	*	1651252225	0
-	"	1	0
-
-> ~/GhRegistry/src/app.py
-	*	1651250596	0
-	"	88	0
 	^	1	0
 	.	1	0
-	+	88	31
-	+	38	40
-	+	88	0
-	+	89	53
-	+	113	0
-	+	119	7
-	+	100	0
-	+	107	6
-	+	122	2
-	+	123	0
-	+	106	0
-	+	100	37
-	+	106	21
-	+	71	54
-	+	39	40
-	+	71	49
-	+	73	20
-	+	95	3
-	+	90	0
-	+	86	35
-	+	73	33
-	+	89	54
 	+	1	0
 
-> ~/GhRegistry/src/.env
-	*	1651250334	0
-	"	5	0
-	^	4	25
-	.	6	0
-	+	4	14
-	+	6	0
-	+	4	66
-	+	1	0
-	+	4	25
-	+	6	0
+> ~/projects/pdfminer.six/mypy.ini
+	*	1653255327	0
+	"	33	0
 
-> ~/GhRegistry/ls
-	*	1651248069	0
-	"	1	0
+> /tmp/hello.cs
+	*	1652903831	0
+	"	4	20
+	^	4	21
+	.	4	20
+	+	6	2
+	+	4	20
 
-> ~/GhRegistry/sta
-	*	1651248047	0
-	"	1	0
+> ~/entries/bullshit.txt
+	*	1652903647	0
+	"	15	34
+	^	15	35
+	.	15	35
+	+	10	12
+	+	10	13
+	+	15	35
 
-> ~/GhRegistry/st
-	*	1651248043	0
-	"	1	0
-
-> ~/GhRegistry/public/html/index.html
-	*	1651245749	0
-	"	1	0
-
-> ~/GhRegistry/public/js/like_button.js
-	*	1651245684	0
-	"	4	27
-	^	4	28
-	.	4	27
-	+	4	27
-
-> ~/GhRegistry/verifyGithubNames.py
-	*	1651245083	0
-	"	1	0
-	^	99	22
-	.	81	0
-	+	101	19
-	+	103	0
-	+	86	86
-	+	87	81
-	+	71	0
-	+	105	13
-	+	112	1
-	+	112	0
-	+	110	3
-	+	116	6
-	+	101	19
-	+	100	14
-	+	120	12
-	+	118	1
-	+	119	0
-	+	118	0
-	+	72	35
-	+	86	16
-	+	88	22
-	+	82	0
-	+	101	10
-	+	109	0
-	+	108	0
-	+	100	0
-	+	71	57
-	+	72	37
-	+	70	64
-	+	72	39
-	+	78	81
-	+	82	0
-	+	80	0
-	+	81	0
-	+	91	18
-	+	91	0
-	+	101	0
-	+	99	21
-	+	81	0
-
-> ~/GhRegistry/app
-	*	1651245076	0
-	"	1	0
-
-> /tmp/formtest/app.py
-	*	1651245066	0
-	"	13	25
-	^	13	97
-	.	13	25
-	+	21	36
-	+	2	3
-	+	1	21
-	+	8	0
-	+	25	0
-	+	27	1
-	+	26	26
-	+	27	0
-	+	18	35
-	+	20	33
-	+	22	8
-	+	19	11
+> ~/projects/pdfprospector/main.py
+	*	1652843885	0
+	"	4	0
+	^	12	28
+	.	12	27
+	+	11	30
+	+	3	11
+	+	13	46
+	+	2	0
+	+	11	19
+	+	13	35
+	+	20	0
+	+	11	24
+	+	10	17
+	+	11	24
+	+	11	0
+	+	13	0
+	+	13	36
+	+	13	31
+	+	18	14
+	+	13	36
+	+	13	22
+	+	13	17
+	+	13	89
+	+	13	0
+	+	13	17
+	+	13	0
+	+	11	0
+	+	13	0
+	+	13	17
+	+	13	76
+	+	13	16
+	+	13	17
+	+	21	0
+	+	1	1
+	+	13	0
+	+	13	17
+	+	13	4
+	+	13	0
+	+	18	20
+	+	19	8
 	+	18	0
-	+	19	12
-	+	20	10
-	+	13	98
-	+	14	0
-	+	13	25
-	+	14	0
-	+	13	25
+	+	17	0
+	+	19	31
+	+	21	39
+	+	19	30
+	+	11	0
+	+	11	31
+	+	12	10
+	+	11	4
+	+	13	0
+	+	12	12
+	+	12	13
+	+	13	0
+	+	12	27
+	a	11	26
+	k	13	0
 
-> /tmp/formtest/radio.html
-	*	1651244257	0
-	"	3	2
-	^	2	11
-	.	3	0
-	+	6	12
-	+	2	10
-	+	3	0
-	e	1	0
+> ~/projects/pdfminer.six/Makefile
+	*	1652843213	0
+	"	14	0
 
-> ~/GhRegistry/tood.md
-	*	1651243740	0
-	"	10	0
-	^	10	0
-	.	10	0
+> ~/projects/pdfminer.six/Makeifle
+	*	1652843200	0
+	"	1	0
+
+> ~/.tmux.conf
+	*	1652841564	0
+	"	21	0
+	^	21	1
+	.	21	0
+	+	23	108
+	+	23	38
+	+	1	0
+	+	23	0
+	+	24	0
+	+	22	0
+	+	24	0
+	+	22	0
+	+	21	0
+	+	24	0
+	+	20	0
+	+	21	0
+	+	13	0
+	+	9	0
+	+	11	100
+	+	11	0
+	+	22	31
+	+	23	0
+	+	20	0
+	+	21	0
+	+	18	0
+	+	28	0
+	+	21	0
+	m	12	0
+	n	12	0
+
+> ~/.tmux.confd
+	*	1652841355	0
+	"	1	0
+
+> ~/projects/pdfprospector/main
+	*	1652839655	0
+	"	1	0
+
+> ~/projects/pdfprospector/minepdf.py
+	*	1652839373	0
+	"	1	0
+	^	5	27
+	.	5	26
+	+	6	35
+	+	8	12
+	+	3	68
+	+	4	75
+	+	5	26
+
+> ~/projects/pandoc_resume/output/minepdf.py
+	*	1652839282	0
+	"	6	7
+	^	5	27
+	.	5	26
+	+	6	35
+	+	8	12
+	+	3	68
+	+	4	75
+	+	5	26
+
+> ~/projects/pandoc_resume/output/output.py
+	*	1652838881	0
+	"	10	54
+	^	10	55
+	.	10	54
+	+	1	0
+	+	1	10
+	+	1	7
+	+	1	10
 	+	1	24
-	+	6	85
-	+	8	51
+	+	1	25
+	+	1	18
+	+	1	22
+	+	1	31
+	+	1	20
+	+	1	23
+	+	16	33
+	+	17	8
+	+	2	10
+	+	17	21
+	+	16	0
+	+	3	9
+	+	11	51
+	+	16	5
+	+	17	9
+	+	8	39
+	+	11	86
+	+	16	0
+	+	11	18
+	+	15	0
+	+	16	0
+	+	12	38
+	+	17	23
+	+	9	8
+	+	11	68
+	+	10	19
+	+	11	0
+	+	10	20
+	+	11	40
+	+	10	44
+	+	8	35
+	+	6	16
+	+	5	0
+	+	10	42
+	+	8	20
+	+	10	15
+	+	12	33
+	+	14	0
+	+	13	0
+	+	12	39
+	+	10	54
+
+> ~/projects/pandoc_resume/output/oupu
+	*	1652837762	0
+	"	1	0
+
+> ~/projects/pandoc_resume/output/resume.pdf
+	*	1652837651	0
+	"	1	0
+
+> ~/projects/pandoc_resume/output/output.pyu
+	*	1652837543	0
+	"	1	0
+
+> ~/redditpost
+	*	1652836546	0
+	"	1	0
+	^	3	149
+	.	1	0
+	+	1	30
+	+	6	0
+	+	1	73
+	+	5	0
+	+	1	324
+	+	1	537
+	+	1	438
+	+	3	148
+	+	1	0
+
+> ~/userspace/eth_header
+	*	1652760482	0
+	"	1	0
+
+> ~/userspace/eth_header.c
+	*	1652760461	0
+	"	19	17
+	^	19	18
+	.	19	17
+	+	8	22
+	+	4	31
+	+	11	0
+	+	15	0
 	+	10	0
+	+	13	0
+	+	6	0
+	+	6	62
+	+	7	57
+	+	2	20
+	+	2	17
+	+	2	0
+	+	1	19
+	+	20	1
+	+	19	17
 
-> ~/GhRegistry/todo
-	*	1651243726	0
+> ~/userspace/eht
+	*	1652760352	0
 	"	1	0
 
-> ~/.vimr
-	*	1651194805	0
+> ~/userspace/eth_header.h
+	*	1652760148	0
+	"	1	8
+	^	1	9
+	.	1	8
+	+	1	8
+
+> ~/bashr
+	*	1652758985	0
 	"	1	0
 
-> ~/.bshrc
-	*	1651194721	0
+> ~/.bashr
+	*	1652758969	0
 	"	1	0
+
+> /media/buhfur/Karen/games/otherVanilla/realmlist.wtf
+	*	1652678188	0
+	"	1	0
+
+> /media/buhfur/Karen/games/otherVanilla/rel
+	*	1652678160	0
+	"	1	0
+
+> ~/.bashrc]
+	*	1652677995	0
+	"	1	0
+	^	1	0
+
+> ~/projects/pandoc_resume/markdown/resume.md
+	*	1652667047	0
+	"	1	0
+
+> ~/graphex/main.c
+	*	1652594711	0
+	"	40	8
+	^	39	8
+	.	40	0
+	+	18	21
+	+	18	23
+	+	5	54
+	+	14	80
+	+	15	26
+	+	18	18
+	+	18	40
+	+	18	4
+	+	46	0
+	+	5	0
+	+	46	0
+	+	18	4
+	+	45	7
+	+	18	0
+	+	45	0
+	+	46	0
+	+	12	37
+	+	7	0
+	+	8	0
+	+	9	0
+	+	8	0
+	+	10	0
+	+	11	0
+	+	12	0
+	+	14	0
+	+	15	0
+	+	12	0
+	+	13	0
+	+	49	75
+	+	49	0
+	+	45	2
+	+	49	31
+	+	49	90
+	+	49	0
+	+	6	33
+	+	17	37
+	+	49	0
+	+	47	25
+	+	19	31
+	+	20	0
+	+	45	0
+	+	5	0
+	+	45	0
+	+	45	19
+	+	45	37
+	+	45	23
+	+	45	29
+	+	49	9
+	+	49	0
+	+	45	32
+	+	45	0
+	+	45	24
+	+	49	0
+	+	49	8
+	+	49	0
+	+	49	41
+	+	49	9
+	+	49	0
+	+	45	0
+	+	50	0
+	+	6	3
+	+	5	0
+	+	50	0
+	+	6	13
+	+	6	0
+	+	49	0
+	+	49	20
+	+	49	19
+	+	6	0
+	+	4	0
+	+	49	0
+	+	44	0
+	+	49	0
+	+	25	0
+	+	43	0
+	+	42	0
+	+	34	52
+	+	35	23
+	+	36	0
+	+	48	38
+	+	3	17
+	+	31	0
+	+	45	9
+	+	41	16
+	+	38	35
+	+	40	17
+	+	40	31
+	+	40	0
+	+	39	12
+	+	40	31
+	+	31	43
+	+	30	78
+	+	28	26
+	+	30	39
+	+	31	0
+	+	39	27
+	+	40	0
+
+> ~/graphex/read.c
+	*	1652594695	0
+	"	3	19
+	^	3	20
+	.	3	19
+	+	4	327
+	+	4	12
+	+	23	47
+	+	5	0
+	+	4	0
+	+	24	0
+	+	23	15
+	+	2	18
+	+	10	33
+	+	13	9
+	+	3	19
+
+> ~/todo/movingout
+	*	1652594206	0
+	"	16	8
+	^	42	106
+	.	42	105
+	+	3	47
+	+	21	30
+	+	22	0
+	+	21	0
+	+	20	0
+	+	21	0
+	+	20	0
+	+	21	0
+	+	23	1
+	+	10	19
+	+	19	0
+	+	22	0
+	+	23	0
+	+	20	0
+	+	6	0
+	+	6	20
+	+	19	10
+	+	9	1
+	+	23	17
+	+	24	20
+	+	26	24
+	+	8	5
+	+	5	18
+	+	6	20
+	+	7	0
+	+	6	0
+	+	8	37
+	+	11	19
+	+	19	0
+	+	12	14
+	+	14	20
+	+	15	19
+	+	16	24
+	+	18	14
+	+	25	17
+	+	28	23
+	+	29	19
+	+	30	14
+	+	37	11
+	+	35	17
+	+	41	23
+	+	42	105
+
+> ~/graphex/main.py
+	*	1652572527	0
+	"	16	56
+	^	17	54
+	.	17	56
+	+	8	40
+	+	9	0
+	+	8	50
+	+	9	27
+	+	6	9
+	+	8	36
+	+	9	12
+	+	28	0
+	+	4	0
+	+	15	21
+	+	12	31
+	+	21	77
+	+	22	47
+	+	26	6
+	+	9	0
+	+	10	15
+	+	9	0
+	+	10	16
+	+	10	14
+	+	17	56
+
+> ~/graphex/main.pyu
+	*	1652561552	0
+	"	1	0
+
+> ~/graphex/run
+	*	1652559522	0
+	"	5	0
+	^	5	6
+	.	5	6
+	+	4	26
+	+	5	6
+
+> ~/GarbleWeb/src/templates/webgl_loader_ttf.html
+	*	1652510604	0
+	"	239	3
+
+> ~/GarbleWeb/src/app.py
+	*	1652510377	0
+	"	57	44
+	^	57	43
+	.	57	0
+	+	62	16
+	+	61	32
+	+	62	0
+	+	61	0
+	+	63	4
+	+	63	20
+	+	64	31
+	+	66	50
+	+	66	0
+	+	54	12
+	+	58	49
+	+	58	25
+	+	58	0
+	+	57	15
+	+	58	55
+	+	3	50
+	+	57	17
+	+	57	21
+	+	57	0
+	+	54	12
+	+	55	0
+	+	62	95
+	+	58	15
+	+	58	19
+	+	54	12
+	+	58	3
+	+	58	24
+	+	58	71
+	+	58	85
+	+	58	55
+	+	58	118
+	+	26	0
+	+	29	73
+	+	29	0
+	+	37	0
+	+	39	33
+	+	28	18
+	+	55	12
+	+	57	18
+	+	58	54
+	+	36	71
+	+	63	0
+	+	66	0
+	+	58	0
+	+	61	0
+	+	59	6
+	+	61	0
+	+	62	0
+	+	60	0
+	+	59	16
+	+	24	55
+	+	25	68
+	+	24	57
+	+	25	61
+	+	35	0
+	+	10	0
+	+	11	0
+	+	24	0
+	+	9	2
+	+	24	3
+	+	12	0
+	+	15	37
+	+	24	0
+	+	15	28
+	+	14	15
+	+	13	0
+	+	16	0
+	+	16	80
+	+	20	31
+	+	21	15
+	+	16	61
+	+	21	20
+	+	20	24
+	+	19	0
+	+	20	0
+	+	19	17
+	+	20	25
+	+	21	21
+	+	23	0
+	+	8	77
+	+	16	0
+	+	23	23
+	+	25	0
+	+	21	83
+	+	55	0
+	+	60	0
+	+	59	62
+	+	60	18
+	+	55	5
+	+	56	29
+	+	63	15
+	+	56	15
+	+	63	23
+	+	64	0
+	+	31	143
+	+	63	0
+	+	61	0
+	+	58	0
+	+	65	0
+	+	57	0
+
+> ~/GarbleWeb/src/static/animation.js
+	*	1652510189	0
+	"	23	20
+	^	23	23
+	.	23	22
+	+	1	0
+	+	1	1
+	+	1	0
+	+	17	17
+	+	19	0
+	+	19	1
+	+	19	0
+	+	35	0
+	+	2	41
+	+	3	0
+	+	5	38
+	+	6	0
+	+	5	38
+	+	6	29
+	+	16	53
+	+	20	0
+	+	5	26
+	+	34	16
+	+	35	1
+	+	34	25
+	+	16	0
+	+	6	16
+	+	8	32
+	+	6	38
+	+	34	15
+	+	34	0
+	+	34	8
+	+	34	0
+	+	34	16
+	+	34	18
+	+	34	37
+	+	34	0
+	+	34	15
+	+	19	15
+	+	34	44
+	+	34	0
+	+	34	8
+	+	34	47
+	+	34	12
+	+	34	67
+	+	34	16
+	+	19	0
+	+	34	0
+	+	34	17
+	+	6	38
+	+	16	0
+	+	34	0
+	+	19	0
+	+	7	0
+	+	8	10
+	+	34	0
+	+	9	0
+	+	8	8
+	+	15	61
+	+	12	16
+	+	13	16
+	+	13	0
+	+	15	35
+	+	15	0
+	+	26	0
+	+	28	0
+	+	27	55
+	+	21	8
+	+	18	15
+	+	27	15
+	+	27	33
+	+	28	0
+	+	27	26
+	+	34	0
+	+	29	0
+	+	32	0
+	+	33	0
+	+	30	33
+	+	31	34
+	+	20	0
+	+	24	8
+	+	17	47
+	+	23	23
+	+	23	22
+
+> ~/GarbleWeb/src/templates/level.html
+	*	1652460799	0
+	"	8	0
+	^	8	0
+	.	8	0
+	+	7	51
+	+	8	0
+
+> ~/GarbleWeb/src/templates/animation.js
+	*	1652460297	0
+	"	1	0
+
+> ~/GarbleWeb/src/NERD_tree_1
+	*	1652460273	0
+	"	8	0
+	.	1	0
+	+	1	0
+
+> ~/GarbleWeb/src/NERD_tree_4
+	*	1652459746	0
+	"	8	1
+	.	1	0
+	+	1	0
+
+> ~/GarbleWeb/src/NERD_tree_2
+	*	1652459619	0
+	"	8	0
+	.	1	0
+	+	1	0
+
+> /etc/security/limits.conf
+	*	1652406848	0
+	"	55	0
+	^	55	0
+	.	55	0
+	+	55	0
+
+> /etc/security/limits.confg
+	*	1652406429	0
+	"	1	0
+
+> ~/AintPaint/paint
+	*	1652303739	0
+	"	1	0
+
+> ~/GarbleWeb/src/templates/index.html
+	*	1652301736	0
+	"	11	0
+	^	43	24
+	.	43	23
+	+	39	23
+	+	45	114
+	+	45	113
+	+	45	112
+	+	45	124
+	+	45	0
+	+	44	0
+	+	40	50
+	+	42	0
+	+	43	25
+	+	41	48
+	+	43	23
+
+> ~/GarbleWeb/src/static/timer.js
+	*	1652301735	0
+	"	1	0
+
+> ~/GarbleWeb/src/templates.html
+	*	1652291231	0
+	"	1	0
+
+> ~/.BASHRC
+	*	1652221996	0
+	"	1	0
+
+> ~/entries/fluxotine
+	*	1652218158	0
+	"	12	0
+	^	12	0
+	.	11	50
+	+	1	79
+	+	7	31
+	+	9	2
+	+	8	32
+	+	10	0
+	+	9	0
+	+	7	0
+	+	5	0
+	+	7	0
+	+	8	0
+	+	9	0
+	+	11	50
+
+> ~/GarbleWeb/src/templates/index.htmk
+	*	1652152741	0
+	"	1	0
+
+> ~/GarbleWeb/src/templates/data.html
+	*	1652152706	0
+	"	8	0
+	^	7	35
+	.	8	0
+	+	8	0
+	+	6	6
+	+	7	34
+	+	6	6
+	+	7	35
+	+	8	0
+
+> ~/GarbleWeb/src/garble.py
+	*	1652151058	0
+	"	9	0
+	.	9	0
+	+	1	0
+	+	8	0
+	+	9	0
+
+> ~/GarbleWeb/src/gat
+	*	1652150803	0
+	"	1	0
+
+> ~/GarbleWeb/src/appData.py
+	*	1652150701	0
+	"	2	0
+
+> ~/GarbleWeb/garble.py
+	*	1652150526	0
+	"	27	45
+	^	31	5
+	.	32	0
+	+	30	3
+	+	33	0
+	+	31	4
+	+	32	0
+
+> ~/GarbleWeb/app.py
+	*	1652149036	0
+	"	23	31
+	^	23	32
+	.	23	31
+	+	22	41
+	+	22	0
+	+	22	41
+	+	23	0
+	+	22	0
+	+	13	0
+	+	25	0
+	+	20	16
+	+	23	31
+
+> ~/GarbleWeb/NERD_tree_1
+	*	1652149017	0
+	"	10	0
+	.	1	0
+	+	1	0
+
+> ~/GarbleWeb/requirements.txt
+	*	1652148321	0
+	"	1	0
+
+> ~/GarbleWeb/core/app.py
+	*	1652147847	0
+	"	31	10
+	^	25	11
+	.	25	10
+	+	2	13
+	+	9	64
+	+	14	21
+	+	14	29
+	+	14	21
+	+	16	0
+	+	14	0
+	+	13	15
+	+	14	21
+	+	15	0
+	+	18	46
+	+	19	0
+	+	20	20
+	+	23	0
+	+	20	40
+	+	23	27
+	+	24	16
+	+	34	46
+	+	24	12
+	+	34	57
+	+	18	38
+	+	20	0
+	+	22	0
+	+	21	18
+	+	34	19
+	+	22	7
+	+	25	56
+	+	27	28
+	+	25	0
+	+	27	28
+	+	34	0
+	+	23	28
+	+	24	4
+	+	32	7
+	+	29	19
+	+	33	17
+	+	30	0
+	+	25	10
+
+> ~/GarbleWeb/core/NERD_tree_1
+	*	1652147846	0
+	"	6	0
+	.	1	0
+	+	1	0
