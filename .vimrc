@@ -24,6 +24,8 @@
         nnoremap <C-l> :tabprevious<CR>
         nnoremap <C-h> :tabnext<CR>
         "vim Plugs 
+        call plug#begin()
+        Plug 'ycm-core/YouCompleteMe'
         nnoremap cp :call CompileRunGcc()<CR>
         func! CompileRunGcc()
 
@@ -52,19 +54,17 @@
                         exec "!rm %.html"
                 endif
         endfunc
-call plug#begin()
-        Plug 'ycm-core/YouCompleteMe'
         Plug 'http://github.com/morhetz/gruvbox'
         Plug 'tyru/open-browser.vim' " opens url in browser
         Plug 'tpope/vim-surround' " Surrounding ysw)
         Plug 'https://github.com/preservim/nerdtree', { 'on': 'NERDTreeToggle' }
         Plug 'https://github.com/ap/vim-css-color' " CSS Color Preview
         Plug 'https://github.com/tpope/vim-commentary' " For Commenting gcc & gc
+
+
         Plug 'honza/vim-snippets'
         Plug 'tmsvg/pear-tree'
         " let Vundle manage Vundle, required
-        Plug 'vim-airline/vim-airline'
-        Plug 'VundleVim/Vundle.vim'
         Plug 'preservim/nerdtree'
         Plug 'morhetz/gruvbox'
         Plug 'grvcoelho/vim-javascript-snippets'
