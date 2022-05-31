@@ -1,420 +1,3 @@
-xdg-open resume.pdf
-lsd
-tmux
-exit
-vim .tmux.conf +96
-vim .tmux.conf
-exit
-sudo systemctl start plexmediaserver
-http://127.0.0.1:32400/web
-firefox http://127.0.0.1:32400/web
-cd $k
-ls $k
-vim .bashrc
-source .bashrc
-cd 4k
-cd k4
-cd $k
-ls
-wotlk
-tmux
-tmux 
-vim .tmux.conf 
-tmux
-cd $k
-ls
-cd /media
-ls
-cd $k
-ls
-cd /media
-ls
-cd 
-ping  149.164.111.84 
-ping -c 4 ⽓
-ping -c 4  149.164.111.84 
-sudo reboot
-sudo vim /etc/fstab
-ls
-cd /media
-ls
-sudo chmod 777 buhfur
-exit
-git clone https://github.com/PySimpleGUI/PySimpleGUI.git
-ls
-cd notes
-ls
-exit
-cd blingtron/
-ls
-vim README.md 
-cd 
-mkdir notes
-ls
-cd notes
-ls
-cp ~/50projects50days/notes-app/* ./
-ls
-vim .bashrc
-vim ~/.bashrc
-source ~/.bashrc
-cd 
-cd notes
-vim start.sh
-ls
-rm st
-rm start.sh
-vim server.py 
-exit
-vim .bashrc
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-git clone https://github.com/buhfur/ConfigFiles
-cd ConfigFiles/
-cp ~/.bashrc && ~/.vimrc
-cp ~/.bashrc && ~/.vimrc ./
-cat {.,}*
-find . -iname {.,}*
-ls -dl .[^.]*
-echo "ls -dl .[^.]*" > getConfFiles.sh
-vim getConfFiles.sh 
-sudo chmod +x getConfFiles.sh 
-ls
-vim getConfFiles.sh 
-./getConfFiles.sh 
-vim getConfFiles.sh 
-ls
-ls -a
-vim getConfFiles.sh 
-./getConfFiles.sh 
-vim getConfFiles.sh 
-./getConfFiles.sh 
-vim getConfFiles.sh 
-./getConfFiles.sh 
-vim getConfFiles.sh 
-git commit 
-git config --global user.email "ryanmcvicker@protonmail.com"
-git config --global user.name "buhfur"
-git commit 
-vim .vimrc
-rm .vimrc.swp
-rm /.vimrc.swp
-vim .vimrc
-vim .tmux.conf
-git push
-git pull
-git commit -a -m"updated config files " ; git push 
-git config credential.helper --cache
-git config credential.helper -h
-git config credential.helper store
-ls ~/.gitconfig 
-vim ~/.gitconfig 
-git push
-vim ~/.git-credentials 
-ls
-git add .
-git commit 
-git commit -a -m "added script to update all config files " ; git push
-vim ~/.bashrc
-exit
-cat .token
-exit
-python3
-exit
-cd 50projects50days/
-cd drink-water/
-ls
-vim script.js 
-vim 
-cd 
-vim tree.py 
-ls
-vim tree.py 
-exit
-python3 -m notes.server
-pip -m install pickledb
-pip3 install pickledb 
-vim serial
-cd pan
-ls
-cd projects
-ls
-cd pandoc_resume/
-ls
-cd markdown/
-ls
-vim resume.md 
-cd ..
-vim resume.md 
-cd ..
-make pdf
-cd pandoc_resume/
-make pdf
-xdg-open resume.md 
-xdg-open resume.pdf 
-xdg-open output/resume.pdf 
-ls
-cd output/
-ls
-open resume.
-open resume.pdf
-cd ..
-ls
-mv resume.md markdown/resume.md 
-make pdf
-xdg-openopen
-open resume.pdf
-open output/resume.pdf
-ls
-wget https://resume.glassdoor.com/a0/da/70/8c/resume.pdf?AWSAccessKeyId=AKIAXMYEU5OEZIQWWLYY&response-content-disposition=attachment%3B+filename%3D%22resume.pdf%22&Signature=M6DF4IR7HneDejn35FH09rmKlzc%3D&Expires=1651449396
-ls
-rm pdf-links-target-blank.lua
-ls
-rm pdc-links-target-blank.lua 
-ls
-cp ~/Documents/resume.md ./markdown/resume.md
-ls ~/Documents/
-cd. .
-cd ..
-rm -rf pandoc_resume/
-ls
-cd pabn
-cd pan
-git clone https://github.com/buhfur/pandoc_resume
-cd pandoc_resume/
-ls
-cd markdown/
-vim resume.md 
-cd. .
-cd ..
-make pdf
-open output/resume.
-open output/resume.pdf
-exit
-cd projects/pandoc_resume/
-vim markdown/
-make pdf
-vim markdown/
-vim markdown/resume.md 
-exit
-ls
-exit
-cd projects/pandoc_resume/
-ls
-make pdf
-gitpush
-git add . ; git commit -a -m "changed resume" ; git push
-cd output
-ls
-cp resume.pdf ~/Documents
-ls
-cd 
-s
-git clone https://github.com/ichomchom/Indeed-Bot.git
-cd Indeed-Bot/
-ls
-vim in
-vim indeed.py
-vim in
-vim info.py 
-lsls
-ls
-vim info.py 
-vim angel.py
-ls
-vim test.py 
-cd .
-cd 
-rm -rf Indeed-Bot/ 
-git clone https://github.com/buhfur/Indeed-Bot
-ls .git-credentials 
-cat .git-credentials 
-cd in
-cd Indeed-Bot/
-ls
-sudo chmod +x test.py
-ls
-vim ~/.bashrc
-source .bashrc
-source ~/.bashrc
-ls
-vim ~/.bah
-vim ~/.bahrc
-vim ~/.bashrc
-source ~/.bashrc
-vim .bashrc
-source ~/.bashrc
-vim .bashrc
-vim ~/.bashrc
-source ~/.bashrc 
-ls
-vim info.py
-vim .gitignore
-mv info info.txt
-vim test.py 
-grep . "info"
-grep -s "info"
-find . -name "*.py" -exec grep -H "info" {} \;
-cat *.py | grep "info
-cat *.py | grep "info"
-grep -s "info" *
-mv info.txt info.py 
-vim info.py 
-ls
-cat cv.txt 
-.gitignore
-vim .gitignore
-vim info.py
-vim test.py 
-pip3 install selenium 
-vim test.py 
-sudo chmod +x test.py 
-./test.py 
-vim test.py 
-./test.py 
-sudo apt install firefox-geckodriver
-pip install -U selenium
-cd ~/Downloads/
-ls
-sudo chmod +x geckodriver-v0.31.0-linux64
-sudo chmod +x geckodriver-v0.31.0-linux64.tar.gz 
-sudo tar xvf geckodriver-v0.31.0-linux64.tar.gz 
-cp geckodriver /usr/bin
-sudo cp geckodriver /usr/bin
-cd 
-ls
-cd Indeed-Bot/
-ls
-./test.py 
-vim test.py 
-./ts
-python3 test.py
-sudo chmod 777 ./*
-python3 test.py
-sudo systemctl status plexmediaserver
-exit
-wotlk
-ls
-cd blingtron
-lks
-ls
-vim README.md 
-git init
-ls
-vim README.md 
-ls
-vim 
-ls
-cd 
-cd Downloads
-ls
-sudo chmod +x exper
-sudo chmod +x expressvpn_3.22.0.2-1_amd64.deb 
-ls
-sudo dpkg -i expressvpn_3.22.0.2-1_amd64.deb 
-expressvpn connect
-expressvpn activate 
-expressvpn connect
-ls
-sudo chmod +x qbittorrent-4.4.2.tar.gz 
-sudo tar xvf qbittorrent-4.4.2.tar.gz 
-ls
-cd qbittorrent-4.4.2/
-ls
-cd dist
-ls
-cd unix
-ls
-cmake
-make
-cd ..
-ls
-cd ..
-ls
-cmake
-cmake .
-sudo cmake .
-ls
-sudo chmod +x conf
-sudo chmod +x configure
-ls
-./configure 
-sudo ./configure
-ls
-vim README.md 
-./configure 
-sudh chmod 777 configure
-sudo chmod 777 configure
-./configure 
-sudo chmod +x ./*
-./configure 
-sudo ./configure
-sudo apt install qmake
-cd ..
-rm -rf qbittorrent-4.4.2
-sudo rm -rf qbittorrent-4.4.2
-ls
-sudo rm -rf qbittorrent-4.4.2.tar.gz 
-ls
-sudo apt install qbittorrent
-sudo apt install gimp 
-cd .d
-cd 
-tmux
-man wget | grep output
-man wget | grep directory
-cd 
-cd .vim/colors
-cd ~/.vim
-ls
-mkdir colors
-cd colors/
-wget https://raw.githubusercontent.com/joshdick/onedark.vim/main/colors/onedark.vim
-ls
-cd ..
-ls
-cd .
-cd ..
-vim ~/.vimrc
-ls
-vim conf
-vim ~/.vimrc
-vim ~/.vim/autoload
-mkdir ~/.vim/autoload
-cp ~/.vim/colors/onedark.vim ~/.vim/autoload/onedark.vim
-vim ~/.vimrc
-rm -rf ~/.vim/colors
-rm -rf ~/.vim/autoload/onedark.vim 
-vim ~/.vimrc
-ls
-vim .vimrc
-vim ~/.vimrc
-vim .vimrc
-vim ~/.vimrc
-vim .vimrc
-vim ~/.vimrc
-ls
-cd GarbleWeb/
-python3 -m http.server
-ls
-rm ]
-cd hashBrownTable/
-ls
-git init
-ls
-cd src
-lks
-ls
-vim hash_table.c
-exit
-sudo snap install electron-mail
-electron-mail 
-sudo apt-get install obs-studio
-obs 
-lsusb
-sudo add-apt-repository multiverse
-tmux
-vim .tmux
-vim .tmux.conf
 tmux
 vim .tmux.conf +35
 tmux
@@ -1997,4 +1580,421 @@ ls
 wget http://62.182.86.140/main/3250000/ae221514347f8ec9742d9c50e6c044e4/Cormen%2C%20Thomas%20H._%20Leiserson%2C%20Charles%20E._%20Rivest%2C%20Ronald%20L._%20Stein%2C%20Clifford%20-%20Introduction%20to%20Algorithms%20%282022%29.pdf
 ls
 open 'Cormen, Thomas H._ Leiserson, Charles E._ Rivest, Ronald L._ Stein, Clifford - Introduction to Algorithms (2022).pdf' 
+exit
+cd tests
+python3 test one.py
+cd 
+cd projects
+cd HA
+cd Hash-Tables/
+ls
+cd basic_hashtable/
+ls
+b_hashtables.py
+python3 b_hashtables.py
+ls
+vim test.py
+ls
+cd 
+cd projects 
+mkdir buhfurHash 
+cd buhfurHash/
+ls
+git init 
+vim myhash.py
+go mod init
+go mod init github.com/myHash
+go mod tidy 
+ls
+vim myhash.go
+ls
+cd 
+ls
+cd entires
+git init 
+gh repo create
+ls
+git add . 
+git remote add origin https://github.com/buhfur/Journal-new.git
+git commit -am "inital commit with some old entries " 
+git push 
+git push origin master
+git push --set-upstream origin master
+gitp ush
+git push 
+ls
+firefox https://github.com/buhfur/Journal-new
+vim friends 
+ls
+mv bullshit.txt bullshitr
+mv bullshitr bullshit
+mv bullshitr bullshit.md
+ls
+mv bullshit bullshit.md 
+ls
+mv bullshit.md bullshit.md
+ls
+mv entry1 entry1.md
+mv entry2 entry2.md 
+ls
+mv fluxotine fluxotine.md 
+vim .
+ls
+vim entry2.md
+ls
+firefox entry2.md
+pandoc -f md -t html entry1md
+pandoc -f md -t html entry1.md
+pandoc entry1.md -f markdown -t html
+vim ~/.vimrc
+ls
+vim entry
+vim entry1.md 
+ls
+w
+ls
+git add .
+gitpush 
+ls
+vim entry1.md
+vim entry2.md
+rm entry2.md
+gitpush
+cd 
+ls
+cd entries 
+ls
+vim distros.md 
+cd ~/ConfigFiles/
+ls
+vim getConfFiles.sh 
+man cp 
+vim getConfFiles.sh 
+./getConfFiles.sh 
+vim .bashrc
+cd $wotlk
+cd $addons
+cd _ 
+cd -
+cd 
+ls 
+ls
+cd ConfigFiels 
+cd ConfigFiles/
+ls
+la
+vim .vimrc
+gp
+sudo apt update 
+sudo apt upgrade
+cd 
+cd entries'
+cd entreis 
+cd entries 
+ls
+vim distros.md 
+go help 
+ucd 
+cd 
+ls
+cd golearn 
+cd projects
+ls
+cd buhfurHash/
+ls
+vim myhash.
+rm myhash.
+rm myhash.py 
+vim myhash.go
+wow
+vwo 
+vwow
+cd $wow
+vim rel
+vim realmlist.wtf
+wow
+vwow
+cd $k/downloads
+unzip Bartender2.zip -d $addons
+vwow
+ls $addons
+ls
+unzip Carnival_EnemyCastBar.zip -d $addons
+ls $addons
+unzip Gatherer.zip -d $addons
+ls $addons
+rm -rf Bartender2
+cd $addons
+rm -rf Bartender2
+;s
+ls
+vim test
+rm test 
+cd Dp
+cd DPSMate-master/
+ls
+cp ./* ../
+cp -r ./* ../
+cd ..
+ls
+ls | grep mail
+ls | grep Postal 
+cd $k/downloads
+unzip Atlas -d $addons
+ks
+ls
+unzip Atlas-master.zip -d $addons
+ls
+cd $addons
+ls
+cd Atlas-master/
+ls
+cp -r ./* ../ 
+ls
+cd .. ; rm -rf Atlas-master
+cd ..
+ls
+cd -
+ls
+vwow
+ls
+cd Atlas
+find -iname FuBar
+ls
+cd ..
+ls
+find -iname FuBar
+ls
+man find
+sudo apt install asciiquarium 
+snap install asciiquarium 
+asciiquarium 
+cd 
+asciiquarium 
+asciiquarium -h 
+man asciiquarium 
+man asciiquarium --help
+man asciiquarium 
+asciiquarium 
+vim 
+ls 
+ls
+cd books 
+wget http://62.182.86.140/main/2543000/297a5e754dab2cde9651069590489131/Yang%20Hu%20-%20Graphic%20Go%20Algorithms_%20Graphically%20learn%20data%20structures%20and%20algorithms%20better%20than%20before-Independently%20published%20%282020%29.pdf
+ls
+open 'Yang Hu - Graphic Go Algorithms_ Graphically learn data structures and algorithms better than before-Independently published (2020).pdf' 
+cd 
+cd projects
+ls
+cd buhfurHash 
+ls
+mv myhash.go main.go 
+go run main.go
+go build 
+go build . 
+vim main.go 
+tmux
+ls
+cd 
+cd projects 
+ls
+cd buhfurHash/
+ls
+vim main.go
+go run main.go 
+tmux
+cd books 
+ls,
+ls
+vim Yang\ Hu\ -\ Graphic\ Go\ Algorithms_\ Graphically\ learn\ data\ structures\ and\ algorithms\ better\ than\ before-Independently\ published\ \(2020\).pdf 
+open Yang\ Hu\ -\ Graphic\ Go\ Algorithms_\ Graphically\ learn\ data\ structures\ and\ algorithms\ better\ than\ before-Independently\ published\ \(2020\).pdf 
+cd projects/buhfurHash/
+cd 
+cd projects/buhfurHash
+xit
+exit
+ls
+cd /root/
+sudo cd root/
+sudo cd /root/
+ls
+cd $k/
+ls
+cd games 
+ls
+cd vanilla/
+ls
+find . -type d -iname '*.MPQ'
+d 
+exit
+tmux
+ping ptr.wallcraft.org\
+ping -c 2 ptr.wallcraft.org
+ping -c 2 ptr.everlook.org
+ping -c 2 ptr.everlook.com
+ping -c 2 logon.everlook.com
+ls
+exit
+wotlk
+sudo apt update 
+ping -c 4 wallcraft.org
+wotlk
+vim $wow/realmlist.wtf
+vwow
+git clone https://github.com/mrrosh/Bongos
+cd Bongos
+ls
+mv ./* $addons
+ls
+cd 
+rm -rf Bongos 
+ls
+l
+ls
+lll
+clear
+vwoww
+vwow
+ls
+rm -rf $addons/Bongos
+ls $addons
+rm -rf $addons/Bongos*
+ls $addons
+git clone https://github.com/ElvUI-Vanilla/ElvUI.git
+cd ElvUI/
+ls
+rm ISSUE_TEMPLATE.md 
+rm README.md 
+mv -r ./* $addons
+mv  ./* $addons
+vwow
+rm -rf $addons/ElvUI
+ls
+cd $addons
+ls
+exit
+unzip LunaUnitFrames.zip -d $addons
+vwow
+cd $addons
+ls
+rm -rf ElvUI_Config/
+cd Cartographer-master/
+ls
+cd ..
+mv Cartographer-master/ Cartographer
+cd Cartographer
+ls
+cd ..
+vwow
+cd 
+sl
+sudo apt-get upgrade 
+sudo apt upgrade 
+j
+cd projects
+cd buhfur
+cd buhfurHash/
+ls
+vim main.go 
+rm .swp
+vim main.go
+cd 
+ls
+cd $addons
+ls
+CD 
+LS
+cd 
+cd proejcts 
+cd projects 
+;s
+ls
+exit
+con
+vwow
+exit
+ls
+sudo chmod +x setup.exe 
+wine setup.ex
+wine setup.exe
+ls
+cd $k 
+ls
+cd games
+lls
+ls
+cd Decision\ Red\ Daze/
+ls
+wine DecisionRedDaze
+wine DecisionRedDaze.exe
+sudo wine DecisionRedDaze.exe
+ascii
+sudo apt install ascii
+ascii
+exit
+cd
+cd dht
+ls
+cd
+dis
+exit
+cd $ k
+cd $$K
+cd $k
+ls
+cd gaems
+ls
+rm -rf Decision\ Red\ Daze/
+ls
+cd 'Guild Wars 2'/
+ls
+wine Gw2-64.exe 
+cd ..
+rm -rf Guild\ Wars\ 2/
+ls
+con
+cd 
+cd $k 
+ls
+cd media 
+lws
+ls
+cd ISOs/
+'
+ls
+cd ..
+cd 
+cd entries
+vim adderall.md 
+git push
+gp
+vim adderall.md
+rm adderall.md 
+ls
+gp
+vim organization.md
+gp 
+ls
+vim organization
+vim ori
+vim organization.md 
+ls
+gp
+ls
+vim todo.md
+tmux
+exit
+sudo reboot
+exit 
+sudo update-grub
+sudo reboot
+lspci 
+sudo lspci 
+sudo lspci | grep audio
+sudo lspci -v
+aplay -l 
+man aplay 
+sudo apt update && sudo apt -y upgrade
+sudo reboot
+ls
 exit
