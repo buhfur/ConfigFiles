@@ -157,3 +157,6 @@ export wotlk='/media/buhfur/Karen/games/wotlk'
 export PATH=$PATH:/home/buhfur/.spicetify
 . "$HOME/.cargo/env"
 export addons=/media/buhfur/Karen/games/vanilla/Interface/AddOns
+export twow=/media/buhfur/Karen/media/games/turtle_client_116
+alias twow=/media/buhfur/Karen/media/games/turtle_client_116
+alias twow="wine /media/buhfur/Karen/media/games/turtle_client_116/WoW.exe" 

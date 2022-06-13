@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/EOF
+~MSle0~/backgrou
 
 # Last Substitute Search Pattern:
 ~MSle0&Plugin
@@ -21,107 +21,123 @@ $Plug
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1653976384,,"wq"
-:Wq
-|2,0,1653976382,,"Wq"
-:q
-|2,0,1653976203,,"q"
+|2,0,1655006753,,"wq"
 :w
-|2,0,1653975964,,"w"
-:w'
-|2,0,1653905939,,"w'"
-:we
-|2,0,1653905735,,"we"
-:"w
-|2,0,1653905673,,"\"w"
-:qw
-|2,0,1653883438,,"qw"
-:'w
-|2,0,1653863891,,"'w"
-:'
-|2,0,1653863890,,"'"
+|2,0,1654822373,,"w"
 :W
-|2,0,1653863324,,"W"
-:saveas organization.md
-|2,0,1653863078,,"saveas organization.md"
-:WQ
-|2,0,1653713494,,"WQ"
-:wqq
-|2,0,1653704784,,"wqq"
-:qwq
-|2,0,1653695817,,"qwq"
-:PlugInstall 
-|2,0,1653681354,,"PlugInstall "
-:PlugInstall
-|2,0,1653680602,,"PlugInstall"
+|2,0,1654648364,,"W"
+:q
+|2,0,1654563982,,"q"
+:C
+|2,0,1654475935,,"C"
+:c
+|2,0,1654475930,,"c"
 :so % 
-|2,0,1653680586,,"so % "
-:!go run %
-|2,0,1653629597,,"!go run %"
-:!go run 
-|2,0,1653629558,,"!go run "
-:q!
-|2,0,1653623856,,"q!"
-:so 5t
-|2,0,1653606522,,"so 5t"
-:so %
-|2,0,1653604725,,"so %"
+|2,0,1654475824,,"so % "
+:weq
+|2,0,1654475665,,"weq"
+:tabnew test.lua
+|2,0,1654475423,,"tabnew test.lua"
+:we
+|2,0,1654057891,,"we"
+:wNextq
+|2,0,1654053027,,"wNextq"
+:colorscheme
+|2,0,1654048311,,"colorscheme"
+:qall
+|2,0,1654048294,,"qall"
+:colorscheme materialbox
+|2,0,1654048286,,"colorscheme materialbox"
+:colorscheme material-theme
+|2,0,1654048280,,"colorscheme material-theme"
 :so 5
-|2,0,1653604723,,"so 5"
-:so 54 
-|2,0,1653604535,,"so 54 "
-:so %r
-|2,0,1653602521,,"so %r"
-:%s/Plugin/Plug
-|2,0,1653602485,,"%s/Plugin/Plug"
-:saveas myhash.go
-|2,0,1653602029,,"saveas myhash.go"
-:q1
-|2,0,1653538982,,"q1"
-:e test.py 
-|2,0,1653538974,,"e test.py "
-:so r5
-|2,0,1653435416,,"so r5"
-:make
-|2,0,1653435249,,"make"
-:make %:r 
-|2,0,1653435244,,"make %:r "
-:e main.c
-|2,0,1653435128,,"e main.c"
-:s
-|2,0,1653432556,,"s"
-:wqw
-|2,0,1653428842,,"wqw"
-:saveas README.md 
-|2,0,1653428682,,"saveas README.md "
-:saveas dht.md 
-|2,0,1653428649,,"saveas dht.md "
-:pwd
-|2,0,1653428583,,"pwd"
-:!w
-|2,0,1653289489,,"!w"
-:w]
-|2,0,1653255926,,"w]"
-:2w
-|2,0,1652898479,,"2w"
-:saveas $HOME/entries/bullshit.txt
-|2,0,1652898476,,"saveas $HOME/entries/bullshit.txt"
-:saveas $HOME/bullshit.txft
-|2,0,1652898461,,"saveas $HOME/bullshit.txft"
-:b
-|2,0,1652842320,,"b"
-:wwq
-|2,0,1652841564,,"wwq"
-:saveas $HOME/projects/pdfprospector/%
-|2,0,1652839351,,"saveas $HOME/projects/pdfprospector/%"
-:saveas $HOME/projects/pdfprospector
-|2,0,1652839345,,"saveas $HOME/projects/pdfprospector"
-:! mkdir $HOME/projects/pdfprospector
-|2,0,1652839334,,"! mkdir $HOME/projects/pdfprospector"
-:Lw
-|2,0,1652839079,,"Lw"
+|2,0,1654048263,,"so 5"
+:so 
+|2,0,1654048244,,"so "
+:so $% 
+|2,0,1654048243,,"so $% "
+:so  5
+|2,0,1654048241,,"so  5"
+:qw
+|2,0,1654048216,,"qw"
+:colorscheme 1989
+|2,0,1654048138,,"colorscheme 1989"
+:so %
+|2,0,1654048125,,"so %"
+:colorscheme materialbo
+|2,0,1654048096,,"colorscheme materialbo"
+:colorscheme alduin
+|2,0,1654048094,,"colorscheme alduin"
+:color alduin 
+|2,0,1654046499,,"color alduin "
+:color aldiu n
+|2,0,1654046493,,"color aldiu n"
+:col alduin
+|2,0,1654046489,,"col alduin"
+:col alduin 
+|2,0,1654046486,,"col alduin "
+:co alduin
+|2,0,1654046471,,"co alduin"
+:co alduin 
+|2,0,1654046469,,"co alduin "
+:color aldiun
+|2,0,1654046464,,"color aldiun"
+:co aldiun 
+|2,0,1654046460,,"co aldiun "
+:color alduin \
+|2,0,1654046454,,"color alduin \\"
+:wqal
+|2,0,1654046445,,"wqal"
+:colorscheme 0x7A69_dark
+|2,0,1654046371,,"colorscheme 0x7A69_dark"
+:colorscheme neodark
+|2,0,1654046307,,"colorscheme neodark"
+:w 
+|2,0,1654046088,,"w "
+:so 5 
+|2,0,1654046087,,"so 5 "
+:colorscheme Atelier_EstuaryLight
+|2,0,1654045244,,"colorscheme Atelier_EstuaryLight"
+:colorscheem
+|2,0,1654045000,,"colorscheem"
+:qZll
+|2,0,1654044977,,"qZll"
+:qa;;
+|2,0,1654044975,,"qa;;"
+:colorscheme industry
+|2,0,1654041653,,"colorscheme industry"
+:color
+|2,0,1654041644,,"color"
+:PlugInstall
+|2,0,1654041618,,"PlugInstall"
+:colorscheme gruvbox
+|2,0,1654041379,,"colorscheme gruvbox"
+:% 
+|2,0,1654041335,,"% "
+:so 5r 
+|2,0,1654041325,,"so 5r "
+:Ww
+|2,0,1654031325,,"Ww"
+:qwq
+|2,0,1654030825,,"qwq"
 
 # Search String History (newest to oldest):
+?/Time 
+|2,1,1654475139,47,"Time "
+?/Time
+|2,1,1654475135,47,"Time"
+?/backgrou
+|2,1,1654048123,47,"backgrou"
+?/backgo
+|2,1,1654048121,47,"backgo"
+?/color
+|2,1,1654048113,47,"color"
+?/colro
+|2,1,1654048112,47,"colro"
+?/colr
+|2,1,1654044958,47,"colr"
+?/C-h
+|2,1,1654030584,47,"C-h"
 ?/EOF
 |2,1,1653884013,47,"EOF"
 ? Plugin
@@ -160,8 +176,6 @@ $Plug
 |2,1,1652303193,47,"min_wlne"
 ?/max_
 |2,1,1652303155,47,"max_"
-?/color
-|2,1,1652301727,47,"color"
 ?/level_data
 |2,1,1652228995,47,"level_data"
 ?/leveldata
@@ -197,48 +211,42 @@ $Plug
 
 # Registers:
 "0	CHAR	0
-	 19, 18 , 35, 40 , 41 ,42 
-|3,0,0,0,1,0,1653629461," 19, 18 , 35, 40 , 41 ,42 "
+	int* nums, int numsSize
+|3,0,0,0,1,0,1654821597,"int* nums, int numsSize"
 "1	LINE	0
-	                ++count;
-|3,0,1,1,1,0,1653905893,"                ++count;"
+	#include <string.h> 
+|3,0,1,1,1,0,1654822325,"#include <string.h> "
 "2	LINE	0
-	                if 
-|3,0,2,1,1,0,1653905892,"                if "
+	     
+|3,0,2,1,1,0,1654822153,"     "
 "3	LINE	0
-	        //hold the count of lines with a long variable since a long variable is 32 bits and won't be easilly overflowed
-	        //since integers are only 16 bits which at most is 32767 numbers
-	        long count ;
-	        int c; // variable to hold the current input stream
-	        // you are really just counting the \n characters in the input   
-|3,0,3,1,5,0,1653905868,"        //hold the count of lines with a long variable since a long variable is 32 bits and won't be easilly overflowed","        //since integers are only 16 bits which at most is 32767 numbers","        long count ;","        int c; // variable to hold the current input stream","        // you are really just counting the \\n characters in the input   "
+	        
+|3,0,3,1,1,0,1654821564,"        "
 "4	LINE	0
-	                printf("Count of new lines : %ld", count);
-|3,0,4,1,1,0,1653905822,"                printf(\"Count of new lines : %ld\", count);"
+	        int r0 ,r1 ; 
+	        r0 = 93 ; 
+	        r1 = 42 ;
+	
+	        return r0 + r1;
+|3,0,4,1,5,0,1654821378,"        int r0 ,r1 ; ","        r0 = 93 ; ","        r1 = 42 ;","","        return r0 + r1;"
 "5	LINE	0
-	- [] 
-|3,0,5,1,1,0,1653863760,"- [] "
+	function helloWorld() 
+	        print("hello world " )
+	end 
+	--[ really this is just --]
+|3,0,5,1,4,0,1654475848,"function helloWorld() ","        print(\"hello world \" )","end ","--[ really this is just --]"
 "6	LINE	0
-	![alt text](notebook.png)
-|3,0,6,1,1,0,1653863640,"![alt text](notebook.png)"
+	                endif
+|3,0,6,1,1,0,1654475818,"                endif"
 "7	LINE	0
-	Goals
-|3,0,7,1,1,0,1653863298,"Goals"
+	print("thisis lua ")
+|3,0,7,1,1,0,1654475719,"print(\"thisis lua \")"
 "8	LINE	0
-	
-	What makes up a journal?
-|3,0,8,1,2,0,1653863072,"","What makes up a journal?"
+	What is the point of computer architecture? 
+|3,0,8,1,1,0,1654460638,"What is the point of computer architecture? "
 "9	LINE	0
-	# Some shit to say 
-	
-	usually I could record these on a video but since I live with roomates 
-	this makes things like this difficult 
-	
-	
-	This week
-	---
-	so far i've been very '
-|3,0,9,1,9,0,1653863071,"# Some shit to say ","","usually I could record these on a video but since I live with roomates ","this makes things like this difficult ","","","This week","---","so far i've been very '"
+	set-option -g history-limit 5000
+|3,0,9,1,1,0,1654303488,"set-option -g history-limit 5000"
 "w	CHAR	0
 	627
 <wwbiTODO::wjjkjwwwwlwhxjjhxjjhxjjxjjxjjx;wkkkkkkkkkkjkwillhli{data.kkkkjjjV5djk5dju4djO<button >€kbuuujk$a€kb>,€kb€kb>€kb€kb {% €kb€kb€kb{% for x €kb€kb€kb _ €kb€kbletter in data.€kb['€kb€kb['letters']} €kb€kb %R'€kb€kb} no{% enfor *€kb%] €kb€kb€kb%} :wkkkojki	€kb€ýaA							<button > €kb {{ letter }} </button> ;wjjjjkkbbciwendrofr€kbfor ;wx:w€ýatggggjjjk$Ra, r€kb€kb€kb€kb€kba, €kb€kb€kbe, request :wbbb/argsirquest rqe€kb€kbequest €kb.;w;wcpan€kbu;wjjkkkjjkbbi($a)a.jsoin()json():wbbbbwwhDxbBx:wjkkkjjjjjjjkkkkkoprint(levl	prin(levt(levle€kb€kbel_data) €ýa
@@ -246,234 +254,753 @@ $Plug
 |<"wwbiTODO::wjjkjwwwwlwhxjjhxjjhxjjxjjxjjx;wkkkkkkkkkkjkwillhli{data.kkkkjjjV5djk5dju4djO<button >€kbuuujk$a€kb>,€kb€kb>€kb€kb {% €kb€kb€kb{% for x €kb€kb€kb _ €kb€kbletter in data.€kb['€kb€kb['letters']} €kb€kb %R'€kb€kb} \no{% enfor *€kb%] €kb€kb€kb%} :wkkkojki	€kb€ýaA							<button > €kb {{ letter }} </button> ;wjjjjkkbbciwendrofr€kbfor ;wx:w€ýatggggjjjk$Ra, r€kb€kb€kb€kb€kba, €kb€kb€kbe, request :wbbb/argsirquest rqe€kb€kbequest €kb.;w;wcpan€
 |<kbu;wjjkkkjjkbbi($a)a.jsoin()json():wbbbbwwhDxbBx:wjkkkjjjjjjjkkkkkoprint(levl	prin(levt(levle€kb€kbel_data) €ýa"
 ""-	CHAR	0
-	varaible
-|3,1,36,0,1,0,1653905937,"varaible"
+	numsSize
+|3,1,36,0,1,0,1654822338,"numsSize"
 
 # File marks:
-'0  1  0  /media/buhfur/Karen/LoginHashCalculator/LoginHashCalculator/main.cpp
-|4,48,1,0,1653976384,"/media/buhfur/Karen/LoginHashCalculator/LoginHashCalculator/main.cpp"
-'1  1  0  /media/buhfur/Karen/LoginHashCalculator/LoginHashCalculator/Makefile
-|4,49,1,0,1653976203,"/media/buhfur/Karen/LoginHashCalculator/LoginHashCalculator/Makefile"
-'2  9  164  /media/buhfur/Karen/LoginHashCalculator/LoginHashCalculator/main.cpp
-|4,50,9,164,1653975977,"/media/buhfur/Karen/LoginHashCalculator/LoginHashCalculator/main.cpp"
-'3  9  164  /media/buhfur/Karen/LoginHashCalculator/LoginHashCalculator/main.cpp
-|4,51,9,164,1653975977,"/media/buhfur/Karen/LoginHashCalculator/LoginHashCalculator/main.cpp"
-'4  10  109  ~/learn/main.c
-|4,52,10,109,1653905959,"~/learn/main.c"
-'5  731  4  ~/WoeUSB-ng/WoeUSB/core.py
-|4,53,731,4,1653904654,"~/WoeUSB-ng/WoeUSB/core.py"
-'6  27  0  ~/WoeUSB-ng/WoeUSB/woeusb
-|4,54,27,0,1653904603,"~/WoeUSB-ng/WoeUSB/woeusb"
-'7  16  0  ~/WoeUSB-ng/setup.py
-|4,55,16,0,1653904565,"~/WoeUSB-ng/setup.py"
-'8  1  0  /media/buhfur/Karen/games/vanilla/realmlist.wtf
-|4,56,1,0,1653888431,"/media/buhfur/Karen/games/vanilla/realmlist.wtf"
-'9  1  0  ~/projects/learnc/$wow/realmlist.wtf
-|4,57,1,0,1653888406,"~/projects/learnc/$wow/realmlist.wtf"
+'0  162  75  ~/.bashrc
+|4,48,162,75,1655006753,"~/.bashrc"
+'1  1  0  ~/main.c
+|4,49,1,0,1654822391,"~/main.c"
+'2  19  35  ~/main.c
+|4,50,19,35,1654822381,"~/main.c"
+'3  19  35  ~/main.c
+|4,51,19,35,1654822381,"~/main.c"
+'4  20  0  ~/tvhead/README.md
+|4,52,20,0,1654648804,"~/tvhead/README.md"
+'5  20  0  ~/tvhead/README.md
+|4,53,20,0,1654648804,"~/tvhead/README.md"
+'6  17  53  ~/tvhead/README.md
+|4,54,17,53,1654648782,"~/tvhead/README.md"
+'7  17  53  ~/tvhead/README.md
+|4,55,17,53,1654648782,"~/tvhead/README.md"
+'8  17  53  ~/tvhead/README.md
+|4,56,17,53,1654648782,"~/tvhead/README.md"
+'9  17  53  ~/tvhead/README.md
+|4,57,17,53,1654648782,"~/tvhead/README.md"
 
 # Jumplist (newest first):
--'  1  0  /media/buhfur/Karen/LoginHashCalculator/LoginHashCalculator/main.cpp
-|4,39,1,0,1653976384,"/media/buhfur/Karen/LoginHashCalculator/LoginHashCalculator/main.cpp"
--'  1  0  /media/buhfur/Karen/LoginHashCalculator/LoginHashCalculator/Makefile
-|4,39,1,0,1653976203,"/media/buhfur/Karen/LoginHashCalculator/LoginHashCalculator/Makefile"
--'  1  0  /media/buhfur/Karen/LoginHashCalculator/LoginHashCalculator/Makefile
-|4,39,1,0,1653976203,"/media/buhfur/Karen/LoginHashCalculator/LoginHashCalculator/Makefile"
--'  9  164  /media/buhfur/Karen/LoginHashCalculator/LoginHashCalculator/main.cpp
-|4,39,9,164,1653975977,"/media/buhfur/Karen/LoginHashCalculator/LoginHashCalculator/main.cpp"
--'  9  164  /media/buhfur/Karen/LoginHashCalculator/LoginHashCalculator/main.cpp
-|4,39,9,164,1653975977,"/media/buhfur/Karen/LoginHashCalculator/LoginHashCalculator/main.cpp"
--'  9  164  /media/buhfur/Karen/LoginHashCalculator/LoginHashCalculator/main.cpp
-|4,39,9,164,1653975977,"/media/buhfur/Karen/LoginHashCalculator/LoginHashCalculator/main.cpp"
--'  1  0  /media/buhfur/Karen/LoginHashCalculator/LoginHashCalculator/main.cpp
-|4,39,1,0,1653975910,"/media/buhfur/Karen/LoginHashCalculator/LoginHashCalculator/main.cpp"
--'  1  0  /media/buhfur/Karen/LoginHashCalculator/LoginHashCalculator/main.cpp
-|4,39,1,0,1653975910,"/media/buhfur/Karen/LoginHashCalculator/LoginHashCalculator/main.cpp"
--'  10  109  ~/learn/main.c
-|4,39,10,109,1653905959,"~/learn/main.c"
--'  10  109  ~/learn/main.c
-|4,39,10,109,1653905959,"~/learn/main.c"
--'  10  109  ~/learn/main.c
-|4,39,10,109,1653905959,"~/learn/main.c"
--'  10  109  ~/learn/main.c
-|4,39,10,109,1653905959,"~/learn/main.c"
--'  10  109  ~/learn/main.c
-|4,39,10,109,1653905959,"~/learn/main.c"
--'  10  109  ~/learn/main.c
-|4,39,10,109,1653905959,"~/learn/main.c"
--'  10  109  ~/learn/main.c
-|4,39,10,109,1653905959,"~/learn/main.c"
--'  10  109  ~/learn/main.c
-|4,39,10,109,1653905959,"~/learn/main.c"
--'  14  0  ~/learn/main.c
-|4,39,14,0,1653905894,"~/learn/main.c"
--'  14  0  ~/learn/main.c
-|4,39,14,0,1653905894,"~/learn/main.c"
--'  14  0  ~/learn/main.c
-|4,39,14,0,1653905894,"~/learn/main.c"
--'  14  0  ~/learn/main.c
-|4,39,14,0,1653905894,"~/learn/main.c"
--'  14  0  ~/learn/main.c
-|4,39,14,0,1653905894,"~/learn/main.c"
--'  14  0  ~/learn/main.c
-|4,39,14,0,1653905894,"~/learn/main.c"
--'  14  0  ~/learn/main.c
-|4,39,14,0,1653905894,"~/learn/main.c"
--'  14  0  ~/learn/main.c
-|4,39,14,0,1653905894,"~/learn/main.c"
--'  6  0  ~/learn/main.c
-|4,39,6,0,1653905879,"~/learn/main.c"
--'  6  0  ~/learn/main.c
-|4,39,6,0,1653905879,"~/learn/main.c"
--'  6  0  ~/learn/main.c
-|4,39,6,0,1653905879,"~/learn/main.c"
--'  6  0  ~/learn/main.c
-|4,39,6,0,1653905879,"~/learn/main.c"
--'  6  0  ~/learn/main.c
-|4,39,6,0,1653905879,"~/learn/main.c"
--'  6  0  ~/learn/main.c
-|4,39,6,0,1653905879,"~/learn/main.c"
--'  6  0  ~/learn/main.c
-|4,39,6,0,1653905879,"~/learn/main.c"
--'  6  0  ~/learn/main.c
-|4,39,6,0,1653905879,"~/learn/main.c"
--'  2  0  ~/learn/main.c
-|4,39,2,0,1653905353,"~/learn/main.c"
--'  2  0  ~/learn/main.c
-|4,39,2,0,1653905353,"~/learn/main.c"
--'  2  0  ~/learn/main.c
-|4,39,2,0,1653905353,"~/learn/main.c"
--'  2  0  ~/learn/main.c
-|4,39,2,0,1653905353,"~/learn/main.c"
--'  2  0  ~/learn/main.c
-|4,39,2,0,1653905353,"~/learn/main.c"
--'  2  0  ~/learn/main.c
-|4,39,2,0,1653905353,"~/learn/main.c"
--'  2  0  ~/learn/main.c
-|4,39,2,0,1653905353,"~/learn/main.c"
--'  2  0  ~/learn/main.c
-|4,39,2,0,1653905353,"~/learn/main.c"
--'  731  4  ~/WoeUSB-ng/WoeUSB/core.py
-|4,39,731,4,1653904654,"~/WoeUSB-ng/WoeUSB/core.py"
--'  731  4  ~/WoeUSB-ng/WoeUSB/core.py
-|4,39,731,4,1653904654,"~/WoeUSB-ng/WoeUSB/core.py"
--'  731  4  ~/WoeUSB-ng/WoeUSB/core.py
-|4,39,731,4,1653904654,"~/WoeUSB-ng/WoeUSB/core.py"
--'  731  4  ~/WoeUSB-ng/WoeUSB/core.py
-|4,39,731,4,1653904654,"~/WoeUSB-ng/WoeUSB/core.py"
--'  731  4  ~/WoeUSB-ng/WoeUSB/core.py
-|4,39,731,4,1653904654,"~/WoeUSB-ng/WoeUSB/core.py"
--'  731  4  ~/WoeUSB-ng/WoeUSB/core.py
-|4,39,731,4,1653904654,"~/WoeUSB-ng/WoeUSB/core.py"
--'  731  4  ~/WoeUSB-ng/WoeUSB/core.py
-|4,39,731,4,1653904654,"~/WoeUSB-ng/WoeUSB/core.py"
--'  731  4  ~/WoeUSB-ng/WoeUSB/core.py
-|4,39,731,4,1653904654,"~/WoeUSB-ng/WoeUSB/core.py"
--'  731  4  ~/WoeUSB-ng/WoeUSB/core.py
-|4,39,731,4,1653904654,"~/WoeUSB-ng/WoeUSB/core.py"
--'  731  4  ~/WoeUSB-ng/WoeUSB/core.py
-|4,39,731,4,1653904654,"~/WoeUSB-ng/WoeUSB/core.py"
--'  731  4  ~/WoeUSB-ng/WoeUSB/core.py
-|4,39,731,4,1653904654,"~/WoeUSB-ng/WoeUSB/core.py"
--'  731  4  ~/WoeUSB-ng/WoeUSB/core.py
-|4,39,731,4,1653904654,"~/WoeUSB-ng/WoeUSB/core.py"
--'  731  4  ~/WoeUSB-ng/WoeUSB/core.py
-|4,39,731,4,1653904654,"~/WoeUSB-ng/WoeUSB/core.py"
--'  731  4  ~/WoeUSB-ng/WoeUSB/core.py
-|4,39,731,4,1653904654,"~/WoeUSB-ng/WoeUSB/core.py"
--'  731  4  ~/WoeUSB-ng/WoeUSB/core.py
-|4,39,731,4,1653904654,"~/WoeUSB-ng/WoeUSB/core.py"
--'  731  4  ~/WoeUSB-ng/WoeUSB/core.py
-|4,39,731,4,1653904654,"~/WoeUSB-ng/WoeUSB/core.py"
--'  591  0  ~/WoeUSB-ng/WoeUSB/core.py
-|4,39,591,0,1653904646,"~/WoeUSB-ng/WoeUSB/core.py"
--'  591  0  ~/WoeUSB-ng/WoeUSB/core.py
-|4,39,591,0,1653904646,"~/WoeUSB-ng/WoeUSB/core.py"
--'  591  0  ~/WoeUSB-ng/WoeUSB/core.py
-|4,39,591,0,1653904646,"~/WoeUSB-ng/WoeUSB/core.py"
--'  591  0  ~/WoeUSB-ng/WoeUSB/core.py
-|4,39,591,0,1653904646,"~/WoeUSB-ng/WoeUSB/core.py"
--'  591  0  ~/WoeUSB-ng/WoeUSB/core.py
-|4,39,591,0,1653904646,"~/WoeUSB-ng/WoeUSB/core.py"
--'  591  0  ~/WoeUSB-ng/WoeUSB/core.py
-|4,39,591,0,1653904646,"~/WoeUSB-ng/WoeUSB/core.py"
--'  591  0  ~/WoeUSB-ng/WoeUSB/core.py
-|4,39,591,0,1653904646,"~/WoeUSB-ng/WoeUSB/core.py"
--'  591  0  ~/WoeUSB-ng/WoeUSB/core.py
-|4,39,591,0,1653904646,"~/WoeUSB-ng/WoeUSB/core.py"
--'  591  0  ~/WoeUSB-ng/WoeUSB/core.py
-|4,39,591,0,1653904646,"~/WoeUSB-ng/WoeUSB/core.py"
--'  591  0  ~/WoeUSB-ng/WoeUSB/core.py
-|4,39,591,0,1653904646,"~/WoeUSB-ng/WoeUSB/core.py"
--'  591  0  ~/WoeUSB-ng/WoeUSB/core.py
-|4,39,591,0,1653904646,"~/WoeUSB-ng/WoeUSB/core.py"
--'  591  0  ~/WoeUSB-ng/WoeUSB/core.py
-|4,39,591,0,1653904646,"~/WoeUSB-ng/WoeUSB/core.py"
--'  591  0  ~/WoeUSB-ng/WoeUSB/core.py
-|4,39,591,0,1653904646,"~/WoeUSB-ng/WoeUSB/core.py"
--'  591  0  ~/WoeUSB-ng/WoeUSB/core.py
-|4,39,591,0,1653904646,"~/WoeUSB-ng/WoeUSB/core.py"
--'  591  0  ~/WoeUSB-ng/WoeUSB/core.py
-|4,39,591,0,1653904646,"~/WoeUSB-ng/WoeUSB/core.py"
--'  591  0  ~/WoeUSB-ng/WoeUSB/core.py
-|4,39,591,0,1653904646,"~/WoeUSB-ng/WoeUSB/core.py"
--'  1  0  ~/WoeUSB-ng/WoeUSB/core.py
-|4,39,1,0,1653904608,"~/WoeUSB-ng/WoeUSB/core.py"
--'  1  0  ~/WoeUSB-ng/WoeUSB/core.py
-|4,39,1,0,1653904608,"~/WoeUSB-ng/WoeUSB/core.py"
--'  1  0  ~/WoeUSB-ng/WoeUSB/core.py
-|4,39,1,0,1653904608,"~/WoeUSB-ng/WoeUSB/core.py"
--'  1  0  ~/WoeUSB-ng/WoeUSB/core.py
-|4,39,1,0,1653904608,"~/WoeUSB-ng/WoeUSB/core.py"
--'  1  0  ~/WoeUSB-ng/WoeUSB/core.py
-|4,39,1,0,1653904608,"~/WoeUSB-ng/WoeUSB/core.py"
--'  1  0  ~/WoeUSB-ng/WoeUSB/core.py
-|4,39,1,0,1653904608,"~/WoeUSB-ng/WoeUSB/core.py"
--'  1  0  ~/WoeUSB-ng/WoeUSB/core.py
-|4,39,1,0,1653904608,"~/WoeUSB-ng/WoeUSB/core.py"
--'  1  0  ~/WoeUSB-ng/WoeUSB/core.py
-|4,39,1,0,1653904608,"~/WoeUSB-ng/WoeUSB/core.py"
--'  1  0  ~/WoeUSB-ng/WoeUSB/core.py
-|4,39,1,0,1653904608,"~/WoeUSB-ng/WoeUSB/core.py"
--'  1  0  ~/WoeUSB-ng/WoeUSB/core.py
-|4,39,1,0,1653904608,"~/WoeUSB-ng/WoeUSB/core.py"
--'  1  0  ~/WoeUSB-ng/WoeUSB/core.py
-|4,39,1,0,1653904608,"~/WoeUSB-ng/WoeUSB/core.py"
--'  1  0  ~/WoeUSB-ng/WoeUSB/core.py
-|4,39,1,0,1653904608,"~/WoeUSB-ng/WoeUSB/core.py"
--'  1  0  ~/WoeUSB-ng/WoeUSB/core.py
-|4,39,1,0,1653904608,"~/WoeUSB-ng/WoeUSB/core.py"
--'  1  0  ~/WoeUSB-ng/WoeUSB/core.py
-|4,39,1,0,1653904608,"~/WoeUSB-ng/WoeUSB/core.py"
--'  1  0  ~/WoeUSB-ng/WoeUSB/core.py
-|4,39,1,0,1653904608,"~/WoeUSB-ng/WoeUSB/core.py"
--'  1  0  ~/WoeUSB-ng/WoeUSB/core.py
-|4,39,1,0,1653904608,"~/WoeUSB-ng/WoeUSB/core.py"
--'  27  0  ~/WoeUSB-ng/WoeUSB/woeusb
-|4,39,27,0,1653904603,"~/WoeUSB-ng/WoeUSB/woeusb"
--'  27  0  ~/WoeUSB-ng/WoeUSB/woeusb
-|4,39,27,0,1653904603,"~/WoeUSB-ng/WoeUSB/woeusb"
--'  27  0  ~/WoeUSB-ng/WoeUSB/woeusb
-|4,39,27,0,1653904603,"~/WoeUSB-ng/WoeUSB/woeusb"
--'  27  0  ~/WoeUSB-ng/WoeUSB/woeusb
-|4,39,27,0,1653904603,"~/WoeUSB-ng/WoeUSB/woeusb"
--'  27  0  ~/WoeUSB-ng/WoeUSB/woeusb
-|4,39,27,0,1653904603,"~/WoeUSB-ng/WoeUSB/woeusb"
--'  27  0  ~/WoeUSB-ng/WoeUSB/woeusb
-|4,39,27,0,1653904603,"~/WoeUSB-ng/WoeUSB/woeusb"
--'  27  0  ~/WoeUSB-ng/WoeUSB/woeusb
-|4,39,27,0,1653904603,"~/WoeUSB-ng/WoeUSB/woeusb"
--'  27  0  ~/WoeUSB-ng/WoeUSB/woeusb
-|4,39,27,0,1653904603,"~/WoeUSB-ng/WoeUSB/woeusb"
--'  27  0  ~/WoeUSB-ng/WoeUSB/woeusb
-|4,39,27,0,1653904603,"~/WoeUSB-ng/WoeUSB/woeusb"
--'  27  0  ~/WoeUSB-ng/WoeUSB/woeusb
-|4,39,27,0,1653904603,"~/WoeUSB-ng/WoeUSB/woeusb"
--'  27  0  ~/WoeUSB-ng/WoeUSB/woeusb
-|4,39,27,0,1653904603,"~/WoeUSB-ng/WoeUSB/woeusb"
--'  27  0  ~/WoeUSB-ng/WoeUSB/woeusb
-|4,39,27,0,1653904603,"~/WoeUSB-ng/WoeUSB/woeusb"
+-'  162  75  ~/.bashrc
+|4,39,162,75,1655006753,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1655006743,"~/.bashrc"
+-'  1  0  ~/main.c
+|4,39,1,0,1654822391,"~/main.c"
+-'  1  0  ~/main.c
+|4,39,1,0,1654822391,"~/main.c"
+-'  19  35  ~/main.c
+|4,39,19,35,1654822381,"~/main.c"
+-'  19  35  ~/main.c
+|4,39,19,35,1654822381,"~/main.c"
+-'  19  35  ~/main.c
+|4,39,19,35,1654822381,"~/main.c"
+-'  19  35  ~/main.c
+|4,39,19,35,1654822381,"~/main.c"
+-'  7  41  ~/main.c
+|4,39,7,41,1654822295,"~/main.c"
+-'  7  41  ~/main.c
+|4,39,7,41,1654822295,"~/main.c"
+-'  7  41  ~/main.c
+|4,39,7,41,1654822295,"~/main.c"
+-'  7  41  ~/main.c
+|4,39,7,41,1654822295,"~/main.c"
+-'  5  23  ~/main.c
+|4,39,5,23,1654821599,"~/main.c"
+-'  5  23  ~/main.c
+|4,39,5,23,1654821599,"~/main.c"
+-'  5  23  ~/main.c
+|4,39,5,23,1654821599,"~/main.c"
+-'  5  23  ~/main.c
+|4,39,5,23,1654821599,"~/main.c"
+-'  13  60  ~/main.c
+|4,39,13,60,1654821466,"~/main.c"
+-'  13  60  ~/main.c
+|4,39,13,60,1654821466,"~/main.c"
+-'  13  60  ~/main.c
+|4,39,13,60,1654821466,"~/main.c"
+-'  13  60  ~/main.c
+|4,39,13,60,1654821466,"~/main.c"
+-'  11  0  ~/main.c
+|4,39,11,0,1654821379,"~/main.c"
+-'  11  0  ~/main.c
+|4,39,11,0,1654821379,"~/main.c"
+-'  11  0  ~/main.c
+|4,39,11,0,1654821379,"~/main.c"
+-'  11  0  ~/main.c
+|4,39,11,0,1654821379,"~/main.c"
+-'  1  0  ~/main.c
+|4,39,1,0,1654821373,"~/main.c"
+-'  1  0  ~/main.c
+|4,39,1,0,1654821373,"~/main.c"
+-'  20  0  ~/tvhead/README.md
+|4,39,20,0,1654648804,"~/tvhead/README.md"
+-'  20  0  ~/tvhead/README.md
+|4,39,20,0,1654648804,"~/tvhead/README.md"
+-'  20  0  ~/tvhead/README.md
+|4,39,20,0,1654648804,"~/tvhead/README.md"
+-'  20  0  ~/tvhead/README.md
+|4,39,20,0,1654648804,"~/tvhead/README.md"
+-'  20  0  ~/tvhead/README.md
+|4,39,20,0,1654648804,"~/tvhead/README.md"
+-'  20  0  ~/tvhead/README.md
+|4,39,20,0,1654648804,"~/tvhead/README.md"
+-'  20  0  ~/tvhead/README.md
+|4,39,20,0,1654648804,"~/tvhead/README.md"
+-'  20  0  ~/tvhead/README.md
+|4,39,20,0,1654648804,"~/tvhead/README.md"
+-'  1  0  ~/tvhead/README.md
+|4,39,1,0,1654648784,"~/tvhead/README.md"
+-'  1  0  ~/tvhead/README.md
+|4,39,1,0,1654648784,"~/tvhead/README.md"
+-'  1  0  ~/tvhead/README.md
+|4,39,1,0,1654648784,"~/tvhead/README.md"
+-'  1  0  ~/tvhead/README.md
+|4,39,1,0,1654648784,"~/tvhead/README.md"
+-'  1  0  ~/tvhead/README.md
+|4,39,1,0,1654648784,"~/tvhead/README.md"
+-'  1  0  ~/tvhead/README.md
+|4,39,1,0,1654648784,"~/tvhead/README.md"
+-'  1  0  ~/tvhead/README.md
+|4,39,1,0,1654648784,"~/tvhead/README.md"
+-'  1  0  ~/tvhead/README.md
+|4,39,1,0,1654648784,"~/tvhead/README.md"
+-'  17  53  ~/tvhead/README.md
+|4,39,17,53,1654648782,"~/tvhead/README.md"
+-'  17  53  ~/tvhead/README.md
+|4,39,17,53,1654648782,"~/tvhead/README.md"
+-'  17  53  ~/tvhead/README.md
+|4,39,17,53,1654648782,"~/tvhead/README.md"
+-'  17  53  ~/tvhead/README.md
+|4,39,17,53,1654648782,"~/tvhead/README.md"
+-'  17  53  ~/tvhead/README.md
+|4,39,17,53,1654648782,"~/tvhead/README.md"
+-'  17  53  ~/tvhead/README.md
+|4,39,17,53,1654648782,"~/tvhead/README.md"
+-'  17  53  ~/tvhead/README.md
+|4,39,17,53,1654648782,"~/tvhead/README.md"
+-'  17  53  ~/tvhead/README.md
+|4,39,17,53,1654648782,"~/tvhead/README.md"
+-'  17  53  ~/tvhead/README.md
+|4,39,17,53,1654648782,"~/tvhead/README.md"
+-'  17  53  ~/tvhead/README.md
+|4,39,17,53,1654648782,"~/tvhead/README.md"
+-'  17  53  ~/tvhead/README.md
+|4,39,17,53,1654648782,"~/tvhead/README.md"
+-'  17  53  ~/tvhead/README.md
+|4,39,17,53,1654648782,"~/tvhead/README.md"
+-'  1  0  ~/tvhead/README.md
+|4,39,1,0,1654647059,"~/tvhead/README.md"
+-'  1  0  ~/tvhead/README.md
+|4,39,1,0,1654647059,"~/tvhead/README.md"
+-'  1  0  ~/tvhead/README.md
+|4,39,1,0,1654647059,"~/tvhead/README.md"
+-'  1  0  ~/tvhead/README.md
+|4,39,1,0,1654647059,"~/tvhead/README.md"
+-'  1  0  /etc/firefox/pref/apturl.js
+|4,39,1,0,1654576269,"/etc/firefox/pref/apturl.js"
+-'  1  0  /etc/firefox/pref/apturl.js
+|4,39,1,0,1654576269,"/etc/firefox/pref/apturl.js"
+-'  1  0  /etc/firefox/pref/apturl.js
+|4,39,1,0,1654576269,"/etc/firefox/pref/apturl.js"
+-'  1  0  /etc/firefox/pref/apturl.js
+|4,39,1,0,1654576269,"/etc/firefox/pref/apturl.js"
+-'  1  0  /etc/firefox/pref/apturl.js
+|4,39,1,0,1654576269,"/etc/firefox/pref/apturl.js"
+-'  1  0  /etc/firefox/pref/apturl.js
+|4,39,1,0,1654576269,"/etc/firefox/pref/apturl.js"
+-'  1  0  /etc/firefox/pref/apturl.js
+|4,39,1,0,1654576269,"/etc/firefox/pref/apturl.js"
+-'  1  0  /etc/firefox/pref/apturl.js
+|4,39,1,0,1654576269,"/etc/firefox/pref/apturl.js"
+-'  1  0  /etc/firefox/pref/apturl.js
+|4,39,1,0,1654576269,"/etc/firefox/pref/apturl.js"
+-'  1  0  /etc/firefox/pref/apturl.js
+|4,39,1,0,1654576269,"/etc/firefox/pref/apturl.js"
+-'  1  0  /etc/firefox/pref/apturl.js
+|4,39,1,0,1654576269,"/etc/firefox/pref/apturl.js"
+-'  1  0  /etc/firefox/pref/apturl.js
+|4,39,1,0,1654576269,"/etc/firefox/pref/apturl.js"
+-'  1  0  /etc/firefox/pref/apturl.js
+|4,39,1,0,1654576269,"/etc/firefox/pref/apturl.js"
+-'  1  0  /etc/firefox/pref/apturl.js
+|4,39,1,0,1654576269,"/etc/firefox/pref/apturl.js"
+-'  1  0  /etc/firefox/pref/apturl.js
+|4,39,1,0,1654576269,"/etc/firefox/pref/apturl.js"
+-'  1  0  /etc/firefox/pref/apturl.js
+|4,39,1,0,1654576269,"/etc/firefox/pref/apturl.js"
+-'  1  0  /etc/firefox/pref/apturl.js
+|4,39,1,0,1654576269,"/etc/firefox/pref/apturl.js"
+-'  1  0  /etc/firefox/pref/apturl.js
+|4,39,1,0,1654576269,"/etc/firefox/pref/apturl.js"
+-'  1  0  /etc/firefox/pref/apturl.js
+|4,39,1,0,1654576269,"/etc/firefox/pref/apturl.js"
+-'  1  0  /etc/firefox/pref/apturl.js
+|4,39,1,0,1654576269,"/etc/firefox/pref/apturl.js"
+-'  1  0  ~/notes/processors.md
+|4,39,1,0,1654564573,"~/notes/processors.md"
+-'  1  0  ~/notes/processors.md
+|4,39,1,0,1654564573,"~/notes/processors.md"
+-'  1  0  ~/notes/processors.md
+|4,39,1,0,1654564573,"~/notes/processors.md"
+-'  1  0  ~/notes/processors.md
+|4,39,1,0,1654564573,"~/notes/processors.md"
+-'  1  0  ~/notes/processors.md
+|4,39,1,0,1654564573,"~/notes/processors.md"
+-'  1  0  ~/notes/processors.md
+|4,39,1,0,1654564573,"~/notes/processors.md"
+-'  1  0  ~/notes/processors.md
+|4,39,1,0,1654564573,"~/notes/processors.md"
+-'  1  0  ~/notes/processors.md
+|4,39,1,0,1654564573,"~/notes/processors.md"
+-'  1  0  ~/notes/processors.md
+|4,39,1,0,1654564573,"~/notes/processors.md"
+-'  1  0  ~/notes/processors.md
+|4,39,1,0,1654564573,"~/notes/processors.md"
+-'  1  0  ~/notes/processors.md
+|4,39,1,0,1654564573,"~/notes/processors.md"
+-'  1  0  ~/notes/processors.md
+|4,39,1,0,1654564573,"~/notes/processors.md"
+-'  1  0  ~/notes/processors.md
+|4,39,1,0,1654564573,"~/notes/processors.md"
+-'  1  0  ~/notes/processors.md
+|4,39,1,0,1654564573,"~/notes/processors.md"
+-'  1  0  ~/notes/processors.md
+|4,39,1,0,1654564573,"~/notes/processors.md"
+-'  1  0  ~/notes/processors.md
+|4,39,1,0,1654564573,"~/notes/processors.md"
+-'  1  0  ~/notes/processors.md
+|4,39,1,0,1654564573,"~/notes/processors.md"
+-'  1  0  ~/notes/processors.md
+|4,39,1,0,1654564573,"~/notes/processors.md"
+-'  1  0  ~/notes/processors.md
+|4,39,1,0,1654564573,"~/notes/processors.md"
+-'  1  0  ~/notes/processors.md
+|4,39,1,0,1654564573,"~/notes/processors.md"
+-'  1  0  ~/notes/processors.md
+|4,39,1,0,1654564573,"~/notes/processors.md"
+-'  1  0  ~/notes/processors.md
+|4,39,1,0,1654564573,"~/notes/processors.md"
 
 # History of marks within files (newest to oldest):
+
+> ~/.bashrc
+	*	1655006752	0
+	"	162	75
+	^	162	76
+	.	162	75
+	+	150	0
+	+	154	29
+	+	156	0
+	+	144	5
+	+	156	46
+	+	157	0
+	+	154	18
+	+	156	0
+	+	150	16
+	+	155	45
+	+	160	0
+	+	151	0
+	+	162	75
+
+> ~/main.c
+	*	1654822386	0
+	"	1	0
+	^	19	36
+	.	19	35
+	+	11	13
+	+	20	20
+	+	20	16
+	+	20	15
+	+	20	0
+	+	20	15
+	+	20	0
+	+	11	0
+	+	12	0
+	+	10	0
+	+	2	0
+	+	13	37
+	+	19	26
+	+	13	24
+	+	19	0
+	+	13	77
+	+	13	24
+	+	13	35
+	+	7	35
+	+	8	0
+	+	7	37
+	+	8	12
+	+	13	16
+	+	20	0
+	+	19	41
+	+	8	19
+	+	13	32
+	+	2	19
+	+	2	21
+	+	7	29
+	+	2	16
+	+	8	46
+	+	13	25
+	+	4	15
+	+	13	24
+	+	19	0
+	+	15	45
+	+	17	19
+	+	18	8
+	+	16	39
+	+	17	62
+	+	7	40
+	+	9	4
+	+	8	11
+	+	7	5
+	+	3	19
+	+	2	0
+	+	19	35
+
+> ~/tvhead/README.md
+	*	1654648803	0
+	"	20	0
+	^	20	0
+	.	19	0
+	+	3	62
+	+	4	54
+	+	6	85
+	+	11	118
+	+	13	109
+	+	15	154
+	+	17	54
+	+	19	0
+
+> /etc/firefox/pref/apturl.js
+	*	1654576262	0
+	"	1	0
+
+> ~/notes/processors.md
+	*	1654563993	0
+	"	1	0
+
+> ~/processors
+	*	1654563981	0
+	"	1	0
+	^	1	0
+
+> /tmp/lualearn/learn
+	*	1654476069	0
+	"	6	47
+	^	6	48
+	.	6	47
+	+	4	20
+	+	4	0
+	+	3	0
+	+	4	0
+	+	7	29
+	+	7	25
+	+	7	27
+	+	7	21
+	+	9	0
+	+	7	30
+	+	7	0
+	+	7	4
+	+	7	27
+	+	7	0
+	+	14	12
+	+	14	0
+	+	5	30
+	+	14	0
+	+	13	0
+	+	12	0
+	+	6	47
+
+> ~/.vimrc
+	*	1654475824	0
+	"	55	16
+	^	57	22
+	.	55	0
+	+	76	0
+	+	29	29
+	+	27	12
+	+	27	0
+	+	28	0
+	+	27	28
+	+	27	0
+	+	1	0
+	+	15	34
+	+	17	16
+	+	5	34
+	+	27	19
+	+	27	1
+	+	27	19
+	+	27	2
+	+	27	0
+	+	18	14
+	+	27	0
+	+	5	0
+	+	12	0
+	+	5	34
+	+	12	0
+	+	27	0
+	+	58	130
+	+	29	0
+	+	30	0
+	+	45	34
+	+	41	0
+	+	76	0
+	+	76	27
+	+	83	0
+	+	77	13
+	+	75	65
+	+	70	41
+	+	27	0
+	+	1	0
+	+	2	21
+	+	2	0
+	+	6	21
+	+	6	0
+	+	12	26
+	+	13	20
+	+	14	17
+	+	15	27
+	+	15	34
+	+	16	39
+	+	17	0
+	+	83	0
+	+	83	20
+	+	78	59
+	+	83	0
+	+	51	38
+	+	53	40
+	+	52	67
+	+	53	44
+	+	54	39
+	+	68	0
+	+	75	0
+	+	72	14
+	+	66	0
+	+	64	80
+	+	65	0
+	+	73	27
+	+	26	20
+	+	25	8
+	+	26	43
+	+	2	26
+	+	3	0
+	+	32	0
+	+	35	37
+	+	2	0
+	+	83	0
+	+	84	0
+	+	82	0
+	+	72	0
+	+	71	35
+	+	72	0
+	+	78	24
+	+	15	8
+	+	78	19
+	+	15	8
+	+	78	0
+	+	80	19
+	+	81	0
+	+	80	0
+	+	78	12
+	+	79	1
+	+	79	24
+	+	80	0
+	+	79	0
+	+	15	0
+	+	79	0
+	+	78	1
+	+	79	0
+	+	80	1
+	+	81	17
+	+	56	30
+	+	57	21
+	+	55	0
+
+> /tmp/lualearn/learen
+	*	1654475629	0
+	"	1	0
+
+> /tmp/lualearn/lear
+	*	1654475626	0
+	"	1	0
+
+> /tmp/lualearn/learn.lua
+	*	1654475616	0
+	"	1	13
+	^	1	14
+	.	1	13
+	+	1	13
+
+> /media/buhfur/Karen/games/vanilla/Interface/AddOns/SellJunk/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua
+	*	1654475510	0
+	"	1	0
+	^	92	5
+	.	92	0
+	+	92	0
+
+> /media/buhfur/Karen/games/vanilla/Interface/AddOns/SellJunk/libs/CallbackHandler-1.0/test.lua
+	*	1654475509	0
+	"	1	13
+	^	1	14
+	.	1	13
+	+	1	9
+	+	3	21
+	+	1	13
+
+> /media/buhfur/Karen/games/vanilla/Interface/AddOns/SellJunk/libs/NERD_tree_1
+	*	1654475006	0
+	"	6	2
+	.	1	0
+	+	1	0
+
+> /media/buhfur/Karen/games/vanilla/Interface/AddOns/SellJunk/libs/AceLibrary/AceLibrary.lua
+	*	1654474980	0
+	"	62	33
+	^	62	34
+	.	62	33
+	+	62	33
+
+> ~/test.lua
+	*	1654473985	0
+	"	6	34
+	^	6	35
+	.	6	34
+	+	3	18
+	+	1	13
+	+	7	0
+	+	6	0
+	+	7	0
+	+	6	34
+
+> ~/m
+	*	1654460627	0
+	"	1	0
+
+> ~/yt-dlp/pyinst.py
+	*	1654316750	0
+	"	80	4
+
+> ~/yt-dlp/setup.cfg
+	*	1654316686	0
+	"	1	0
+
+> ~/yt-dlp/setup.
+	*	1654316681	0
+	"	1	0
+
+> ~/yt-dlp/stu
+	*	1654316676	0
+	"	1	0
+
+> ~/test.py
+	*	1654304065	0
+	"	5	0
+
+> ~/.tmux.conf
+	*	1654303496	0
+	"	4	29
+	^	4	30
+	.	4	29
+	+	22	108
+	+	22	38
+	+	1	0
+	+	22	0
+	+	23	0
+	+	22	0
+	+	23	0
+	+	22	0
+	+	21	0
+	+	23	0
+	+	20	0
+	+	21	0
+	+	13	0
+	+	9	0
+	+	11	100
+	+	11	0
+	+	22	31
+	+	22	0
+	+	20	0
+	+	21	0
+	+	18	0
+	+	27	0
+	+	21	0
+	+	2	0
+	+	22	0
+	+	4	29
+	m	12	0
+	n	12	0
+
+> ~/entries/burnout.md
+	*	1654066076	0
+	"	26	33
+	^	26	34
+	.	26	33
+	+	9	116
+	+	19	99
+	+	22	114
+	+	25	120
+	+	26	33
+
+> ~/stufur/.gitignore
+	*	1654054575	0
+	"	1	0
+	^	1	12
+	.	1	11
+	+	1	11
+
+> ~/CS232/project2/Makefile
+	*	1654053736	0
+	"	1	0
+
+> ~/CS232/project2/NERD_tree_1
+	*	1654053653	0
+	"	8	0
+	.	1	0
+	+	1	0
+
+> ~/CS232/project2/getText.py
+	*	1654053650	0
+	"	1	22
+	^	31	42
+	.	31	41
+	+	10	68
+	+	11	65
+	+	14	0
+	+	1	22
+	+	13	75
+	+	9	55
+	+	18	18
+	+	19	29
+	+	18	63
+	+	31	7
+	+	34	11
+	+	9	27
+	+	19	68
+	+	20	111
+	+	21	77
+	+	31	41
+
+> ~/CS232/project2/geti
+	*	1654053068	0
+	"	1	0
+
+> ~/CS232/project2/getText.poy
+	*	1654053019	0
+	"	1	0
+
+> ~/learn/main.c
+	*	1654052621	0
+	"	5	1
+	^	11	103
+	.	11	102
+	+	17	0
+	+	1	16
+	+	14	17
+	+	15	0
+	+	6	118
+	+	6	41
+	+	11	8
+	+	6	72
+	+	6	20
+	+	6	14
+	+	6	58
+	+	6	70
+	+	10	23
+	+	10	0
+	+	13	0
+	+	6	0
+	+	3	0
+	+	5	21
+	+	10	0
+	+	11	0
+	+	8	24
+	+	7	108
+	+	7	110
+	+	6	87
+	+	8	0
+	+	11	0
+	+	1	0
+	+	28	0
+	+	5	0
+	+	12	15
+	+	2	57
+	+	3	0
+	+	27	0
+	+	11	102
+
+> ~/learn/NERD_tree_1
+	*	1654047485	0
+	"	7	0
+	.	1	0
+	+	1	0
+
+> ~/learn/trivial_hashing.py
+	*	1654046824	0
+	"	3	0
+
+> ~/learn/main
+	*	1654046584	0
+	"	1	0
+
+> ~/learn/wow/processors.md
+	*	1654042601	0
+	"	1	48
+	^	1	50
+	.	1	50
+	+	1	50
+
+> ~/learn/wow/m.
+	*	1654041477	0
+	"	1	0
+
+> ~/learn/wow/NERD_tree_1
+	*	1654041472	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/learn/wow/services.md
+	*	1654035344	0
+	"	36	25
+	^	36	26
+	.	36	26
+	+	5	25
+	+	10	22
+	+	11	1
+	+	15	0
+	+	10	0
+	+	6	0
+	+	1	0
+	+	9	47
+	+	9	89
+	+	9	1
+	+	7	1
+	+	12	95
+	+	13	10
+	+	15	45
+	+	16	99
+	+	17	29
+	+	19	67
+	+	20	0
+	+	21	72
+	+	27	44
+	+	21	70
+	+	22	0
+	+	23	58
+	+	24	0
+	+	27	43
+	+	28	0
+	+	27	65
+	+	32	31
+	+	36	26
+	n	19	67
+
+> ~/learn/wow/README.md
+	*	1654030825	0
+	"	3	51
+	^	3	52
+	.	3	51
+	+	2	0
+	+	3	51
 
 > /media/buhfur/Karen/LoginHashCalculator/LoginHashCalculator/main.cpp
 	*	1653976382	0
@@ -485,37 +1012,6 @@ $Plug
 > /media/buhfur/Karen/LoginHashCalculator/LoginHashCalculator/Makefile
 	*	1653976059	0
 	"	1	0
-
-> ~/learn/main.c
-	*	1653905958	0
-	"	10	109
-	^	9	88
-	.	11	0
-	+	19	0
-	+	1	16
-	+	16	17
-	+	17	0
-	+	9	118
-	+	9	41
-	+	14	8
-	+	9	72
-	+	9	20
-	+	9	14
-	+	9	58
-	+	9	70
-	+	13	23
-	+	13	0
-	+	15	0
-	+	9	0
-	+	6	0
-	+	8	21
-	+	13	0
-	+	14	0
-	+	11	24
-	+	10	108
-	+	10	110
-	+	9	87
-	+	11	0
 
 > ~/WoeUSB-ng/WoeUSB/core.py
 	*	1653904646	0
@@ -822,69 +1318,6 @@ $Plug
 	+	22	61
 	+	23	54
 
-> ~/.vimrc
-	*	1653680611	0
-	"	68	8
-	^	54	40
-	.	68	0
-	+	73	0
-	+	28	29
-	+	26	12
-	+	26	0
-	+	27	0
-	+	26	28
-	+	26	0
-	+	1	0
-	+	15	34
-	+	17	16
-	+	4	34
-	+	26	19
-	+	26	1
-	+	26	19
-	+	26	2
-	+	26	0
-	+	18	14
-	+	26	0
-	+	4	0
-	+	11	0
-	+	4	34
-	+	11	0
-	+	26	0
-	+	56	130
-	+	28	0
-	+	29	0
-	+	45	34
-	+	41	0
-	+	73	0
-	+	73	27
-	+	76	0
-	+	74	13
-	+	72	65
-	+	70	41
-	+	26	0
-	+	1	0
-	+	2	21
-	+	2	0
-	+	5	21
-	+	5	0
-	+	11	26
-	+	12	20
-	+	13	17
-	+	14	27
-	+	15	34
-	+	16	39
-	+	17	0
-	+	76	0
-	+	76	20
-	+	75	59
-	+	76	0
-	+	51	38
-	+	53	40
-	+	52	67
-	+	53	44
-	+	54	39
-	+	68	0
-
 > ~/books/Yang Hu - Graphic Go Algorithms_ Graphically learn data structures and algorithms better than before-Independently published (2020).pdf
 	*	1653675503	0
 	"	1	0
@@ -1112,23 +1545,6 @@ $Plug
 	*	1653433038	0
 	"	11	1
 
-> ~/.bashrc
-	*	1653432632	0
-	"	150	58
-	.	151	0
-	+	150	0
-	+	154	29
-	+	156	0
-	+	144	5
-	+	156	46
-	+	157	0
-	+	154	18
-	+	156	0
-	+	150	16
-	+	155	45
-	+	160	0
-	+	151	0
-
 > ~/.bahrc
 	*	1653432464	0
 	"	1	0
@@ -1214,526 +1630,3 @@ $Plug
 	^	1	2
 	.	1	1
 	+	1	1
-
-> ~/projects/bug.c
-	*	1653285557	0
-	"	6	14
-	^	15	2
-	.	6	17
-	+	3	33
-	+	13	18
-	+	15	1
-	+	6	17
-
-> ~/rust-learn/Cargo.toml
-	*	1653258406	0
-	"	4	40
-	^	5	0
-	.	5	0
-	+	7	20
-	+	9	0
-	+	7	18
-	+	8	0
-	+	4	41
-	+	5	0
-
-> ~/rust-learn/tood
-	*	1653256044	0
-	"	1	0
-
-> ~/rust-learn/main.rs
-	*	1653255932	0
-	"	1	0
-
-> ~/test.rs
-	*	1653255867	0
-	"	1	0
-	^	1	0
-	.	1	0
-	+	1	0
-
-> ~/projects/pdfminer.six/mypy.ini
-	*	1653255327	0
-	"	33	0
-
-> /tmp/hello.cs
-	*	1652903831	0
-	"	4	20
-	^	4	21
-	.	4	20
-	+	6	2
-	+	4	20
-
-> ~/entries/bullshit.txt
-	*	1652903647	0
-	"	15	34
-	^	15	35
-	.	15	35
-	+	10	12
-	+	10	13
-	+	15	35
-
-> ~/projects/pdfprospector/main.py
-	*	1652843885	0
-	"	4	0
-	^	12	28
-	.	12	27
-	+	11	30
-	+	3	11
-	+	13	46
-	+	2	0
-	+	11	19
-	+	13	35
-	+	20	0
-	+	11	24
-	+	10	17
-	+	11	24
-	+	11	0
-	+	13	0
-	+	13	36
-	+	13	31
-	+	18	14
-	+	13	36
-	+	13	22
-	+	13	17
-	+	13	89
-	+	13	0
-	+	13	17
-	+	13	0
-	+	11	0
-	+	13	0
-	+	13	17
-	+	13	76
-	+	13	16
-	+	13	17
-	+	21	0
-	+	1	1
-	+	13	0
-	+	13	17
-	+	13	4
-	+	13	0
-	+	18	20
-	+	19	8
-	+	18	0
-	+	17	0
-	+	19	31
-	+	21	39
-	+	19	30
-	+	11	0
-	+	11	31
-	+	12	10
-	+	11	4
-	+	13	0
-	+	12	12
-	+	12	13
-	+	13	0
-	+	12	27
-	a	11	26
-	k	13	0
-
-> ~/projects/pdfminer.six/Makefile
-	*	1652843213	0
-	"	14	0
-
-> ~/projects/pdfminer.six/Makeifle
-	*	1652843200	0
-	"	1	0
-
-> ~/.tmux.conf
-	*	1652841564	0
-	"	21	0
-	^	21	1
-	.	21	0
-	+	23	108
-	+	23	38
-	+	1	0
-	+	23	0
-	+	24	0
-	+	22	0
-	+	24	0
-	+	22	0
-	+	21	0
-	+	24	0
-	+	20	0
-	+	21	0
-	+	13	0
-	+	9	0
-	+	11	100
-	+	11	0
-	+	22	31
-	+	23	0
-	+	20	0
-	+	21	0
-	+	18	0
-	+	28	0
-	+	21	0
-	m	12	0
-	n	12	0
-
-> ~/.tmux.confd
-	*	1652841355	0
-	"	1	0
-
-> ~/projects/pdfprospector/main
-	*	1652839655	0
-	"	1	0
-
-> ~/projects/pdfprospector/minepdf.py
-	*	1652839373	0
-	"	1	0
-	^	5	27
-	.	5	26
-	+	6	35
-	+	8	12
-	+	3	68
-	+	4	75
-	+	5	26
-
-> ~/projects/pandoc_resume/output/minepdf.py
-	*	1652839282	0
-	"	6	7
-	^	5	27
-	.	5	26
-	+	6	35
-	+	8	12
-	+	3	68
-	+	4	75
-	+	5	26
-
-> ~/projects/pandoc_resume/output/output.py
-	*	1652838881	0
-	"	10	54
-	^	10	55
-	.	10	54
-	+	1	0
-	+	1	10
-	+	1	7
-	+	1	10
-	+	1	24
-	+	1	25
-	+	1	18
-	+	1	22
-	+	1	31
-	+	1	20
-	+	1	23
-	+	16	33
-	+	17	8
-	+	2	10
-	+	17	21
-	+	16	0
-	+	3	9
-	+	11	51
-	+	16	5
-	+	17	9
-	+	8	39
-	+	11	86
-	+	16	0
-	+	11	18
-	+	15	0
-	+	16	0
-	+	12	38
-	+	17	23
-	+	9	8
-	+	11	68
-	+	10	19
-	+	11	0
-	+	10	20
-	+	11	40
-	+	10	44
-	+	8	35
-	+	6	16
-	+	5	0
-	+	10	42
-	+	8	20
-	+	10	15
-	+	12	33
-	+	14	0
-	+	13	0
-	+	12	39
-	+	10	54
-
-> ~/projects/pandoc_resume/output/oupu
-	*	1652837762	0
-	"	1	0
-
-> ~/projects/pandoc_resume/output/resume.pdf
-	*	1652837651	0
-	"	1	0
-
-> ~/projects/pandoc_resume/output/output.pyu
-	*	1652837543	0
-	"	1	0
-
-> ~/redditpost
-	*	1652836546	0
-	"	1	0
-	^	3	149
-	.	1	0
-	+	1	30
-	+	6	0
-	+	1	73
-	+	5	0
-	+	1	324
-	+	1	537
-	+	1	438
-	+	3	148
-	+	1	0
-
-> ~/userspace/eth_header
-	*	1652760482	0
-	"	1	0
-
-> ~/userspace/eth_header.c
-	*	1652760461	0
-	"	19	17
-	^	19	18
-	.	19	17
-	+	8	22
-	+	4	31
-	+	11	0
-	+	15	0
-	+	10	0
-	+	13	0
-	+	6	0
-	+	6	62
-	+	7	57
-	+	2	20
-	+	2	17
-	+	2	0
-	+	1	19
-	+	20	1
-	+	19	17
-
-> ~/userspace/eht
-	*	1652760352	0
-	"	1	0
-
-> ~/userspace/eth_header.h
-	*	1652760148	0
-	"	1	8
-	^	1	9
-	.	1	8
-	+	1	8
-
-> ~/bashr
-	*	1652758985	0
-	"	1	0
-
-> ~/.bashr
-	*	1652758969	0
-	"	1	0
-
-> /media/buhfur/Karen/games/otherVanilla/realmlist.wtf
-	*	1652678188	0
-	"	1	0
-
-> /media/buhfur/Karen/games/otherVanilla/rel
-	*	1652678160	0
-	"	1	0
-
-> ~/.bashrc]
-	*	1652677995	0
-	"	1	0
-	^	1	0
-
-> ~/projects/pandoc_resume/markdown/resume.md
-	*	1652667047	0
-	"	1	0
-
-> ~/graphex/main.c
-	*	1652594711	0
-	"	40	8
-	^	39	8
-	.	40	0
-	+	18	21
-	+	18	23
-	+	5	54
-	+	14	80
-	+	15	26
-	+	18	18
-	+	18	40
-	+	18	4
-	+	46	0
-	+	5	0
-	+	46	0
-	+	18	4
-	+	45	7
-	+	18	0
-	+	45	0
-	+	46	0
-	+	12	37
-	+	7	0
-	+	8	0
-	+	9	0
-	+	8	0
-	+	10	0
-	+	11	0
-	+	12	0
-	+	14	0
-	+	15	0
-	+	12	0
-	+	13	0
-	+	49	75
-	+	49	0
-	+	45	2
-	+	49	31
-	+	49	90
-	+	49	0
-	+	6	33
-	+	17	37
-	+	49	0
-	+	47	25
-	+	19	31
-	+	20	0
-	+	45	0
-	+	5	0
-	+	45	0
-	+	45	19
-	+	45	37
-	+	45	23
-	+	45	29
-	+	49	9
-	+	49	0
-	+	45	32
-	+	45	0
-	+	45	24
-	+	49	0
-	+	49	8
-	+	49	0
-	+	49	41
-	+	49	9
-	+	49	0
-	+	45	0
-	+	50	0
-	+	6	3
-	+	5	0
-	+	50	0
-	+	6	13
-	+	6	0
-	+	49	0
-	+	49	20
-	+	49	19
-	+	6	0
-	+	4	0
-	+	49	0
-	+	44	0
-	+	49	0
-	+	25	0
-	+	43	0
-	+	42	0
-	+	34	52
-	+	35	23
-	+	36	0
-	+	48	38
-	+	3	17
-	+	31	0
-	+	45	9
-	+	41	16
-	+	38	35
-	+	40	17
-	+	40	31
-	+	40	0
-	+	39	12
-	+	40	31
-	+	31	43
-	+	30	78
-	+	28	26
-	+	30	39
-	+	31	0
-	+	39	27
-	+	40	0
-
-> ~/graphex/read.c
-	*	1652594695	0
-	"	3	19
-	^	3	20
-	.	3	19
-	+	4	327
-	+	4	12
-	+	23	47
-	+	5	0
-	+	4	0
-	+	24	0
-	+	23	15
-	+	2	18
-	+	10	33
-	+	13	9
-	+	3	19
-
-> ~/todo/movingout
-	*	1652594206	0
-	"	16	8
-	^	42	106
-	.	42	105
-	+	3	47
-	+	21	30
-	+	22	0
-	+	21	0
-	+	20	0
-	+	21	0
-	+	20	0
-	+	21	0
-	+	23	1
-	+	10	19
-	+	19	0
-	+	22	0
-	+	23	0
-	+	20	0
-	+	6	0
-	+	6	20
-	+	19	10
-	+	9	1
-	+	23	17
-	+	24	20
-	+	26	24
-	+	8	5
-	+	5	18
-	+	6	20
-	+	7	0
-	+	6	0
-	+	8	37
-	+	11	19
-	+	19	0
-	+	12	14
-	+	14	20
-	+	15	19
-	+	16	24
-	+	18	14
-	+	25	17
-	+	28	23
-	+	29	19
-	+	30	14
-	+	37	11
-	+	35	17
-	+	41	23
-	+	42	105
-
-> ~/graphex/main.py
-	*	1652572527	0
-	"	16	56
-	^	17	54
-	.	17	56
-	+	8	40
-	+	9	0
-	+	8	50
-	+	9	27
-	+	6	9
-	+	8	36
-	+	9	12
-	+	28	0
-	+	4	0
-	+	15	21
-	+	12	31
-	+	21	77
-	+	22	47
-	+	26	6
-	+	9	0
-	+	10	15
-	+	9	0
-	+	10	16
-	+	10	14
-	+	17	56
-
-> ~/graphex/main.pyu
-	*	1652561552	0
-	"	1	0
