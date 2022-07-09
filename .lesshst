@@ -1,21 +1,5 @@
 .less-history-file:
 .search
-"\w
-"\-w
-"plain texts
-"upstream
-"remove 
-"browser
-"browse
-"view
-"lsit
-"contents
-"C
-"-C
-"outpu
-"DIR
-"raw
-"-c
-"soft
-"hard
-"link
+"remove
+.search
+"file

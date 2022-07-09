@@ -1,0 +1,2 @@
+#!/bin/sh
+feh --no-fehbg --bg-fill '/home/buhfur/Pictures/th-3487079860.jpg' 

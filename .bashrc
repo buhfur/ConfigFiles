@@ -145,18 +145,25 @@ export k='/media/buhfur/Karen'
 alias wotlk='wine /media/buhfur/Karen/games/wotlk/Wow.exe'
 alias con='expressvpn connect'
 alias dis='expressvpn disconnect'
-alias updg='sudo apt -y update && sudo apt -y upgrade' 
 alias gitpush='git add . ; git commit -a -m"base changes" ; git push '
-alias vwow='wine /media/buhfur/Karen/games/vanilla/WoW.exe'
 alias gp='git add . && git commit -am "changes" && git push' 
 #personal notes app 
-alias notes='python3 -m http.server --directory /home/buhfur/notes/'
 #personal exports 
-export wow='/media/buhfur/Karen/games/vanilla'
 export wotlk='/media/buhfur/Karen/games/wotlk'
-export PATH=$PATH:/home/buhfur/.spicetify
-. "$HOME/.cargo/env"
 export addons=/media/buhfur/Karen/games/vanilla/Interface/AddOns
 export twow=/media/buhfur/Karen/media/games/turtle_client_116
 alias twow=/media/buhfur/Karen/media/games/turtle_client_116
 alias twow="wine /media/buhfur/Karen/media/games/turtle_client_116/WoW.exe" 
+
+
+alias ls='ls --color'
+
+alias ls='ls -G'
+
+export CLICOLOR=1
+# Change to your name, do not delete backslashes
+export PS1="buhfur\[\e[31m\] \[\e[m\]\[\e[31m\]:\[\e[m\]\[\e[31m\]:\[\e[m\] \[\e[32m\]\w\[\e[m\] \[\e[36m\]»\[\e[m\] "
+
+export LSCOLORS=cxgxfxexbxegedabagacad
+
+export EDITOR='vim'

@@ -1,9 +1,4 @@
 # HSTS 1.0 Known Hosts database for GNU Wget.
 # Edit at your own risk.
 # <hostname>	<port>	<incl. subdomains>	<created>	<max-age>
-mirrors.kernel.org	0	0	1654118889	15768001
-raw.githubusercontent.com	0	0	1654118839	31536000
-dl.winehq.org	0	0	1654118808	31536000
-github.com	0	1	1654118839	31536000
-ipinfo.io	0	1	1654118828	2592000
-dist.ipfs.io	0	1	1653277472	31536000
+www.expressvpn.com	0	1	1657229273	31536000
