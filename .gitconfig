@@ -1,5 +1,7 @@
 [user]
-	email = ryanmcvicker@protonmail.com
-	name = buhfur
+	email = tvheadmail@protonmail.com
+	name = Ryan McVicker \n
 [credential]
 	helper = store
+[safe]
+	directory = /home/ryanmcvicker/writings

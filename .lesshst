@@ -1,5 +1,8 @@
 .less-history-file:
 .search
-"remove
-.search
-"file
+"-r
+"password
+"djvu
+"sizeof
+"strlen
+"hex
