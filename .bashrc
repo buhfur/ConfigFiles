@@ -167,3 +167,5 @@ export PS1="buhfur\[\e[31m\] \[\e[m\]\[\e[31m\]:\[\e[m\]\[\e[31m\]:\[\e[m\] \[\e
 export LSCOLORS=cxgxfxexbxegedabagacad
 
 export EDITOR='vim'
+
+setxkbmap -option caps:swapescape
