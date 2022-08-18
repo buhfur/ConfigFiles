@@ -73,7 +73,7 @@ call plug#end()
         "colorscheme neodark 
         "colorscheme materialbox 
         "colorscheme alduin 
-        colorscheme desert
+        colorscheme elflord
         inoremap {<CR> {<CR>}<C-o>O
         set foldmethod=indent
         set foldlevel=99

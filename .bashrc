@@ -1,4 +1,4 @@
-# ~/.bashrc: executed by bash(1) for non-login shells.
+
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
@@ -116,18 +116,14 @@ if ! shopt -oq posix; then
   fi
 fi
 
-alias ls='ls --color'
 
 alias ls='ls -G'
-
 export CLICOLOR=1
 # Change to your name, do not delete backslashes
-
 export LSCOLORS=cxgxfxexbxegedabagacad
 
 alias ls='ls --color'
 
-alias ls='ls -G'
 
 export CLICOLOR=1
 # Change to your name, do not delete backslashes
@@ -147,19 +143,7 @@ alias con='expressvpn connect'
 alias dis='expressvpn disconnect'
 alias gitpush='git add . ; git commit -a -m"base changes" ; git push '
 alias gp='git add . && git commit -am "changes" && git push' 
-#personal notes app 
-#personal exports 
-export wotlk='/media/buhfur/Karen/games/wotlk'
-export addons=/media/buhfur/Karen/games/vanilla/Interface/AddOns
-export twow=/media/buhfur/Karen/media/games/turtle_client_116
-alias twow=/media/buhfur/Karen/media/games/turtle_client_116
-alias twow="wine /media/buhfur/Karen/media/games/turtle_client_116/WoW.exe" 
-
-
-alias ls='ls --color'
-
-alias ls='ls -G'
-
+alias updg='sudo apt update && sudo apt -y upgrade'
 export CLICOLOR=1
 # Change to your name, do not delete backslashes
 export PS1="buhfur\[\e[31m\] \[\e[m\]\[\e[31m\]:\[\e[m\]\[\e[31m\]:\[\e[m\] \[\e[32m\]\w\[\e[m\] \[\e[36m\]»\[\e[m\] "
@@ -167,5 +151,15 @@ export PS1="buhfur\[\e[31m\] \[\e[m\]\[\e[31m\]:\[\e[m\]\[\e[31m\]:\[\e[m\] \[\e
 export LSCOLORS=cxgxfxexbxegedabagacad
 
 export EDITOR='vim'
-
+#personal notes app 
+#personal exports 
+export wotlk='/media/buhfur/Karen/games/wotlk'
+export movies='/media/buhfur/Todd/movies'
+export twow=/home/buhfur/games/turtle
+export addons=/home/buhfur/games/turtle/Interface/AddOns/
+export vaddons=/home/buhfur/games/vanilla/Interface/AddOns/
+alias twow="wine games/turtle/WoW.exe" 
+#swaps the caps lock key and the escape key 
 setxkbmap -option caps:swapescape
+
+
