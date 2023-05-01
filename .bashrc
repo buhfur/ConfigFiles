@@ -118,30 +118,11 @@ fi
 
 
 alias ls='ls -G'
-export CLICOLOR=1
-# Change to your name, do not delete backslashes
-export LSCOLORS=cxgxfxexbxegedabagacad
-
 alias ls='ls --color'
-
-
-export CLICOLOR=1
-# Change to your name, do not delete backslashes
-
-export LSCOLORS=cxgxfxexbxegedabagacad
-
-export EDITOR='vim'
-export EDITOR='vim'
-
-
-
 #personal alises 
 
-export k='/media/buhfur/Karen'
-alias wotlk='wine /media/buhfur/Karen/games/wotlk/Wow.exe'
 alias con='expressvpn connect'
 alias dis='expressvpn disconnect'
-alias gitpush='git add . ; git commit -a -m"base changes" ; git push '
 alias gp='git add . && git commit -am "changes" && git push' 
 alias updg='sudo apt update && sudo apt -y upgrade'
 export CLICOLOR=1
@@ -151,15 +132,6 @@ export PS1="buhfur\[\e[31m\] \[\e[m\]\[\e[31m\]:\[\e[m\]\[\e[31m\]:\[\e[m\] \[\e
 export LSCOLORS=cxgxfxexbxegedabagacad
 
 export EDITOR='vim'
-#personal notes app 
-#personal exports 
-export wotlk='/media/buhfur/Karen/games/wotlk'
-export movies='/media/buhfur/Todd/movies'
-export twow=/home/buhfur/games/turtle
-export addons=/home/buhfur/games/turtle/Interface/AddOns/
-export vaddons=/home/buhfur/games/vanilla/Interface/AddOns/
-alias twow="wine games/turtle/WoW.exe" 
-#swaps the caps lock key and the escape key 
 setxkbmap -option caps:swapescape
 
 
