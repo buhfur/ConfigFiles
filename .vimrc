@@ -16,12 +16,16 @@ set ruler
 highlight Comment ctermfg=green
 "normal bindings 
 nnoremap vc :vs ~/.vimrc<CR>
-nnoremap tt :NERDTree<CR>
 nnoremap <return> :noh<return><esc>
 nnoremap cp :call CompileRunGcc()<CR>
 nnoremap <C-h> :tabprevious<CR>
 nnoremap <C-l> :tabnext<CR>
 "nnoremap <C-h> :RandomColorScheme<CR> 
+
+"Disable Ranger default keybinding and rebind
+let g:ranger_map_keys = 0
+map tt :Ranger<CR>
+
 func! CompileRunGcc()
         exec "w"
         exec "!clear"
@@ -58,24 +62,17 @@ if empty(glob(data_dir . '/autoload/plug.vim'))
 endif
 call plug#begin() 
         Plug 'tpope/vim-surround' " Surrounding ysw)
-        Plug 'https://github.com/preservim/nerdtree', { 'on': 'NERDTreeToggle' }
         Plug 'https://github.com/ap/vim-css-color' " CSS Color Preview
         Plug 'https://github.com/tpope/vim-commentary' " For Commenting gcc & gc
         Plug 'honza/vim-snippets'
         Plug 'tmsvg/pear-tree'
         " let Vundle manage Vundle, required
-        Plug 'preservim/nerdtree'
         Plug 'grvcoelho/vim-javascript-snippets'
         Plug 'xolox/vim-colorscheme-switcher'
         Plug 'xolox/vim-misc'
+    Plug 'francoiscabrol/ranger.vim'
 call plug#end()
-"Exit vim if NERDTree is the only window remaining in the only tab
-autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
-:set incsearch
+
 "much better default behavior for editing line above cursor 
-"colorscheme neodark 
-"colorscheme materialbox 
-"colorscheme alduin 
-"colorscheme elflord
-inoremap {<CR> {<CR>}<C-o>O
+noremap {<CR> {<CR>}<C-o>O
 
