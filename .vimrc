@@ -17,13 +17,11 @@ highlight Comment ctermfg=green
 "normal bindings 
 nnoremap vc :vs ~/.vimrc<CR>
 nnoremap tt :NERDTree<CR>
-nnoremap ;w :w<CR>
-nnoremap ;q :q!<CR>
 nnoremap <return> :noh<return><esc>
 nnoremap cp :call CompileRunGcc()<CR>
-nnoremap <C-l> :tabprevious<CR>
-"nnoremap <C-h> :tabnext<CR>
-nnoremap <C-h> :RandomColorScheme<CR> 
+nnoremap <C-h> :tabprevious<CR>
+nnoremap <C-l> :tabnext<CR>
+"nnoremap <C-h> :RandomColorScheme<CR> 
 func! CompileRunGcc()
         exec "w"
         exec "!clear"
@@ -71,15 +69,13 @@ call plug#begin()
         Plug 'xolox/vim-colorscheme-switcher'
         Plug 'xolox/vim-misc'
 call plug#end()
-        "Exit vim if NERDTree is the only window remaining in the only tab
-        autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
-        :set incsearch
-        "much better default behavior for editing line above cursor 
-        "colorscheme neodark 
-        "colorscheme materialbox 
-        "colorscheme alduin 
-        colorscheme elflord
-        inoremap {<CR> {<CR>}<C-o>O
-        set foldmethod=indent
-        set foldlevel=99
+"Exit vim if NERDTree is the only window remaining in the only tab
+autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
+:set incsearch
+"much better default behavior for editing line above cursor 
+"colorscheme neodark 
+"colorscheme materialbox 
+"colorscheme alduin 
+"colorscheme elflord
+inoremap {<CR> {<CR>}<C-o>O
 
