@@ -124,7 +124,7 @@ alias gp='git add . && git commit -a && git push'
 alias updg='sudo apt update && sudo apt -y upgrade'
 export CLICOLOR=1
 # Change to your name, do not delete backslashes
-export PS1="buhfur\[\e[31m\] \[\e[m\]\[\e[31m\]:\[\e[m\]\[\e[31m\]:\[\e[m\] \[\e[32m\]\w\[\e[m\] \[\e[36m\]»\[\e[m\] "
+export PS1="$USER\[\e[31m\] \[\e[m\]\[\e[31m\]:\[\e[m\]\[\e[31m\]:\[\e[m\] \[\e[32m\]\w\[\e[m\] \[\e[36m\]»\[\e[m\] "
 
 export LSCOLORS=cxgxfxexbxegedabagacad
 
