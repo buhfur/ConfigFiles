@@ -21,10 +21,10 @@ fi
 
 
 # download golang binaries 
-wget https://go.dev/dl/go1.22.2.linux-amd64.tar.gz -O /home/$SUDO_USER/Downloads/go
+wget https://go.dev/dl/go1.22.2.linux-amd64.tar.gz -O /home/$SUDO_USER/go
 
 # untar binaries and copy to /usr/local/
-tar vxzf /home/$SUDO_USER/Downloads/go -C /usr/local/
+tar vxzf /home/$SUDO_USER/go -C /usr/local/
 
 
 # Add go lang to path 
