@@ -73,6 +73,15 @@ call plug#begin()
     Plug 'francoiscabrol/ranger.vim'
 call plug#end()
 
-"much better default behavior for editing line above cursor 
-noremap {<CR> {<CR>}<C-o>O
+
+" much better vanilla vim defaults for auto completion of brackets , quotes 
+" and curly brackets 
+inoremap " ""<left>
+inoremap ' ''<left>
+inoremap ( ()<left>
+inoremap [ []<left>
+inoremap { {}<left>
+inoremap {<CR> {<CR>}<ESC>O
+inoremap {;<CR> {<CR>};<ESC>O
+
 
