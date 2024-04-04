@@ -1,13 +1,10 @@
-#!/bin/sh
+#!/bin/bash
 
 
-is_sudo = $SUDO_USER
 
-if [ -z $is_sudo ]; then
-        echo "Script is not running as super user! " 
-        echo "Please run this script as superuser ! "
-        exit
-fi
+# Tell if script is being run as superuser 
+
+if[ ]
 
 
 # download golang binaries 
