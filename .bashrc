@@ -120,7 +120,7 @@ fi
 alias ls='ls -G'
 alias ls='ls --color'
 #personal alises 
-alias gp='git add . && git commit -a && git push' 
+alias gp='git add . ; git commit -a ; git push' 
 alias updg='sudo apt update && sudo apt -y upgrade'
 export CLICOLOR=1
 # Change to your name, do not delete backslashes
