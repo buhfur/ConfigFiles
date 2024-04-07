@@ -1,2 +1,6 @@
-#ls -dl $HOME/.[^.]* 
-cp -v $HOME/.[^.]* ./
+
+
+cat tmux.conf > $HOME/.tmux.conf
+cat bashrc > $HOME/.bashrc
+cat vimrc > $HOME/.vimrc
+
