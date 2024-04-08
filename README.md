@@ -18,4 +18,4 @@ This document may be called "config" but I use it for alot more
 1. dotfiles 
 2. installation script for linux distros I put on my system
 3. installation scripts for VM's on my proxmox hypervisor 
-4. Random notes , code snippets,  and one liners put in shell scripts or markdown documents
+4. Acts as my central location for notes during my learning / projects
