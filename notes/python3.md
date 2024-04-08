@@ -1,7 +1,3 @@
-# Python 3 notes in markdown for my journal 
-
-
-
 
 # Python packages 
 
