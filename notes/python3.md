@@ -66,3 +66,14 @@ OUTPUT :
 `/home/user`
 
 
+# Determine if you are in a certain directory , for example "Downloads"
+
+```
+import pathlib 
+
+path = pathlib.Path('/home/user/Downloads')
+
+if pathlib.PurePath(path).match("Downloads") : 
+    print('path leads to /home/user/Downloads')
+
+```
