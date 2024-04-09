@@ -77,3 +77,14 @@ if pathlib.PurePath(path).match("Downloads") :
     print('path leads to /home/user/Downloads')
 
 ```
+
+# Basic beautiful soup example 
+
+```
+from bs4 import BeautifulSoup
+
+html_doc = requests.get(url)
+
+soup = BeautifulSoup(html_doc, 'html.parser')
+
+```
