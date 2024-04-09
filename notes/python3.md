@@ -88,3 +88,16 @@ html_doc = requests.get(url)
 soup = BeautifulSoup(html_doc, 'html.parser')
 
 ```
+
+# Search by tag in BeautifulSoup 
+
+```
+    for x in soup.find_all('p'):
+        print(x)
+    
+```
+
+# Search for other content inside a div in BeautifulSoup
+
+For exmple , searching for all paragrap tags inside a div with an id of "content-div"
+`x = soup.find('div', {'id': 'content-div'}).findAll('p')`
