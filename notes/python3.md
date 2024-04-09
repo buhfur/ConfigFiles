@@ -26,3 +26,19 @@ print(a_list)
 ['key1', 'key2']
 
 ```
+
+# Print out dictionary values 
+
+```
+a = {'key1' : 'value1', 'key2': 'value2' }  
+
+
+```
+
+# Union operators in python3.9 
+
+Python 3.9 introduced some new union operators to be used with strings and dictionaries.
+
+**What are union operators?** 
+
+
