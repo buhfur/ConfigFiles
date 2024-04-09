@@ -48,3 +48,19 @@ elif sys.platform.startswith("win32"):
     print('on windows')
 
 ```
+
+# Print out parent directory of Path object
+
+
+```
+import pathlib
+
+path = pathlib.Path('/home/user/Downloads')
+
+print(path.parent)
+
+```
+
+OUTPUT : 
+> /home/user/
+
