@@ -62,5 +62,5 @@ print(path.parent)
 ```
 
 OUTPUT : 
-> /home/user/
+`/home/user`
 
