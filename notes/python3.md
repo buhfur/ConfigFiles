@@ -34,3 +34,17 @@ a = {'key1' : 'value1', 'key2': 'value2' }
 
 
 ```
+
+# Detect OS platform 
+
+```
+import sys
+
+
+if sys.platform.startswith("linux"):
+    print('on linux')
+
+elif sys.platform.startswith("win32"):
+    print('on windows')
+
+```
