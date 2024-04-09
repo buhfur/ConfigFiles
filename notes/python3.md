@@ -3,7 +3,7 @@
 
 On linux , python packages are stored in 
 
-`$: /usr/local/lib/pythonx.xx/dist-packages`
+`/usr/local/lib/pythonx.xx/dist-packages`
 
 
 These are packages installed on your local system.
@@ -13,3 +13,16 @@ These are packages installed on your local system.
 To create a virtual environment for packages , do. 
 
 ``
+
+# Put dictionary keys in list 
+
+```
+a = {'key1' : 'value1', 'key2': 'value2' }  
+
+a_list = [*a] # Putting asterisk key before dict gets all keys
+
+print(a_list)
+
+['key1', 'key2']
+
+```
