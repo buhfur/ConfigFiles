@@ -100,4 +100,12 @@ soup = BeautifulSoup(html_doc, 'html.parser')
 # Search for other content inside a div in BeautifulSoup
 
 For exmple , searching for all paragrap tags inside a div with an id of "content-div"
+
 `x = soup.find('div', {'id': 'content-div'}).findAll('p')`
+
+
+# Remove all packages installed by pip 
+
+`pip freeze | xargs pip uninstall -y`
+
+
