@@ -23,9 +23,9 @@ NOTE : This throws away all your recent uncommited changes
 
 `git checkout -b <branch name> `
 
-Branch is automatically created when you push the branch to the remote server
+Branch is automatically created when you push the branch to the remote server. Most times I substiute `<remote-name>` with "origin"
 
-`git push <remote name> <local-branch-name>:<remote-branch-name>`
+`git push <remote-name> <local-branch-name>:<remote-branch-name>`
 
 
 WARNING: DO NOT omit the `:<remote-branch-name>` or the remote branch will be DELTED
@@ -37,3 +37,8 @@ WARNING: DO NOT omit the `:<remote-branch-name>` or the remote branch will be DE
 `git rev-parse --abbrev-ref HEAD`
 
 
+# Push all local branches to remote 
+
+This is handy if you aren't sharing a repo with someone, I might use this more often than not since i'm a hobbyist with no partners on my projects. ( As of yet ) 
+
+`git push --all -u`
