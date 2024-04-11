@@ -84,9 +84,4 @@ inoremap { {}<left>
 inoremap {<CR> {<CR>}<ESC>O
 inoremap {;<CR> {<CR>};<ESC>O
 
-" Change the dowload location of swap files 
-" Found on https://stackoverflow.com/questions/821902/disabling-swap-file-creation-in-vim
 
-set backupdir=~/.vim/backup//
-set directory=~/.vim/swap//
-set undodir=~/.vim/undo//
