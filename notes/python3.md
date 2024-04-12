@@ -109,3 +109,11 @@ For exmple , searching for all paragrap tags inside a div with an id of "content
 `pip freeze | xargs pip uninstall -y`
 
 
+
+# PyQt notes
+
+using the loadUi class automatically creates python objects by using their ObjectName in QtDesigner
+
+
+- The QFileDialog is actually in the QtWidgets class and not the QtGui class like in earlier versions  
+
