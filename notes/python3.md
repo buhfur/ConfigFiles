@@ -117,3 +117,17 @@ using the loadUi class automatically creates python objects by using their Objec
 
 - The QFileDialog is actually in the QtWidgets class and not the QtGui class like in earlier versions  
 
+
+
+# Print out string as lower case 
+
+```
+
+example_str = "Hello"
+
+>>> example_str.lower() 
+
+"hello"
+
+
+```
