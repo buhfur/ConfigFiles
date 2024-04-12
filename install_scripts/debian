@@ -42,5 +42,6 @@ wait
 pip3 install -e . --break-system-packages
 
 
-
-
+# Install tmux plugin manager
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+wait
