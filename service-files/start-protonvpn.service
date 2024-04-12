@@ -1,0 +1,10 @@
+[Unit]
+Description= Starts protonvpn 
+After=multi-user.target
+
+[Service]
+ExecStart=/usr/local/bin/protonvpn c --p2p -p udp
+Type=forking
+
+[Install]
+WantedBy=multi-user.target
