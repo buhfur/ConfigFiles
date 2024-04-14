@@ -5,8 +5,8 @@ The protonvpn killswitch exists to secure your connection in the event of an une
 
 There are two modes for the killswitch : 
 
-    - Block access on local LAN , best used for public wifi 
-    - Allow access on local LAN , used for home networks  
+- Block access on local LAN , best used for public wifi 
+- Allow access on local LAN , used for home networks  
 
 Since my hypervisor is bridging the network interface for the virtual machines, I don't think option 1 would be a problem
 
