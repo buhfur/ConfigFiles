@@ -24,5 +24,5 @@ In this thread someone posted about how to trigger the killswitch functionality 
 To trigger the killswitch , just kill the OpenVPN process being used by the VPN.
 
 
-`sudo kill openvpn`
+`sudo pkill openvpn`
 
