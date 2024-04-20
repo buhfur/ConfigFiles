@@ -22,3 +22,22 @@ are
 **Note**  
 
 For some of my dotfiles I have extra configurations , such as the tmux-powerline, sometimes I will put the README.md document titled the name of the software to compile a pseudo manual for all my extra configurations. This is also so I don't have to search for info online sometimes.
+
+
+**Below is some additional software I use for customization**
+
+---
+
+
+# Tmux
+
+
+## tmux-powerline 
+
+Customizes the status bar in tmux. i've added 2 lines in the tmux.conf file to install the addon itself and some cool
+themes for the powerline. Check the powerline-themes.md file in the manuals page using the link below 
+
+[themes link](../manuals/powerline-themes.md)
+
+
+
