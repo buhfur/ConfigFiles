@@ -128,6 +128,6 @@ export PS1="$USER\[\e[31m\] \[\e[m\]\[\e[31m\]:\[\e[m\]\[\e[31m\]:\[\e[m\] \[\e[
 
 export LSCOLORS=cxgxfxexbxegedabagacad
 
-export EDITOR='vim'
+export EDITOR=/bin/vim
 
 
