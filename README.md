@@ -24,6 +24,9 @@ are
 For some of my dotfiles I have extra configurations , such as the tmux-powerline, sometimes I will put the README.md document titled the name of the software to compile a pseudo manual for all my extra configurations. This is also so I don't have to search for info online sometimes.
 
 
+**Tmux dotfile**
+
+Quick side note , the tmux.conf is assuming  you are **NOT** using zsh as your shell , the two dotfiles  are the same except for setting the default terminal to zsh in .ztmux.conf
 
 
 **Below is some additional software I use for customization**
@@ -40,6 +43,7 @@ Customizes the status bar in tmux. i've added 2 lines in the tmux.conf file to i
 themes for the powerline. Check the powerline-themes.md file in the manuals page using the link below 
 
 [themes link](../manuals/powerline-themes.md)
+
 
 
 
