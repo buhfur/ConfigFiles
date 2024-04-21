@@ -13,7 +13,6 @@ samba
 neofetch
 net-tools
 openvpn
-dialog
 python3-pip
 python3-setuptools
 iptables-persistant
@@ -22,3 +21,5 @@ htop
 iptraf-ng
 nmap
 tree
+ranger
+qbittorrent-nox
