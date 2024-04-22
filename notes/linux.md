@@ -44,3 +44,23 @@ or
 or 
 
 `lsblk |awk 'NR==1{print $0" DEVICE-ID(S)"}NR>1{dev=$1;printf $0" ";system("find /dev/disk/by-id -lname \"*"dev"\" -printf \" %p\"");print "";}'|grep -v -E 'part|lvm'`
+
+
+# Reduce text entering sensitivity 
+
+You can either use kbdrate or xset , preferably xset as it works alot easier 
+
+Enter this line in your xinitrc , or just copy the xinitrc from the ~/dotfiles directory to your local .xinitrc
+
+`xset r rate 250 60`
+
+
+This will reduce the sensitivity 
+
+
+# xinitrc 
+
+the xinitrc file is used for loading additional configurations and settings when the Xorg server starts 
+
+
+
