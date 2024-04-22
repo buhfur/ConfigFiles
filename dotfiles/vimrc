@@ -87,6 +87,9 @@ call plug#begin()
         Plug 'francoiscabrol/ranger.vim'
 call plug#end()
 
+" map jj to exit insert mode 
+inoremap jj <ESC>
 "much better default behavior for editing line above cursor 
 noremap {<CR> {<CR>}<C-o>O
+
 
