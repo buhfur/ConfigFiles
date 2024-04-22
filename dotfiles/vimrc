@@ -61,7 +61,7 @@ if empty(glob(data_dir . '/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 call plug#begin() 
-        Plug 'tpope/vim-surround' " Surrounding ysw)
+        "Plug 'tpope/vim-surround' " Surrounding ysw)
         Plug 'https://github.com/ap/vim-css-color' " CSS Color Preview
         Plug 'https://github.com/tpope/vim-commentary' " For Commenting gcc & gc
         Plug 'honza/vim-snippets'
@@ -70,18 +70,9 @@ call plug#begin()
         Plug 'grvcoelho/vim-javascript-snippets'
         Plug 'xolox/vim-colorscheme-switcher'
         Plug 'xolox/vim-misc'
-    Plug 'francoiscabrol/ranger.vim'
+        Plug 'francoiscabrol/ranger.vim'
 call plug#end()
 
-
-" much better vanilla vim defaults for auto completion of brackets , quotes 
-" and curly brackets 
-inoremap " ""<left>
-inoremap ' ''<left>
-inoremap ( ()<left>
-inoremap [ []<left>
-inoremap { {}<left>
-inoremap {<CR> {<CR>}<ESC>O
-inoremap {;<CR> {<CR>};<ESC>O
-
+"much better default behavior for editing line above cursor 
+noremap {<CR> {<CR>}<C-o>O
 
