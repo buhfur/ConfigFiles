@@ -1,12 +1,23 @@
 syntax on
 set tabstop=2
 
+" found from
+" https://stackoverflow.com/questions/65076/how-do-i-set-up-vim-autoindentation-properly-for-editing-python-files
+set showmatch
+set ts=4
+set sts=4
+set sw=4
+set autoindent
+set smartindent
+set smarttab
+set expandtab
+
+
 " change color of tab line and tab area 
 :hi TabLineFill ctermfg=Black ctermbg=Black
 :hi TabLine ctermfg=Red ctermbg=Black
 set breakindent
 set breakindentopt=shift:2
-set expandtab
 "make completion more aware 
 set infercase 
 set wildmenu
