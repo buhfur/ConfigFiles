@@ -1,6 +1,9 @@
 syntax on
 set tabstop=2
 
+" change color of tab line and tab area 
+:hi TabLineFill ctermfg=Black ctermbg=Black
+:hi TabLine ctermfg=Black ctermbg=DarkYellow
 set breakindent
 set breakindentopt=shift:2
 set expandtab
