@@ -4,6 +4,7 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
+source /home/spare-user/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -99,4 +100,17 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias gp='git add . && git commit -a && git push' 
+alias updg='sudo apt update && sudo apt -y upgrade'
+alias work="cd flightmaster/src; vim ui.py -p utils.py -p addonWidget.py -p TODO.md"
+
+
+#alias journal="glow -p /home/$USER/config/notes/$1.md"
+
+
+function journal () {
+    glow -p /home/$USER/config/notes/$(printf '%s.md' $1)
+}
+
+
 
