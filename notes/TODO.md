@@ -1,4 +1,13 @@
 
+# Summary 
+
+This file is used as a general document to track tasks that I need to accomplish. Underneath every header is a description / notes about the task.
+
+
+
+Config TODO 
+---
+
 
 # [ ] - Create script to setup cool tmux environment 
 
@@ -23,5 +32,12 @@ not an application. Woulden't be a bad idea in the future to develop one , or po
 All you gotta do is get the site running again, there may be some misconfig that's not allowing the domain to be resolved 
 
 
+# [ ] - Swap CapsLock with  Left Ctrl on main desktop 
+
+
+General TODO
+---
+
+# [ ] - 
 
 
