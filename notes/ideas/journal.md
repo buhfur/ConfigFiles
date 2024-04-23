@@ -21,3 +21,5 @@ After reading further , I belive the "x$" symbols are used to get the args.
 
 Also instead of using vim , I could use a  CLI markdown reader like glow , which I already have installed  
 
+I created a function in the zshrc file that calls glow with the filename passed 
+

@@ -131,3 +131,9 @@ example_str = "Hello"
 
 
 ```
+
+# Create documentation with pydoc
+
+`python3 -m pydoc modulename`
+
+remember to not put the *.py file extension at the end 
