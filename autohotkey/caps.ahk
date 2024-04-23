@@ -1,1 +1,3 @@
-﻿Capslock::Esc
+﻿Capslock::LCtrl
+
+LCtrl::Esc
