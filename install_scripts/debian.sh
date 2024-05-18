@@ -1,10 +1,6 @@
 #!/bin/bash
 # Description: Script to install optional packages on a debian based distribution 
 
-# Install packages from package list 
-apt-get install $(cat /home/$SUDO_USER/config/install_scripts/package_lists/debian_packages)
-wait 
-
 # create the media directory 
 if [ ! -d /mnt/media ]; then
 	mkdir /mnt/media
@@ -17,22 +13,24 @@ wait
 # add credentials file 
 username="jellyfin";
 password="youronyourown";
-
 if [ -f /home/$SUDO_USER/.smbcredentials ]; then
-	echo -en "username=${username}\npassword=${password}" > /home/$USER/.smbcredentials
-  echo -en "\n/home/$USER/.smbcredentials was created successfully\n"
+   echo -en "\nERROR: /home/$SUDO_USER/.smbcredentials already exists or was not able to be created\n"
 else
-        echo -en "\nERROR: /home/$USER/.smbcredentials already exists or was not able to be created\n"
+ 	echo  "username=${username}\npassword=${password}" > /home/$SUDO_USER/.smbcredentials
+    echo -en "\n/home/$SUDO_USER/.smbcredentials was created successfully\n"
 fi
 wait 
 
 # add FSTAB entry
 ENTRY="//192.168.4.152/pool1 /mnt/media cifs uid=0,credentials=/home/$SUDO_USER/.smbcredentials,iocharset=utf8,file_mode=0777,dir_mode=0777 0 0"
 
-echo ${ENTRY} >> /etc/fstab
-
-echo -en "\n Added entry to fstab\n"
-wait
+if grep -Fxq "$ENTRY" /etc/fstab
+then
+    echo -en "Entry already exists in fstab!"
+else
+    echo ${ENTRY} >> /etc/fstab
+    echo -en "\n Added entry to fstab\n"
+fi
 
 # Install protonvpn cli and input creds in prompted login 
 git clone https://github.com/ProtonVPN/linux-cli-community /home/$SUDO_USER/linux-cli
