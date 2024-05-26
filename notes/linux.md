@@ -63,4 +63,9 @@ This will reduce the sensitivity
 the xinitrc file is used for loading additional configurations and settings when the Xorg server starts 
 
 
+# Manually disable the caps lock ( lock , not the button itself) 
+
+**Install numlockx and run this command**
+
+`python -c 'from ctypes import *; X11 = cdll.LoadLibrary("libX11.so.6"); display = X11.XOpenDisplay(None); X11.XkbLockModifiers(display, c_uint(0x0100), c_uint(2), c_uint(0)); X11.XCloseDisplay(display)'`
 
