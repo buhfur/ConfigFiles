@@ -69,3 +69,49 @@ the xinitrc file is used for loading additional configurations and settings when
 
 `python -c 'from ctypes import *; X11 = cdll.LoadLibrary("libX11.so.6"); display = X11.XOpenDisplay(None); X11.XkbLockModifiers(display, c_uint(0x0100), c_uint(2), c_uint(0)); X11.XCloseDisplay(display)'`
 
+
+# Add aliases for ssh connections 
+
+Add two lines for each host , one being the IP and the port you want to use 
+
+`vim ~/.ssh/config `
+
+Add these two lines 
+
+```
+Host xxx.xxx.x.x
+Port xxx
+
+```
+
+# Create swap file 
+
+**step 1 : use dd to create the file using the /dev/zero device**
+
+`dd if=/dev/zero of=/swapfile bs=1M count=100`
+
+**step 2 : convert file to swapfile**
+
+`mkswap /swapfile`
+
+**step 3 : swap to the newly created swap file**
+
+`swapon /swapfile`
+
+**step 4 : mount the file in /etc/fstab**
+
+Add this line to the bottom of your /etc/fstab file 
+
+`/swapfile none swap defaults 0 0`
+
+This will mount the swap file automatically after boot 
+
+
+
+# Enable ssh port in SELinux 
+
+
+`semanage port -a -t ssh_port_t -p tcp PORTNUMBER `
+
+
+

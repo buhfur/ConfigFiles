@@ -35,9 +35,10 @@ All you gotta do is get the site running again, there may be some misconfig that
 # [ ] - Swap CapsLock with  Left Ctrl on main desktop 
 
 
-General TODO
+
+General  TODO 
 ---
 
-# [ ] - 
+
 
 
