@@ -150,4 +150,12 @@ or
 `command > /dev/null 2>&1`
 
 
+# Start command as background job 
 
+` command &`
+
+Add an ampersand at the end of the command 
+
+Type jobs to view your background tasks
+
+use `fg ` by itself to bring the most recently started background job to the foreground of the console. From there you can stop the job using Ctrl-Z or Ctrl-C
