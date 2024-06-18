@@ -114,4 +114,40 @@ This will mount the swap file automatically after boot
 `semanage port -a -t ssh_port_t -p tcp PORTNUMBER `
 
 
+# Archive top level directories with tar 
+
+Use the '-C / xxx/xxx'
+
+For example if you want to archive the /etc/network/interfaces file 
+
+`sudo tar czf interfaces.tar -C / etc/network/interfaces`
+
+
+# Installing Network Manager on Debian 12 
+
+One of the issues while installing NetworkManager lies with a preset network configuration by the system. Specifically the file /etc/network/interfaces is configured automatically and for some reason if this is present you will see an error in STDERR when installing asking you to remove the configuration if you want to use Network manager to manage any connections.
+
+
+Simply delete all lines in /etc/network/interfaces and re-install the package and the systemd service file should be present and should allow you  to activate it. 
+
+# ProtonVPN connections 
+
+Change the file extension to a .conf file , then copy the file over to /etc/openvpn. This will start a daemon for every connection in the directory 
+
+# Setting up torrent server vm 
+
+Put ovpn file in /etc/openvpn 
+
+install openvpn-systemd-resolved and network manager
+
+
+# Redirect both STDOUT and STDERR 
+
+`command &> /dev/null`
+
+or 
+
+`command > /dev/null 2>&1`
+
+
 
