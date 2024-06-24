@@ -170,3 +170,14 @@ use `fg ` by itself to bring the most recently started background job to the for
 ## List largest directories in current directory 
 
 `du -s * | sort -nr | head -n10`
+# Systemd targets
+
+## To boot into diff target
+
+`cd /usr/lib/systemd/system`
+
+`grep Isolate *.target`
+
+Decide which target you would like to use , then run systemctl isolate 
+
+`systemctl isolate something.target`
