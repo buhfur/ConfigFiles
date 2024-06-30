@@ -176,9 +176,6 @@ use `fg ` by itself to bring the most recently started background job to the for
 
 `du -s * | sort -nr | head -n10`
 
-# Systemd 
-
-Below I will list out some helpful tips and knowledge for setting up different parts of systemd.
 
 ## To boot into diff target
 
