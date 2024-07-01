@@ -186,3 +186,28 @@ use `fg ` by itself to bring the most recently started background job to the for
 Decide which target you would like to use , then run systemctl isolate 
 
 `systemctl isolate something.target`
+
+
+## xrandr 
+
+Put xrandr configurations in ~/.xprofile 
+
+
+
+### move monitor to the right of another 
+
+`xrandr --output <DISPLAY-OUTPUT-1> --right-of <DISPLAY-TWO-2> `
+
+
+### change refresh rate of monitor 
+
+`xrandr --output <DISPLAY-OUTPUT> --mode <DISPLAY-RESOLUTION> --rate <REF-RATE> `
+
+Put this line in the ~/.xprofile file for configuration on startup ( happens late in the boot process ) 
+
+
+## feh 
+
+## Change background picture with feh 
+
+
