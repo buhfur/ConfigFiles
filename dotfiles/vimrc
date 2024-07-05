@@ -11,7 +11,7 @@ set autoindent
 set smartindent
 set smarttab
 set expandtab
-
+set autoread
 
 " change color of tab line and tab area 
 :hi TabLineFill ctermfg=Black ctermbg=Black

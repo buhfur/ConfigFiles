@@ -1,34 +1,24 @@
 #!/bin/sh
-
 # copies the output from cat of  tmux.conf , bashrc , vimrc to the users dotfiles 
 
-parent_dir=$(dirname $PWD)/dotfiles
-
-# copy old dotfiles to /tmp/dotfilebackup
-
-if [ -d /tmp/dotfilebackup ]; then
-    mkdir /tmp/dotfilebackup
-    #copy over current dotfiles to backup 
-    #TODO : ls for dotfiles and pipe output into cp 
-
-
-else
-    mkdir /tmp/dotfilebackup 
-    echo "Created /tmp/dotfilebackup , copying old dotfiles over "
-    
-
+# delete bash history for security reasons 
+if [ -f $HOME/.bash_history ] ;
+    rm $HOME/.bash_history 
+    echo "| rm $HOME/.bash_history"
 fi
 
-for filename in $parent_dir/*; do
-    abs_path=${filename} #absolute path of dotfile 
-    file_base=$(basename ${filename}) #basname
-    dotfile="~/."${file_base} #conversion to dotfile format
+echo -e "| removed .bash_history\n"
 
-    #cat ${abs_path} > ${dotfile}
-    echo "${abs_path} > ${dotfile}"
+# Copy existing dotfiles to /tmp 
+for x in $(find . -maxdepth 1 -type f -name ".*" | grep -E 'tmux|vim|bash|xinitrc'); do
+    cp $x /tmp
+    echo "| cp $x /tmp"
+
+
+# Copy new dotfiles to $HOME
+for x in ../dotfiles/* ; do
+    echo "| cat $x > ~/.$(basename ${x})"
 done
-
-
 
 
 

@@ -300,4 +300,4 @@ Context labels define the nature of the object. Rules are created to match conte
 So setting up these labels correctly is very important  as mismatching context labels can cause alot of issues with selinux. 
 
 
-
+Make sure you know about context types as they are important for the exam 

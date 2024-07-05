@@ -206,8 +206,61 @@ Put xrandr configurations in ~/.xprofile
 Put this line in the ~/.xprofile file for configuration on startup ( happens late in the boot process ) 
 
 
-## feh 
 
 ## Change background picture with feh 
 
+create a ~/.fehbg file with your feh command 
 
+`feh --bg-fill /home/user/something.jpg`
+
+Then put this line in your ~/.xinitrc file 
+
+`~/.fehbg &`
+
+
+## Enable CIFS mounts for user 
+
+Set the SUID perm on these binaries 
+
+> /bin/mount
+> /bin/umount 
+> /user/sbin/mount.cifs
+
+`sudo chmod u+s /bin/mount /bin/umount /usr/sbin/mount.cifs`
+
+## Scan for all IP's on your network with nmap
+
+`nmap -sn 192.168.0.0/24`
+
+You can substitute the ip in the command above for one or multiple networks 
+
+The '-sn' option tells nmap to not search for open ports 
+
+
+## Check what port a service is using 
+
+**If you know the port the service might be using**
+
+`lsof -i :<port>`
+
+
+**If you don't know the port being used**
+
+
+
+## bash difference between $() and ${}
+
+"${}" :
+- used for referencing variables in a script 
+
+`echo ${var} something`
+
+"$()" : 
+- used for running commands in a subshell 
+
+`echo "Path $(basename /home/user/Downloads)`
+
+
+## use find to only list dotfiles 
+
+`find . -maxdepth 1 -type f -name ".*" `
