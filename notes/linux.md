@@ -158,6 +158,8 @@ or
 
 `command > /dev/null 2>&1`
 
+
+
 ## Start command as background job 
 
 ` command &`
@@ -175,6 +177,13 @@ use `fg ` by itself to bring the most recently started background job to the for
 ## List largest directories in current directory 
 
 `du -s * | sort -nr | head -n10`
+
+
+## Change file extension of all files in directory
+
+`rename 's/\.foo$/.bar/' *.foo`
+
+replace foo with the current extension , replace bar with the new ext.
 
 
 ## To boot into diff target
@@ -264,3 +273,24 @@ The '-sn' option tells nmap to not search for open ports
 ## use find to only list dotfiles 
 
 `find . -maxdepth 1 -type f -name ".*" `
+
+
+## Change extensions of all files in dir
+
+`find . -name '*.txt' -exec sh -c 'mv "$0" "${0%.txt}.txt_bak"' {} \;`
+
+Replace .txt with the current ext and replace .txt_bak with the ext you are trying to set it to 
+
+
+## add text to specific line with sed 
+
+For this example I wanted to update a bunch of openvpn config files to change only one line , being the 'auth-user-pass' and put in the location where my creds are stored 
+
+Below is the command I used 
+
+`sed -e '/auth-user-pass/ s/$/ \/opt\/scripts\/login.conf/' ./*`
+
+
+
+
+
