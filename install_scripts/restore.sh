@@ -1,4 +1,4 @@
-
+#!/bin/sh
 
 for x in /mnt/media/jellyfin/archives/torrent-server/*; do
     abs_dir=$x
