@@ -159,10 +159,43 @@ or
 `command > /dev/null 2>&1`
 
 
+## Piping 
+
+0> = STDIN
+1> = STDOUT 
+&> = STDOUT & STDERR
+2> = STDERR
+
+
+## add timestamp to tar archive 
+
+`tar -zcvf "$(date '+%Y-%m-%d').tar.gz" `
+
+
+## tar snippets 
+
+**List contents of archive**
+
+`tar -tf archive.tar`
+
+**Add file to archive**
+
+`tar -rf backup.tar file`
+
+**Backup entire system with timestamp**
+
+Note : it's a good idea to exclude sys, mnt , and proc as they can cause a backup to freeze. None of these directories should be necessary for archival anyways 
+
+`tar pzvxf --exclude=mnt/ --exclude=sys/ --exclude=proc/ /backup/"$(date '+%Y-%m-%d').tar.gz" --one-file-system /`
+
+## restore backup from tar archive 
+
+`tar --overwrite -xzvf backup.tar.gz --directory /`
+
 
 ## Start command as background job 
 
-` command &`
+`command &`
 
 Add an ampersand at the end of the command 
 
