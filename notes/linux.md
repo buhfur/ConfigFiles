@@ -447,7 +447,51 @@ Install selinux-policy-doc package
 
 `semanage port -a -t ssh_port_t -p tcp PORTNUMBER `
 
+## Relabel entire filesytem 
 
+`restorecon -Rv /`
+
+or create a file `/.autorelabel`
+works after server restart, afterwards the file will be removed
+
+## Managing Port Access 
+
+**Example: Changing port of apache**
+
+`semanage port -a -t http_port_t -p tcp 8008`
+
+**Template**
+
+`semanage port -a -t <context-type> -p <tcp/udp> <port>`
+
+run `restorecon` afterwards to apply changes
+
+
+## Using Boolean Settings to Modify SELinux Settings
+
+**get list of booleans on system**
+
+`getsebool -a`
+
+`semanage boolean -l`
+
+**Change Boolean example**
+
+`setsebool ftpd_anon_write on`
+
+**Template**
+
+`setsebool <context-rule> <on/off>`
+
+**Apply permanant changes to boolean**
+
+`setsebool -P`
+
+## Key topics about selinux 
+
+- newly created files inherit the context settings from the parent directory
+- copied files do this as well. 
+- original context settings are retained when using the `cp -a` command. To fix this use `restorecon`
 
 # DNF 
 
