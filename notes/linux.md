@@ -115,12 +115,6 @@ This will mount the swap file automatically after boot
 
 
 
-## Enable ssh port in SELinux 
-
-
-`semanage port -a -t ssh_port_t -p tcp PORTNUMBER `
-
-
 ## Archive top level directories with tar 
 
 Use the '-C / xxx/xxx'
@@ -324,6 +318,141 @@ Below is the command I used
 `sed -e '/auth-user-pass/ s/$/ \/opt\/scripts\/login.conf/' ./*`
 
 
+# nmcli 
+
+## Create new network connection in nmcli 
+
+`nmcli con add con-name static ifname ens18 autoconnect no type ethernet ip4 10.0.0.10/24 gw4 10.0.0.1 ipv4.method manual`
+
+
+## Bring up network connection with nmcli 
+
+`nmcli con up <con-name> `
+
+
+## Switch to DHCP with nmcli 
+
+`nmcli con up dhcp`
+
+
+## change connection to not connect automatically with nmcli 
+
+`nmcli con mod <con-name> connection.autoconnect no`
+
+## Add DNS server to connection with nmcli 
+
+`nmcli con mod <con-name> ipv4.dns <dns-server-ip>`
+
+**To add additional dns servers**
+
+`nmcli con mod <con-name> +ipv4.dns 8.8.8.8`
+
+## Change IP for existing connection in nmcli 
+
+`nmcli con mod <con-name> ipv4.addresses <ip-address>/<CIDR-prefix>`
+
+## Add secondary IP addresses with nmcli 
+
+`nmcli con mod <con-name> +ipv4.addresses <new-ip>/<CIDR-prefix>`
+
+## After chaning any properties to a connection you must re-activate the connection 
+
+`nmcli con up <con-name> `
+
+---
+
+# SELinux 
+
+## Put SElinux into disabled mode in grub 
+
+Put this line into your kernel boot args 
+
+`selinux=0`
+
+## Put Selinux into enforcing mode in grub
+
+add this to kernel boot args 
+
+`enforcing=0`
+
+## View selinux config
+
+`cat /etc/sysconfig/selinux`
+
+## Check what mode selinux is running 
+
+`getenforce`
+
+## Switch between selinux modes temporarily 
+
+**permissive mode**
+
+`setenforce 0`
+
+**enforcingm mode**
+
+`setenforce 1`
+
+## Switch modes persistantly
+
+modify /etc/sysconfig or add kernel boot arg 
+
+## Get status of selinux 
+
+`sestatus`
+
+**Get more detailed info**
+
+`setstatus -v`
+
+## Show context setttings 
+
+**using ls**
+
+`ls -Z`
+
+**using ps**
+
+`ps Zaux`
+
+**using ss**
+
+`ss -Ztul`
+
+## Setting Context types 
+
+**Add context type to manually created directories**
+
+`semanage fcontext -a -t <contxt-type> "/mydir"`
+
+**Apply policy settings**
+
+`restorecon -R -v /mydir`
+
+**Help with setting contexts**
+
+`man semanage-fcontext`
+
+type "/example"
+
+## Finding context types 
+
+Install selinux-policy-doc package 
+
+`dnf -y install selinux-policy-package`
+
+`man -k _selinux`
+
+## Enable ssh port in SELinux 
+
+`semanage port -a -t ssh_port_t -p tcp PORTNUMBER `
 
 
 
+# DNF 
+
+## Search for RPM's of specific tool
+
+`dnf whatprovides */semanage`
+
+`dnf whatprovides`
