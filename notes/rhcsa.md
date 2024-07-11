@@ -301,3 +301,120 @@ So setting up these labels correctly is very important  as mismatching context l
 
 
 Make sure you know about context types as they are important for the exam 
+
+
+# Configuring a firewall 
+
+firewall-cmd uses the netfilter subsystem , it allows kernel modules to inspect incoming , outgoing , or forwarded packets and either allow the packet or block it.
+
+
+iptables used to be the default firewall , however it has since been replaced by nftables. 
+
+You can use the `nft` command to rules directly to nftables 
+
+Firewalld is a system service that can configure firewall rules by using different interfaces.
+
+Apps can request ports to be opened by using the DBus messaging system. Without requireing any action from the sys admin.
+
+This allows apps to address the firewall from user space.
+
+firewall-cmd manages the firewalld system service 
+
+
+**Understanding Firewalld Zones**
+
+a **zone** is a collection of rules that are applied to incoming packets matching a specific source address or network interface 
+
+Firewalld applies to incoming packets by default , outgoing packets must be configured 
+
+Zones are useful for servers that have multiple interfaces. Multiple zones allow you to set a specific set of rules for each interface. 
+
+With servers with only one interface, you may only need 1 zone.
+
+This zone is already set by default , and if no zone is available , packets are handled through the default zone. 
+
+
+**Firewalld default zones**
+
+
+### Block 
+
+incoming connections are rejected with an "icmp-host-prohibited". Only connections that were initiated on this system are allowed
+
+### Dmz 
+
+For use on computers in the demilitarized zone , only selected incoming connections are accepted, limited access to the internal network is allowed.
+
+
+### Drop
+
+Any incoming packets are dropped and there is no reply.
+
+### External 
+
+For use on external networks with NAT enabled, used on routers. Only selected incoming packets are acccepted.
+
+### Home 
+
+For use with home networks  , computers on the same network are truested and only selected incoming connections are accepted.
+
+### Internal 
+
+Most computers on the same network are trusted , only selected incoming connections are accepted.
+
+### Public 
+
+Other computers in the same network are not trusted, limited connections are accepted. Used as the default zone for newly created network interfaces.
+
+### Trusted 
+
+All network connections are accepted 
+
+### Work 
+
+Most computers on the same network are trusted, only selected incoming connections are accepted.
+
+
+---
+
+**Understanding Firewalld Services**
+
+Not the same as a service in systemd. 
+
+A Firewalld service specifies what exactly should be accepted as incoming and outgoing traffic in the firewall.  
+
+This typically includes ports to be opened and kernel modules that should be loaded 
+
+XML files define the service. And they can be found in /usr/lib/firewalld/services
+
+By looking at the service file for git.xml , you can see the port being defined and the protocol used for the service. 
+
+You can also use the `firewall-cmd --get-services` command to see what services are available 
+
+Services are added to zones 
+
+To add your own services , you can put the XML files in the /etc/firewalld/services directory. They will be automatically added once the firewalld service is restarted.
+
+
+**Working with Firewalld**
+
+Remember to commit changes to on-disk once you are finished 
+
+On the exam , only use ports if no services contain the ports that you want to open.
+
+---
+
+# NFS 
+
+
+You should use NFS with an authentication service such as Lightweight Directory Access Protocol ( LDAP for short ) or kerberos 
+
+**Setting up NFS**
+
+1. Create local directory you would like to share 
+2. Edit the /etc/exports file to define NFS share
+3. Start NFS server
+4. Configure firewall to allow incoming NFS traffic
+
+
+

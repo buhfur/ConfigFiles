@@ -487,6 +487,44 @@ run `restorecon` afterwards to apply changes
 
 `setsebool -P`
 
+
+## Diagnosing and Addressing SELinux Policy Violations
+
+**audit log**
+
+The audit log is stored in /var/log/audit/audit.log
+
+Messages are logged with the type=AVC in the log. 
+
+You can search for these messages through grep 
+
+`grep AVC /var/log/audit/audit.log`
+
+"avc: denied { map } " indicates a map request was denied , therefore some process tried to read attributes of a file and that was denied. Thus triggering a policy violation
+
+in this logging , the scontext is the **source context** while the tcontext is the **target context**
+
+## Making SELinux Analyzing Easier
+
+Download the **sealert** command 
+
+`dnf -y install setroubleshoot-server`
+
+Then restart your server 
+
+Then you can grep for entries from sealert 
+
+`journalctl | grep sealert`
+
+From the info you get , you might see a command it recommends to run to see furtheri nfo. 
+
+`sealert -l <SOME-ID> `
+
+Sometimes the logging will even recommend other commands to run in order to fix the issue, take these commands with a grain of salt unless you know what you are doing .
+
+These recommendations will have a confidence score 
+
+
 ## Key topics about selinux 
 
 - newly created files inherit the context settings from the parent directory
@@ -500,3 +538,47 @@ run `restorecon` afterwards to apply changes
 `dnf whatprovides */semanage`
 
 `dnf whatprovides`
+
+
+# Firewalld 
+
+**View all available services**
+
+`firewall-cmd --get-services`
+
+
+**Get default zone**
+
+`firewall-cmd --get-default-zone`
+
+**Get available zones**
+
+`firewall-cmd --get-zones`
+
+**List services**
+
+`firewall-cmd --list-services`
+
+**List services enabled in zone**
+
+`firewall-cmd --list-all --zone=public`
+
+**Add port to firewalld permanently**
+
+`firewall-cmd --add-port=2020/tcp --permanent`
+
+**Add service to firewalld**
+
+`firewall-cmd --add-service=vnc-server --permanent`
+
+**Reload firewalld**
+
+`firewall-cmd --reload`
+
+**Write configs to runtime**
+
+`firewall-cmd --runtime-to-permanent`
+
+**Add source IP**
+
+`firewall-cmd --add-source=<ipaddress/netmask>`
