@@ -6,9 +6,12 @@ In this document I have added various bash snippets ,tips , and other useful pie
 
 # Command snippets 
 
-Below are some snippets of various commands and what they do. 
+**List all users on host**
 
-## Restore default .bashrc, .profile , or .bash\_logout
+`compgen -u | column`
+
+
+**Restore default .bashrc, .profile**
 
 The default versions of these files are stored in 
 
@@ -28,12 +31,12 @@ or
 `source /etc/skel/.bash_logout`
 
 
-## Show motherboard info 
+**Show motherboard info**
 
 `dmidecode | less`
 
 
-## Get CPU info 
+**Get CPU info** 
 
 `lscpu`
 
@@ -212,8 +215,12 @@ use `fg ` by itself to bring the most recently started background job to the for
 
 replace foo with the current extension , replace bar with the new ext.
 
+---
 
-## To boot into diff target
+# Systemd 
+
+
+**Boot into different target**
 
 `cd /usr/lib/systemd/system`
 
@@ -223,8 +230,17 @@ Decide which target you would like to use , then run systemctl isolate
 
 `systemctl isolate something.target`
 
+**Start systemd service under specific User ID**
 
-## xrandr 
+`systemctl --user service.name`
+
+**Change user systemd service to start on system startup**
+
+`loginctl enable-linger myuser`
+
+---
+
+# xrandr 
 
 Put xrandr configurations in ~/.xprofile 
 
@@ -252,37 +268,6 @@ create a ~/.fehbg file with your feh command
 Then put this line in your ~/.xinitrc file 
 
 `~/.fehbg &`
-
-
-## Enable CIFS mounts for user 
-
-Set the SUID perm on these binaries 
-
-> /bin/mount
-> /bin/umount 
-> /user/sbin/mount.cifs
-
-`sudo chmod u+s /bin/mount /bin/umount /usr/sbin/mount.cifs`
-
-## Scan for all IP's on your network with nmap
-
-`nmap -sn 192.168.0.0/24`
-
-You can substitute the ip in the command above for one or multiple networks 
-
-The '-sn' option tells nmap to not search for open ports 
-
-
-## Check what port a service is using 
-
-**If you know the port the service might be using**
-
-`lsof -i :<port>`
-
-
-**If you don't know the port being used**
-
-
 
 ## bash difference between $() and ${}
 
@@ -582,3 +567,471 @@ These recommendations will have a confidence score
 **Add source IP**
 
 `firewall-cmd --add-source=<ipaddress/netmask>`
+
+**Location of firewall-cmd services 
+
+# NFS 
+
+**Setup NFS on RHEL 9**
+
+create local directories to be shared 
+
+`mkdir -p /nfsdata /users/user1 /users/user2`
+
+Create /etc/exports file and assign the following 
+
+```
+/nfsdata *(rw,no_root_squash)
+/users *(rw,no_root_squash)
+```
+
+Install the cifs-utils package
+
+`dnf install -y nfs-utils`
+
+Add the nfs , rcp-bind, and mountd services to firewall 
+
+`firewall-cmd --add-service nfs --permanent ; firewall-cmd --add-service rpc-bind ; firewall-cmd --add-service mountd --permanent`
+
+Then reload the firewall-cmd config 
+
+`firewall-cmd --reload`
+
+**List available mounts from IP or hostname**
+
+`showmount -e <IP-or-hostname>`
+
+**Perform pseudo root mount**
+
+`mount <Ip-Or-hostname>:/ /mnt`
+
+
+# NTP
+
+**Turn on NTP**
+
+`timedatectl set-ntp 1`
+
+
+**Commands to manage time on RHEL 9**
+
+`date` - manages
+
+**Commands to manage time on RHEL 9**
+
+`date` - manages local time 
+
+`hwclock` - manages hardware time 
+
+`timedatectl` - developed to manage all aspects of time 
+
+
+**Convert epoch time to human time**
+
+`date --date '@1720893005` 
+
+**Show the current system day of month, month , and year**
+
+`date +%d-%m-%y`
+
+**Set the current time 3 minutes past 4 pm**
+
+`date -s 16:03`
+
+**Using hwclock**
+
+`hwclock --systohc` - synchronizes curent system time to the hardware clock 
+
+`hwclock --hctosys` - synchronizes current hardware time to the system clock
+
+
+**timedatectl commands**
+
+`status` - shows current time settings 
+
+`set-time TIME` - sets the current time
+
+`set-timezone ZONE` - sets the current timezone 
+
+`list-timezone` - shows a list of all time zones 
+
+`set-local-rtc [0|1]` - controls whether the RTC ( hardware clock )
+
+`set-ntp [0|1]` - Controls whether NTP is enabled
+
+timedatectl is used to switch on NTP time , it talks to the chronyd process
+
+
+# Podman
+
+**Run container in detached mode**
+
+`podman run -d nginx`
+
+**Run container in TTY mode**
+
+`podman run -it nginx /bin/sh`
+
+**View running containers**
+
+`podman ps`
+
+
+**View all inactive and active containers**
+
+`podman ps -a`
+
+**Attach to running container**
+
+`podman attach <name>`
+
+**Stop running container**
+
+`podman stop <name>`
+
+**Search which registries are currently used**
+
+`podman info`
+
+
+**Filter images in search**
+
+`podman search --filter official=true alpine`
+
+`podman search --filter stars=5 alpine`
+
+
+**Pull image**
+
+`podman pull <image>`
+
+
+**Build custom image**
+
+`podman build -t imagename:tag -f /path/to/Containerfile`
+
+Example : 
+
+`podman build -t mymap:1.0`
+
+
+**Verify custom image was built**
+
+`podman images`
+
+**Remove images with None tag**
+
+`podman image prune`
+
+
+**Managing Containers**
+
+
+`podman stop` - sends SIGTERM signal to the container , if no results after 10 seconds , the SIGKILL signal is sent.
+
+`podman kill` - immediately sends the SIGKILL command 
+
+`podman restart` - restarts container 
+
+`podman rm` - removes container files written to the writable layer 
+
+`podman run --rm` - runs the container and deletes container files automatically 
+
+**Running Commands inside containers**
+
+`podman exec mycontainer uname -r`
+
+TTY MODE: 
+
+`podman exec -it mycontainer /bin/bash`
+
+**Managing Container Ports**
+
+ports 1-1024 are accessible by the root user only 
+
+To run a container with port forwarding , run the following command below 
+
+`podman run --name nginxport -d -p 8080:80 nginx`
+
+This would allow the nginx process to access host port 8080 and forward to standard http port 80 
+
+After adding the port , don't forget to add the port to your firewall
+
+**Managing Container Environment Variables**
+
+For containers such as mariadb , you will need to supply the container with environment variables. For example the mariadb container needs the password for the root user 
+
+Some containers contain a "usage" line that may say how the container needs to run with environment variables included. However this is not always the case, you can check the container with `podman inspect` to see if it's there.
+
+
+Here's an example on how to use env variables with the mariadb container 
+
+`podman run -d -e MYSQL_ROOT_PASSWORD=password -e MYSQL_USER=anna `
+
+**Managing Container storage**
+
+If you want to save the changes made in the writable layer , you will need to configure persistant storage.
+
+You can do this by adding a bind-mount from the host OS into the container, this is used instead of a block device 
+
+There are 2 requirements to doing this however : 
+
+* The host directory must be writable for the user account that runs the container
+* The appropriate SELinux context label must be set to container\_file\_t
+
+> NOTE: The bind-mount dir must be OWNED by the user that runs the container
+
+If not done automatically , you can do it with the cmmand 
+
+`semanage fcontext -a -t container_file_t "hostdir(/.*)?"; restorecon`
+
+To do so automatically :
+
+`-v host_dir:container_dir`
+
+If root container or if user is owner of the container 
+
+`-v host_dir:container_dir:Z`
+
+
+**set directory ownership on bind-mounted directories for rootless containers**
+
+1. Find UID of the user that runs the container main app , using `podman inspect imagename`
+
+2. Use `podman unshare chown nn:nn dirname` to set the container UID as the owner of the directory on the host. This directory must be in the rootless user home dir. Otherwise it woulden't be apart of the user namespace.
+
+3. Use `podman unshare /cat/proc/self/uid_map` to verify the user ID mapping 
+
+4. Verify that the mapped user is owner on the host by using `ls -ld ~/dirname`
+
+
+**Running Containers as Systemd Services**
+
+`podman generate systemd --name mycontainer --files`
+
+The Container file must be generated in the `~/.config/systemd/user/directory`
+
+Create this dir and CD to it before running the `podman generate` command 
+
+Then run 
+`systemctl --user enable containe-mycontainer.service`
+
+
+# GRUB  
+
+**Reset root password without access to wheel group**
+
+1. Boot into GRUB boot args 
+
+2. Remove the "console=" and "vconsole="  key pairs. 
+
+3. add "init=/bin/bash"
+
+4. then mount the filesystem as writable 
+
+`mount -o remount,rw /`
+
+5. Then enable SELinux relabeling on next boot 
+
+`touch /.autorelabel`
+
+6. then reboot the system
+
+`/usr/sbin/reboot -f `
+
+
+
+# User management 
+
+**Change password validity to 90 days**
+
+`passwd -n 30 -w 3 -x 90 username`
+
+The "-n" sets minimal usage period 
+
+"-w" sets the days the user will be warned before their password expires 
+
+"-x" sets the amount of days until the password expires 
+
+You can also do this with chage by setting an exact date 
+
+`chage -E 2025-12-31 username`
+
+You can find the amount of days until the password expires with `chage -l username` or by viewing the /etc/passwd file 
+
+**Change default password expiration**
+
+open the **/etc/login.defs** file 
+
+change PASS\_MAX\_DAYS to the number of days before the password expires 
+
+
+**Add default directories for newly created users**
+
+`cd /etc/skel`
+
+in this directory 
+
+**Change default .bashrc**
+
+Edit the .bashrc file in /etc/skel
+This bashrc will be used for all created users
+
+**Change default UUID for new users**
+
+Edit the UID\_MIN file with the default UID new users 
+
+
+**View what groups a user is apart of**
+
+`lid username`
+
+**Add user to group**
+
+`usermod -aG <group-name> <username>`
+
+**Change UID of user**
+
+`usermod -u <NEWUID> username`
+
+**Configure user to be unable to start interactive shell**
+
+`usermod -s /sbin/nologin username`
+
+**Configure directory to have access from one group**
+
+
+**Change group owner of dir**
+
+`chown -R :groupname /dirname`
+
+**Change permissions for group on dir**
+
+This example allows full access to the dir for the group members 
+
+`chmod g+rwx /dirname`
+
+**Configure dir where new files are owned by group**
+
+Set the SGID on the directory 
+
+`chmod g+s /dir`
+
+
+---
+
+# Package management with DNF 
+
+**Add installation disk as repo**
+
+`dnf config-manager --add-repo=file:///repo/filename`
+
+Then locate the repo in /etc/yum.conf.d
+
+add the 'gpgcheck=0' to the file
+
+
+---
+
+# Logical Volume Managment 
+
+**View volume groups extent size**
+
+`vgdisplay`
+
+**Create VG with specified extent size**
+
+`vgcreate myvg /dev/sdx -s 8MiB`
+
+The example above creates a volume group with a Physical Extent size of 8-MiB
+
+
+**Create logical volume with specific size**
+
+`lvcreate -n lvdata -l 50%FREE vgdata`
+
+`lvcreate -n lvdata `
+
+
+
+---
+
+# Stratis 
+
+Install stratis package 
+
+---
+
+
+# CIFS 
+
+
+**Enable CIFS mounts for user**
+
+Set the SUID perm on these binaries 
+
+> /bin/mount
+> /bin/umount 
+> /user/sbin/mount.cifs
+
+`sudo chmod u+s /bin/mount /bin/umount /usr/sbin/mount.cifs`
+
+**CIFS default ports**
+
+> CIFS uses ports 138 for clients , 139 & 445 for servers
+
+---
+
+# NMAP 
+
+
+**Scan for all IP's on your network with nmap**
+
+`nmap -sn 192.168.0.0/24`
+
+You can substitute the ip in the command above for one or multiple networks 
+
+The '-sn' option tells nmap to not search for open ports 
+
+**Check if certain port is open**
+
+`nmap <ip><prefix> -p <port-number>`
+
+
+**If you know the port the service might be using**
+
+`lsof -i :<port>`
+
+
+**If you don't know the port being used**
+
+
+
+---
+
+# GRUB 
+
+**Update GRUB config**
+
+`grub2-mkconfig -o /boot/grub2/grub.cfg`
+`grub2-mkconfig -o /boot/efi/EFI/almalinux/grub.cfg`
+`grub2-mkconfig -o /boot/efi/EFI/redhat/grub.cfg`
+
+
+**reset root password**
+
+
+add init=/bin/sh in GRUB kernel boot args 
+
+remount filesystem for writing 
+
+`mount -rw -o remount /`
+
+use passwd to change pass 
+
+`passwd root`
+
+
+Then add /.autorelabel command for SELinux , without doing this you will not be able to login at all ! 
+
+`touch /.autorelabel`
