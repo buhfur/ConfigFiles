@@ -1,5 +1,4 @@
 
-{% include components/sidebar.html %}
 
 # Buhfurs Notes 
 
