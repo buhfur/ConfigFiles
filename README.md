@@ -9,7 +9,7 @@ Welome ! This website here is acts as a central location where I may store my no
 
 
 1. [Notes](notes.md)
-2. [Example2](#example2)
+2. [Dotfiles](dotfiles.md)
 3. [Third Example](#third-example)
 4. [Fourth Example](#fourth-examplehttpwwwfourthexamplecom)
 
