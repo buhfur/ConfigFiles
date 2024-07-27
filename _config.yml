@@ -6,6 +6,7 @@ relative_links:
   enabled: true
   collections: true
   include:
+    - README.md
     - CONTRIBUTING.md
     - LICENSE.md
     - COPYING.md
@@ -13,4 +14,3 @@ relative_links:
     - CONTRIBUTING.md
     - ISSUE_TEMPLATE.md
     - PULL_REQUEST_TEMPLATE.md
-    - index.html
