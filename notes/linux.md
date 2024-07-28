@@ -303,7 +303,7 @@ Below is the command I used
 `sed -e '/auth-user-pass/ s/$/ \/opt\/scripts\/login.conf/' ./*`
 
 
-# nmcli 
+# nmcli & Networking 
 
 ## Create new network connection in nmcli 
 
@@ -1035,3 +1035,18 @@ use passwd to change pass
 Then add /.autorelabel command for SELinux , without doing this you will not be able to login at all ! 
 
 `touch /.autorelabel`
+
+
+---
+
+# Common errors and small fixes 
+
+
+**Error: org.bluz.Error.NotReady**
+
+You can fix this using the `rfkill` tool
+
+`sudo rfkill unblock all`
+
+
+
