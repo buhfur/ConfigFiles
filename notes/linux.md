@@ -1002,8 +1002,9 @@ The '-sn' option tells nmap to not search for open ports
 
 `lsof -i :<port>`
 
+Or alternatively , you can use netstat 
 
-**If you don't know the port being used**
+`sudo netstat -nlp  | grep <port-number>`
 
 
 
