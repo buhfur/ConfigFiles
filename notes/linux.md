@@ -305,26 +305,30 @@ Below is the command I used
 
 # nmcli & Networking 
 
-## Create new network connection in nmcli 
+**Add Wifi Connection**
+
+`nmcli device wifi connect <AP name> password <password>`
+
+**Create new network connection in nmcli**
 
 `nmcli con add con-name static ifname ens18 autoconnect no type ethernet ip4 10.0.0.10/24 gw4 10.0.0.1 ipv4.method manual`
 
 
-## Bring up network connection with nmcli 
+**Bring up network connection with nmcli**
 
 `nmcli con up <con-name> `
 
 
-## Switch to DHCP with nmcli 
+**Switch to DHCP with nmcli**
 
 `nmcli con up dhcp`
 
 
-## change connection to not connect automatically with nmcli 
+**change connection to not connect automatically with nmcli** 
 
 `nmcli con mod <con-name> connection.autoconnect no`
 
-## Add DNS server to connection with nmcli 
+**Add DNS server to connection with nmcli**
 
 `nmcli con mod <con-name> ipv4.dns <dns-server-ip>`
 
@@ -332,15 +336,15 @@ Below is the command I used
 
 `nmcli con mod <con-name> +ipv4.dns 8.8.8.8`
 
-## Change IP for existing connection in nmcli 
+**Change IP for existing connection in nmcli**
 
 `nmcli con mod <con-name> ipv4.addresses <ip-address>/<CIDR-prefix>`
 
-## Add secondary IP addresses with nmcli 
+**Add secondary IP addresses with nmcli**
 
 `nmcli con mod <con-name> +ipv4.addresses <new-ip>/<CIDR-prefix>`
 
-## After chaning any properties to a connection you must re-activate the connection 
+**After chaning any properties to a connection you must re-activate the connection**
 
 `nmcli con up <con-name> `
 
