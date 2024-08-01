@@ -1,7 +1,12 @@
 
+# Welcome ! 
+
+Welcome to my website ! Here I host a collection of all my notes which mainly involve Linux and it's various tools and technologies. Keep an eye out for future updates as I also plan on publishing writeups about what i'm currently working on. 
 # Notes
 
-Below is a table of contents for all my notes
+
+
+# Table of Contents
 
 1. [Antigen](notes/antigen.md)
 2. [Git](notes/git.md)
