@@ -131,3 +131,4 @@ export LSCOLORS=cxgxfxexbxegedabagacad
 export EDITOR=/bin/vim
 
 alias notes='glow ~/config/notes/'
+

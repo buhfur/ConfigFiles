@@ -1055,3 +1055,12 @@ You can fix this using the `rfkill` tool
 
 
 
+---
+
+# docker 
+
+**list docker networks**
+
+`sudo docker network ls`
+
+
