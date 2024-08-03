@@ -7,8 +7,8 @@ Welome ! This website here is acts as a central location where I may store my no
 
 # Table of contents 
 
-1. [Notes](buhfur.github.io/notes.md)
-2. [Dotfiles](buhfur.github.io/dotfiles.md)
-3. [Install Scripts](buhfur.github.io/install_scripts.md)
-4. [Ideas](buhfur.github.io/ideas.md)
-5. [Service-files](buhfur.github.io/service-files.md)
+1. [Notes](notes.md)
+2. [Dotfiles](dotfiles.md)
+3. [Install Scripts](install_scripts.md)
+4. [Ideas](ideas.md)
+5. [Service-files](service-files.md)
