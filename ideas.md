@@ -5,8 +5,7 @@ The links to the pages below are some unorganized entries with some of my sporad
 
 # Table of Contents 
 
-1. [.server_script.md.](ideas/.server_script.md.swp)
-2. [Appideas](ideas/appideas.md)
-3. [Journal](ideas/journal.md)
-4. [Server_script](ideas/server_script.md)
-5. [Torrent](ideas/torrent.md)
+1. [Appideas](ideas/appideas.md)
+2. [Journal](ideas/journal.md)
+3. [Server_script](ideas/server_script.md)
+4. [Torrent](ideas/torrent.md)
