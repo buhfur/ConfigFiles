@@ -1064,3 +1064,10 @@ You can fix this using the `rfkill` tool
 `sudo docker network ls`
 
 
+---
+
+# Sed 
+
+**replace /bin/sh with /bin/bash for all files in a dir**
+
+`sed -i 's/\#!\/bin\/sh/\#!\/bin\/bash/g' *`
