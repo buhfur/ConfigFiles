@@ -1,4 +1,4 @@
-#!/bin/sh 
+#!/bin/bash 
 
 #Script to install other apps not related for work reasons 
 

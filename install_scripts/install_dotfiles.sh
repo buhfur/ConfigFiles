@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 if  [ $SHELL = /usr/bin/zsh ]; then
     cat ../dotfiles/zshrc > ~/.zshrc 
 fi

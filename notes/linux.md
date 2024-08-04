@@ -1071,3 +1071,8 @@ You can fix this using the `rfkill` tool
 **replace /bin/sh with /bin/bash for all files in a dir**
 
 `sed -i 's/\#!\/bin\/sh/\#!\/bin\/bash/g' *`
+
+
+# Bash scripting 
+
+
