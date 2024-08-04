@@ -11,8 +11,8 @@ fi
 wait 
 
 # add credentials file 
-username="jellyfin";
-password="youronyourown";
+username="";
+password="";
 if [ -f /home/$SUDO_USER/.smbcredentials ]; then
    echo -en "\nERROR: /home/$SUDO_USER/.smbcredentials already exists or was not able to be created\n"
 else
