@@ -827,7 +827,7 @@ Then run
 
 1. Boot into GRUB boot args 
 
-2. Remove the "console=" and "vconsole="  key pairs. 
+2. Remove the "rhgb" and "quiet" from the options 
 
 3. add "init=/bin/bash"
 
@@ -835,11 +835,13 @@ Then run
 
 `mount -o remount,rw /`
 
-5. Then enable SELinux relabeling on next boot 
+5. Then change the password for root with `passwd root`
+
+6. Then enable SELinux relabeling on next boot 
 
 `touch /.autorelabel`
 
-6. then reboot the system
+7. then reboot the system
 
 `/usr/sbin/reboot -f `
 
@@ -1073,6 +1075,17 @@ You can fix this using the `rfkill` tool
 `sed -i 's/\#!\/bin\/sh/\#!\/bin\/bash/g' *`
 
 
-# Bash scripting 
+--- 
+
+# Oracle SBC 
+
+**show all sip agents**
+
+`sho sipd agents`
+
+**show configuration for specified agent**
+
+`sho configuration session-agent <AGENT-NAME> sh `
+
 
 
