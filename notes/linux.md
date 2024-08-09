@@ -1089,3 +1089,10 @@ You can fix this using the `rfkill` tool
 
 
 
+---
+
+# TrueNAS
+
+**restart ssh service**
+
+`midclt call service.restart "ssh"`
