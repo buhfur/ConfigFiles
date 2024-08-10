@@ -32,13 +32,6 @@ else
     echo -en "\n Added entry to fstab\n"
 fi
 
-# Install protonvpn cli and input creds in prompted login 
-git clone https://github.com/ProtonVPN/linux-cli-community /home/$SUDO_USER/linux-cli
-wait
-cd /home/$SUDO_USER/linux-cli
-wait
-pip3 install -e . --break-system-packages
-
 
 # Install tmux plugin manager
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
