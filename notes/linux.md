@@ -305,6 +305,9 @@ Below is the command I used
 
 # nmcli & Networking 
 
+**Remove Secondary IP for host**
+
+`nmcli con mod <con-name> -ipv4.addresses "<IP>" `
 **Add Wifi Connection**
 
 `nmcli device wifi connect <AP name> password <password>`
