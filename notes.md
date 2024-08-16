@@ -30,3 +30,4 @@ Welcome to my website ! Here I host a collection of all my notes which mainly in
 19. [Dotfiles](notes/dotfiles.md)
 20. [Linux](notes/linux.md)
 21. [Docker](notes/docker.md)
+22. [Networking](notes/networking.md)
