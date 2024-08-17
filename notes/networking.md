@@ -13,7 +13,6 @@ Speeds are negotiated in Megabits per second ( Mbps ). in multiples of 10 ( 10 ,
 Duplex determines how data flows on the device , half duplex means that only one side can trasmit data while the other cannot. Full duplex means that both sides can transmit & receive data at the same time.
 
 There is a common misconception about autonegotiation, that being the misconception that autonegotiation configures the other host on the opposite side of the link. Autonegotiation only works if BOTH sides of the link are implementing autonegotiation. If both sides aren't using autonegotiate , then autonegotiate cannot determine the speed / duplex of the switch. 
-
 If both sides are using autonegotiate , then one device advertises the speed / duplex to the other device on the link. The configuration is done on the hosts that have the feature enabled.
 
 There is a common issue with autonegotiation being "parallel detection" which is enabled once autonegotiation fails to find autonegotiation running on the other side of the link.
@@ -106,3 +105,18 @@ Trunk ports are not assigned a VLAN. If you want to route traffic between all th
 
 
 Some Cisco switch models like the 2950 and the 3550 come equiped with a VLAN database which has an entirely separate configuration than the switch. This was an older feature on Cisco switches. However newer models allow you to manage the VLAN's from the CLI 
+
+---
+
+# Trunking 
+
+A trunk is an interface or link that can carry frames for more than one VLAN. Trunks are used to facilitate communication between two devices in the same VLAN on anoother switche. They can act as a metaphorical bridge to another switch's ports in the same VLAN. Trunking is not related to purely switches and can even be setup on routers / firewalls and other devices. 
+
+
+When a switch receives a frame from a trunk port , it views the reference to the intended VLAN. This reference is stored in a header utilizing the Inter Switch Link( ISL) or 802.1Q protocol. Some swithes may not support the ISL protocol and may have to use the 802.1Q protocol. 
+
+There are some differences between the two protocols and how they treat the ethernet frame. ISL encapsulates frames inside it's own ISL fram while 802.1Q alters the ethernet frame and adds a VLAN tag header 
+
+You can see a picture of a 802.1Q frame below 
+
+![packet](images/802.png)
