@@ -95,3 +95,14 @@ Double tagging allows an attacker to send a frame to a destination VLAN other th
 In order for a host on VLAN 1 to forward frames to host2 on VLAN 2 , an external router may be used to accomplish this. To do this , the router must be connected to a port on each VLAN in order to facilitate communication.
 
 However, as a networks scales to add more switches , there is another solution for interconnecting VLAN's. To do this , you may use trunking. VLAN trunks are links that carry traffic for more than one VLAN.
+
+
+Trunk ports are not assigned a VLAN. If you want to route traffic between all the VLAN's , you can use a "router-on-a-stick" approach , to do this you would connect a router to a trunk port on the switch. The only limitation with this setup is the bandwidth on the trunk port used. Often the port may be a 10 Mbps link which isn't optimal. Sometimes you will see a similar approach except instead of router you would use a firewall. Keep in mind this approach only applies to Layer 2 switches, layer 3 switches have a router built in which you could use to route traffic between all VLAN's.   
+
+
+---
+
+# Configuring VLAN's 
+
+
+Some Cisco switch models like the 2950 and the 3550 come equiped with a VLAN database which has an entirely separate configuration than the switch. This was an older feature on Cisco switches. However newer models allow you to manage the VLAN's from the CLI 
