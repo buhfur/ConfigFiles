@@ -1099,3 +1099,24 @@ You can fix this using the `rfkill` tool
 **restart ssh service**
 
 `midclt call service.restart "ssh"`
+
+---
+
+# Grep 
+
+**grep for specific file extension**
+
+`grep ".*\.md`
+
+Replace "md" with whichever extension you are trying to grep for.
+
+
+---
+
+# Find 
+
+**List files with specified extension**
+
+`find . -name \*.md`
+
+Replace "." with the directory you are searching in and replace "md" with the extension you are trying to search for. 

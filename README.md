@@ -12,3 +12,4 @@ Welome ! This website here is acts as a central location where I may store my no
 3. [Install Scripts](install_scripts.md)
 4. [Ideas](ideas.md)
 5. [Service-files](service-files.md)
+6. [Vanilla World of Warcraft Macros](macros.md)

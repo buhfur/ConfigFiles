@@ -1,0 +1,7 @@
+1. [AQ40 mount](Guides/AQ40 mount.md)
+2. [Shoot macro](Guides/Shoot macro.md)
+3. [Autoattack](Guides/Autoattack.md)
+4. [Inventory](Guides/Inventory.md)
+5. [Instantcast](Guides/Instantcast.md)
+6. [Bandage self](Guides/Bandage self.md)
+7. [Autoselfcast](Guides/Autoselfcast.md)
