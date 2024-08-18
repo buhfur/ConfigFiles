@@ -91,7 +91,13 @@ Add two lines for each host , one being the IP and the port you want to use
 Add these two lines to the ~/.ssh/config file 
 
 > Host xxx.xxx.x.x
+
 > Port xxx
+
+
+Then add the IP addresses for the ssh hosts to the /etc/hosts file with the format below 
+
+`IPADDR     hostname`
 
 
 ## Create swap file 
