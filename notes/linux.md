@@ -1126,3 +1126,23 @@ Replace "md" with whichever extension you are trying to grep for.
 `find . -name \*.md`
 
 Replace "." with the directory you are searching in and replace "md" with the extension you are trying to search for. 
+
+
+---
+
+# System Clipboard 
+
+If you are using the X window system , 
+
+
+---
+
+# Tar 
+
+**extract archive to specified directory**
+
+`tar -xf archive.tar.xz -C / etc/something`
+
+if not root directory 
+
+` tar -xf archive.tar.xz -C /this/directory`
