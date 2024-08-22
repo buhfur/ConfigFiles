@@ -28,3 +28,24 @@ I've even created a script to automate this process , you can find it in the ins
 
 
 [Dotfile Script Link](../install_scripts/install_dotfiles.sh)
+
+
+---
+
+**In order to utilize this setup , you will need to add your dotfiles to be tracked under the bare repo**
+
+```
+
+config status 
+config add .vimrc 
+config commit -m "Add vimrc"
+config add .config/redshift.con
+config commit -m "Added redshift config "
+config push 
+```
+
+
+Someone else also made an article on this users approach to handling dotfiles , you may find this link below 
+
+[Dotfiles: Best way to store in a bare git repository](https://www.atlassian.com/git/tutorials/dotfiles)
+

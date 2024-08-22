@@ -132,3 +132,5 @@ export EDITOR=/bin/vim
 
 alias notes='glow ~/config/notes/'
 
+alias dotfiles='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
+
