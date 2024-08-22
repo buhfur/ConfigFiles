@@ -1,0 +1,8 @@
+1. [Perform trade skill](Profession/Perform trade skill.md)
+2. [Mouseover skinning](Profession/Mouseover skinning.md)
+3. [Mouseover enchant](Profession/Mouseover enchant.md)
+4. [Buy merchant item](Profession/Buy merchant item.md)
+5. [Tracking](Profession/Tracking.md)
+6. [Disenchanting](Profession/Disenchanting.md)
+7. [Sell grey junk](Profession/Sell grey junk.md)
+8. [Fishing](Profession/Fishing.md)

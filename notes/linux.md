@@ -91,7 +91,13 @@ Add two lines for each host , one being the IP and the port you want to use
 Add these two lines to the ~/.ssh/config file 
 
 > Host xxx.xxx.x.x
+
 > Port xxx
+
+
+Then add the IP addresses for the ssh hosts to the /etc/hosts file with the format below 
+
+`IPADDR     hostname`
 
 
 ## Create swap file 
@@ -1099,3 +1105,44 @@ You can fix this using the `rfkill` tool
 **restart ssh service**
 
 `midclt call service.restart "ssh"`
+
+---
+
+# Grep 
+
+**grep for specific file extension**
+
+`grep ".*\.md`
+
+Replace "md" with whichever extension you are trying to grep for.
+
+
+---
+
+# Find 
+
+**List files with specified extension**
+
+`find . -name \*.md`
+
+Replace "." with the directory you are searching in and replace "md" with the extension you are trying to search for. 
+
+
+---
+
+# System Clipboard 
+
+If you are using the X window system , 
+
+
+---
+
+# Tar 
+
+**extract archive to specified directory**
+
+`tar -xf archive.tar.xz -C / etc/something`
+
+if not root directory 
+
+` tar -xf archive.tar.xz -C /this/directory`
