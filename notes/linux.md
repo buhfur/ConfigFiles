@@ -1147,3 +1147,11 @@ For example if you want to archive the /etc/network/interfaces file
 if not root directory 
 
 ` tar -xf archive.tar.xz -C /this/directory`
+
+---
+
+# Unzip 
+
+**unzip all zip files in directory**
+
+`unzip \*.zip`
