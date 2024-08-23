@@ -45,7 +45,8 @@ or
 `cat /proc/cpuinfo`
 
 
-## Get disk info 
+
+**Get disk info**
 
 `lsblk -o +MODEL,SERIAL,WWN`
 
@@ -58,7 +59,7 @@ or
 `lsblk |awk 'NR==1{print $0" DEVICE-ID(S)"}NR>1{dev=$1;printf $0" ";system("find /dev/disk/by-id -lname \"*"dev"\" -printf \" %p\"");print "";}'|grep -v -E 'part|lvm'`
 
 
-## Reduce text entering sensitivity 
+**Reduce text entering sensitivity**
 
 You can either use kbdrate or xset , preferably xset as it works alot easier 
 
@@ -75,14 +76,14 @@ This will reduce the sensitivity
 the xinitrc file is used for loading additional configurations and settings when the Xorg server starts 
 
 
-## Manually disable the caps lock ( lock , not the button itself) 
+**Manually disable the caps lock ( lock , not the button itself)**
 
 **Install numlockx and run this command**
 
 `python -c 'from ctypes import *; X11 = cdll.LoadLibrary("libX11.so.6"); display = X11.XOpenDisplay(None); X11.XkbLockModifiers(display, c_uint(0x0100), c_uint(2), c_uint(0)); X11.XCloseDisplay(display)'`
 
 
-## Add aliases for ssh connections 
+**Add aliases for ssh connections**
 
 Add two lines for each host , one being the IP and the port you want to use 
 
@@ -100,7 +101,7 @@ Then add the IP addresses for the ssh hosts to the /etc/hosts file with the form
 `IPADDR     hostname`
 
 
-## Create swap file 
+**Create swap file**
 
 **step 1 : use dd to create the file using the /dev/zero device**
 
@@ -123,20 +124,11 @@ Add this line to the bottom of your /etc/fstab file
 This will mount the swap file automatically after boot 
 
 
-
-## Archive top level directories with tar 
-
-Use the '-C / xxx/xxx'
-
-For example if you want to archive the /etc/network/interfaces file 
-
-`sudo tar czf interfaces.tar -C / etc/network/interfaces`
-
 # Tips & tricks 
 
 Below is some useful info for different services and how they can be enabled / modified.
 
-## Installing Network Manager on Debian 12 
+**Installing Network Manager on Debian 12**
 
 One of the issues while installing NetworkManager lies with a preset network configuration by the system. Specifically the file /etc/network/interfaces is configured automatically and for some reason if this is present you will see an error in STDERR when installing asking you to remove the configuration if you want to use Network manager to manage any connections.
 
@@ -465,7 +457,7 @@ works after server restart, afterwards the file will be removed
 run `restorecon` afterwards to apply changes
 
 
-## Using Boolean Settings to Modify SELinux Settings
+**Using Boolean Settings to Modify SELinux Settings**
 
 **get list of booleans on system**
 
@@ -486,7 +478,7 @@ run `restorecon` afterwards to apply changes
 `setsebool -P`
 
 
-## Diagnosing and Addressing SELinux Policy Violations
+**Diagnosing and Addressing SELinux Policy Violations**
 
 **audit log**
 
@@ -502,7 +494,7 @@ You can search for these messages through grep
 
 in this logging , the scontext is the **source context** while the tcontext is the **target context**
 
-## Making SELinux Analyzing Easier
+**Making SELinux Analyzing Easier**
 
 Download the **sealert** command 
 
@@ -523,7 +515,7 @@ Sometimes the logging will even recommend other commands to run in order to fix 
 These recommendations will have a confidence score 
 
 
-## Key topics about selinux 
+**Key topics about selinux**
 
 - newly created files inherit the context settings from the parent directory
 - copied files do this as well. 
@@ -531,7 +523,7 @@ These recommendations will have a confidence score
 
 # DNF 
 
-## Search for RPM's of specific tool
+**Search for RPM's of specific tool**
 
 `dnf whatprovides */semanage`
 
@@ -1138,6 +1130,15 @@ If you are using the X window system ,
 ---
 
 # Tar 
+
+**Archive top level directories with tar**
+
+Use the '-C / xxx/xxx'
+
+For example if you want to archive the /etc/network/interfaces file 
+
+`sudo tar czf interfaces.tar -C / etc/network/interfaces`
+
 
 **extract archive to specified directory**
 
