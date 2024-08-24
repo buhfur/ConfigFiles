@@ -34,3 +34,5 @@ Welcome to my website ! Here I host a collection of all my notes which mainly in
 23. [Proxmox](notes/proxmox.md)
 24. [Linux Networking](notes/linux_networking.md)
 25. [Auto HotKey](notes/autohotkey.md)
+26. [Todo](notes/todo.md)
+27. [WoW Todo](notes/wowtodo.md)
