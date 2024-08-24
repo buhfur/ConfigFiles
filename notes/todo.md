@@ -55,7 +55,11 @@
 - [ ] find cooler status bar 
 - [ ] download extra fonts for cool stuff 
 - [x] download rofi 
-- [ ] use picom for animations? 
-- [ ] setup i3 rounded gaps config 
+- [x] setup xborders 
+- [x] setup default picom conf with xborders 
 - [ ] find gruvbox dark wallpaper 
-- [ ] re-add i3 back to gdm3 options 
+- [x] re-add i3 back to gdm3 options 
+- [ ] switch to sddm custom login prompt 
+- [ ] setup polybar 
+- [ ] customize thunar 
+- [ ] find out what i3blocks is 

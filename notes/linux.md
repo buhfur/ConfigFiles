@@ -1170,3 +1170,9 @@ On Debian/Ubuntu using X11 :
 On Redhat : 
 
 `cat /etc/sysconfig/desktop`
+
+**check what compositor you are using**
+
+`sudo apt install -y inxi`
+
+`inxi -Gxx | grep compositor`
