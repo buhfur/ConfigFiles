@@ -1155,3 +1155,18 @@ if not root directory
 **unzip all zip files in directory**
 
 `unzip \*.zip`
+
+
+---
+
+# Display Management 
+
+**check what display manager you are using**
+
+On Debian/Ubuntu using X11 : 
+
+`cat /etc/X11/default-display-manager`
+
+On Redhat : 
+
+`cat /etc/sysconfig/desktop`
