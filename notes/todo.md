@@ -56,10 +56,13 @@
 - [ ] download extra fonts for cool stuff 
 - [x] download rofi 
 - [x] setup xborders 
+- [ ] customize picom conf
 - [x] setup default picom conf with xborders 
-- [ ] find gruvbox dark wallpaper 
+- [x] find gruvbox dark wallpaper 
 - [x] re-add i3 back to gdm3 options 
 - [ ] switch to sddm custom login prompt 
-- [ ] setup polybar 
+- [x] setup polybar 
+- [ ] customize polybar 
 - [ ] customize thunar 
 - [ ] find out what i3blocks is 
+- [ ] setup script for installing fonts 
