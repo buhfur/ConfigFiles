@@ -1176,3 +1176,13 @@ On Redhat :
 `sudo apt install -y inxi`
 
 `inxi -Gxx | grep compositor`
+
+--- 
+
+# Git 
+
+**ignore vim swap files**
+
+Add this to your .gitignore 
+
+`*~`

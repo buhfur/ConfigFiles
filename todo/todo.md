@@ -95,11 +95,11 @@
 
 **Rice config**
 
-    - [x] create repo , clone to device 
-    - [ ] cp config files for : picom , zshrc, ohmyzsh , polybar , thunar, i3-config , 
-    - [x] download fonts to the repo 
-    - [*] create script to copy all dotfiles and fonts 
-    
+- [x] create repo , clone to device 
+- [ ] cp config files for : picom , zshrc, ohmyzsh , polybar , thunar, i3-config , 
+- [x] download fonts to the repo 
+- [&] create script to copy all dotfiles and fonts 
+
 
 # Proxmox Projects 
 
@@ -115,6 +115,6 @@
 
 - [x] save i3 workspace 
 - [x] hide scrollbar in konsole 
-- [1] make sure zshenv aliases work 
+- [x] make sure zshenv aliases work 
 - [2] add vim swap files to gitignore 
 - [3] add how to ignore vim swap files in repo to linux.md notes 
