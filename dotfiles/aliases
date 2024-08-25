@@ -8,4 +8,11 @@ alias alaconf='vim ~/.config/alacritty/alacritty.toml'
 alias twow='wine $HOME/turtle/VanillaFixes.exe'
 alias zconf='vim ~/.zshrc'
 alias sozsh='source ~/.zshrc'
+alias gp='git add . && git commit -a && git push' 
+alias updg='sudo apt update && sudo apt -y upgrade'
+alias work="cd flightmaster/src; vim ui.py -p utils.py -p addonWidget.py -p TODO.md"
+alias dotfiles='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
+alias todo='vim $HOME/buhfur.github.io/todo/todo.md -p $HOME/buhfur.github.io/todo/wowtodo.md'
+alias notes='ranger /home/sky/buhfur.github.io/notes'
+
 

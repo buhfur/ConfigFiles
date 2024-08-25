@@ -1,6 +1,11 @@
 
 # TODO
 
+# Key 
+
+"[\*]" - task is in progress 
+"[1-9]" - order of tasks to complete after completing current 
+"[x]" - completed task 
 ## Notes 
 
 - [ ] add grep and find snippets to linux.md
@@ -23,7 +28,7 @@
 - [ ] setup root key on gns3 vm 
 - [x] setup root key on spare-vm 
 - [x] swap caps and escape on i3 
-- [ ] find template nice looking i3 configs 
+- [x] find template nice looking i3 configs 
 - [ ] customize tmux powerline until you are happy with it 
 - [ ] add updated i3 rice and tmux powerline config to buhfur.github.io
 ## Macro project 
@@ -36,19 +41,16 @@
 - [x] modify the TOC gen script to include adding TOC's for subfolders as well 
 - [x] fix druid formatting , create md files for each subdir in the Druid folder 
 
-# i3 config todo 
+# I3 config todo 
 
-- [ ] fix tmux yank ??? 
-- [ ] setup i3 gaps 
-- [ ] add rounded corners with gaps 
-- [ ] allow middle mouse pasting into interactive terminal in tmux session 
+- [x] fix tmux yank ??? 
+- [x] setup i3 gaps 
+- [x] add rounded corners with gaps 
 - [ ] disable track pad  
-- [ ] add network info to status bar 
-- [ ] add memory info to status bar 
-- [x] install tmux powerline fonts 
+- [ ] reduce width of border highlight 
 
 
-# I3 todo 
+# I3 Customization TODO
 
 - [x] find cooler status bar 
 - [ ] download extra fonts for cool stuff 
@@ -71,18 +73,35 @@
 - [ ] setup GeForce GT 620 Drivers on windows 
 - [ ] Download minecraft SKLauncher
 - [ ] setup active directory server for both buhfur-windows & skylar-pc 
+- [ ] make backup of laptop using clonezilla 
+- [ ] make backup of filesystem 
 
 # Home Network Projects 
 
 - [ ] do something with the raspberry pi 
-- [ ] find something to create a firewall 
+- [ ] find something to use as a firewall 
+
 
 # Programming Projects 
 
+**Addon Setup**
 - [ ] create script to download addons for windows and linux clients 
 
 **Rice config**
 
-    - [ ] create repo , clone to device 
-
+    - [x] create repo , clone to device 
     - [ ] cp config files for : picom , zshrc, ohmyzsh , polybar , thunar, i3-config , 
+    - [x] download fonts to the repo 
+    - [*] create script to copy all dotfiles and fonts 
+    
+
+# Proxmox Projects 
+
+- [ ] fix the console issue involving the openvpn tunnel 
+
+
+# Buhfur.github.io todo 
+
+- [ ] feature : Copy aliases to bashrc or zshrc depending on the shell they have installed to .aliases and .zshenv
+
+
