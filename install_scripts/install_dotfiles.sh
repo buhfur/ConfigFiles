@@ -1,4 +1,6 @@
 #!/bin/bash
+
+
 cat ../dotfiles/zshrc > ~/.zshrc 
 cat ../dotfiles/bashrc > ~/.bashrc 
 cat ../dotfiles/tmux.conf > ~/.tmux.conf

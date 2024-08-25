@@ -38,10 +38,13 @@
 
 # i3 config todo 
 
-- [x] fix tmux yank ??? 
-- [x] setup i3 gaps 
-- [x] add rounded corners with gaps 
+- [ ] fix tmux yank ??? 
+- [ ] setup i3 gaps 
+- [ ] add rounded corners with gaps 
+- [ ] allow middle mouse pasting into interactive terminal in tmux session 
 - [ ] disable track pad  
+- [ ] add network info to status bar 
+- [ ] add memory info to status bar 
 - [x] install tmux powerline fonts 
 
 
@@ -68,14 +71,11 @@
 - [ ] setup GeForce GT 620 Drivers on windows 
 - [ ] Download minecraft SKLauncher
 - [ ] setup active directory server for both buhfur-windows & skylar-pc 
-- [ ] make backup of laptop using clonezilla 
-- [ ] make backup of filesystem 
 
 # Home Network Projects 
 
 - [ ] do something with the raspberry pi 
 - [ ] find something to create a firewall 
-
 
 # Programming Projects 
 
@@ -84,11 +84,5 @@
 **Rice config**
 
     - [ ] create repo , clone to device 
+
     - [ ] cp config files for : picom , zshrc, ohmyzsh , polybar , thunar, i3-config , 
-    - [ ] download fonts to the repo 
-    - [ ] create script to copy all dotfiles and fonts 
-
-# Proxmox Projects 
-
-- [ ] fix the console issue involving the openvpn tunnel 
-
