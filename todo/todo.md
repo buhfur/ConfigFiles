@@ -3,9 +3,12 @@
 
 # Key 
 
-"[\*]" - task is in progress 
-"[1-9]" - order of tasks to complete after completing current 
-"[x]" - completed task 
+> "[&]" - task is in progress 
+
+> "[1-9]" - order of tasks to complete after completing current 
+
+> "[x]" - completed task 
+
 ## Notes 
 
 - [ ] add grep and find snippets to linux.md
@@ -13,6 +16,7 @@
 - [ ] add to networking.md for general networking info , protocols and such , for example ICMP 
 - [x] add notes in linux.md for ssh config 
 - [ ] add notes for the linux system clipboard 
+
 
 ## Studying 
 
@@ -68,6 +72,8 @@
 - [ ] create repo to store config files for rice 
 
 
+
+
 # skylar pc 
 
 - [ ] setup GeForce GT 620 Drivers on windows 
@@ -105,3 +111,10 @@
 - [ ] feature : Copy aliases to bashrc or zshrc depending on the shell they have installed to .aliases and .zshenv
 
 
+# Misc 
+
+- [x] save i3 workspace 
+- [x] hide scrollbar in konsole 
+- [1] make sure zshenv aliases work 
+- [2] add vim swap files to gitignore 
+- [3] add how to ignore vim swap files in repo to linux.md notes 
