@@ -12,11 +12,11 @@
 ## Notes 
 
 - [ ] add grep and find snippets to linux.md
-- [ ] finish linux_networking.md 
+- [ ] finish linux\_networking.md 
 - [ ] add to networking.md for general networking info , protocols and such , for example ICMP 
 - [x] add notes in linux.md for ssh config 
 - [ ] add notes for the linux system clipboard 
-
+- [ ] add instructions on how to make a git repo purely from the command line using gh and git CLI 
 
 ## Studying 
 
@@ -35,6 +35,7 @@
 - [x] find template nice looking i3 configs 
 - [ ] customize tmux powerline until you are happy with it 
 - [ ] add updated i3 rice and tmux powerline config to buhfur.github.io
+
 ## Macro project 
 
 - [x] Add macros.md file in buhfur.github.io/ 
@@ -64,9 +65,9 @@
 - [x] setup default picom conf with xborders 
 - [x] find gruvbox dark wallpaper 
 - [x] re-add i3 back to gdm3 options 
-- [ ] switch to sddm custom login prompt 
+- [x] switch to sddm custom login prompt 
 - [x] setup polybar 
-- [ ] customize polybar 
+- [x] customize polybar 
 - [ ] customize thunar 
 - [x] find out what i3blocks is 
 - [ ] create repo to store config files for rice 
@@ -84,37 +85,41 @@
 
 # Home Network Projects 
 
-- [ ] do something with the raspberry pi 
+- [ ] Create DNS server on proxmox 
 - [ ] find something to use as a firewall 
-
 
 # Programming Projects 
 
-**Addon Setup**
+**Addon Setup Project**
+
 - [ ] create script to download addons for windows and linux clients 
 
-**Rice config**
+**Rice Config Project**
 
 - [x] create repo , clone to device 
-- [ ] cp config files for : picom , zshrc, ohmyzsh , polybar , thunar, i3-config , 
+- [x] cp config files for : picom , zshrc, ohmyzsh , polybar , thunar, i3-config , 
 - [x] download fonts to the repo 
-- [&] create script to copy all dotfiles and fonts 
-
+- [&] create script to copy all dotfiles and fonts to new machine
 
 # Proxmox Projects 
 
 - [ ] fix the console issue involving the openvpn tunnel 
 
-
 # Buhfur.github.io todo 
 
 - [ ] feature : Copy aliases to bashrc or zshrc depending on the shell they have installed to .aliases and .zshenv
-
 
 # Misc 
 
 - [x] save i3 workspace 
 - [x] hide scrollbar in konsole 
 - [x] make sure zshenv aliases work 
-- [2] add vim swap files to gitignore 
-- [3] add how to ignore vim swap files in repo to linux.md notes 
+- [x] add vim swap files to gitignore 
+- [x] add how to ignore vim swap files in repo to linux.md notes 
+- [x] download Fatasque Sans Mono 
+- [x] download Noto Sans 
+- [x] download Droid Sans 
+- [x] download Terminus
+- [x] download material icons 
+
+
