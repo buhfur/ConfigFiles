@@ -303,6 +303,10 @@ Below is the command I used
 
 # nmcli & Networking 
 
+**show all open net conns**
+
+`sudo netstat -nlp`
+
 **show service being used by specific port**
 
 Shows services using port 80 
