@@ -303,6 +303,12 @@ Below is the command I used
 
 # nmcli & Networking 
 
+**show service being used by specific port**
+
+Shows services using port 80 
+
+`lsof -i tcp:80`
+
 **Remove Secondary IP for host**
 
 `nmcli con mod <con-name> -ipv4.addresses "<IP>" `
