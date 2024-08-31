@@ -226,6 +226,10 @@ replace foo with the current extension , replace bar with the new ext.
 
 # Systemd 
 
+**Creating service files that involve X org server**
+If you need to create a service that depends upon an X server running , add this line under the "Unit" section 
+
+`PartOf=graphical-session.target`
 
 **Boot into different target**
 
