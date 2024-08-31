@@ -934,8 +934,15 @@ Set the SGID on the directory
 
 `chmod g+s /dir`
 
+**Change username of user** 
+
+`usermod -l [new_user] [old_user]`
+or 
+`sudo usermod -l faruk -d /home/faruk -m pardus`
+
 
 ---
+
 
 # Package management with DNF 
 
