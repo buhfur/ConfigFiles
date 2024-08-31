@@ -245,6 +245,72 @@ Decide which target you would like to use , then run systemctl isolate
 
 `loginctl enable-linger myuser`
 
+**Running scripts at startup**
+
+There are many ways to do this , assuming you are using systemd. You can use the following methods to run a script on boot.
+
+### Rc.local
+
+add this line in the /etc/rc.d/rc.local file 
+
+`sh /home/user/scriptdir/script.sh`
+
+### systemd unit file 
+
+Use the template below for your script , put this inside */etc/systemd/system*
+
+```
+[Unit]
+Description=Reboot message systemd service.
+
+[Service]
+Type=simple
+ExecStart=/bin/bash /home/ec2-user/reboot_message.sh
+
+[Install]
+WantedBy=multi-user.target
+```
+
+Set perms for the service file 
+
+`chmod 644 /etc/systemd/system/script.service `
+
+Then enable the service file in systemd 
+
+`systemctl enable script.service `
+
+### Crontab 
+
+edit the crontab file 
+
+`crontab -e `
+
+To run the script on reboot, use the template below 
+
+`@reboot sh /home/user/reboot_message.sh`
+
+**WARNING : Not all versions of cron support the '@reboot' option**
+
+### init.d 
+
+Make a script and put it in /etc/init.d/
+
+Use the template below : 
+
+```
+! /bin/sh
+# chkconfig: 345 99 10
+case "$1" in
+  start)
+    # Executes our script
+    sudo sh /home/user/script.sh
+    ;;
+  *)
+    ;;
+esac
+exit 0
+```
+
 ---
 
 # xrandr 
@@ -1212,3 +1278,5 @@ On Redhat :
 Add this to your .gitignore 
 
 `*~`
+
+
