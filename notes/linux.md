@@ -231,6 +231,10 @@ If you need to create a service that depends upon an X server running , add this
 
 `PartOf=graphical-session.target`
 
+Also you will want to add this line under the "Install" section 
+
+`WantedBy=xsession.target`
+
 **Boot into different target**
 
 `cd /usr/lib/systemd/system`
