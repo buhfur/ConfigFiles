@@ -6,6 +6,15 @@ In this document I have added various bash snippets ,tips , and other useful pie
 
 # Command snippets 
 
+**Disable trackpad on linux**
+
+`sudo apt-get install xinput `
+
+then find your touchpad with `xinput list`. Alot of the time trackpads are labeled with "SynPS/x Snynaptics TouchPad". Locate the ID in the second column and do the following command below.
+
+`xinput --disable <ID>`
+
+
 **List all users on host**
 
 `compgen -u | column`
