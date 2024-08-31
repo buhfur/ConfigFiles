@@ -1287,4 +1287,23 @@ Add this to your .gitignore
 
 `*~`
 
+---
+
+# FHS 
+
+This section is dedicated to my notes around the filsystem hierarchy standard that's used widely among most linux distributions. These may contain pure info or snippets that may help me along with configuring a system and knowing where to allocate certain files. Each section will be divided by the named directory. 
+
+
+## /home
+
+- I like to put my scripts in /home/<usr>/bin. in ~/.profile there's a bash ssnippet which will automatically add any script in this directory to your PATH
+
+See the snippet below : 
+
+```
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/bin" ] ; then
+    PATH="$HOME/bin:$PATH"
+fi
+```
 
