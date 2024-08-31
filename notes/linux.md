@@ -312,6 +312,16 @@ Below is the command I used
 
 # nmcli & Networking 
 
+**show all open net conns**
+
+`sudo netstat -nlp`
+
+**show service being used by specific port**
+
+Shows services using port 80 
+
+`lsof -i tcp:80`
+
 **Remove Secondary IP for host**
 
 `nmcli con mod <con-name> -ipv4.addresses "<IP>" `
@@ -933,8 +943,15 @@ Set the SGID on the directory
 
 `chmod g+s /dir`
 
+**Change username of user** 
+
+`usermod -l [new_user] [old_user]`
+or 
+`sudo usermod -l faruk -d /home/faruk -m pardus`
+
 
 ---
+
 
 # Package management with DNF 
 
