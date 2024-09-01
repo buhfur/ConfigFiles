@@ -6,6 +6,10 @@ In this document I have added various bash snippets ,tips , and other useful pie
 
 # Command snippets 
 
+**Show Motherboard info**
+
+`dmidecode -t 2 `
+
 **Disable trackpad on linux**
 
 `sudo apt-get install xinput `
