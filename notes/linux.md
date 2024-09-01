@@ -943,6 +943,10 @@ Then run
 
 # User management 
 
+**View user ID** 
+
+`id -u <username>`
+
 **Change password validity to 90 days**
 
 `passwd -n 30 -w 3 -x 90 username`
