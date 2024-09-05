@@ -31,8 +31,8 @@
 
 # Home Network Projects 
 
-- [&] Create DNS server on proxmox 
-- [ ] setup adguardhome dns server 
+- [x] Create DNS server on proxmox 
+- [x] setup adguardhome dns server 
 - [ ] setup some form of web file sharing server to share files from smb share
 - [ ] find something to use as a firewall 
 
@@ -47,7 +47,7 @@
 - [x] create repo , clone to device 
 - [x] cp config files for : picom , zshrc, ohmyzsh , polybar , thunar, i3-config , 
 - [x] download fonts to the repo 
-- [ ] create script to copy all dotfiles and fonts to new machine
+- [x] create script to copy all dotfiles and fonts to new machine
 
 # Proxmox Projects 
 
