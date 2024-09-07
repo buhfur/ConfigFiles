@@ -13,6 +13,10 @@
 - [ ] add GNS3 images for routers / switches / firewalls 
 - [ ] Finish reading through the network warrior book.
 
+## Discord 
+
+- [ ] install vencord 
+- [ ] install tui theme for vencord 
 
 # Ricing todo 
 
