@@ -14,15 +14,15 @@ wait
 username=$1;
 password=$2;
 if [ -f /home/$USER/.smbcredentials ]; then
-   echo -en "\nERROR: /home/$SUDO_USER/.smbcredentials already exists or was not able to be created\n"
+   echo -en "\nERROR: /home/$USER/.smbcredentials already exists or was not able to be created\n"
 else
- 	echo  "username=${username}\npassword=${password}" > /home/$SUDO_USER/.smbcredentials
-    echo -en "\n/home/$SUDO_USER/.smbcredentials was created successfully\n"
+ 	echo  "username=${username}\npassword=${password}" > /home/$USER/.smbcredentials
+    echo -en "\n/home/$USER/.smbcredentials was created successfully\n"
 fi
 wait 
 
 # add FSTAB entry
-ENTRY="//192.168.4.152/pool1 /mnt/media cifs uid=0,credentials=/home/$SUDO_USER/.smbcredentials,iocharset=utf8,file_mode=0777,dir_mode=0777 0 0"
+ENTRY="//192.168.4.152/pool1 /mnt/media cifs uid=0,credentials=/home/$USER/.smbcredentials,iocharset=utf8,file_mode=0777,dir_mode=0777 0 0"
 
 if grep -Fxq "$ENTRY" /etc/fstab
 then
