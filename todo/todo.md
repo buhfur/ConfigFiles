@@ -23,6 +23,11 @@
 - [x] change colors of rofi launcher to gruvbox dark 
 
 
+# Discord 
+
+- [ ] download vecord 
+- [ ] download tui discord theme on vencord 
+
 # skylar pc 
 
 - [ ] setup GeForce GT 620 Drivers on windows 
