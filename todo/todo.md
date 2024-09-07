@@ -16,9 +16,11 @@
 
 # Ricing todo 
 
-- [ ] disable track pad  
+- [x] disable track pad  
+- [ ] configure sddm theme 
+- [ ] change wallpaper 
 - [ ] reduce width of border highlight 
-- [ ] change colors of rofi launcher to gruvbox dark 
+- [x] change colors of rofi launcher to gruvbox dark 
 
 
 # skylar pc 
@@ -34,7 +36,8 @@
 - [x] Create DNS server on proxmox 
 - [x] setup adguardhome dns server 
 - [ ] setup some form of web file sharing server to share files from smb share
-- [ ] find something to use as a firewall 
+- [ ] install NIC on hypervisor 
+- [ ] setup pfsense vm on hypervisor 
 
 # Programming Projects 
 
@@ -52,5 +55,13 @@
 # Proxmox Projects 
 
 - [ ] fix the console issue involving the openvpn tunnel 
+
+# Main pc todo 
+
+- [ ] setup remote desktop server on proxmox or buhfurpc 
+- [ ] configure rice from laptop on pc 
+- [ ] change wallpaper 
+- [ ] turn off sleep and suspend on i3
+- [ ] customize lock screen / screensaver ? 
 
 
