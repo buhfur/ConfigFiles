@@ -24,3 +24,8 @@ Or to repeat multiple times
 > 5@@
 
 
+# Useful keybinds 
+
+> Ctrl-Z : suspends vim and writes process to a job , use `fg` to bring it back 
+
+

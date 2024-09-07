@@ -6,6 +6,16 @@ In this document I have added various bash snippets ,tips , and other useful pie
 
 # Command snippets 
 
+**Show keycode for keybind**
+
+If you're using Xorg as your display server, xev should already be installed. This tool let's you see what keycode goes to what key.
+
+`xev` 
+
+After finding the keycode, run this command below. Substitute \<KEYCODE\> with the numerical keycode you retrieve from xev.
+
+`xmodmap -pk | grep <KEYCODE>`
+
 **Show Motherboard info**
 
 `dmidecode -t 2 `
