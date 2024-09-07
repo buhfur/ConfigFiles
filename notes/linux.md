@@ -1309,7 +1309,7 @@ Add this to your .gitignore
 
 **disable sleep / suspend on xorg**
 
-create `/etc/X11/xorg.conf.d/10-extensions.conf`
+> create `/etc/X11/xorg.conf.d/10-extensions.conf`
 
 Then put this into the conf file 
 
