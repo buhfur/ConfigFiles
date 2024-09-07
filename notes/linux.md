@@ -1305,6 +1305,22 @@ Add this to your .gitignore
 
 `*~`
 
+# Xorg 
+
+**disable sleep / suspend on xorg**
+
+create `/etc/X11/xorg.conf.d/10-extensions.conf`
+
+Then put this into the conf file 
+
+```
+Section "Extensions"
+    Option "DPMS" "false"
+    EndSection
+
+```
+
+
 ---
 
 # Youtube downloading 
