@@ -74,3 +74,20 @@
 - [ ] customize lock screen / screensaver ? 
 
 
+# Misc TODO 
+
+- [ ] setup backup server for photos on proxmox 
+- [ ] setup google drive like file browser on proxmox 
+- [ ] setup pfsense on proxmox after installing NIC 
+- [ ] download pics sent from skylar in discord , also download photos from phone 
+- [ ] print out photos online in 5x7 format 
+- [ ] buy picture frames for printed photos 
+- [ ] tui docker container manager ? 
+
+# Copyparty 
+
+- [ ] setup secure https cert 
+- [ ] configure DNS to point to server 
+
+
+

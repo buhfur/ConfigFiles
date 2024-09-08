@@ -1184,6 +1184,18 @@ You can fix this using the `rfkill` tool
 
 `sudo docker network ls`
 
+**delete all docker containers**
+
+`docker rm vf $(docker ps -a -q)`
+
+**Add bind mount to docker container**
+
+You can use the "-v" option when making bind mounts 
+
+the left operand is the file path of a directory on your local machine , the other operand is where that path will be mounted to in the containers file system
+
+
+`docker run -v /var/something/something:/var/container/something something  `
 
 ---
 
