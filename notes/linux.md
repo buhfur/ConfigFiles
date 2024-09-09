@@ -3,8 +3,35 @@
 
 In this document I have added various bash snippets ,tips , and other useful pieces of knowledge that might help me navigate the insane POWAH of linux.
 
+---
 
 # Command snippets 
+
+**Start comand as background job**
+
+`command &`
+
+Add an ampersand at the end of the command 
+
+Type jobs to view your background tasks
+
+use `fg ` by itself to bring the most recently started background job to the foreground of the console. From there you can stop the job using Ctrl-Z or Ctrl-C
+
+**ist largest files in current directory**
+
+`du . | sort -nr | head -n10`
+
+**List largest directories in current directory**
+
+`du -s * | sort -nr | head -n10`
+
+
+**Change file extension of all files in director**
+
+`rename 's/\.foo$/.bar/' *.foo`
+
+replace foo with the current extension , replace bar with the new ext.
+
 
 **Show keycode for keybind**
 
@@ -93,8 +120,9 @@ Enter this line in your xinitrc , or just copy the xinitrc from the ~/dotfiles d
 
 This will reduce the sensitivity 
 
+---
 
-## xinitrc 
+# Xinitrc 
 
 the xinitrc file is used for loading additional configurations and settings when the Xorg server starts 
 
@@ -146,6 +174,8 @@ Add this line to the bottom of your /etc/fstab file
 
 This will mount the swap file automatically after boot 
 
+--- 
+
 
 # Tips & tricks 
 
@@ -158,17 +188,21 @@ One of the issues while installing NetworkManager lies with a preset network con
 
 Simply delete all lines in /etc/network/interfaces and re-install the package and the systemd service file should be present and should allow you  to activate it. 
 
-## ProtonVPN connections 
+# ProtonVPN connections 
 
 Change the file extension to a .conf file , then copy the file over to /etc/openvpn. This will start a daemon for every connection in the directory 
 
-## Setting up torrent server vm 
+---
+
+# Setting up torrent server vm 
 
 Put ovpn file in /etc/openvpn 
 
 install openvpn-systemd-resolved and network manager
 
-## Redirect both STDOUT and STDERR 
+---
+
+# Redirect both STDOUT and STDERR 
 
 `command &> /dev/null`
 
@@ -176,8 +210,10 @@ or
 
 `command > /dev/null 2>&1`
 
+---
 
-## Piping 
+
+# Piping 
 
 0> = STDIN
 1> = STDOUT 
@@ -185,12 +221,16 @@ or
 2> = STDERR
 
 
-## add timestamp to tar archive 
+---
+
+# add timestamp to tar archive 
 
 `tar -zcvf "$(date '+%Y-%m-%d').tar.gz" `
 
+---
 
-## tar snippets 
+
+# tar snippets 
 
 **List contents of archive**
 
@@ -206,35 +246,6 @@ Note : it's a good idea to exclude sys, mnt , and proc as they can cause a backu
 
 `tar pzvxf --exclude=mnt/ --exclude=sys/ --exclude=proc/ /backup/"$(date '+%Y-%m-%d').tar.gz" --one-file-system /`
 
-## restore backup from tar archive 
-
-`tar --overwrite -xzvf backup.tar.gz --directory /`
-
-
-## Start command as background job 
-
-`command &`
-
-Add an ampersand at the end of the command 
-
-Type jobs to view your background tasks
-
-use `fg ` by itself to bring the most recently started background job to the foreground of the console. From there you can stop the job using Ctrl-Z or Ctrl-C
-
-## List largest files in current directory 
-
-`du . | sort -nr | head -n10`
-
-## List largest directories in current directory 
-
-`du -s * | sort -nr | head -n10`
-
-
-## Change file extension of all files in directory
-
-`rename 's/\.foo$/.bar/' *.foo`
-
-replace foo with the current extension , replace bar with the new ext.
 
 ---
 
@@ -460,27 +471,27 @@ Shows services using port 80
 
 # SELinux 
 
-## Put SElinux into disabled mode in grub 
+**Put SElinux into disabled mode in grub**
 
 Put this line into your kernel boot args 
 
 `selinux=0`
 
-## Put Selinux into enforcing mode in grub
+**Put Selinux into enforcing mode in grub**
 
 add this to kernel boot args 
 
 `enforcing=0`
 
-## View selinux config
+**View selinux config**
 
 `cat /etc/sysconfig/selinux`
 
-## Check what mode selinux is running 
+**Check what mode selinux is running**
 
 `getenforce`
 
-## Switch between selinux modes temporarily 
+**Switch between selinux modes temporarily**
 
 **permissive mode**
 
@@ -490,11 +501,11 @@ add this to kernel boot args
 
 `setenforce 1`
 
-## Switch modes persistantly
+**Switch modes persistantl**
 
 modify /etc/sysconfig or add kernel boot arg 
 
-## Get status of selinux 
+**Get status of selinux**
 
 `sestatus`
 
@@ -502,7 +513,7 @@ modify /etc/sysconfig or add kernel boot arg
 
 `setstatus -v`
 
-## Show context setttings 
+**Show context setttings**
 
 **using ls**
 
@@ -516,7 +527,7 @@ modify /etc/sysconfig or add kernel boot arg
 
 `ss -Ztul`
 
-## Setting Context types 
+**Setting Context types**
 
 **Add context type to manually created directories**
 
@@ -532,7 +543,7 @@ modify /etc/sysconfig or add kernel boot arg
 
 type "/example"
 
-## Finding context types 
+**Finding context types**
 
 Install selinux-policy-doc package 
 
@@ -540,18 +551,20 @@ Install selinux-policy-doc package
 
 `man -k _selinux`
 
-## Enable ssh port in SELinux 
+**Enable ssh port in SELinux**
 
 `semanage port -a -t ssh_port_t -p tcp PORTNUMBER `
 
-## Relabel entire filesytem 
+**Relabel entire filesytem**
 
 `restorecon -Rv /`
 
 or create a file `/.autorelabel`
 works after server restart, afterwards the file will be removed
 
-## Managing Port Access 
+---
+
+**Managing Port Access**
 
 **Example: Changing port of apache**
 
@@ -628,6 +641,8 @@ These recommendations will have a confidence score
 - copied files do this as well. 
 - original context settings are retained when using the `cp -a` command. To fix this use `restorecon`
 
+---
+
 # DNF 
 
 **Search for RPM's of specific tool**
@@ -636,6 +651,7 @@ These recommendations will have a confidence score
 
 `dnf whatprovides`
 
+---
 
 # Firewalld 
 
@@ -680,7 +696,8 @@ These recommendations will have a confidence score
 
 `firewall-cmd --add-source=<ipaddress/netmask>`
 
-**Location of firewall-cmd services 
+
+---
 
 # NFS 
 
@@ -717,6 +734,7 @@ Then reload the firewall-cmd config
 
 `mount <Ip-Or-hostname>:/ /mnt`
 
+---
 
 # NTP
 
@@ -773,6 +791,7 @@ Then reload the firewall-cmd config
 
 timedatectl is used to switch on NTP time , it talks to the chronyd process
 
+---
 
 # Podman
 
@@ -929,6 +948,8 @@ Then run
 `systemctl --user enable containe-mycontainer.service`
 
 
+---
+
 # GRUB  
 
 **Reset root password without access to wheel group**
@@ -953,8 +974,8 @@ Then run
 
 `/usr/sbin/reboot -f `
 
+---
 
-
 # User management 
 
 **View user ID** 
@@ -1278,6 +1299,11 @@ if not root directory
 
 ` tar -xf archive.tar.xz -C /this/directory`
 
+**Restore backup from drive**
+
+`tar --overwrite -xzvf backup.tar.gz --directory /`
+
+
 ---
 
 # Unzip 
@@ -1331,6 +1357,14 @@ Section "Extensions"
     EndSection
 
 ```
+
+---
+
+# Rclone 
+
+**copy files from source to dest**
+
+`rlcone copy /source/dir mydrive:/drive/dir`
 
 
 ---

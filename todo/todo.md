@@ -79,10 +79,13 @@
 - [ ] setup backup server for photos on proxmox 
 - [ ] setup google drive like file browser on proxmox 
 - [ ] setup pfsense on proxmox after installing NIC 
-- [ ] download pics sent from skylar in discord , also download photos from phone 
-- [ ] print out photos online in 5x7 format 
-- [ ] buy picture frames for printed photos 
-- [ ] tui docker container manager ? 
+- [x] download pics sent from skylar in discord , also download photos from phone 
+- [ ] print out photo of austin with the two anime girls from final fantasy 
+- [x] print out photos online in 5x7 format 
+- [x] buy picture frames for printed photos 
+- [x] tui docker container manager ? 
+- [ ] are there cooler terminal emulators out there ? 
+- [ ] make backup script to send backups to google drive 
 
 # Copyparty 
 
