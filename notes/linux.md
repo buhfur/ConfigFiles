@@ -5,7 +5,10 @@ In this document I have added various bash snippets ,tips , and other useful pie
 
 ---
 
-# Command snippets 
+
+# Command & Bash snippets 
+
+
 
 **Start comand as background job**
 
@@ -1344,6 +1347,37 @@ Add this to your .gitignore
 `*~`
 
 # Xorg 
+
+**Make desktop shortcut for application**
+
+
+If you're on GNOME , you can make a shortcut using the gnome-desktop-item-edit tool 
+
+`gnome-desktop-item-edit ~/.local/share/applicationsj --create-new `
+
+
+> You will need to do this if you would like the application to show up in the GNOME search menu. 
+
+Create a file for the shortcut located in /usr/share/applications. Create file with \*.desktop extension 
+
+Use the template below to create your shortcut 
+
+Or you can do it manually by using this template for the \*.desktop file 
+
+```
+[Deskktop Entry]
+Encoding=UTF-8
+Version=1.0                                     # version of an app.
+Name[en_US]=yEd                                 # name of an app.
+GenericName=GUI Port Scanner                    # longer name of an app.
+Exec=java -jar /opt/yed-3.11.1/yed.jar          # command used to launch an app.
+Terminal=false                                  # whether an app requires to be run in a terminal.
+Icon[en_US]=/opt/yed-3.11.1/icons/yicon32.png   # location of icon file.
+Type=Application                                # type.
+Categories=Application;Network;Security;        # categories in which this app should be listed.
+Comment[en_US]=yEd Graph Editor                 # comment which appears as a tooltip.
+```
+
 
 **disable sleep / suspend on xorg**
 
