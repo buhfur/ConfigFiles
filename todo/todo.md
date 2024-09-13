@@ -45,8 +45,6 @@
 - [x] Create DNS server on proxmox 
 - [x] setup adguardhome dns server 
 - [ ] setup some form of web file sharing server to share files from smb share
-- [ ] install NIC on hypervisor 
-- [ ] setup pfsense vm on hypervisor 
 
 # Programming Projects 
 
@@ -86,6 +84,15 @@
 - [x] tui docker container manager ? 
 - [ ] are there cooler terminal emulators out there ? 
 - [ ] make backup script to send backups to google drive 
+
+
+# TrueNAS 
+
+- [ ] create new user for content share 
+- [ ] migrate jellyfin user data I would like to keep to new content share 
+- [ ] add new user account to all VM's and main pc 
+- [ ] configure radarr , sonarr, and deluge to use the new share 
+
 
 # Copyparty 
 
