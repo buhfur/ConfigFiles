@@ -46,7 +46,11 @@ After finding the keycode, run this command below. Substitute \<KEYCODE\> with t
 
 `xmodmap -pk | grep <KEYCODE>`
 
-**Show Motherboard info**
+**Show info about hard drives connected**
+
+`find /dev/disk/by-id/ -type l|xargs -I{} ls -l {}|grep -v -E '[0-9]$' |sort -k11|cut -d' ' -f9,10,11,12`
+
+**Show otherboard info**
 
 `dmidecode -t 2 `
 
