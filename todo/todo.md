@@ -88,10 +88,11 @@
 
 # TrueNAS 
 
-- [ ] create new user for content share 
+- [x] create new user for content share 
 - [ ] migrate jellyfin user data I would like to keep to new content share 
 - [ ] add new user account to all VM's and main pc 
-- [ ] configure radarr , sonarr, and deluge to use the new share 
+- [x] configure radarr , sonarr, and deluge to use the new share 
+- [x] fix weird issue with trackers not being used on radarr
 
 
 # Copyparty 
