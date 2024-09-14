@@ -29,13 +29,14 @@
 
 # Discord 
 
-- [ ] download vecord 
-- [ ] download tui discord theme on vencord 
+- [x] download vecord 
+- [ ] download vecord on main pc 
+- [x] download tui discord theme on vencord 
 
 # skylar pc 
 
-- [ ] setup GeForce GT 620 Drivers on windows 
-- [ ] Download minecraft SKLauncher
+- [x] setup GeForce GT 620 Drivers on windows 
+- [x] Download minecraft SKLauncher
 - [ ] setup active directory server for both buhfur-windows & skylar-pc 
 - [ ] make backup of laptop using clonezilla 
 - [ ] make backup of filesystem 
@@ -66,9 +67,9 @@
 # Main pc todo 
 
 - [ ] setup remote desktop server on proxmox or buhfurpc 
-- [ ] configure rice from laptop on pc 
+- [x] configure rice from laptop on pc 
 - [ ] change wallpaper 
-- [ ] turn off sleep and suspend on i3
+- [x] turn off sleep and suspend on i3
 - [ ] customize lock screen / screensaver ? 
 
 
@@ -76,14 +77,17 @@
 
 - [ ] setup backup server for photos on proxmox 
 - [ ] setup google drive like file browser on proxmox 
-- [ ] setup pfsense on proxmox after installing NIC 
+- [ ] install new NIC into one of the other small factor pc's I have laying around 
 - [x] download pics sent from skylar in discord , also download photos from phone 
 - [ ] print out photo of austin with the two anime girls from final fantasy 
 - [x] print out photos online in 5x7 format 
 - [x] buy picture frames for printed photos 
 - [x] tui docker container manager ? 
-- [ ] are there cooler terminal emulators out there ? 
 - [ ] make backup script to send backups to google drive 
+- [x] add 3 more blocklists to adguard 
+- [x] find a crazy over the top zsh theme 
+- [ ] reset root password on redhat vm 
+- [ ] enable wake on LAN on buhfur-pc ?
 
 
 # TrueNAS 
@@ -101,4 +105,6 @@
 - [ ] configure DNS to point to server 
 
 
+# Deluge
 
+- [ ] set perms for deluge to access new share to download torrents 

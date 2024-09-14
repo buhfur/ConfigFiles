@@ -8,7 +8,13 @@ In this document I have added various bash snippets ,tips , and other useful pie
 
 # Command & Bash snippets 
 
+**Remove file with hyphens in the name**
 
+`rm -- -filename`
+
+or 
+
+`rm ./--filename`
 
 **Start comand as background job**
 
@@ -1385,6 +1391,21 @@ Comment[en_US]=yEd Graph Editor                 # comment which appears as a too
 
 **disable sleep / suspend on xorg**
 
+Create the /etc/systemd/sleep.conf.d/nosuspend.conf file 
+
+Add these lines to the file 
+
+```
+[Sleep]
+AllowSuspend=no
+AllowHibernation=no
+AllowSuspendThenHibernate=no
+AllowHybridSleep=no
+
+```
+
+
+---
 > create `/etc/X11/xorg.conf.d/10-extensions.conf`
 
 Then put this into the conf file 
@@ -1396,7 +1417,6 @@ Section "Extensions"
 
 ```
 
----
 
 # Rclone 
 
