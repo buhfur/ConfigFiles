@@ -48,6 +48,7 @@
 
 # Misc TODO 
 
+- [ ] play around with mech-dump 
 - [ ] setup backup server for photos on proxmox 
 - [ ] setup google drive like file browser on proxmox 
 - [ ] install new NIC into one of the other small factor pc's I have laying around 
@@ -75,6 +76,10 @@
 - [ ] remove spotify from dns block list 
 - [ ] start torrent for god of wara- [ ] fix jellyfin webui 
 - [ ] remove spotify from dns block list 
+- [ ] find out why 1337x.to is redirecting to blank homepage with "welcome to my web server" 
+
+
+
 
 
 

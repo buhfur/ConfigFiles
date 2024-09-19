@@ -666,6 +666,27 @@ These recommendations will have a confidence score
 
 ---
 
+# Adguard Home
+
+**"X" Service is blocked !**
+
+1. Log onto your adguard home page and click on the Blocked by Filters button 
+
+![clickblock](images/clickblock.png)
+
+2. Then search for the domain you would like to block 
+
+![querydomain.png](images/querydomain.png)
+
+3. Select the side menu on the right hand side and click "Unblock"
+
+![unblockurl.png](images/unblockurl.png)
+
+
+And after that you're done ! 
+
+---
+
 # Firewalld 
 
 **View all available services**
