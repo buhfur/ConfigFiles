@@ -31,3 +31,4 @@ Welcome to my website ! Here I host a collection of all my notes which mainly in
 22. [Rpm](notes/rpm.md)
 23. [Tutorial_ideas](notes/tutorial_ideas.md)
 24. [Lvm](notes/lvm.md)
+25. [Troubleshooting](notes/troubleshooting.md)

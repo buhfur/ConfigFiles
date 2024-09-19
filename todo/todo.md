@@ -77,6 +77,7 @@
 - [ ] start torrent for god of wara- [ ] fix jellyfin webui 
 - [ ] remove spotify from dns block list 
 - [ ] find out why 1337x.to is redirecting to blank homepage with "welcome to my web server" 
+- [ ] put cool ascii art on the top of every page on the ryanm.dev website 
 
 
 
