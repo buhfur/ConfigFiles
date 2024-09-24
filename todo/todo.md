@@ -48,13 +48,14 @@
 
 # Misc TODO 
 
-- [ ] play around with mech-dump 
+- [ ] find some way to stream games from my PC to the TV 
 - [ ] setup backup server for photos on proxmox 
 - [ ] setup google drive like file browser on proxmox 
 - [ ] install new NIC into one of the other small factor pc's I have laying around 
 - [ ] print out photo of austin with the two anime girls from final fantasy 
 - [ ] reset root password on redhat vm 
 - [ ] enable wake on LAN on buhfur-pc ?
+- [ ] find out if it's possible to save local tmux session after reboot 
 
 
 # TrueNAS 
@@ -67,17 +68,34 @@
 - [ ] configure DNS to point to server 
 
 
+---
 
 # Current 
 
 ( I delete lines from the other sections and put the ones i'm currently working on in here )
 
-- [ ] fix jellyfin webui 
+- [x] fix jellyfin webui 
+- [x] start torrent for god of war
 - [ ] remove spotify from dns block list 
-- [ ] start torrent for god of wara- [ ] fix jellyfin webui 
-- [ ] remove spotify from dns block list 
-- [ ] find out why 1337x.to is redirecting to blank homepage with "welcome to my web server" 
+- [x] find out why 1337x.to is redirecting to blank homepage with "welcome to my web server" 
 - [ ] put cool ascii art on the top of every page on the ryanm.dev website 
+- [x] install smarttube on amazon tv stick in the living room 
+- [x] install jellyfin on the living room TV 
+- [ ] download all seasons of rick and morty and regular show 
+- [ ] find out why deluge is not moving completed torrents to their respective folders configured on labels 
+    - [x] check deluge settings 
+    - [x] check deluge version 
+    - [x] check libtorrent version 
+    - [x] update deluge 
+    - [x] update libtorrent  
+    - [x] check sonarr and radarr settings for download locations 
+    - [ ] cause of the issue turned out to be a misconfig on the systemd unit which was set up with "user=torrent-user" instead of "user=radarr" also changed group to media. Also changed owner ship of /opt/Radarr to radarr:media instead of radarr:radarr  
+- [ ] configure radarr to have write access to server smb share 
+    
+
+    
+    
+
 
 
 
