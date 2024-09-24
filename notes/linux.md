@@ -8,6 +8,10 @@ In this document I have added various bash snippets ,tips , and other useful pie
 
 # Command & Bash snippets 
 
+**find bash shortcuts**
+
+`man readline`
+
 **Remove file with hyphens in the name**
 
 `rm -- -filename`

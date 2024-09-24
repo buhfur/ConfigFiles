@@ -89,10 +89,14 @@
     - [x] update deluge 
     - [x] update libtorrent  
     - [x] check sonarr and radarr settings for download locations 
-    - [ ] cause of the issue turned out to be a misconfig on the systemd unit which was set up with "user=torrent-user" instead of "user=radarr" also changed group to media. Also changed owner ship of /opt/Radarr to radarr:media instead of radarr:radarr  
-- [ ] configure radarr to have write access to server smb share 
-    
+- [x] configure radarr to have write access to server smb share 
+- [x] configure deluge to have access to share 
 
+
+- [ ] change default port of jellyfin 
+- [ ] confirm beetlejuice works 
+- [ ] forward jellyfin new port in router 
+- [ ] unforward jellyfin new port in router 
     
     
 
