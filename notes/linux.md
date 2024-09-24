@@ -8,6 +8,10 @@ In this document I have added various bash snippets ,tips , and other useful pie
 
 # Command & Bash snippets 
 
+**enable vi keybinds for bash**
+
+`set -o vi `
+
 **find bash shortcuts**
 
 `man readline`
