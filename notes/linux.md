@@ -1365,6 +1365,10 @@ the left operand is the file path of a directory on your local machine , the oth
 
 Replace "md" with whichever extension you are trying to grep for.
 
+**Grep for certain word in entire directory**
+
+`grep -rni "string" * `
+
 
 ---
 

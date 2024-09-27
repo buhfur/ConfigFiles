@@ -65,11 +65,16 @@
 
 ( I delete lines from the other sections and put the ones i'm currently working on in here )
 
+- [ ] use chatgpt to get all github links on a webpage using scrapy 
 - [ ] find out why shows aren't being moved to the shows directory on the smb share 
+- [ ] add new root folder on sonarr
 - [ ] put cool ascii art on the top of every page on the ryanm.dev website 
 - [ ] download all seasons of rick and morty and regular show 
 - [ ] add section to notes about basics of tmux 
-- [?] add new smb user account to all VM's and main pc 
+- [ ] add new smb user account to all VM's and main pc 
+- [?] add notes for configuring ranger to show hidden files 
+- [x] add github\_links to github repo 
+    - [x] use new repo on vm 
     
 
 
