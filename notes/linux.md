@@ -98,7 +98,7 @@ Type jobs to view your background tasks
 
 use `fg ` by itself to bring the most recently started background job to the foreground of the console. From there you can stop the job using Ctrl-Z or Ctrl-C
 
-**Change file extension of all files in director**
+**Change file extension of all files in directory**
 
 `rename 's/\.foo$/.bar/' *.foo`
 
