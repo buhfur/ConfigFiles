@@ -76,7 +76,7 @@
     - [x] add ranger to TOC at beginning of page under DU 
 - [x] add github\_links to github repo 
     - [x] use new repo on vm 
-- [ ] fix formatting in Du section on notes 
+- [x] fix formatting in Du section on notes 
     
 
 

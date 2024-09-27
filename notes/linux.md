@@ -16,7 +16,6 @@ In this document I have added various bash snippets ,tips , and other useful pie
     - [Setting up torrent server vm](#setting-up-torrent-server-vm)
     - [Redirect both STDOUT and STDERR](#redirect-both-stdout-and-stderr)
     - [Piping](#piping)
-    - [add timestamp to tar archive](#add-timestamp-to-tar-archive)
     - [tar snippets](#tar-snippets)
     - [Systemd](#systemd)
     - [Rc.local](#rclocal)
@@ -301,10 +300,6 @@ or
 
 ---
 
-# add timestamp to tar archive 
-
-`tar -zcvf "$(date '+%Y-%m-%d').tar.gz" `
-
 ---
 
 
@@ -323,6 +318,10 @@ or
 Note : it's a good idea to exclude sys, mnt , and proc as they can cause a backup to freeze. None of these directories should be necessary for archival anyways 
 
 `tar pzvxf --exclude=mnt/ --exclude=sys/ --exclude=proc/ /backup/"$(date '+%Y-%m-%d').tar.gz" --one-file-system /`
+
+**add timestamp to tar archive**
+
+`tar -zcvf "$(date '+%Y-%m-%d').tar.gz" `
 
 
 ---
