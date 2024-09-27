@@ -98,14 +98,6 @@ Type jobs to view your background tasks
 
 use `fg ` by itself to bring the most recently started background job to the foreground of the console. From there you can stop the job using Ctrl-Z or Ctrl-C
 
-**List largest files in current directory**
-
-`du . | sort -nr | head -n10`
-
-**List largest directories in current directory**
-
-`du -s * | sort -nr | head -n10`
-
 **Change file extension of all files in director**
 
 `rename 's/\.foo$/.bar/' *.foo`
@@ -1541,6 +1533,14 @@ Section "Extensions"
 > - You can substitute the 'k' for other letters which represent other file size units : M,K,G,T,E,Z,Y
 >
 > 
+
+**List largest files in current directory**
+
+`du . | sort -nr | head -n10`
+
+**List largest directories in current directory**
+
+`du -s * | sort -nr | head -n10`
 
 
 ---
