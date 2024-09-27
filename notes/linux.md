@@ -141,7 +141,10 @@ Enter this line in your xinitrc , or just copy the xinitrc from the ~/dotfiles d
 
 This will reduce the sensitivity 
 
----
+
+# System Tools and 3rd party utilities command snippets
+
+The below section should include tools and snippets from various tools i've used.
 
 # Xinitrc 
 

@@ -1,10 +1,12 @@
 
 ## Notes 
 
+- [ ] organize linux.md into more granular categories that are easier to search by 
+- [ ] find some software to add table of contents to linux.md 
+- [ ] add tmux notes to linux.md 
 - [ ] add grep and find snippets to linux.md
-- [ ] finish linux\_networking.md 
+- [ ] finish linux\_networking.md using 
 - [ ] add to networking.md for general networking info , protocols and such , for example ICMP 
-- [ ] add notes for the linux system clipboard 
 - [ ] add instructions on how to make a git repo purely from the command line using gh and git CLI 
 
 ## Studying 
@@ -35,10 +37,6 @@
 
 - [ ] create script to download addons for windows and linux clients 
 
-# Proxmox Projects 
-
-- [ ] fix the console issue involving the openvpn tunnel 
-
 # Main pc todo 
 
 - [ ] setup remote desktop server on proxmox or buhfurpc 
@@ -53,14 +51,7 @@
 - [ ] setup google drive like file browser on proxmox 
 - [ ] install new NIC into one of the other small factor pc's I have laying around 
 - [ ] print out photo of austin with the two anime girls from final fantasy 
-- [ ] reset root password on redhat vm 
-- [ ] enable wake on LAN on buhfur-pc ?
-- [ ] find out if it's possible to save local tmux session after reboot 
 
-
-# TrueNAS 
-
-- [ ] add new smb user account to all VM's and main pc 
 
 # Copyparty 
 
@@ -74,30 +65,11 @@
 
 ( I delete lines from the other sections and put the ones i'm currently working on in here )
 
-- [x] fix jellyfin webui 
-- [x] start torrent for god of war
-- [ ] remove spotify from dns block list 
-- [x] find out why 1337x.to is redirecting to blank homepage with "welcome to my web server" 
+- [ ] find out why shows aren't being moved to the shows directory on the smb share 
 - [ ] put cool ascii art on the top of every page on the ryanm.dev website 
-- [x] install smarttube on amazon tv stick in the living room 
-- [x] install jellyfin on the living room TV 
 - [ ] download all seasons of rick and morty and regular show 
-- [ ] find out why deluge is not moving completed torrents to their respective folders configured on labels 
-    - [x] check deluge settings 
-    - [x] check deluge version 
-    - [x] check libtorrent version 
-    - [x] update deluge 
-    - [x] update libtorrent  
-    - [x] check sonarr and radarr settings for download locations 
-- [x] configure radarr to have write access to server smb share 
-- [x] configure deluge to have access to share 
-
-
-- [ ] change default port of jellyfin 
-- [ ] confirm beetlejuice works 
-- [ ] forward jellyfin new port in router 
-- [ ] unforward jellyfin new port in router 
-    
+- [ ] add section to notes about basics of tmux 
+- [?] add new smb user account to all VM's and main pc 
     
 
 

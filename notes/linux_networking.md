@@ -19,3 +19,8 @@ When the physical device receives a packet,  its driver receives an interrupt , 
 Here is a diagram of what a packet looks like from memory to the NIC driver. 
 
 ![image](images/memtopack.png)
+
+
+
+
+
