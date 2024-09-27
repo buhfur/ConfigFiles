@@ -71,11 +71,12 @@
 - [ ] download all seasons of rick and morty and regular show 
 - [ ] add section to notes about basics of tmux 
 - [ ] add new smb user account to all VM's and main pc 
-- [ ] add notes for configuring ranger to show hidden files 
+- [x] add notes for configuring ranger to show hidden files 
     - [x] add du to toc on page 
-    - [ ] add ranger to TOC at beginning of page under DU 
+    - [x] add ranger to TOC at beginning of page under DU 
 - [x] add github\_links to github repo 
     - [x] use new repo on vm 
+- [ ] fix formatting in Du section on notes 
     
 
 

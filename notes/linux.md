@@ -1527,22 +1527,21 @@ Section "Extensions"
 
 # Du 
 
-**show all files in current directory size in different units**
-
+> **show all files in current directory size in different units**
 > The 3 lines below shows the sizes in kilobytes 
-
-`du -k * `
-
-`du --block-size=1K * `
-
-
+>
+> `du -k * `
+>
+> `du --block-size=1K * `
+>
+> `du -B 1K *`
+>
 > # Note
 >
 > - You can substitute the 'k' for other letters which represent other file size units : M,K,G,T,E,Z,Y
 >
->
+> 
 
-`du -B 1K *`
 
 ---
 
