@@ -4,7 +4,6 @@
 - [ ] organize linux.md into more granular categories that are easier to search by 
 - [ ] find some software to add table of contents to linux.md 
 - [ ] add tmux notes to linux.md 
-- [ ] add grep and find snippets to linux.md
 - [ ] finish linux\_networking.md using 
 - [ ] add to networking.md for general networking info , protocols and such , for example ICMP 
 - [ ] add instructions on how to make a git repo purely from the command line using gh and git CLI 
@@ -72,7 +71,9 @@
 - [ ] download all seasons of rick and morty and regular show 
 - [ ] add section to notes about basics of tmux 
 - [ ] add new smb user account to all VM's and main pc 
-- [?] add notes for configuring ranger to show hidden files 
+- [ ] add notes for configuring ranger to show hidden files 
+    - [x] add du to toc on page 
+    - [ ] add ranger to TOC at beginning of page under DU 
 - [x] add github\_links to github repo 
     - [x] use new repo on vm 
     

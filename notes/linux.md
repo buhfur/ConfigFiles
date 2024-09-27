@@ -62,6 +62,8 @@ In this document I have added various bash snippets ,tips , and other useful pie
     - [Git](#git)
     - [Xorg](#xorg)
     - [Rclone](#rclone)
+    - [Du](#du)
+    - [Ranger](#ranger)
     - [Youtube downloading](#youtube-downloading)
     - [FHS](#fhs)
 - [/home](#home)
@@ -1521,17 +1523,18 @@ Section "Extensions"
 
 `rlcone copy /source/dir mydrive:/drive/dir`
 
-Du 
----
+--- 
+
+# Du 
 
 **show all files in current directory size in different units**
-
 
 > The 3 lines below shows the sizes in kilobytes 
 
 `du -k * `
 
 `du --block-size=1K * `
+
 
 > # Note
 >
@@ -1540,6 +1543,18 @@ Du
 >
 
 `du -B 1K *`
+
+---
+
+# Ranger
+
+**hidden files config**
+
+> Open up ~/.config/ranger/rc.conf ( or where ever your config file is located )
+> 
+> # Add this line :
+> 
+> `set show_hidden true `
 
 
 ---
