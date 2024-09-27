@@ -66,8 +66,7 @@ In this document I have added various bash snippets ,tips , and other useful pie
     - [Ranger](#ranger)
     - [Youtube downloading](#youtube-downloading)
     - [FHS](#fhs)
-    - [/home](#home)
-        - [set PATH so it includes user's private bin if it exists](#set-path-so-it-includes-users-private-bin-if-it-exists)
+        - [/home](#home)
 
 
 # Command & Bash snippets 
