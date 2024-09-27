@@ -104,7 +104,6 @@ use `fg ` by itself to bring the most recently started background job to the for
 
 `du -s * | sort -nr | head -n10`
 
-
 **Change file extension of all files in director**
 
 `rename 's/\.foo$/.bar/' *.foo`
@@ -1517,6 +1516,26 @@ Section "Extensions"
 **copy files from source to dest**
 
 `rlcone copy /source/dir mydrive:/drive/dir`
+
+Du 
+---
+
+**show all files in current directory size in different units**
+
+
+> The 3 lines below shows the sizes in kilobytes 
+
+`du -k * `
+
+`du --block-size=1K * `
+
+> # Note
+>
+> - You can substitute the 'k' for other letters which represent other file size units : M,K,G,T,E,Z,Y
+>
+>
+
+`du -B 1K *`
 
 
 ---
