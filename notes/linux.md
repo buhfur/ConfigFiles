@@ -328,6 +328,23 @@ Note : it's a good idea to exclude sys, mnt , and proc as they can cause a backu
 
 # Systemd 
 
+**disable unit**
+
+> Stop the service 
+>
+>   `systemctl stop <unit-name> `
+> 
+> Disable the service :
+>
+>   `systemctl disable <unit-name>`
+>
+> Stop the unit from being started manually or automatically 
+>
+>   `systemctl mask <unit-name>`
+>
+
+
+
 **Creating service files that involve X org server**
 If you need to create a service that depends upon an X server running , add this line under the "Unit" section 
 

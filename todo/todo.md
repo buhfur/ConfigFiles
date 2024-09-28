@@ -1,6 +1,7 @@
 
 ## Notes 
 
+- [ ] add notes about masking a systemd unit to disable it 
 - [ ] organize linux.md into more granular categories that are easier to search by 
 - [ ] find some software to add table of contents to linux.md 
 - [ ] add tmux notes to linux.md 
@@ -50,6 +51,7 @@
 - [ ] setup google drive like file browser on proxmox 
 - [ ] install new NIC into one of the other small factor pc's I have laying around 
 - [ ] print out photo of austin with the two anime girls from final fantasy 
+- [ ] find tool to generate throw away emails 
 
 
 # Copyparty 
@@ -64,20 +66,22 @@
 
 ( I delete lines from the other sections and put the ones i'm currently working on in here )
 
-- [ ] use chatgpt to get all github links on a webpage using scrapy 
+- [x] use chatgpt to get all github links on a webpage using scrapy 
+- [ ] turn off annoying yellow highlighting on ls on xterm-256color
 - [ ] find out why shows aren't being moved to the shows directory on the smb share 
-- [ ] add new root folder on sonarr
 - [ ] put cool ascii art on the top of every page on the ryanm.dev website 
-- [ ] download all seasons of rick and morty and regular show 
 - [ ] add section to notes about basics of tmux 
 - [ ] add new smb user account to all VM's and main pc 
-- [x] add notes for configuring ranger to show hidden files 
-    - [x] add du to toc on page 
-    - [x] add ranger to TOC at beginning of page under DU 
-- [x] add github\_links to github repo 
-    - [x] use new repo on vm 
-- [x] fix formatting in Du section on notes 
-    
+- [ ] setup ssh key on redhat and buhfurpc for root account on proxmox hypervisor
+- [x] re-install jackett on torrent-server
+- [ ] add trackers in jackett to sonarr & radarr
+    - [x] add badass torrents 
+    - [x] add glodls 
+    - [x] add idope 
+    - [x] add isohunt2 
+    - [ ] add yts 
+- [ ] add torrent trackers to adguard whitelist 
+
 
 
 
