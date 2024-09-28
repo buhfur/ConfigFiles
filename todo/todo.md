@@ -66,6 +66,7 @@
 
 ( I delete lines from the other sections and put the ones i'm currently working on in here )
 
+<<<<<<< HEAD
 - [x] use chatgpt to get all github links on a webpage using scrapy 
 - [ ] turn off annoying yellow highlighting on ls on xterm-256color
 - [ ] find out why shows aren't being moved to the shows directory on the smb share 
@@ -82,6 +83,28 @@
     - [ ] add yts 
 - [ ] add torrent trackers to adguard whitelist 
 
+=======
+
+- [ ] add better trackers for sonarr
+- [ ] fix jackett 
+- [x] find out why shows aren't being moved to the shows directory on the smb share 
+- [x] add new root folder on sonarr
+- [ ] put cool ascii art on the top of every page on the ryanm.dev website 
+- [x] download all seasons of rick and morty and regular show 
+- [ ] add section to notes about basics of tmux 
+- [ ] add new smb user account to all VM's and main pc 
+- [x] add notes for configuring ranger to show hidden files 
+    - [x] add du to toc on page 
+    - [x] add ranger to TOC at beginning of page under DU 
+- [x] add github\_links to github repo 
+    - [x] use new repo on vm 
+- [x] fix formatting in Du section on notes 
+
+- [ ] change xrandr config to rotate left monitor vertically. 
+
+
+    
+>>>>>>> c5a6873037abd744eb8d5933808588cc7012127f
 
 
 
