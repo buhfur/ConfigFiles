@@ -346,11 +346,12 @@ Note : it's a good idea to exclude sys, mnt , and proc as they can cause a backu
 
 
 **Creating service files that involve X org server**
-If you need to create a service that depends upon an X server running , add this line under the "Unit" section 
+
+> If you need to create a service that depends upon an X server running , add this line under the "Unit" section 
 
 `PartOf=graphical-session.target`
 
-Also you will want to add this line under the "Install" section 
+> Also you will want to add this line under the "Install" section 
 
 `WantedBy=xsession.target`
 
