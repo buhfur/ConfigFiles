@@ -67,20 +67,10 @@
 ( I delete lines from the other sections and put the ones i'm currently working on in here )
 
 - [x] use chatgpt to get all github links on a webpage using scrapy 
-- [ ] turn off annoying yellow highlighting on ls on xterm-256color
-- [ ] find out why shows aren't being moved to the shows directory on the smb share 
+- [x] find out why shows aren't being moved to the shows directory on the smb share 
 - [ ] put cool ascii art on the top of every page on the ryanm.dev website 
-- [ ] add section to notes about basics of tmux 
-- [ ] add new smb user account to all VM's and main pc 
-- [ ] setup ssh key on redhat and buhfurpc for root account on proxmox hypervisor
-- [x] re-install jackett on torrent-server
-- [ ] add trackers in jackett to sonarr & radarr
-    - [x] add badass torrents 
-    - [x] add glodls 
-    - [x] add idope 
-    - [x] add isohunt2 
-    - [ ] add yts 
 - [ ] add torrent trackers to adguard whitelist 
+- [ ] add buhfur-pc to known hosts on root@garden
 
 
 
