@@ -1,13 +1,10 @@
 
 ## Notes 
 
-- [ ] add notes about masking a systemd unit to disable it 
+- [x] add notes about masking a systemd unit to disable it 
 - [ ] organize linux.md into more granular categories that are easier to search by 
 - [ ] find some software to add table of contents to linux.md 
-- [ ] add tmux notes to linux.md 
 - [ ] finish linux\_networking.md using 
-- [ ] add to networking.md for general networking info , protocols and such , for example ICMP 
-- [ ] add instructions on how to make a git repo purely from the command line using gh and git CLI 
 
 ## Studying 
 
@@ -71,6 +68,9 @@
 - [ ] put cool ascii art on the top of every page on the ryanm.dev website 
 - [ ] add torrent trackers to adguard whitelist 
 - [ ] add buhfur-pc to known hosts on root@garden
+- [ ] setup openvpn tunnel between laptop 
+- [ ] modify proxmox backup script to create folder for the date 
+- [ ] add notes to linux.md about creating directories with timestamps  
 
 
 

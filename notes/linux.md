@@ -70,6 +70,13 @@ In this document I have added various bash snippets ,tips , and other useful pie
 
 # Command & Bash snippets 
 
+**create directory with a timestamp as it's name**
+
+> Use the following command below in a bash script 
+>
+> `timestamp=$(date +"%Y-%m-%d_%H-%M-%S")`
+>
+
 **enable vi keybinds for bash**
 
 `set -o vi `
