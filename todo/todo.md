@@ -66,19 +66,9 @@
 - [x] use chatgpt to get all github links on a webpage using scrapy 
 - [x] find out why shows aren't being moved to the shows directory on the smb share 
 - [ ] put cool ascii art on the top of every page on the ryanm.dev website 
-- [ ] add torrent trackers to adguard whitelist 
-- [ ] add buhfur-pc to known hosts on root@garden
-- [ ] setup openvpn tunnel between laptop 
+- [ ] setup openvpn tunnel between laptop and proxmox root user 
 - [ ] modify proxmox backup script to create folder for the date 
 - [ ] add notes to linux.md about creating directories with timestamps  
+- [ ] download lynis on one of the linux hosts to see if it's good at finding vulnerabilities 
 
-
-
-
-
-
-
-
-
-
-
+- [ ] make proxmox backup script create directory with timestamp on backups 

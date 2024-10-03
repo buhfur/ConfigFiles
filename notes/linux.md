@@ -76,7 +76,8 @@ In this document I have added various bash snippets ,tips , and other useful pie
 >
 > `timestamp=$(date +"%Y-%m-%d_%H-%M-%S")`
 >
-
+> Then to make the directory , use the following syntax 
+> `mkdir "directory_$(date +%Y%m%d_%H%M%S)"`
 **enable vi keybinds for bash**
 
 `set -o vi `
