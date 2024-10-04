@@ -63,12 +63,10 @@
 
 ( I delete lines from the other sections and put the ones i'm currently working on in here )
 
-- [x] use chatgpt to get all github links on a webpage using scrapy 
-- [x] find out why shows aren't being moved to the shows directory on the smb share 
 - [ ] put cool ascii art on the top of every page on the ryanm.dev website 
-- [ ] setup openvpn tunnel between laptop and proxmox root user 
-- [ ] modify proxmox backup script to create folder for the date 
-- [ ] add notes to linux.md about creating directories with timestamps  
-- [ ] download lynis on one of the linux hosts to see if it's good at finding vulnerabilities 
-
-- [ ] make proxmox backup script create directory with timestamp on backups 
+- [ ] put cool ascii art on every server when the user logs in 
+- [ ] write timer systemd unit to tar all backups in /mnt/backups/backups/backups/
+- [x] find out what's taking up so much space on pool2 
+- [x] change categories on trackers to not download 4k movies / shows  
+- [x] remove 4k torrents and movies / shows from deluged 
+- [ ] implement some suggestions from lynis on buhfur-pc and other VM's on proxmox
