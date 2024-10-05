@@ -35,7 +35,9 @@
     - [ ] add to notes instructions on how to setup a timer systemd unit  
 - [ ] setup debian repo server for distributing custom debian repos on my network
 - [ ] find a way to reduce ram usage on TrueNAS vm 
-
+- [ ] add more trackers to sonarr 
+    - [ ] **optional** create script to add set of trackers to jackett & sonarr /radarr
+- [ ] disable openvpn on root@proxmox 
 
 
 

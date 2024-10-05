@@ -352,10 +352,17 @@ Note : it's a good idea to exclude sys, mnt , and proc as they can cause a backu
 >   `systemctl mask <unit-name>`
 >
 
-**Create timer unit**
+**Systemd timer unit template**
 
-> Use the following 
+```
+[Timer]
 
+Unit=name.service
+OnCalendar=weekly | 
+
+
+
+```
 
 **Creating service files that involve X org server**
 
@@ -1152,6 +1159,17 @@ Edit the UID\_MIN file with the default UID new users
 **View what groups a user is apart of**
 
 `lid username`
+
+**Change home directory of user** 
+
+`usermod -d /home/NEW-DIR/ *username* `
+
+or 
+
+`usermod -m -d /home/NEW-DIR/ *username* `
+
+> You can use the `-m` option to move the contents of the users current home directory to the newly created home directory.
+
 
 **Add user to group**
 
