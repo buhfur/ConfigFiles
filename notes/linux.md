@@ -7,7 +7,6 @@ In this document I have added various bash snippets ,tips , and other useful pie
 
 # Table of contents 
 
-- [Linux notes for reference](#linux-notes-for-reference)
 - [Command & Bash snippets](#command--bash-snippets)
 - [System Tools and 3rd party utilities command snippets](#system-tools-and-3rd-party-utilities-command-snippets)
     - [Xinitrc](#xinitrc)
@@ -16,7 +15,7 @@ In this document I have added various bash snippets ,tips , and other useful pie
     - [Setting up torrent server vm](#setting-up-torrent-server-vm)
     - [Redirect both STDOUT and STDERR](#redirect-both-stdout-and-stderr)
     - [Piping](#piping)
-    - [tar snippets](#tar-snippets)
+    - [Tar snippets](#tar-snippets)
     - [Systemd](#systemd)
     - [Rc.local](#rclocal)
     - [systemd unit file](#systemd-unit-file)
@@ -78,6 +77,7 @@ In this document I have added various bash snippets ,tips , and other useful pie
 >
 > Then to make the directory , use the following syntax 
 > `mkdir "directory_$(date +%Y%m%d_%H%M%S)"`
+
 **enable vi keybinds for bash**
 
 `set -o vi `
@@ -300,13 +300,14 @@ or
 
 # Piping 
 
-0> = STDIN
-1> = STDOUT 
-&> = STDOUT & STDERR
-2> = STDERR
+> 0> = STDIN
+>
+> 1> = STDOUT 
+> 
+> &> = STDOUT & STDERR
+> 
+> 2> = STDERR
 
-
----
 
 ---
 
@@ -351,6 +352,9 @@ Note : it's a good idea to exclude sys, mnt , and proc as they can cause a backu
 >   `systemctl mask <unit-name>`
 >
 
+**Create timer unit**
+
+> Use the following 
 
 
 **Creating service files that involve X org server**
@@ -1582,6 +1586,30 @@ Section "Extensions"
 
 ---
 
+# Markdown 
+
+**Markdown table template**
+
+```
+| Left Align (default) | Center Align | Right Align |
+| :------------------- | :----------: | ----------: |
+| React.js             | Node.js      | MySQL       |
+| Next.js              | Express      | MongoDB     |
+| Vue.js               | Nest.js      | Redis       |
+
+```
+
+Output : 
+
+
+| Left Align (default) | Center Align | Right Align |
+| :------------------- | :----------: | ----------: |
+| React.js             | Node.js      | MySQL       |
+| Next.js              | Express      | MongoDB     |
+| Vue.js               | Nest.js      | Redis       |
+
+---
+
 # Youtube downloading 
 
 **download only the transcript**
@@ -1598,7 +1626,11 @@ This section is dedicated to my notes around the filsystem hierarchy standard th
 
 ## /home
 
-- I like to put my scripts in /home/<usr>/bin. in ~/.profile there's a bash ssnippet which will automatically add any script in this directory to your PATH
+
+### Home Notes 
+
+* Any scripts located in ```/home/<user>/bin``` will be automatically added to the users PATH.   
+* You may configure an NFS share to store and serve the home directory for users on your local network
 
 See the snippet below : 
 
