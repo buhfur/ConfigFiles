@@ -1474,9 +1474,19 @@ On Debian/Ubuntu using X11 :
 
 `cat /etc/X11/default-display-manager`
 
+or 
+
+`dpkg -l | grep -E 'gnome|kde|xfce|lxde|mate'`
+
 On Redhat : 
 
 `cat /etc/sysconfig/desktop`
+
+`rpm -qa | grep -E 'gnome|kde|xfce|lxde|mate'`
+
+**Check current session**
+
+`echo $DESKTOP_SESSION`
 
 **check what compositor you are using**
 
