@@ -4,6 +4,8 @@
 - [x] add notes about masking a systemd unit to disable it 
 - [ ] finish linux\_networking.md using 
 - [ ] put cool ascii art on the top of every page on the ryanm.dev website 
+- [ ] update toc with link to Markdown section 
+- [ ] implement "return to top" on every header if possible 
 
 ## Studying 
 
@@ -32,12 +34,12 @@
 ( I delete lines from the other sections and put the ones i'm currently working on in here )
 
 - [ ] write timer systemd unit to tar all backups in /mnt/backups/backups/backups/
-    - [ ] add to notes instructions on how to setup a timer systemd unit  
+    - [x] add to notes instructions on how to setup a timer systemd unit  
 - [ ] setup debian repo server for distributing custom debian repos on my network
-- [ ] find a way to reduce ram usage on TrueNAS vm 
-- [ ] add more trackers to sonarr 
-    - [ ] **optional** create script to add set of trackers to jackett & sonarr /radarr
-- [ ] disable openvpn on root@proxmox 
+- [ ] create folder on pool2 for miscellanious files 
+- [ ] add notes about the current shares on the truenas vm notes 
+- [ ] add datasets to truenas shares without losing existing data 
+
 
 
 

@@ -62,6 +62,7 @@ In this document I have added various bash snippets ,tips , and other useful pie
     - [Rclone](#rclone)
     - [Du](#du)
     - [Ranger](#ranger)
+    - [Markdown](#markdown)
     - [Youtube downloading](#youtube-downloading)
     - [FHS](#fhs)
         - [/home](#home)
