@@ -27,6 +27,12 @@
 - [ ] configure DNS to point to server 
 
 
+# Fun stuff todo 
+
+- [ ] find a way to generate temporary SMS to receive verification codes for free 
+- [ ] find a way to generate emails to use with chatgpt 
+    - [ ] spoof email of 1secmail email address ? 
+
 ---
 
 # Current 
