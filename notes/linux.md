@@ -1484,9 +1484,13 @@ On Redhat :
 
 `rpm -qa | grep -E 'gnome|kde|xfce|lxde|mate'`
 
-**Check current session**
+Check current display session: 
 
 `echo $DESKTOP_SESSION`
+
+Check process list for running DE : 
+
+`ps -e | grep -E 'gnome|kde|xfce|lxde|mate'`
 
 **check what compositor you are using**
 
