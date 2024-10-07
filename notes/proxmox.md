@@ -13,3 +13,10 @@ ISO images are commonly found in
 **Location of VM Notes**
 
 `/etc/pve/qemu-server`
+
+
+**Enable novnc clipboard support**
+
+`qm set <vmid> -vga <displaytype>,clipboard=vnc`
+
+
