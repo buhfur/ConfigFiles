@@ -355,6 +355,8 @@ Note : it's a good idea to exclude sys, mnt , and proc as they can cause a backu
 
 **Systemd timer unit template**
 
+Create this unit alongside the existing service unit in the same directory 
+
 ```bash
 [Unit]
 Description=Runs My Service every hour
