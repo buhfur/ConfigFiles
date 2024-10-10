@@ -39,7 +39,9 @@
 
 ( I delete lines from the other sections and put the ones i'm currently working on in here )
 
+- [ ] learn more about systemd 
 - [ ] create script that copies files from /mnt/backups/backups/archive/ to mydrive:/pve-backups
+    - [ ] test the script using the redhat vm 
     - [ ] write systemd timer unit that does this automatically 
 - [x] write timer systemd unit to compress all backups in /mnt/backups/backups/backups/
 - [ ] setup debian repo server for distributing custom debian repos on my network
