@@ -355,13 +355,17 @@ Note : it's a good idea to exclude sys, mnt , and proc as they can cause a backu
 
 **Systemd timer unit template**
 
-```
+```bash
+[Unit]
+Description=Runs My Service every hour
+
 [Timer]
+OnBootSec=10min
+OnUnitActiveSec=1h
+Unit=my-service.service
 
-Unit=name.service
-OnCalendar=weekly | 
-
-
+[Install]
+WantedBy=timers.target
 
 ```
 

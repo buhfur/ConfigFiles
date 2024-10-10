@@ -39,8 +39,9 @@
 
 ( I delete lines from the other sections and put the ones i'm currently working on in here )
 
-- [ ] write timer systemd unit to tar all backups in /mnt/backups/backups/backups/
-    - [x] add to notes instructions on how to setup a timer systemd unit  
+- [ ] create script that copies files from /mnt/backups/backups/archive/ to mydrive:/pve-backups
+    - [ ] write systemd timer unit that does this automatically 
+- [x] write timer systemd unit to compress all backups in /mnt/backups/backups/backups/
 - [ ] setup debian repo server for distributing custom debian repos on my network
 - [ ] create folder on pool2 for miscellanious files 
 - [ ] add notes about the current shares on the truenas vm notes 
