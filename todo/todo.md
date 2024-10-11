@@ -40,8 +40,7 @@
 
 ( I delete lines from the other sections and put the ones i'm currently working on in here )
 
-- [ ] write autohotkey script to output windows clipboard 
-- [ ] use chatgpt or other tools to improve the formatting of linux.md 
+- [x] write autohotkey script to output windows clipboard 
 - [ ] learn more about systemd 
 - [ ] create script that copies files from /mnt/backups/backups/archive/ to mydrive:/pve-backups
     - [ ] test the script using the redhat vm 

@@ -32,4 +32,4 @@ Welcome to my website ! Here I host a collection of all my notes which mainly in
 23. [Tutorial_ideas](notes/tutorial_ideas.md)
 24. [Lvm](notes/lvm.md)
 25. [Troubleshooting](notes/troubleshooting.md)
-26. [Linux Improved](notes/linux_improved.md)
+26. [Linux New ](notes/new_linux.md)
