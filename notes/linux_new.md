@@ -1,6 +1,8 @@
 
 
+```bash
 # Linux notes for reference
+```
 
 
 In this document I have added various bash snippets ,tips , and other useful pieces of knowledge that might help me navigate the insane POWAH of linux.
@@ -8,7 +10,9 @@ In this document I have added various bash snippets ,tips , and other useful pie
 ---
 
 
+```bash
 # Table of contents 
+```
 
 
 - [Command & Bash snippets](#command--bash-snippets)
@@ -73,7 +77,9 @@ In this document I have added various bash snippets ,tips , and other useful pie
 
 
 
+```bash
 # Command & Bash snippets 
+```
 
 
 **create directory with a timestamp as it's name**
@@ -211,13 +217,17 @@ This will reduce the sensitivity
 
 
 
+```bash
 # System Tools and 3rd party utilities command snippets
+```
 
 
 The below section should include tools and snippets from various tools i've used.
 
 
+```bash
 # Xinitrc 
+```
 
 
 the xinitrc file is used for loading additional configurations and settings when the Xorg server starts
@@ -274,7 +284,9 @@ This will mount the swap file automatically after boot
 
 
 
+```bash
 # Tips & tricks 
+```
 
 
 Below is some useful info for different services and how they can be enabled / modified.
@@ -287,7 +299,9 @@ One of the issues while installing NetworkManager lies with a preset network con
 Simply delete all lines in /etc/network/interfaces and re-install the package and the systemd service file should be present and should allow you  to activate it.
 
 
+```bash
 # ProtonVPN connections 
+```
 
 
 Change the file extension to a .conf file , then copy the file over to /etc/openvpn. This will start a daemon for every connection in the directory
@@ -295,7 +309,9 @@ Change the file extension to a .conf file , then copy the file over to /etc/open
 ---
 
 
+```bash
 # Setting up torrent server vm 
+```
 
 
 Put ovpn file in /etc/openvpn
@@ -305,7 +321,9 @@ install openvpn-systemd-resolved and network manager
 ---
 
 
+```bash
 # Redirect both STDOUT and STDERR 
+```
 
 
 `command &> /dev/null`
@@ -318,7 +336,9 @@ or
 
 
 
+```bash
 # Piping 
+```
 
 
 > 0> = STDIN
@@ -334,7 +354,9 @@ or
 
 
 
+```bash
 # tar snippets 
+```
 
 
 **List contents of archive**
@@ -359,7 +381,9 @@ Note : it's a good idea to exclude sys, mnt , and proc as they can cause a backu
 ---
 
 
+```bash
 # Systemd 
+```
 
 
 **disable unit**
@@ -422,7 +446,9 @@ Decide which target you would like to use , then run systemctl isolate
 There are many ways to do this , assuming you are using systemd. You can use the following methods to run a script on boot.
 
 
+```bash
 ### Rc.local
+```
 
 
 add this line in the /etc/rc.d/rc.local file
@@ -430,7 +456,9 @@ add this line in the /etc/rc.d/rc.local file
 `sh /home/user/scriptdir/script.sh`
 
 
+```bash
 ### systemd unit file 
+```
 
 
 Use the template below for your script , put this inside */etc/systemd/system*
@@ -456,7 +484,9 @@ Then enable the service file in systemd
 `systemctl enable script.service `
 
 
+```bash
 ### Crontab 
+```
 
 
 edit the crontab file
@@ -470,7 +500,9 @@ To run the script on reboot, use the template below
 **WARNING : Not all versions of cron support the '@reboot' option**
 
 
+```bash
 ### init.d 
+```
 
 
 Make a script and put it in /etc/init.d/
@@ -480,12 +512,16 @@ Use the template below :
 ```
 ! /bin/sh
 
+```bash
 # chkconfig: 345 99 10
+```
 
 case "$1" in
 start)
+```bash
     # Executes our script
     sudo sh /home/user/script.sh
+```
     ;;
 *)
     ;;
@@ -496,7 +532,9 @@ exit 0
 ---
 
 
+```bash
 # xrandr 
+```
 
 
 Put xrandr configurations in ~/.xprofile
@@ -504,14 +542,18 @@ Put xrandr configurations in ~/.xprofile
 
 
 
+```bash
 ### move monitor to the right of another 
+```
 
 
 `xrandr --output <DISPLAY-OUTPUT-1> --right-of <DISPLAY-TWO-2> `
 
 
 
+```bash
 ### change refresh rate of monitor 
+```
 
 
 `xrandr --output <DISPLAY-OUTPUT> --mode <DISPLAY-RESOLUTION> --rate <REF-RATE> `
@@ -521,7 +563,9 @@ Put this line in the ~/.xprofile file for configuration on startup ( happens lat
 
 
 
+```bash
 ## Change background picture with feh 
+```
 
 
 create a ~/.fehbg file with your feh command
@@ -533,7 +577,9 @@ Then put this line in your ~/.xinitrc file
 `~/.fehbg &`
 
 
+```bash
 ## bash difference between $() and ${}
+```
 
 
 "${}" :
@@ -548,14 +594,18 @@ Then put this line in your ~/.xinitrc file
 
 
 
+```bash
 ## use find to only list dotfiles 
+```
 
 
 `find . -maxdepth 1 -type f -name ".*" `
 
 
 
+```bash
 ## Change extensions of all files in dir
+```
 
 
 `find . -name '*.txt' -exec sh -c 'mv "$0" "${0%.txt}.txt_bak"' {} \;`
@@ -564,7 +614,9 @@ Replace .txt with the current ext and replace .txt_bak with the ext you are tryi
 
 
 
+```bash
 ## add text to specific line with sed 
+```
 
 
 For this example I wanted to update a bunch of openvpn config files to change only one line , being the 'auth-user-pass' and put in the location where my creds are stored
@@ -575,7 +627,9 @@ Below is the command I used
 
 
 
+```bash
 # nmcli & Networking 
+```
 
 
 **show all open net conns**
@@ -637,7 +691,9 @@ Shows services using port 80
 ---
 
 
+```bash
 # SELinux 
+```
 
 
 **Put SElinux into disabled mode in grub**
@@ -813,7 +869,9 @@ These recommendations will have a confidence score
 ---
 
 
+```bash
 # DNF 
+```
 
 
 **Search for RPM's of specific tool**
@@ -825,7 +883,9 @@ These recommendations will have a confidence score
 ---
 
 
+```bash
 # Adguard Home
+```
 
 
 **"X" Service is blocked !**
@@ -848,7 +908,9 @@ And after that you're done !
 ---
 
 
+```bash
 # Firewalld 
+```
 
 
 **View all available services**
@@ -896,7 +958,9 @@ And after that you're done !
 ---
 
 
+```bash
 # NFS 
+```
 
 
 **Setup NFS on RHEL 9**
@@ -935,7 +999,9 @@ Then reload the firewall-cmd config
 ---
 
 
+```bash
 # NTP
+```
 
 
 **Turn on NTP**
@@ -994,7 +1060,9 @@ timedatectl is used to switch on NTP time , it talks to the chronyd process
 ---
 
 
+```bash
 # Podman
+```
 
 
 **Run container in detached mode**
@@ -1153,7 +1221,9 @@ Then run
 ---
 
 
+```bash
 # GRUB  
+```
 
 
 **Reset root password without access to wheel group**
@@ -1182,7 +1252,9 @@ Then run
 
 
 
+```bash
 # User management 
+```
 
 
 **View user ID**
@@ -1285,7 +1357,9 @@ or
 
 
 
+```bash
 # Package management with DNF 
+```
 
 
 **Add installation disk as repo**
@@ -1300,7 +1374,9 @@ add the 'gpgcheck=0' to the file
 ---
 
 
+```bash
 # Logical Volume Managment 
+```
 
 
 **View volume groups extent size**
@@ -1325,7 +1401,9 @@ The example above creates a volume group with a Physical Extent size of 8-MiB
 ---
 
 
+```bash
 # Stratis 
+```
 
 
 Install stratis package
@@ -1334,7 +1412,9 @@ Install stratis package
 
 
 
+```bash
 # CIFS 
+```
 
 
 
@@ -1355,7 +1435,9 @@ Set the SUID perm on these binaries
 ---
 
 
+```bash
 # NMAP 
+```
 
 
 
@@ -1385,7 +1467,9 @@ Or alternatively , you can use netstat
 ---
 
 
+```bash
 # GRUB 
+```
 
 
 **Update GRUB config**
@@ -1417,7 +1501,9 @@ Then add /.autorelabel command for SELinux , without doing this you will not be 
 ---
 
 
+```bash
 # Common errors and small fixes 
+```
 
 
 
@@ -1432,7 +1518,9 @@ You can fix this using the `rfkill` tool
 ---
 
 
+```bash
 # Docker 
+```
 
 
 **list docker networks**
@@ -1455,7 +1543,9 @@ the left operand is the file path of a directory on your local machine , the oth
 ---
 
 
+```bash
 # Sed 
+```
 
 
 **replace /bin/sh with /bin/bash for all files in a dir**
@@ -1466,7 +1556,9 @@ the left operand is the file path of a directory on your local machine , the oth
 ---
 
 
+```bash
 # Oracle SBC 
+```
 
 
 **show all sip agents**
@@ -1482,7 +1574,9 @@ the left operand is the file path of a directory on your local machine , the oth
 ---
 
 
+```bash
 # TrueNAS
+```
 
 
 **restart ssh service**
@@ -1492,7 +1586,9 @@ the left operand is the file path of a directory on your local machine , the oth
 ---
 
 
+```bash
 # Grep 
+```
 
 
 **grep for specific file extension**
@@ -1509,7 +1605,9 @@ Replace "md" with whichever extension you are trying to grep for.
 ---
 
 
+```bash
 # Find 
+```
 
 
 **List files with specified extension**
@@ -1522,7 +1620,9 @@ Replace "." with the directory you are searching in and replace "md" with the ex
 ---
 
 
+```bash
 # System Clipboard 
+```
 
 
 If you are using the X window system ,
@@ -1531,7 +1631,9 @@ If you are using the X window system ,
 ---
 
 
+```bash
 # Tar 
+```
 
 
 **Archive top level directories with tar**
@@ -1559,7 +1661,9 @@ if not root directory
 ---
 
 
+```bash
 # Unzip 
+```
 
 
 **unzip all zip files in directory**
@@ -1570,7 +1674,9 @@ if not root directory
 ---
 
 
+```bash
 # Display Management 
+```
 
 
 **check what display manager you are using**
@@ -1606,7 +1712,9 @@ Check process list for running DE :
 ---
 
 
+```bash
 # Git 
+```
 
 
 **ignore vim swap files**
@@ -1616,7 +1724,9 @@ Add this to your .gitignore
 `*~`
 
 
+```bash
 # Xorg 
+```
 
 
 **Make desktop shortcut for application**
@@ -1680,7 +1790,9 @@ Section "Extensions"
 
 
 
+```bash
 # Rclone 
+```
 
 
 **copy files from source to dest**
@@ -1690,7 +1802,9 @@ Section "Extensions"
 ---
 
 
+```bash
 # Du 
+```
 
 
 > **show all files in current directory size in different units**
@@ -1720,7 +1834,9 @@ Section "Extensions"
 ---
 
 
+```bash
 # Ranger
+```
 
 
 **hidden files config**
@@ -1735,7 +1851,9 @@ Section "Extensions"
 ---
 
 
+```bash
 # Markdown 
+```
 
 
 **Markdown table template**
@@ -1761,7 +1879,9 @@ Output :
 ---
 
 
+```bash
 # Youtube downloading 
+```
 
 
 **download only the transcript**
@@ -1772,19 +1892,25 @@ Output :
 ---
 
 
+```bash
 # FHS 
+```
 
 
 This section is dedicated to my notes around the filsystem hierarchy standard that's used widely among most linux distributions. These may contain pure info or snippets that may help me along with configuring a system and knowing where to allocate certain files. Each section will be divided by the named directory.
 
 
 
+```bash
 ## /home
+```
 
 
 
 
+```bash
 ### Home Notes 
+```
 
 
 * Any scripts located in ```/home/<user>/bin``` will be automatically added to the users PATH.
@@ -1794,7 +1920,9 @@ See the snippet below :
 
 ```
 
+```bash
 # set PATH so it includes user's private bin if it exists
+```
 
 if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
