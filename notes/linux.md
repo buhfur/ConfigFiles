@@ -74,40 +74,58 @@ In this document I have added various bash snippets ,tips , and other useful pie
 
 > Use the following command below in a bash script 
 >
-> `timestamp=$(date +"%Y-%m-%d_%H-%M-%S")`
+> ```bash
+> timestamp=$(date +"%Y-%m-%d_%H-%M-%S")
+> ```
 >
 > Then to make the directory , use the following syntax 
-> `mkdir "directory_$(date +%Y%m%d_%H%M%S)"`
+> ```bash
+mkdir "directory_$(date +%Y%m%d_%H%M%S)"
+```
 
 **enable vi keybinds for bash**
 
-`set -o vi `
+```bash
+set -o vi 
+```
 
 **find bash shortcuts**
 
-`man readline`
+```bash
+man readline
+```
 
 **Remove file with hyphens in the name**
 
-`rm -- -filename`
+```bash
+rm -- -filename
+```
 
 or 
 
-`rm ./--filename`
+```bash
+rm ./--filename
+```
 
 **Start comand as background job**
 
-`command &`
+```bash
+command &
+```
 
 Add an ampersand at the end of the command 
 
 Type jobs to view your background tasks
 
-use `fg ` by itself to bring the most recently started background job to the foreground of the console. From there you can stop the job using Ctrl-Z or Ctrl-C
+use ```bash
+fg 
+``` by itself to bring the most recently started background job to the foreground of the console. From there you can stop the job using Ctrl-Z or Ctrl-C
 
 **Change file extension of all files in directory**
 
-`rename 's/\.foo$/.bar/' *.foo`
+```bash
+rename 's/\.foo$/.bar/' *.foo
+```
 
 replace foo with the current extension , replace bar with the new ext.
 
@@ -116,80 +134,116 @@ replace foo with the current extension , replace bar with the new ext.
 
 If you're using Xorg as your display server, xev should already be installed. This tool let's you see what keycode goes to what key.
 
-`xev` 
+```bash
+xev
+``` 
 
 After finding the keycode, run this command below. Substitute \<KEYCODE\> with the numerical keycode you retrieve from xev.
 
-`xmodmap -pk | grep <KEYCODE>`
+```bash
+xmodmap -pk | grep <KEYCODE>
+```
 
 **Show info about hard drives connected**
 
-`find /dev/disk/by-id/ -type l|xargs -I{} ls -l {}|grep -v -E '[0-9]$' |sort -k11|cut -d' ' -f9,10,11,12`
+```bash
+find /dev/disk/by-id/ -type l|xargs -I{} ls -l {}|grep -v -E '[0-9]$' |sort -k11|cut -d' ' -f9,10,11,12
+```
 
 **Show otherboard info**
 
-`dmidecode -t 2 `
+```bash
+dmidecode -t 2 
+```
 
 **Disable trackpad on linux**
 
-`sudo apt-get install xinput `
+```bash
+sudo apt-get install xinput 
+```
 
-then find your touchpad with `xinput list`. Alot of the time trackpads are labeled with "SynPS/x Snynaptics TouchPad". Locate the ID in the second column and do the following command below.
+then find your touchpad with ```bash
+xinput list
+```. Alot of the time trackpads are labeled with "SynPS/x Snynaptics TouchPad". Locate the ID in the second column and do the following command below.
 
-`xinput --disable <ID>`
+```bash
+xinput --disable <ID>
+```
 
 
 **List all users on host**
 
-`compgen -u | column`
+```bash
+compgen -u | column
+```
 
 
 **Restore default .bashrc, .profile**
 
 The default versions of these files are stored in 
 
-`/etc/skel/`
+```bash
+/etc/skel/
+```
 
 
 **To restore these files**
 
-`source /etc/skel/.bashrc`
+```bash
+source /etc/skel/.bashrc
+```
 
 or 
 
-`source /etc/skel/.profile`
+```bash
+source /etc/skel/.profile
+```
 
 or 
 
-`source /etc/skel/.bash_logout`
+```bash
+source /etc/skel/.bash_logout
+```
 
 
 **Show motherboard info**
 
-`dmidecode | less`
+```bash
+dmidecode | less
+```
 
 
 **Get CPU info** 
 
-`lscpu`
+```bash
+lscpu
+```
 
 or 
 
-`cat /proc/cpuinfo`
+```bash
+cat /proc/cpuinfo
+```
 
 
 
 **Get disk info**
 
-`lsblk -o +MODEL,SERIAL,WWN`
+```bash
+lsblk -o +MODEL,SERIAL,WWN
+```
 
 or 
 
-`ls -l /dev/disk/by-id`
+```bash
+ls -l /dev/disk/by-id
+```
 
 or 
 
-`lsblk |awk 'NR==1{print $0" DEVICE-ID(S)"}NR>1{dev=$1;printf $0" ";system("find /dev/disk/by-id -lname \"*"dev"\" -printf \" %p\"");print "";}'|grep -v -E 'part|lvm'`
+```bash
+lsblk |awk 'NR==1{print $0" DEVICE-ID(S)"}NR>1{dev=$1;printf $0" ";system("find /dev/disk/by-id -lname \"*"dev"\" -printf \" %p\"");print "";}'|grep -v -E 'part|lvm'
+```
 
 
 **Reduce text entering sensitivity**
@@ -198,7 +252,9 @@ You can either use kbdrate or xset , preferably xset as it works alot easier
 
 Enter this line in your xinitrc , or just copy the xinitrc from the ~/dotfiles directory to your local .xinitrc
 
-`xset r rate 250 60`
+```bash
+xset r rate 250 60
+```
 
 
 This will reduce the sensitivity 
@@ -217,14 +273,18 @@ the xinitrc file is used for loading additional configurations and settings when
 
 **Install numlockx and run this command**
 
-`python -c 'from ctypes import *; X11 = cdll.LoadLibrary("libX11.so.6"); display = X11.XOpenDisplay(None); X11.XkbLockModifiers(display, c_uint(0x0100), c_uint(2), c_uint(0)); X11.XCloseDisplay(display)'`
+```bash
+python -c 'from ctypes import *; X11 = cdll.LoadLibrary("libX11.so.6"); display = X11.XOpenDisplay(None); X11.XkbLockModifiers(display, c_uint(0x0100), c_uint(2), c_uint(0)); X11.XCloseDisplay(display)'
+```
 
 
 **Add aliases for ssh connections**
 
 Add two lines for each host , one being the IP and the port you want to use 
 
-`vim ~/.ssh/config `
+```bash
+vim ~/.ssh/config 
+```
 
 Add these two lines to the ~/.ssh/config file 
 
@@ -235,28 +295,38 @@ Add these two lines to the ~/.ssh/config file
 
 Then add the IP addresses for the ssh hosts to the /etc/hosts file with the format below 
 
-`IPADDR     hostname`
+```bash
+IPADDR     hostname
+```
 
 
 **Create swap file**
 
 **step 1 : use dd to create the file using the /dev/zero device**
 
-`dd if=/dev/zero of=/swapfile bs=1M count=100`
+```bash
+dd if=/dev/zero of=/swapfile bs=1M count=100
+```
 
 **step 2 : convert file to swapfile**
 
-`mkswap /swapfile`
+```bash
+mkswap /swapfile
+```
 
 **step 3 : swap to the newly created swap file**
 
-`swapon /swapfile`
+```bash
+swapon /swapfile
+```
 
 **step 4 : mount the file in /etc/fstab**
 
 Add this line to the bottom of your /etc/fstab file 
 
-`/swapfile none swap defaults 0 0`
+```bash
+/swapfile none swap defaults 0 0
+```
 
 This will mount the swap file automatically after boot 
 
@@ -290,11 +360,15 @@ install openvpn-systemd-resolved and network manager
 
 # Redirect both STDOUT and STDERR 
 
-`command &> /dev/null`
+```bash
+command &> /dev/null
+```
 
 or 
 
-`command > /dev/null 2>&1`
+```bash
+command > /dev/null 2>&1
+```
 
 ---
 
@@ -317,21 +391,29 @@ or
 
 **List contents of archive**
 
-`tar -tf archive.tar`
+```bash
+tar -tf archive.tar
+```
 
 **Add file to archive**
 
-`tar -rf backup.tar file`
+```bash
+tar -rf backup.tar file
+```
 
 **Backup entire system with timestamp**
 
 Note : it's a good idea to exclude sys, mnt , and proc as they can cause a backup to freeze. None of these directories should be necessary for archival anyways 
 
-`tar pzvxf --exclude=mnt/ --exclude=sys/ --exclude=proc/ /backup/"$(date '+%Y-%m-%d').tar.gz" --one-file-system /`
+```bash
+tar pzvxf --exclude=mnt/ --exclude=sys/ --exclude=proc/ /backup/"$(date '+%Y-%m-%d').tar.gz" --one-file-system /
+```
 
 **add timestamp to tar archive**
 
-`tar -zcvf "$(date '+%Y-%m-%d').tar.gz" `
+```bash
+tar -zcvf "$(date '+%Y-%m-%d').tar.gz" 
+```
 
 
 ---
@@ -342,15 +424,21 @@ Note : it's a good idea to exclude sys, mnt , and proc as they can cause a backu
 
 > Stop the service 
 >
->   `systemctl stop <unit-name> `
+> ```bash
+> systemctl stop <unit-name> 
+> ```
 > 
 > Disable the service :
 >
->   `systemctl disable <unit-name>`
+> ```bash
+> systemctl disable <unit-name>
+> ```
 >
 > Stop the unit from being started manually or automatically 
 >
->   `systemctl mask <unit-name>`
+> ```bash
+> systemctl mask <unit-name>
+> ```
 >
 
 **Systemd timer unit template**
@@ -375,29 +463,43 @@ WantedBy=timers.target
 
 > If you need to create a service that depends upon an X server running , add this line under the "Unit" section 
 
-`PartOf=graphical-session.target`
+```bash
+PartOf=graphical-session.target
+```
 
 > Also you will want to add this line under the "Install" section 
 
-`WantedBy=xsession.target`
+```bash
+WantedBy=xsession.target
+```
 
 **Boot into different target**
 
-`cd /usr/lib/systemd/system`
+```bash
+cd /usr/lib/systemd/system
+```
 
-`grep Isolate *.target`
+```bash
+grep Isolate *.target
+```
 
 Decide which target you would like to use , then run systemctl isolate 
 
-`systemctl isolate something.target`
+```bash
+systemctl isolate something.target
+```
 
 **Start systemd service under specific User ID**
 
-`systemctl --user service.name`
+```bash
+systemctl --user service.name
+```
 
 **Change user systemd service to start on system startup**
 
-`loginctl enable-linger myuser`
+```bash
+loginctl enable-linger myuser
+```
 
 **Running scripts at startup**
 
@@ -407,13 +509,15 @@ There are many ways to do this , assuming you are using systemd. You can use the
 
 add this line in the /etc/rc.d/rc.local file 
 
-`sh /home/user/scriptdir/script.sh`
+```bash
+sh /home/user/scriptdir/script.sh
+```
 
 ### systemd unit file 
 
 Use the template below for your script , put this inside */etc/systemd/system*
 
-```
+```bash
 [Unit]
 Description=Reboot message systemd service.
 
@@ -427,22 +531,30 @@ WantedBy=multi-user.target
 
 Set perms for the service file 
 
-`chmod 644 /etc/systemd/system/script.service `
+```bash
+chmod 644 /etc/systemd/system/script.service 
+```
 
 Then enable the service file in systemd 
 
-`systemctl enable script.service `
+```bash
+systemctl enable script.service 
+```
 
 
 ### Crontab 
 
 edit the crontab file 
 
-`crontab -e `
+```bash
+crontab -e 
+```
 
 To run the script on reboot, use the template below 
 
-`@reboot sh /home/user/reboot_message.sh`
+```bash
+@reboot sh /home/user/reboot_message.sh
+```
 
 **WARNING : Not all versions of cron support the '@reboot' option**
 
@@ -452,7 +564,7 @@ Make a script and put it in /etc/init.d/
 
 Use the template below : 
 
-```
+```bash
 ! /bin/sh
 # chkconfig: 345 99 10
 case "$1" in
@@ -476,12 +588,16 @@ Put xrandr configurations in ~/.xprofile
 
 ### move monitor to the right of another 
 
-`xrandr --output <DISPLAY-OUTPUT-1> --right-of <DISPLAY-TWO-2> `
+```bash
+xrandr --output <DISPLAY-OUTPUT-1> --right-of <DISPLAY-TWO-2> 
+```
 
 
 ### change refresh rate of monitor 
 
-`xrandr --output <DISPLAY-OUTPUT> --mode <DISPLAY-RESOLUTION> --rate <REF-RATE> `
+```bash
+xrandr --output <DISPLAY-OUTPUT> --mode <DISPLAY-RESOLUTION> --rate <REF-RATE> 
+```
 
 Put this line in the ~/.xprofile file for configuration on startup ( happens late in the boot process ) 
 
@@ -491,33 +607,45 @@ Put this line in the ~/.xprofile file for configuration on startup ( happens lat
 
 create a ~/.fehbg file with your feh command 
 
-`feh --bg-fill /home/user/something.jpg`
+```bash
+feh --bg-fill /home/user/something.jpg
+```
 
 Then put this line in your ~/.xinitrc file 
 
-`~/.fehbg &`
+```bash
+~/.fehbg &
+```
 
 ## bash difference between $() and ${}
 
 "${}" :
 - used for referencing variables in a script 
 
-`echo ${var} something`
+```bash
+echo ${var} something
+```
 
 "$()" : 
 - used for running commands in a subshell 
 
-`echo "Path $(basename /home/user/Downloads)`
+```bash
+echo "Path $(basename /home/user/Downloads)
+```
 
 
 ## use find to only list dotfiles 
 
-`find . -maxdepth 1 -type f -name ".*" `
+```bash
+find . -maxdepth 1 -type f -name ".*" 
+```
 
 
 ## Change extensions of all files in dir
 
-`find . -name '*.txt' -exec sh -c 'mv "$0" "${0%.txt}.txt_bak"' {} \;`
+```bash
+find . -name '*.txt' -exec sh -c 'mv "$0" "${0%.txt}.txt_bak"' {} \;
+```
 
 Replace .txt with the current ext and replace .txt_bak with the ext you are trying to set it to 
 
@@ -528,66 +656,94 @@ For this example I wanted to update a bunch of openvpn config files to change on
 
 Below is the command I used 
 
-`sed -e '/auth-user-pass/ s/$/ \/opt\/scripts\/login.conf/' ./*`
+```bash
+sed -e '/auth-user-pass/ s/$/ \/opt\/scripts\/login.conf/' ./*
+```
 
 
 # nmcli & Networking 
 
 **show all open net conns**
 
-`sudo netstat -nlp`
+```bash
+sudo netstat -nlp
+```
 
 **show service being used by specific port**
 
 Shows services using port 80 
 
-`lsof -i tcp:80`
+```bash
+lsof -i tcp:80
+```
 
 **Remove Secondary IP for host**
 
-`nmcli con mod <con-name> -ipv4.addresses "<IP>" `
+```bash
+nmcli con mod <con-name> -ipv4.addresses "<IP>" 
+```
 **Add Wifi Connection**
 
-`nmcli device wifi connect <AP name> password <password>`
+```bash
+nmcli device wifi connect <AP name> password <password>
+```
 
 **Create new network connection in nmcli**
 
-`nmcli con add con-name static ifname ens18 autoconnect no type ethernet ip4 10.0.0.10/24 gw4 10.0.0.1 ipv4.method manual`
+```bash
+nmcli con add con-name static ifname ens18 autoconnect no type ethernet ip4 10.0.0.10/24 gw4 10.0.0.1 ipv4.method manual
+```
 
 
 **Bring up network connection with nmcli**
 
-`nmcli con up <con-name> `
+```bash
+nmcli con up <con-name> 
+```
 
 
 **Switch to DHCP with nmcli**
 
-`nmcli con up dhcp`
+```bash
+nmcli con up dhcp
+```
 
 
 **change connection to not connect automatically with nmcli** 
 
-`nmcli con mod <con-name> connection.autoconnect no`
+```bash
+nmcli con mod <con-name> connection.autoconnect no
+```
 
 **Add DNS server to connection with nmcli**
 
-`nmcli con mod <con-name> ipv4.dns <dns-server-ip>`
+```bash
+nmcli con mod <con-name> ipv4.dns <dns-server-ip>
+```
 
 **To add additional dns servers**
 
-`nmcli con mod <con-name> +ipv4.dns 8.8.8.8`
+```bash
+nmcli con mod <con-name> +ipv4.dns 8.8.8.8
+```
 
 **Change IP for existing connection in nmcli**
 
-`nmcli con mod <con-name> ipv4.addresses <ip-address>/<CIDR-prefix>`
+```bash
+nmcli con mod <con-name> ipv4.addresses <ip-address>/<CIDR-prefix>
+```
 
 **Add secondary IP addresses with nmcli**
 
-`nmcli con mod <con-name> +ipv4.addresses <new-ip>/<CIDR-prefix>`
+```bash
+nmcli con mod <con-name> +ipv4.addresses <new-ip>/<CIDR-prefix>
+```
 
 **After chaning any properties to a connection you must re-activate the connection**
 
-`nmcli con up <con-name> `
+```bash
+nmcli con up <con-name> 
+```
 
 ---
 
@@ -597,31 +753,43 @@ Shows services using port 80
 
 Put this line into your kernel boot args 
 
-`selinux=0`
+```bash
+selinux=0
+```
 
 **Put Selinux into enforcing mode in grub**
 
 add this to kernel boot args 
 
-`enforcing=0`
+```bash
+enforcing=0
+```
 
 **View selinux config**
 
-`cat /etc/sysconfig/selinux`
+```bash
+cat /etc/sysconfig/selinux
+```
 
 **Check what mode selinux is running**
 
-`getenforce`
+```bash
+getenforce
+```
 
 **Switch between selinux modes temporarily**
 
 **permissive mode**
 
-`setenforce 0`
+```bash
+setenforce 0
+```
 
 **enforcingm mode**
 
-`setenforce 1`
+```bash
+setenforce 1
+```
 
 **Switch modes persistantl**
 
@@ -629,39 +797,55 @@ modify /etc/sysconfig or add kernel boot arg
 
 **Get status of selinux**
 
-`sestatus`
+```bash
+sestatus
+```
 
 **Get more detailed info**
 
-`setstatus -v`
+```bash
+setstatus -v
+```
 
 **Show context setttings**
 
 **using ls**
 
-`ls -Z`
+```bash
+ls -Z
+```
 
 **using ps**
 
-`ps Zaux`
+```bash
+ps Zaux
+```
 
 **using ss**
 
-`ss -Ztul`
+```bash
+ss -Ztul
+```
 
 **Setting Context types**
 
 **Add context type to manually created directories**
 
-`semanage fcontext -a -t <contxt-type> "/mydir"`
+```bash
+semanage fcontext -a -t <contxt-type> "/mydir"
+```
 
 **Apply policy settings**
 
-`restorecon -R -v /mydir`
+```bash
+restorecon -R -v /mydir
+```
 
 **Help with setting contexts**
 
-`man semanage-fcontext`
+```bash
+man semanage-fcontext
+```
 
 type "/example"
 
@@ -669,19 +853,29 @@ type "/example"
 
 Install selinux-policy-doc package 
 
-`dnf -y install selinux-policy-package`
+```bash
+dnf -y install selinux-policy-package
+```
 
-`man -k _selinux`
+```bash
+man -k _selinux
+```
 
 **Enable ssh port in SELinux**
 
-`semanage port -a -t ssh_port_t -p tcp PORTNUMBER `
+```bash
+semanage port -a -t ssh_port_t -p tcp PORTNUMBER 
+```
 
 **Relabel entire filesytem**
 
-`restorecon -Rv /`
+```bash
+restorecon -Rv /
+```
 
-or create a file `/.autorelabel`
+or create a file ```bash
+/.autorelabel
+```
 works after server restart, afterwards the file will be removed
 
 ---
@@ -690,34 +884,52 @@ works after server restart, afterwards the file will be removed
 
 **Example: Changing port of apache**
 
-`semanage port -a -t http_port_t -p tcp 8008`
+```bash
+semanage port -a -t http_port_t -p tcp 8008
+```
 
 **Template**
 
-`semanage port -a -t <context-type> -p <tcp/udp> <port>`
+```bash
+semanage port -a -t <context-type> -p <tcp/udp> <port>
+```
 
-run `restorecon` afterwards to apply changes
+```bash
+restorecon
+```
+
+afterwards to apply changes
 
 
 **Using Boolean Settings to Modify SELinux Settings**
 
 **get list of booleans on system**
 
-`getsebool -a`
+```bash
+getsebool -a
+```
 
-`semanage boolean -l`
+```bash
+semanage boolean -l
+```
 
 **Change Boolean example**
 
-`setsebool ftpd_anon_write on`
+```bash
+setsebool ftpd_anon_write on
+```
 
 **Template**
 
-`setsebool <context-rule> <on/off>`
+```bash
+setsebool <context-rule> <on/off>
+```
 
 **Apply permanant changes to boolean**
 
-`setsebool -P`
+```bash
+setsebool -P
+```
 
 
 **Diagnosing and Addressing SELinux Policy Violations**
@@ -730,7 +942,9 @@ Messages are logged with the type=AVC in the log.
 
 You can search for these messages through grep 
 
-`grep AVC /var/log/audit/audit.log`
+```bash
+grep AVC /var/log/audit/audit.log
+```
 
 "avc: denied { map } " indicates a map request was denied , therefore some process tried to read attributes of a file and that was denied. Thus triggering a policy violation
 
@@ -740,17 +954,23 @@ in this logging , the scontext is the **source context** while the tcontext is t
 
 Download the **sealert** command 
 
-`dnf -y install setroubleshoot-server`
+```bash
+dnf -y install setroubleshoot-server
+```
 
 Then restart your server 
 
 Then you can grep for entries from sealert 
 
-`journalctl | grep sealert`
+```bash
+journalctl | grep sealert
+```
 
 From the info you get , you might see a command it recommends to run to see furtheri nfo. 
 
-`sealert -l <SOME-ID> `
+```bash
+sealert -l <SOME-ID> 
+```
 
 Sometimes the logging will even recommend other commands to run in order to fix the issue, take these commands with a grain of salt unless you know what you are doing .
 
@@ -761,7 +981,6 @@ These recommendations will have a confidence score
 
 - newly created files inherit the context settings from the parent directory
 - copied files do this as well. 
-- original context settings are retained when using the `cp -a` command. To fix this use `restorecon`
 
 ---
 
@@ -769,9 +988,13 @@ These recommendations will have a confidence score
 
 **Search for RPM's of specific tool**
 
-`dnf whatprovides */semanage`
+```bash
+dnf whatprovides */semanage
+```
 
-`dnf whatprovides`
+```bash
+dnf whatprovides
+```
 
 ---
 
@@ -800,44 +1023,64 @@ And after that you're done !
 
 **View all available services**
 
-`firewall-cmd --get-services`
+```bash
+firewall-cmd --get-services
+```
 
 
 **Get default zone**
 
-`firewall-cmd --get-default-zone`
+```bash
+firewall-cmd --get-default-zone
+```
 
 **Get available zones**
 
-`firewall-cmd --get-zones`
+```bash
+firewall-cmd --get-zones
+```
 
 **List services**
 
-`firewall-cmd --list-services`
+```bash
+firewall-cmd --list-services
+```
 
 **List services enabled in zone**
 
-`firewall-cmd --list-all --zone=public`
+```bash
+firewall-cmd --list-all --zone=public
+```
 
 **Add port to firewalld permanently**
 
-`firewall-cmd --add-port=2020/tcp --permanent`
+```bash
+firewall-cmd --add-port=2020/tcp --permanent
+```
 
 **Add service to firewalld**
 
-`firewall-cmd --add-service=vnc-server --permanent`
+```bash
+firewall-cmd --add-service=vnc-server --permanent
+```
 
 **Reload firewalld**
 
-`firewall-cmd --reload`
+```bash
+firewall-cmd --reload
+```
 
 **Write configs to runtime**
 
-`firewall-cmd --runtime-to-permanent`
+```bash
+firewall-cmd --runtime-to-permanent
+```
 
 **Add source IP**
 
-`firewall-cmd --add-source=<ipaddress/netmask>`
+```bash
+firewall-cmd --add-source=<ipaddress/netmask>
+```
 
 
 ---
@@ -848,7 +1091,9 @@ And after that you're done !
 
 create local directories to be shared 
 
-`mkdir -p /nfsdata /users/user1 /users/user2`
+```bash
+mkdir -p /nfsdata /users/user1 /users/user2
+```
 
 Create /etc/exports file and assign the following 
 
@@ -859,23 +1104,33 @@ Create /etc/exports file and assign the following
 
 Install the cifs-utils package
 
-`dnf install -y nfs-utils`
+```bash
+dnf install -y nfs-utils
+```
 
 Add the nfs , rcp-bind, and mountd services to firewall 
 
-`firewall-cmd --add-service nfs --permanent ; firewall-cmd --add-service rpc-bind ; firewall-cmd --add-service mountd --permanent`
+```bash
+firewall-cmd --add-service nfs --permanent ; firewall-cmd --add-service rpc-bind ; firewall-cmd --add-service mountd --permanent
+```
 
 Then reload the firewall-cmd config 
 
-`firewall-cmd --reload`
+```bash
+firewall-cmd --reload
+```
 
 **List available mounts from IP or hostname**
 
-`showmount -e <IP-or-hostname>`
+```bash
+showmount -e <IP-or-hostname>
+```
 
 **Perform pseudo root mount**
 
-`mount <Ip-Or-hostname>:/ /mnt`
+```bash
+mount <Ip-Or-hostname>:/ /mnt
+```
 
 ---
 
@@ -883,54 +1138,86 @@ Then reload the firewall-cmd config
 
 **Turn on NTP**
 
-`timedatectl set-ntp 1`
+```bash
+timedatectl set-ntp 1
+```
 
 
 **Commands to manage time on RHEL 9**
 
-`date` - manages
+```bash
+date
+``` - manages
 
 **Commands to manage time on RHEL 9**
 
-`date` - manages local time 
+```bash
+date
+``` - manages local time 
 
-`hwclock` - manages hardware time 
+```bash
+hwclock
+``` - manages hardware time 
 
-`timedatectl` - developed to manage all aspects of time 
+```bash
+timedatectl
+``` - developed to manage all aspects of time 
 
 
 **Convert epoch time to human time**
 
-`date --date '@1720893005` 
+```bash
+date --date '@1720893005
+``` 
 
 **Show the current system day of month, month , and year**
 
-`date +%d-%m-%y`
+```bash
+date +%d-%m-%y
+```
 
 **Set the current time 3 minutes past 4 pm**
 
-`date -s 16:03`
+```bash
+date -s 16:03
+```
 
 **Using hwclock**
 
-`hwclock --systohc` - synchronizes curent system time to the hardware clock 
+```bash
+hwclock --systohc
+``` - synchronizes curent system time to the hardware clock 
 
-`hwclock --hctosys` - synchronizes current hardware time to the system clock
+```bash
+hwclock --hctosys
+``` - synchronizes current hardware time to the system clock
 
 
 **timedatectl commands**
 
-`status` - shows current time settings 
+```bash
+status
+``` - shows current time settings 
 
-`set-time TIME` - sets the current time
+```bash
+set-time TIME
+``` - sets the current time
 
-`set-timezone ZONE` - sets the current timezone 
+```bash
+set-timezone ZONE
+``` - sets the current timezone 
 
-`list-timezone` - shows a list of all time zones 
+```bash
+list-timezone
+``` - shows a list of all time zones 
 
-`set-local-rtc [0|1]` - controls whether the RTC ( hardware clock )
+```bash
+set-local-rtc [0|1]
+``` - controls whether the RTC ( hardware clock )
 
-`set-ntp [0|1]` - Controls whether NTP is enabled
+```bash
+set-ntp [0|1]
+``` - Controls whether NTP is enabled
 
 timedatectl is used to switch on NTP time , it talks to the chronyd process
 
@@ -940,84 +1227,126 @@ timedatectl is used to switch on NTP time , it talks to the chronyd process
 
 **Run container in detached mode**
 
-`podman run -d nginx`
+```bash
+podman run -d nginx
+```
 
 **Run container in TTY mode**
 
-`podman run -it nginx /bin/sh`
+```bash
+podman run -it nginx /bin/sh
+```
 
 **View running containers**
 
-`podman ps`
+```bash
+podman ps
+```
 
 
 **View all inactive and active containers**
 
-`podman ps -a`
+```bash
+podman ps -a
+```
 
 **Attach to running container**
 
-`podman attach <name>`
+```bash
+podman attach <name>
+```
 
 **Stop running container**
 
-`podman stop <name>`
+```bash
+podman stop <name>
+```
 
 **Search which registries are currently used**
 
-`podman info`
+```bash
+podman info
+```
 
 
 **Filter images in search**
 
-`podman search --filter official=true alpine`
+```bash
+podman search --filter official=true alpine
+```
 
-`podman search --filter stars=5 alpine`
+```bash
+podman search --filter stars=5 alpine
+```
 
 
 **Pull image**
 
-`podman pull <image>`
+```bash
+podman pull <image>
+```
 
 
 **Build custom image**
 
-`podman build -t imagename:tag -f /path/to/Containerfile`
+```bash
+podman build -t imagename:tag -f /path/to/Containerfile
+```
 
 Example : 
 
-`podman build -t mymap:1.0`
+```bash
+podman build -t mymap:1.0
+```
 
 
 **Verify custom image was built**
 
-`podman images`
+```bash
+podman images
+```
 
 **Remove images with None tag**
 
-`podman image prune`
+```bash
+podman image prune
+```
 
 
 **Managing Containers**
 
 
-`podman stop` - sends SIGTERM signal to the container , if no results after 10 seconds , the SIGKILL signal is sent.
+```bash
+podman stop
+``` - sends SIGTERM signal to the container , if no results after 10 seconds , the SIGKILL signal is sent.
 
-`podman kill` - immediately sends the SIGKILL command 
+```bash
+podman kill
+``` - immediately sends the SIGKILL command 
 
-`podman restart` - restarts container 
+```bash
+podman restart
+``` - restarts container 
 
-`podman rm` - removes container files written to the writable layer 
+```bash
+podman rm
+``` - removes container files written to the writable layer 
 
-`podman run --rm` - runs the container and deletes container files automatically 
+```bash
+podman run --rm
+``` - runs the container and deletes container files automatically 
 
 **Running Commands inside containers**
 
-`podman exec mycontainer uname -r`
+```bash
+podman exec mycontainer uname -r
+```
 
 TTY MODE: 
 
-`podman exec -it mycontainer /bin/bash`
+```bash
+podman exec -it mycontainer /bin/bash
+```
 
 **Managing Container Ports**
 
@@ -1025,7 +1354,9 @@ ports 1-1024 are accessible by the root user only
 
 To run a container with port forwarding , run the following command below 
 
-`podman run --name nginxport -d -p 8080:80 nginx`
+```bash
+podman run --name nginxport -d -p 8080:80 nginx
+```
 
 This would allow the nginx process to access host port 8080 and forward to standard http port 80 
 
@@ -1035,12 +1366,16 @@ After adding the port , don't forget to add the port to your firewall
 
 For containers such as mariadb , you will need to supply the container with environment variables. For example the mariadb container needs the password for the root user 
 
-Some containers contain a "usage" line that may say how the container needs to run with environment variables included. However this is not always the case, you can check the container with `podman inspect` to see if it's there.
+Some containers contain a "usage" line that may say how the container needs to run with environment variables included. However this is not always the case, you can check the container with ```bash
+podman inspect
+``` to see if it's there.
 
 
 Here's an example on how to use env variables with the mariadb container 
 
-`podman run -d -e MYSQL_ROOT_PASSWORD=password -e MYSQL_USER=anna `
+```bash
+podman run -d -e MYSQL_ROOT_PASSWORD=password -e MYSQL_USER=anna 
+```
 
 **Managing Container storage**
 
@@ -1057,38 +1392,60 @@ There are 2 requirements to doing this however :
 
 If not done automatically , you can do it with the cmmand 
 
-`semanage fcontext -a -t container_file_t "hostdir(/.*)?"; restorecon`
+```bash
+semanage fcontext -a -t container_file_t "hostdir(/.*)?"; restorecon
+```
 
 To do so automatically :
 
-`-v host_dir:container_dir`
+```bash
+-v host_dir:container_dir
+```
 
 If root container or if user is owner of the container 
 
-`-v host_dir:container_dir:Z`
+```bash
+-v host_dir:container_dir:Z
+```
 
 
 **set directory ownership on bind-mounted directories for rootless containers**
 
-1. Find UID of the user that runs the container main app , using `podman inspect imagename`
+1. Find UID of the user that runs the container main app , using ```bash
+podman inspect imagename
+```
 
-2. Use `podman unshare chown nn:nn dirname` to set the container UID as the owner of the directory on the host. This directory must be in the rootless user home dir. Otherwise it woulden't be apart of the user namespace.
+2. Use ```bash
+podman unshare chown nn:nn dirname
+``` to set the container UID as the owner of the directory on the host. This directory must be in the rootless user home dir. Otherwise it woulden't be apart of the user namespace.
 
-3. Use `podman unshare /cat/proc/self/uid_map` to verify the user ID mapping 
+3. Use ```bash
+podman unshare /cat/proc/self/uid_map
+``` to verify the user ID mapping 
 
-4. Verify that the mapped user is owner on the host by using `ls -ld ~/dirname`
+4. Verify that the mapped user is owner on the host by using ```bash
+ls -ld ~/dirname
+```
 
 
 **Running Containers as Systemd Services**
 
-`podman generate systemd --name mycontainer --files`
+```bash
+podman generate systemd --name mycontainer --files
+```
 
-The Container file must be generated in the `~/.config/systemd/user/directory`
+The Container file must be generated in the ```bash
+~/.config/systemd/user/directory
+```
 
-Create this dir and CD to it before running the `podman generate` command 
+Create this dir and CD to it before running the ```bash
+podman generate
+``` command 
 
 Then run 
-`systemctl --user enable containe-mycontainer.service`
+```bash
+systemctl --user enable containe-mycontainer.service
+```
 
 
 ---
@@ -1105,17 +1462,25 @@ Then run
 
 4. then mount the filesystem as writable 
 
-`mount -o remount,rw /`
+```bash
+mount -o remount,rw /
+```
 
-5. Then change the password for root with `passwd root`
+5. Then change the password for root with ```bash
+passwd root
+```
 
 6. Then enable SELinux relabeling on next boot 
 
-`touch /.autorelabel`
+```bash
+touch /.autorelabel
+```
 
 7. then reboot the system
 
-`/usr/sbin/reboot -f `
+```bash
+/usr/sbin/reboot -f 
+```
 
 ---
 
@@ -1123,11 +1488,15 @@ Then run
 
 **View user ID** 
 
-`id -u <username>`
+```bash
+id -u <username>
+```
 
 **Change password validity to 90 days**
 
-`passwd -n 30 -w 3 -x 90 username`
+```bash
+passwd -n 30 -w 3 -x 90 username
+```
 
 The "-n" sets minimal usage period 
 
@@ -1137,9 +1506,13 @@ The "-n" sets minimal usage period
 
 You can also do this with chage by setting an exact date 
 
-`chage -E 2025-12-31 username`
+```bash
+chage -E 2025-12-31 username
+```
 
-You can find the amount of days until the password expires with `chage -l username` or by viewing the /etc/passwd file 
+You can find the amount of days until the password expires with ```bash
+chage -l username
+``` or by viewing the /etc/passwd file 
 
 **Change default password expiration**
 
@@ -1150,7 +1523,9 @@ change PASS\_MAX\_DAYS to the number of days before the password expires
 
 **Add default directories for newly created users**
 
-`cd /etc/skel`
+```bash
+cd /etc/skel
+```
 
 in this directory 
 
@@ -1166,55 +1541,77 @@ Edit the UID\_MIN file with the default UID new users
 
 **View what groups a user is apart of**
 
-`lid username`
+```bash
+lid username
+```
 
 **Change home directory of user** 
 
-`usermod -d /home/NEW-DIR/ *username* `
+```bash
+usermod -d /home/NEW-DIR/ *username* 
+```
 
 or 
 
-`usermod -m -d /home/NEW-DIR/ *username* `
+```bash
+usermod -m -d /home/NEW-DIR/ *username* 
+```
 
 > You can use the `-m` option to move the contents of the users current home directory to the newly created home directory.
 
 
 **Add user to group**
 
-`usermod -aG <group-name> <username>`
+```bash
+usermod -aG <group-name> <username>
+```
 
 **Change UID of user**
 
-`usermod -u <NEWUID> username`
+```bash
+usermod -u <NEWUID> username
+```
 
 **Configure user to be unable to start interactive shell**
 
-`usermod -s /sbin/nologin username`
+```bash
+usermod -s /sbin/nologin username
+```
 
 **Configure directory to have access from one group**
 
 
 **Change group owner of dir**
 
-`chown -R :groupname /dirname`
+```bash
+chown -R :groupname /dirname
+```
 
 **Change permissions for group on dir**
 
 This example allows full access to the dir for the group members 
 
-`chmod g+rwx /dirname`
+```bash
+chmod g+rwx /dirname
+```
 
 **Configure dir where new files are owned by group**
 
 Set the SGID on the directory 
 
-`chmod g+s /dir`
+```bash
+chmod g+s /dir
+```
 
 **Change username of user** 
 
-`usermod -l [new_user] [old_user]`
+```bash
+usermod -l [new_user] [old_user]
+```
 or 
-`sudo usermod -l faruk -d /home/faruk -m pardus`
+```bash
+sudo usermod -l faruk -d /home/faruk -m pardus
+```
 
 
 ---
@@ -1224,7 +1621,9 @@ or
 
 **Add installation disk as repo**
 
-`dnf config-manager --add-repo=file:///repo/filename`
+```bash
+dnf config-manager --add-repo=file:///repo/filename
+```
 
 Then locate the repo in /etc/yum.conf.d
 
@@ -1237,20 +1636,28 @@ add the 'gpgcheck=0' to the file
 
 **View volume groups extent size**
 
-`vgdisplay`
+```bash
+vgdisplay
+```
 
 **Create VG with specified extent size**
 
-`vgcreate myvg /dev/sdx -s 8MiB`
+```bash
+vgcreate myvg /dev/sdx -s 8MiB
+```
 
 The example above creates a volume group with a Physical Extent size of 8-MiB
 
 
 **Create logical volume with specific size**
 
-`lvcreate -n lvdata -l 50%FREE vgdata`
+```bash
+lvcreate -n lvdata -l 50%FREE vgdata
+```
 
-`lvcreate -n lvdata `
+```bash
+lvcreate -n lvdata 
+```
 
 
 
@@ -1274,7 +1681,9 @@ Set the SUID perm on these binaries
 > /bin/umount 
 > /user/sbin/mount.cifs
 
-`sudo chmod u+s /bin/mount /bin/umount /usr/sbin/mount.cifs`
+```bash
+sudo chmod u+s /bin/mount /bin/umount /usr/sbin/mount.cifs
+```
 
 **CIFS default ports**
 
@@ -1287,7 +1696,9 @@ Set the SUID perm on these binaries
 
 **Scan for all IP's on your network with nmap**
 
-`nmap -sn 192.168.0.0/24`
+```bash
+nmap -sn 192.168.0.0/24
+```
 
 You can substitute the ip in the command above for one or multiple networks 
 
@@ -1295,16 +1706,22 @@ The '-sn' option tells nmap to not search for open ports
 
 **Check if certain port is open**
 
-`nmap <ip><prefix> -p <port-number>`
+```bash
+nmap <ip><prefix> -p <port-number>
+```
 
 
 **If you know the port the service might be using**
 
-`lsof -i :<port>`
+```bash
+lsof -i :<port>
+```
 
 Or alternatively , you can use netstat 
 
-`sudo netstat -nlp  | grep <port-number>`
+```bash
+sudo netstat -nlp  | grep <port-number>
+```
 
 
 
@@ -1314,9 +1731,15 @@ Or alternatively , you can use netstat
 
 **Update GRUB config**
 
-`grub2-mkconfig -o /boot/grub2/grub.cfg`
-`grub2-mkconfig -o /boot/efi/EFI/almalinux/grub.cfg`
-`grub2-mkconfig -o /boot/efi/EFI/redhat/grub.cfg`
+```bash
+grub2-mkconfig -o /boot/grub2/grub.cfg
+```
+```bash
+grub2-mkconfig -o /boot/efi/EFI/almalinux/grub.cfg
+```
+```bash
+grub2-mkconfig -o /boot/efi/EFI/redhat/grub.cfg
+```
 
 
 **reset root password**
@@ -1326,16 +1749,22 @@ add init=/bin/sh in GRUB kernel boot args
 
 remount filesystem for writing 
 
-`mount -rw -o remount /`
+```bash
+mount -rw -o remount /
+```
 
 use passwd to change pass 
 
-`passwd root`
+```bash
+passwd root
+```
 
 
 Then add /.autorelabel command for SELinux , without doing this you will not be able to login at all ! 
 
-`touch /.autorelabel`
+```bash
+touch /.autorelabel
+```
 
 
 ---
@@ -1345,9 +1774,11 @@ Then add /.autorelabel command for SELinux , without doing this you will not be 
 
 **Error: org.bluz.Error.NotReady**
 
-You can fix this using the `rfkill` tool
+You can fix this using the rfkill tool 
 
-`sudo rfkill unblock all`
+```bash
+sudo rfkill unblock all
+```
 
 
 
@@ -1357,11 +1788,15 @@ You can fix this using the `rfkill` tool
 
 **list docker networks**
 
-`sudo docker network ls`
+```bash
+sudo docker network ls
+```
 
 **delete all docker containers**
 
-`docker rm vf $(docker ps -a -q)`
+```bash
+docker rm vf $(docker ps -a -q)
+```
 
 **Add bind mount to docker container**
 
@@ -1370,7 +1805,9 @@ You can use the "-v" option when making bind mounts
 the left operand is the file path of a directory on your local machine , the other operand is where that path will be mounted to in the containers file system
 
 
-`docker run -v /var/something/something:/var/container/something something  `
+```bash
+docker run -v /var/something/something:/var/container/something something  
+```
 
 ---
 
@@ -1378,7 +1815,9 @@ the left operand is the file path of a directory on your local machine , the oth
 
 **replace /bin/sh with /bin/bash for all files in a dir**
 
-`sed -i 's/\#!\/bin\/sh/\#!\/bin\/bash/g' *`
+```bash
+sed -i 's/\#!\/bin\/sh/\#!\/bin\/bash/g' *
+```
 
 
 --- 
@@ -1387,11 +1826,15 @@ the left operand is the file path of a directory on your local machine , the oth
 
 **show all sip agents**
 
-`sho sipd agents`
+```bash
+sho sipd agents
+```
 
 **show configuration for specified agent**
 
-`sho configuration session-agent <AGENT-NAME> sh `
+```bash
+sho configuration session-agent <AGENT-NAME> sh 
+```
 
 
 
@@ -1401,7 +1844,9 @@ the left operand is the file path of a directory on your local machine , the oth
 
 **restart ssh service**
 
-`midclt call service.restart "ssh"`
+```bash
+midclt call service.restart "ssh"
+```
 
 ---
 
@@ -1409,13 +1854,17 @@ the left operand is the file path of a directory on your local machine , the oth
 
 **grep for specific file extension**
 
-`grep ".*\.md`
+```bash
+grep ".*\.md
+```
 
 Replace "md" with whichever extension you are trying to grep for.
 
 **Grep for certain word in entire directory**
 
-`grep -rni "string" * `
+```bash
+grep -rni "string" * 
+```
 
 
 ---
@@ -1424,7 +1873,9 @@ Replace "md" with whichever extension you are trying to grep for.
 
 **List files with specified extension**
 
-`find . -name \*.md`
+```bash
+find . -name \*.md
+```
 
 Replace "." with the directory you are searching in and replace "md" with the extension you are trying to search for. 
 
@@ -1446,20 +1897,28 @@ Use the '-C / xxx/xxx'
 
 For example if you want to archive the /etc/network/interfaces file 
 
-`sudo tar czf interfaces.tar -C / etc/network/interfaces`
+```bash
+sudo tar czf interfaces.tar -C / etc/network/interfaces
+```
 
 
 **extract archive to specified directory**
 
-`tar -xf archive.tar.xz -C / etc/something`
+```bash
+tar -xf archive.tar.xz -C / etc/something
+```
 
 if not root directory 
 
-` tar -xf archive.tar.xz -C /this/directory`
+```bash
+ tar -xf archive.tar.xz -C /this/directory
+```
 
 **Restore backup from drive**
 
-`tar --overwrite -xzvf backup.tar.gz --directory /`
+```bash
+tar --overwrite -xzvf backup.tar.gz --directory /
+```
 
 
 ---
@@ -1468,7 +1927,9 @@ if not root directory
 
 **unzip all zip files in directory**
 
-`unzip \*.zip`
+```bash
+unzip \*.zip
+```
 
 
 ---
@@ -1479,31 +1940,47 @@ if not root directory
 
 On Debian/Ubuntu using X11 : 
 
-`cat /etc/X11/default-display-manager`
+```bash
+cat /etc/X11/default-display-manager
+```
 
 or 
 
-`dpkg -l | grep -E 'gnome|kde|xfce|lxde|mate'`
+```bash
+dpkg -l | grep -E 'gnome|kde|xfce|lxde|mate'
+```
 
 On Redhat : 
 
-`cat /etc/sysconfig/desktop`
+```bash
+cat /etc/sysconfig/desktop
+```
 
-`rpm -qa | grep -E 'gnome|kde|xfce|lxde|mate'`
+```bash
+rpm -qa | grep -E 'gnome|kde|xfce|lxde|mate'
+```
 
 Check current display session: 
 
-`echo $DESKTOP_SESSION`
+```bash
+echo $DESKTOP_SESSION
+```
 
 Check process list for running DE : 
 
-`ps -e | grep -E 'gnome|kde|xfce|lxde|mate'`
+```bash
+ps -e | grep -E 'gnome|kde|xfce|lxde|mate'
+```
 
 **check what compositor you are using**
 
-`sudo apt install -y inxi`
+```bash
+sudo apt install -y inxi
+```
 
-`inxi -Gxx | grep compositor`
+```bash
+inxi -Gxx | grep compositor
+```
 
 --- 
 
@@ -1513,7 +1990,9 @@ Check process list for running DE :
 
 Add this to your .gitignore 
 
-`*~`
+```bash
+*~
+```
 
 # Xorg 
 
@@ -1522,7 +2001,9 @@ Add this to your .gitignore
 
 If you're on GNOME , you can make a shortcut using the gnome-desktop-item-edit tool 
 
-`gnome-desktop-item-edit ~/.local/share/applicationsj --create-new `
+```bash
+gnome-desktop-item-edit ~/.local/share/applicationsj --create-new 
+```
 
 
 > You will need to do this if you would like the application to show up in the GNOME search menu. 
@@ -1533,7 +2014,7 @@ Use the template below to create your shortcut
 
 Or you can do it manually by using this template for the \*.desktop file 
 
-```
+```bash
 [Deskktop Entry]
 Encoding=UTF-8
 Version=1.0                                     # version of an app.
@@ -1554,7 +2035,7 @@ Create the /etc/systemd/sleep.conf.d/nosuspend.conf file
 
 Add these lines to the file 
 
-```
+```bash
 [Sleep]
 AllowSuspend=no
 AllowHibernation=no
@@ -1565,7 +2046,10 @@ AllowHybridSleep=no
 
 
 ---
-> create `/etc/X11/xorg.conf.d/10-extensions.conf`
+> create 
+> ```bash
+> /etc/X11/xorg.conf.d/10-extensions.conf
+> ```
 
 Then put this into the conf file 
 
@@ -1581,7 +2065,9 @@ Section "Extensions"
 
 **copy files from source to dest**
 
-`rlcone copy /source/dir mydrive:/drive/dir`
+```bash
+rlcone copy /source/dir mydrive:/drive/dir
+```
 
 --- 
 
@@ -1590,11 +2076,17 @@ Section "Extensions"
 > **show all files in current directory size in different units**
 > The 3 lines below shows the sizes in kilobytes 
 >
-> `du -k * `
+> ```bash
+du -k * 
+> ```
 >
-> `du --block-size=1K * `
+> ```bash
+> du --block-size=1K * 
+> ```
 >
-> `du -B 1K *`
+> ```bash
+> du -B 1K *
+> ```
 >
 > # Note
 >
@@ -1604,11 +2096,15 @@ Section "Extensions"
 
 **List largest files in current directory**
 
-`du . | sort -nr | head -n10`
+```bash
+du . | sort -nr | head -n10
+```
 
 **List largest directories in current directory**
 
-`du -s * | sort -nr | head -n10`
+```bash
+du -s * | sort -nr | head -n10
+```
 
 
 ---
@@ -1621,7 +2117,9 @@ Section "Extensions"
 > 
 > # Add this line :
 > 
-> `set show_hidden true `
+> ```bash
+> set show_hidden true 
+> ```
 
 
 ---
@@ -1654,7 +2152,9 @@ Output :
 
 **download only the transcript**
 
-`yt-dlp --verbose --skip-download --write-subs --write-auto-subs --sub-lang en --sub-format ttml --convert-subs srt --output "transcript.%(ext)s" <PUT-URL-HERE> && sed -i '' -e '/^[0-9][0-9]:[0-9][0-9]:[0-9][0-9].[0-9][0-9][0-9] --> [0-9][0-9]:[0-9][0-9]:[0-9][0-9].[0-9][0-9][0-9]$/d' -e '/^[[:digit:]]\{1,3\}$/d' -e 's/<[^>]*>//g' ./transcript.en.srt && sed -e 's/<[^>]*>//g' -e '/^[[:space:]]*$/d' transcript.en.srt > output.txt && rm transcript.en.srt`
+```bash
+yt-dlp --verbose --skip-download --write-subs --write-auto-subs --sub-lang en --sub-format ttml --convert-subs srt --output "transcript.%(ext)s" <PUT-URL-HERE> && sed -i '' -e '/^[0-9][0-9]:[0-9][0-9]:[0-9][0-9].[0-9][0-9][0-9] --> [0-9][0-9]:[0-9][0-9]:[0-9][0-9].[0-9][0-9][0-9]$/d' -e '/^[[:digit:]]\{1,3\}$/d' -e 's/<[^>]*>//g' ./transcript.en.srt && sed -e 's/<[^>]*>//g' -e '/^[[:space:]]*$/d' transcript.en.srt > output.txt && rm transcript.en.srt
+```
 
 
 ---
@@ -1669,7 +2169,9 @@ This section is dedicated to my notes around the filsystem hierarchy standard th
 
 ### Home Notes 
 
-* Any scripts located in ```/home/<user>/bin``` will be automatically added to the users PATH.   
+* Any scripts located in `````bash
+/home/<user>/bin
+````` will be automatically added to the users PATH.   
 * You may configure an NFS share to store and serve the home directory for users on your local network
 
 See the snippet below : 
