@@ -6,6 +6,7 @@
 - [ ] put cool ascii art on the top of every page on the ryanm.dev website 
 - [ ] update toc with link to Markdown section 
 - [ ] implement "return to top" on every header if possible 
+- [ ] use chatgpt or other tools to improve the formatting of linux.md 
 
 ## Studying 
 
@@ -39,6 +40,8 @@
 
 ( I delete lines from the other sections and put the ones i'm currently working on in here )
 
+- [ ] write autohotkey script to output windows clipboard 
+- [ ] use chatgpt or other tools to improve the formatting of linux.md 
 - [ ] learn more about systemd 
 - [ ] create script that copies files from /mnt/backups/backups/archive/ to mydrive:/pve-backups
     - [ ] test the script using the redhat vm 
