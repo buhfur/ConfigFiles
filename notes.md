@@ -32,5 +32,5 @@ Welcome to my website ! Here I host a collection of all my notes which mainly in
 23. [Tutorial_ideas](notes/tutorial_ideas.md)
 24. [Lvm](notes/lvm.md)
 25. [Troubleshooting](notes/troubleshooting.md)
-26. [Linux New ](notes/linux_new.md)
+26. [Linux New ](notes/corrected_linux.md)
 
