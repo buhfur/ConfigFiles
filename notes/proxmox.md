@@ -2,21 +2,21 @@
 
 # Proxmox notes 
 
-
-**Location of ISO images**
-
-ISO images are commonly found in 
-
-`/var/lib/vz/template/iso`
+This document lists all changes i've made to any VM or setting within proxmox 
 
 
-**Location of VM Notes**
+# 10/13/2024 
 
-`/etc/pve/qemu-server`
+* Added all private IP's of hosts on local network to truenas allowlist for pool1 & pool2 
+
+* Removed torrentfunk, torlock , and idope.se from Jackett indexers 
+
+* Removed  torlock , and idope.se from sonarr indexers
+
+* Removed broken torrent for Rick And Morty Season 2 
+
+* Changed share settings on pool1 under "Purpose" , changed from 'Default Share Parameters' to 'No Presets'
 
 
-**Enable novnc clipboard support**
-
-`qm set <vmid> -vga <displaytype>,clipboard=vnc`
 
 
