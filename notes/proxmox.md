@@ -17,6 +17,14 @@ This document lists all changes i've made to any VM or setting within proxmox
 
 * Changed share settings on pool1 under "Purpose" , changed from 'Default Share Parameters' to 'No Presets'
 
+# 10/23/2024 
+
+* Unblocked protonvpn.com in adguard home 
+
+* Unblocked vpn-api.proton.me in adguard home 
+
+* updated adguard blocklists 
+
 
 
 

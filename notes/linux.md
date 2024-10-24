@@ -1884,7 +1884,8 @@ Replace "." with the directory you are searching in and replace "md" with the ex
 
 # System Clipboard 
 
-If you are using the X window system , 
+While using the X window system , there are 3 distinct clipboards 
+
 
 
 ---
