@@ -1,7 +1,9 @@
 
 # Proxmox todo 
 
-- [ ] add notes for every change you make to a VM or setting in proxmox 
+**REMINDER: add notes for every change you make to a VM or setting in proxmox**
+
+- [ ] enable port forwarding for protonvpn openvpn clients thorugh 
 
 # Proxmox project writeup 
 
@@ -15,16 +17,18 @@
 # Config todo 
 
 - [x] enable middle mouse pasting in tmux 
-    - [ ] see notes todo for tmux notes 
-- [ ] allow mouse scrolling through Vim while using tmux 
+    - [x] see notes todo for tmux notes 
+- [x] allow mouse scrolling through Vim while using tmux 
 - [ ] make polybar show on all monitors
 - [ ] fix file button , editor button ? , and settings button ? 
 - [ ] connect bluetooth earbuds to main desktop 
+    - [ ] find out why pulse audio is not showing earbuds as output device. 
 - [ ] install protonvpn client on buhfurpc 
 
 # Notes todo 
 
-- [ ] add notes on how to paste using middle mouse button in tmux by holding shift 
+- [x] add notes on how to paste using middle mouse button in tmux by holding shift 
+- [ ] make folder for 'troubleshooting' various things 
 
 ---
 
@@ -44,3 +48,4 @@
 
 
 
+  

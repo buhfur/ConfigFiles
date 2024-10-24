@@ -25,6 +25,8 @@ This document lists all changes i've made to any VM or setting within proxmox
 
 * updated adguard blocklists 
 
+* turned off mouse for tmux on buhfurpc 
 
+* removed ca-22.protonvpn.tcp.conf & ca-49.protonvpn.udp.conf from torrent server openvpn connections
 
-
+* added new protonvpn openvpn country UDP configs to torrent-server and rebooted 
