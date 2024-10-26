@@ -54,7 +54,7 @@ I have a solid background in various aspects of Information Technology, includin
 Throughout my career, I have successfully managed and contributed to various projects that have strengthened my skills and provided value to organizations. My project experience ranges from system migrations to infrastructure optimization.
 
 ## Let's Connect
-I am always open to new opportunities and collaborations. Feel free to reach out via the contact page or connect with me on [LinkedIn](https://www.linkedin.com/in/ryanm-dev) for professional networking.
+I am always open to new opportunities and collaborations. Feel free to reach out via the contact page or connect with me on [LinkedIn](www.linkedin.com/in/ryan-mcvicker-3a39ab189)  for professional networking.
 
 Thank you for visiting my site!
 
