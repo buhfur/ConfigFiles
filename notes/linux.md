@@ -68,8 +68,20 @@ In this document I have added various bash snippets ,tips , and other useful pie
         - [/home](#home)
 
 
-# Command & Bash snippets 
+## Command & Bash snippets 
 
+### Symbolic and hard links 
+
+The best information can be found on the man page. Use man ln for further details. However, to avoid confusion, please note that the syntax is as follows: "TARGET" should be the file or directory for which you would like to create a link, while "LINK\_NAME" is the name and directory where the link will appear in the specified absolute file path. It should be noted that "TARGET" should be an absolute path to the item you want to link. However, you can use relative paths for "LINK\_NAME" if you wish. Nonetheless, I prefer using absolute paths for both to avoid making mistakes, such as misplacing the link on my system.
+
+```bash
+ln -s TARGET LINK_NAME 
+```
+#### Create symbolic link to file
+
+```bash
+$ ln -s /home/ryan/something.py /opt/scripts/something.py
+```
 **create directory with a timestamp as it's name**
 
 > Use the following command below in a bash script 

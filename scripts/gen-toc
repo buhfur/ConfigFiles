@@ -1,0 +1,43 @@
+#!/usr/bin/env python3
+import re
+import sys
+
+def generate_toc(filepath):
+    # Read the markdown file
+    with open(filepath, 'r') as file:
+        lines = file.readlines()
+
+    toc = []
+    headings = []
+
+    # Find headings and build the table of contents
+    for line in lines:
+        # Match headings (lines starting with #)
+        match = re.match(r'^(#{1,6}) (.+)', line)
+        if match:
+            level = len(match.group(1))  # Number of # symbols determines the level
+            title = match.group(2).strip()  # Heading text
+
+            # Create an anchor link by converting title to lowercase, replacing spaces with hyphens, and removing special characters
+            anchor = re.sub(r'[^\w\s-]', '', title).replace(' ', '-').lower()
+            toc_line = f"{'  ' * (level - 1)}- [{title}](#{anchor})"
+            toc.append(toc_line)
+            headings.append((line, anchor))
+
+    # Insert the Table of Contents at the top
+    toc_text = "# Table of Contents\n" + "\n".join(toc) + "\n\n"
+
+    # Write the updated content back to the file
+    with open(filepath, 'w') as file:
+        file.write(toc_text)
+        for line, anchor in headings:
+            file.write(line)
+
+    print("Table of contents generated successfully!")
+
+# Run the script with the markdown file path as an argument
+if __name__ == '__main__':
+    if len(sys.argv) != 2:
+        print("Usage: python generate_toc.py <markdown_file>")
+    else:
+        generate_toc(sys.argv[1])
