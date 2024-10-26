@@ -29,6 +29,8 @@
 - [x] add notes on how to paste using middle mouse button in tmux by holding shift 
 - [ ] make folder for 'troubleshooting' various things 
 - [ ] write up troubleshooting guide for torrenting issues 
+- [ ] write post about BitTorrent and troubleshooting issues
+- [ ] add TOC to windows.md 
 
 ---
 
@@ -38,7 +40,7 @@
 - [ ] Write blog posts for proxmox Hypervisor self-hosting project 
     - [ ] Use chatgpt to improve the formatting 
 
-
+- [ ] write post about BitTorrent and troubleshooting issues
 
 
 
