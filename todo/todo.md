@@ -28,19 +28,26 @@
 
 - [x] add notes on how to paste using middle mouse button in tmux by holding shift 
 - [x] make folder for 'troubleshooting' various things 
-- [ ] write post about BitTorrent and troubleshooting issues
+- [x] write post about BitTorrent and troubleshooting issues
 - [ ] add TOC to windows.md 
 - [ ] edit notes.md 
+- [ ] move all notes and project related stuff to another github page using a mkdocs 
+- [ ] write troubleshooting guide for proxmox 500 "read-only disk isssue" 
 
 ---
 
 
 # Current ( remove as completed over time ) 
 
+- [ ] add wiki theme to jekyll documentation site 
 - [ ] Write blog posts for proxmox Hypervisor self-hosting project 
     - [ ] Use chatgpt to improve the formatting 
 
-- [ ] write post about BitTorrent and troubleshooting issues
+- [ ] setup apache web server on torrent-server in docker container
+
+
+
+
 
 
 

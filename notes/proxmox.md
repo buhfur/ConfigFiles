@@ -30,3 +30,7 @@ This document lists all changes i've made to any VM or setting within proxmox
 * removed ca-22.protonvpn.tcp.conf & ca-49.protonvpn.udp.conf from torrent server openvpn connections
 
 * added new protonvpn openvpn country UDP configs to torrent-server and rebooted 
+
+# 10/27/2024 
+
+* commented out pool1 entry in fstab on jellyfin host 
