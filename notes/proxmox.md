@@ -34,3 +34,10 @@ This document lists all changes i've made to any VM or setting within proxmox
 # 10/27/2024 
 
 * commented out pool1 entry in fstab on jellyfin host 
+
+* Disabled NTLMv1 Auth as this is a vulnerable protocol 
+
+* Updated backup.service to be started after smbd.service & network.service to prevent the backup service from failing in the event the server is restarted and then attempts to run the scheduled backup . 
+
+* Changed /etc/fstab on proxmox root to remount-rw if there are any errors mounting the smb shares 
+
