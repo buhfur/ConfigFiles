@@ -43,6 +43,7 @@
 - [ ] Write blog posts for proxmox Hypervisor self-hosting project 
     - [ ] Use chatgpt to improve the formatting 
 
+- [ ] Setup web server ,tracker , and metainfo file for torrent to host 
 - [ ] setup apache web server on torrent-server in docker container
 - [ ] add some docker instructions along the way 
     - [ ] add note about how to attach to docker container
