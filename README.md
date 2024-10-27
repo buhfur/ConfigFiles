@@ -29,7 +29,7 @@ Throughout my career, I have successfully managed and contributed to various pro
 
 
 ## Let's Connect
-I am always open to new opportunities and collaborations. Feel free to reach out via the contact page or connect with me on [LinkedIn](www.linkedin.com/in/ryan-mcvicker-3a39ab189)  for professional networking.
+I am always open to new opportunities and collaborations. Feel free to reach out via the contact page or connect with me on ![LinkedIn](www.linkedin.com/in/ryan-mcvicker-3a39ab189)  for professional networking.
 
 Thank you for visiting my site!
 
