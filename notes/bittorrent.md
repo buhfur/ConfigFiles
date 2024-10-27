@@ -96,7 +96,7 @@ When you don’t seed, you limit the availability of the file for others. Althou
 
 #### 1. How is this file used ?
 
-This file contains the complete file to be served and the URL of the tracker being used. Metainfo files commonly use the \*.torrent file extension. This file is then hosted on the web server. 
+- This file contains the complete file to be served and the URL of the tracker being used. Metainfo files commonly use the \*.torrent file extension. This file is then hosted on the web server. 
 
 
 #### 2. Are there any tools I can use to automatically generate this file for me ? 

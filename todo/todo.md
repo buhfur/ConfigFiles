@@ -44,7 +44,9 @@
     - [ ] Use chatgpt to improve the formatting 
 
 - [ ] setup apache web server on torrent-server in docker container
-
+- [ ] add some docker instructions along the way 
+    - [ ] add note about how to attach to docker container
+    - [ ] add note about how to change configuration of apache webserver container
 
 
 

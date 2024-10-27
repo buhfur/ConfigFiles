@@ -1798,7 +1798,22 @@ sudo rfkill unblock all
 
 # Docker 
 
-**list docker networks**
+- Re-Attach to docker container
+    ```bash
+    docker attach <container-id-or-name>
+    ```
+
+- Attach with bash TTY 
+    ```bash
+    docker exec -it <container-id-or-name> /bin/bash
+    ```
+    > to detach , press CTRL + P followed by CTRL + Q
+
+- Change configuration of apache web container
+    ```bash
+    ```
+
+- list docker networks
 
 ```bash
 sudo docker network ls
