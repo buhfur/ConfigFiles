@@ -150,17 +150,26 @@ In order to start hosting a file in BitTorrent. You essentially need a web serve
 
 ## Web Server 
 
-You will need to have a web server to host the \*.torrent file. For this project , i'm going to use the supplied Apache docker container for amd64. 
+You will need to have a web server to host the \*.torrent file. For this project , i'm going to use the supplied Apache docker container. 
 
 - Pull docker container from Dockerhub 
     ```bash 
-    docker pull amd64/httpd
+    docker pull httpd
     ```
 
-- Run Docker container
+- Run Docker container ( Without Dockerfile )
     ```bash
     docker run -dit --name torrent-webserver -p 8080:80 -v "$PWD":/usr/local/apache2/htdocs/ httpd:2.4
     ```
+
+- Run Docker container ( With Dockerfile )
+
+> Create the following Dockerfile using your preferred editor in the folder of your project diretory 
+    ```bash
+    FROM httpd:2.4
+    COPY ./public-html/ /usr/local/apache2/htdocs/
+    ```
+    > The './publc-html/' is a relative pathname to the directory which contains all HTML files to be added to your site
 
 > **Note:All HTML files from /usr/local/apache2/htdocs will be mounted as a volume within the containers filesystem**
 
