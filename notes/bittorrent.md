@@ -164,14 +164,14 @@ You will need to have a web server to host the \*.torrent file. For this project
 
 - Run Docker container ( With Dockerfile )
 
-> Create the following Dockerfile using your preferred editor in the folder of your project diretory 
-    ```bash
-    FROM httpd:2.4
-    COPY ./public-html/ /usr/local/apache2/htdocs/
-    ```
+    -  Create the following Dockerfile using your preferred editor in the folder of your project diretory 
+        ```bash
+        FROM httpd:2.4
+        COPY ./public-html/ /usr/local/apache2/htdocs/
+        ```
+
     > The './publc-html/' is a relative pathname to the directory which contains all HTML files to be added to your site
 
 > **Note:All HTML files from /usr/local/apache2/htdocs will be mounted as a volume within the containers filesystem**
-
 
 
