@@ -1008,6 +1008,11 @@ dnf whatprovides */semanage
 dnf whatprovides
 ```
 
+- Undo recent download 
+
+```bash
+dnf history undo <ID> 
+```
 ---
 
 # Adguard Home

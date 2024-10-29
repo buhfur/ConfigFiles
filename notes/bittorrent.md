@@ -84,7 +84,7 @@ When you don’t seed, you limit the availability of the file for others. Althou
 
 #### 2.1 What are mimetypes and how do they pertain to the \*.torrent file ? 
 
-- MIME-types or Multipurpose Internet Mail Extensions types are identifiers used to tell the web server the format and data of a file. In the context of torrenting , the "application/x-bittorrent" MIME-Type is used to tell the web server about the format and data within the file. 
+- MIME-types or Multipurpose Internet Mail Extensions types are identifiers used to tell the web server the format and data of a file. In the context of torrenting , the "application/x-bittorrent" MIME-Type is used to tell the web server how to interpret the file format.
 
 #### 3. Where do I put the metainfo file on the web server 
 
@@ -101,7 +101,44 @@ When you don’t seed, you limit the availability of the file for others. Althou
 
 #### 2. Are there any tools I can use to automatically generate this file for me ? 
 
-#### 3. What does a current 
+Yes , some clients have the functionality to generate the metainfo file for you. I will list some below and the steps to accomplish this. 
+
+- qBittorrent, Deluge
+    * In the client , navigate to Tools > Torrent Creator 
+
+![qbimg](images/qbittorrent-tools.png)
+
+    * After that , fill out the information for Trackers , Web Seed URL's , Path where the \*.torrent file will be stored , and the Source files you would like to seed.  
+
+![qbimg](images/torrent-creator.png)
+
+- CLI Utilities : mktorrent
+
+
+- Python , Libtorrent 
+
+    - Download bencode.py 
+    ```bash
+    pip install bencode.py
+    ```
+    > Note : If you encounter an issue with importing the library , specifically this error 
+    > ```bash
+    > ModuleNotFoundError: No module named 'BTL'
+    > ```
+    > The current PyPi package does not actually install the required 'bencode.py' file. To fix this make sure to run the command 
+    > as shown above with the \*.py extension included
+    
+
+
+#### 3. What does an example torrent file look like 
+
+I downloaded the torrent file for Debian 12. Upon opening the file in a text editor , ( for this i'm using Vim ) at the very top I see a few UDP links to trackers the torrent would use. 
+
+* Metainfo files are giant bencoded dictionaries 
+
+
+```
+```
 
 
 ### BitTorrent Tracker 
@@ -187,6 +224,7 @@ You will need to have a web server to host the \*.torrent file. For this project
         curl -v http://localhost:8080
         ```
         
+- Associate \*.torrent with mimetype application  
 
 
 

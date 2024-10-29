@@ -43,10 +43,12 @@
     - [ ] Use chatgpt to improve the formatting 
 
 - [ ] Setup web server ,tracker , and metainfo file for torrent to host 
-    - [?] setup apache web server on torrent-server in docker container
+    - [x] setup apache web server on torrent-server in docker container
         - [ ] add some docker instructions along the way 
-        - [ ] add note about how to attach to docker container
-        - [ ] add note about how to change configuration of apache webserver container
+        - [x] add note about how to attach to docker container
+        - [x] add note about how to change configuration of apache webserver container
+    - [ ] generate metainfo file using mktorrent 
+    
 
 
 
