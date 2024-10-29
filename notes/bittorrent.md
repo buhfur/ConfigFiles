@@ -165,7 +165,7 @@ You will need to have a web server to host the \*.torrent file. For this project
 
 - Run Docker container ( With Dockerfile )
 
-    -  Create the following Dockerfile using your preferred editor in the folder of your project diretory 
+    1. Create the following Dockerfile using your preferred editor in the folder of your project diretory 
         ```bash
         FROM httpd:2.4
         COPY ./public-html/ /usr/local/apache2/htdocs/
@@ -173,14 +173,16 @@ You will need to have a web server to host the \*.torrent file. For this project
 
     > The './publc-html/' is a relative pathname to the directory which contains all HTML files to be added to your site
 
-    - Build the container using the Dockerfile 
+    2. Build the container using the Dockerfile 
         ```bash
         docker build -t my-server-image-name . 
 
         docker run -dit --name my-container-name -p 8080:80 my-server-image-name
         ```
-    - Verify the container is running 
-        **You can use curl to verify**
+    3. Verify the container is running 
+
+        You can use curl to verify if the web server will respond 
+
         ```bash
         curl -v http://localhost:8080
         ```
