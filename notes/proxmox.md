@@ -2,7 +2,7 @@
 
 # Proxmox notes 
 
-This document lists all changes i've made to any VM or setting within proxmox 
+This document represents the changelog for my proxmox hypervisor 
 
 
 # 10/13/2024 
@@ -40,4 +40,9 @@ This document lists all changes i've made to any VM or setting within proxmox
 * Updated backup.service to be started after smbd.service & network.service to prevent the backup service from failing in the event the server is restarted and then attempts to run the scheduled backup . 
 
 * Changed /etc/fstab on proxmox root to remount-rw if there are any errors mounting the smb shares 
+
+# 10/28/2024 
+
+* Added x-systemd.automount to /etc/fstab on proxmox root in an attempt to ensure the server has access before attempting to backup 
+* also added the prior mentioned fstab option to apply to pool2 as well.
 
