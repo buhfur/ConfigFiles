@@ -173,5 +173,18 @@ You will need to have a web server to host the \*.torrent file. For this project
 
     > The './publc-html/' is a relative pathname to the directory which contains all HTML files to be added to your site
 
+    - Build the container using the Dockerfile 
+        ```bash
+        docker build -t my-server-image-name . 
+
+        docker run -dit --name my-container-name -p 8080:80 my-server-image-name
+        ```
+    - Verify the container is running 
+        **You can use curl to verify**
+        ```bash
+        curl -v http://localhost:8080
+        ```
+        
+
 
 
