@@ -161,6 +161,7 @@ You will need to have a web server to host the \*.torrent file. For this project
     ```bash
     docker run -dit --name torrent-webserver -p 8080:80 -v "$PWD":/usr/local/apache2/htdocs/ httpd:2.4
     ```
+    > **Note:All HTML files from /usr/local/apache2/htdocs will be mounted as a volume within the containers filesystem**
 
 - Run Docker container ( With Dockerfile )
 
@@ -172,6 +173,5 @@ You will need to have a web server to host the \*.torrent file. For this project
 
     > The './publc-html/' is a relative pathname to the directory which contains all HTML files to be added to your site
 
-> **Note:All HTML files from /usr/local/apache2/htdocs will be mounted as a volume within the containers filesystem**
 
 
