@@ -172,12 +172,18 @@ I am a fan of how bash allowsy you to customize your experience using the belove
         Set-Alias -Name "Resolve-DnsName" -Value "dig"
         ```
 
-- Create alias for non-built in script ( python3 ) 
-    In your profile , use the syntax below to make an alias for a non-built in script or utility
+- Create alias for non-built in script
+    
+    Powershell aliases were intended for running cmdlets, not custom commands. To get around this limitation, you may want to define functions for your custom scripts instead of using `Set-Alias` directly. Please see the below example for how I would do this using a python 3 script. 
+
     ```bash
-    New-Alias -Name tfind -Value "python3 C:\Users\username\path\to\script\tfind.py"
+    function tfind{
+        python3 "C:\Users\buhfur\tfind\tfind.py"
+    }
+
     ```
 
+> Note : Aliases in powershell were intended for executing cmdlets and not executing scripts. To get around this you may need to define functions with the command used to execute your script using an alias. Please see the above example for how to do this.
 ---
 
 # Useful cmdlets 
