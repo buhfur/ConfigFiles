@@ -154,22 +154,22 @@ The commands below are used to modify existing Environment Variables.
 
 I am a fan of how bash allowsy you to customize your experience using the beloved ~/.bashrc file. For powershell it's the same process with a verbose syntax compared to bash. For this section I will put some examples below of alises you might want to add. The basic structure of an alias would look like the below
 
-    - Alias syntax template 
-        ```bash
-        Set-Alias -Name <name-of-alias> -Value "<value-of-alias>"
-        ```
+- Alias syntax template 
+    ```bash
+    Set-Alias -Name <name-of-alias> -Value "<value-of-alias>"
+    ```
 
-    - Remove an alias 
-        ```bash
-        Remove-Item Alias:<alias-name>
-        ```
-    -  Alias for Pre-installed Windows command  
+- Remove an alias 
+    ```bash
+    Remove-Item Alias:<alias-name>
+    ```
+-  Alias for Pre-installed Windows command  
     
-    Let's say we wanted to change the alias for Changing the execution policy for the current user. Open the file located in your $PROFILE variable ( check the above inline comments for further info on what this variable is ). 
+Let's say we wanted to change the alias for Changing the execution policy for the current user. Open the file located in your $PROFILE variable ( check the above inline comments for further info on what this variable is ). 
 
-        ```bash 
-        Set-Alias -Name "Resolve-DnsName" -Value "dig"
-        ```
+    ```bash 
+    Set-Alias -Name "Resolve-DnsName" -Value "dig"
+    ```
 
 - Create alias for non-built in script
     
