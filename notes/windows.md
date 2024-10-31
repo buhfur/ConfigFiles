@@ -168,6 +168,11 @@ I am a fan of how bash allowsy you to customize your experience using the belove
         Set-Alias -Name "Resolve-DnsName" -Value "dig"
         ```
 
+- Create alias for non-built in script ( python3 ) 
+    In your profile , use the syntax below to make an alias for a non-built in script or utility
+    ```bash
+    New-Alias -Name tfind -Value "python3 C:\Users\username\path\to\script\tfind.py"
+    ```
 
 ---
 
