@@ -128,6 +128,102 @@ The commands below are used to modify existing Environment Variables.
 > but this is where you would keep all your custom configurations. In my case the variable contains the path of : 
 > `C:\Users\username\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1`
 
+
+- Use bash like aliases in Powershell 
+
+I am a fan of how bash allowsy you to customize your experience using the beloved ~/.bashrc file. For powershell it's the same process with a verbose syntax compared to bash. For this section I will put some examples below of alises you might want to add. The basic structure of an alias would look like the below : 
+
+    - Alias syntax template 
+        ```bash
+        Set-Alias -Name <name-of-alias> -Value "<value-of-alias>"
+        ```
+
+    -  Alias for Pre-installed Windows command  
+    
+    Let's say we wanted to change the alias for Changing the execution policy for the current user. Open the file located in your $PROFILE variable ( check the above inline comments for further info on what this variable is ). 
+
+        ```bash 
+        Set-Alias -Name "Resolve-DnsName" -Value "dig"
+        ```
+
+
+---
+
+# Useful cmdlets 
+
+Below is a gathered list of all cmdlets installed by default on most powershell systems.
+
+## System Cmdlets
+
+- **`Get-Command`**: Gets all cmdlets, functions, workflows, aliases installed on your system.
+- **`Get-Help`**: Displays help information for cmdlets and functions.
+- **`Get-Process`**: Gets a list of all processes currently running on the local or remote machine.
+- **`Stop-Process`**: Stops a running process by its process ID or process name.
+- **`Get-Service`**: Gets the status of services on a local or remote machine.
+- **`Start-Service`**: Starts a stopped service.
+- **`Stop-Service`**: Stops a running service.
+
+## File and Directory Cmdlets
+
+- **`Get-ChildItem`**: Lists files and directories in a specified location.
+- **`Set-Location`**: Sets the current working location to a specified path (similar to `cd`).
+- **`Copy-Item`**: Copies an item from one location to another.
+- **`Move-Item`**: Moves an item from one location to another.
+- **`Remove-Item`**: Deletes files and directories.
+- **`New-Item`**: Creates a new item (file, directory, etc.).
+- **`Get-Content`**: Reads the content of a file.
+- **`Set-Content`**: Writes content to a file, replacing existing content.
+- **`Add-Content`**: Appends content to a file.
+
+## Networking Cmdlets
+
+- **`Test-Connection`**: Tests the network connection to a remote host (similar to `ping`).
+- **`Resolve-DnsName`**: Performs a DNS query for a specified name.
+- **`Invoke-WebRequest`**: Sends HTTP and HTTPS requests to web pages and retrieves content.
+- **`Get-NetIPAddress`**: Gets the IP address configuration for network adapters.
+- **`Get-NetAdapter`**: Gets the status of network adapters.
+
+## User and Group Cmdlets
+
+- **`Get-LocalUser`**: Gets local user accounts.
+- **`Add-LocalUser`**: Creates a new local user account.
+- **`Remove-LocalUser`**: Deletes a local user account.
+- **`Get-LocalGroup`**: Gets local groups.
+- **`Add-LocalGroupMember`**: Adds users to a local group.
+- **`Remove-LocalGroupMember`**: Removes users from a local group.
+
+## System Monitoring Cmdlets
+
+- **`Get-EventLog`**: Retrieves events from the event log.
+- **`Get-PerformanceCounter`**: Retrieves performance counter data.
+- **`Measure-Object`**: Calculates properties of objects (e.g., count, sum).
+
+## Automation and Scripting Cmdlets
+
+- **`ForEach-Object`**: Processes each item in a collection with a specified script block.
+- **`Where-Object`**: Filters objects based on specified criteria.
+- **`Select-Object`**: Selects specific properties from an object.
+- **`Sort-Object`**: Sorts objects by property values.
+- **`Export-CSV`**: Exports data to a CSV file.
+- **`Import-CSV`**: Imports data from a CSV file.
+
+## Security Cmdlets
+
+- **`Get-Acl`**: Gets the security descriptor for a specified item (file, folder, etc.).
+- **`Set-Acl`**: Sets the security descriptor for a specified item.
+- **`Get-Credential`**: Prompts for user credentials securely.
+
+## Windows Update Cmdlets
+
+- **`Get-WindowsUpdateLog`**: Retrieves Windows Update logs.
+- **`Install-Module`**: Installs PowerShell modules from the PowerShell Gallery.
+
+## Help and Support Cmdlets
+
+- **`Get-Command`**: Lists all available commands, including cmdlets, functions, and aliases.
+- **`Update-Help`**: Downloads and installs the newest help files for PowerShell modules.
+
+
 ---
 
 ## Troubleshooting 
@@ -135,7 +231,7 @@ The commands below are used to modify existing Environment Variables.
 
 ### Disabled Running Scripts
 
-This error indicates the user does not have the execution policy set for a specific user to run scripts inside their session. To allow the user to run the spcified command / script. Follow the instructions below, **make sure you're logged in as administrator**.
+This error indicates the user does not have the execution policy set for a specific user to run scripts inside their session. To allow the user to run the spcified command / script. Follow the instructions below, **make sure you're logged in as administrator**. If there are any scripts that can be used by the admin but not you, it's likely something to do with the execution policy that's been set. 
 
 
 - Change Execution Policy to allow Local scripts
@@ -158,3 +254,6 @@ This error indicates the user does not have the execution policy set for a speci
 > The 'CurrentUser' scope only applies for the currently logged in user account , not the entire system
 > Even when the Scope is set to 'Unrestricted' , you will still be prompted 
 > 
+
+
+---
