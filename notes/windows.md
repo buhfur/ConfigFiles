@@ -16,66 +16,63 @@
 Get-Childitem env: 
 ```
 
-### Modifying existing Environment Variables 
+### Environment Variables & PATHS 
 
 The commands below are used to modify existing Environment Variables.
 
-#### Permanantly append Variable to path 
+- Permanantly append Variable to path 
+    ```bash 
+    setx MyVariable "MyPersistentValue" 
+    ```
 
-```bash 
-setx MyVariable "MyPersistentValue" 
-```
+- Add new path to system Path 
+    ```bash
+    $newPath = "$env:Path;C:\NewPath"
+    setx Path $newPath
+    ```
 
-#### Add new path to system Path 
+- Remove temporary Environment Variable from path 
+    ```bash
+    Remove-Item env:MyVariable
+    ```
 
-```bash
-$newPath = "$env:Path;C:\NewPath"
-setx Path $newPath
-```
+- Remove persistent Environment Variable from path 
+    ```bash
+    setx MyVariable ""
+    ```
 
-#### Remove temporary Environment Variable from path 
+- Check if Environment Variable exists in a powershell script 
+    ```bash 
+    if($env:MyVariable) {
+        Write-Output "MyVariable exists with value $env:MyVariable"
+    }else { 
+        Write-Output "MyVariable does not exist"
+    }
+    ```
 
-```bash
-Remove-Item env:MyVariable
-```
+- Using an Environment Variable in a Script 
+    ```bash 
+    $env:MyVariable = "something"
+    Write-Output "The value of MyVariable is : $env:MyVariable"
+    ```
+- Add script to PATH temporarily to Current Session  
+    ```bash
+    $env:PATH += ";C:\path\to\your\script"
+    ```
 
-#### Remove persistent Environment Variable from path 
+- Add script to users persistent PATH  
+    ```bash
+    [System.Environment]::SetEnvironmentVariable("PATH", $env:PATH + ";C:\path\to\script", [System.EnvironmentVariableTarget]::User)
+    ```
 
-```bash
-setx MyVariable ""
-```
+- List current path 
+    ```bash 
+    echo $env:path 
+    ```
 
-#### Check if Environment Variable exists in a powershell script 
-
-```bash 
-if($env:MyVariable) {
-    Write-Output "MyVariable exists with value $env:MyVariable"
-}else { 
-    Write-Output "MyVariable does not exist"
-}
-```
-
-#### Using an Environment Variable in a Script 
-
-```bash 
-$env:MyVariable = "something"
-Write-Output "The value of MyVariable is : $env:MyVariable"
-```
-
----
-
-### Modifying Windows System PATH's 
-
-### List current path 
-
-```bash 
-echo $env:path 
-```
-
-#### Temporarily append Variable to path 
-
-```bash
-$env:path += ";C:\Program Files\GnuWin32\bin" 
-```
+- Temporarily append Variable to path 
+    ```bash
+    $env:path += ";C:\Program Files\GnuWin32\bin" 
+    ```
 
 
