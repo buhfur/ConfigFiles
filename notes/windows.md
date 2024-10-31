@@ -153,7 +153,7 @@ The commands below are used to modify existing Environment Variables.
 
 - Use bash like aliases in Powershell 
 
-I am a fan of how bash allowsy you to customize your experience using the beloved ~/.bashrc file. For powershell it's the same process with a verbose syntax compared to bash. For this section I will put some examples below of alises you might want to add. The basic structure of an alias would look like the below : 
+I am a fan of how bash allowsy you to customize your experience using the beloved ~/.bashrc file. For powershell it's the same process with a verbose syntax compared to bash. For this section I will put some examples below of alises you might want to add. The basic structure of an alias would look like the below
 
     - Alias syntax template 
         ```bash
