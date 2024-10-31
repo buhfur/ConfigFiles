@@ -160,6 +160,10 @@ I am a fan of how bash allowsy you to customize your experience using the belove
         Set-Alias -Name <name-of-alias> -Value "<value-of-alias>"
         ```
 
+    - Remove an alias 
+        ```bash
+        Remove-Item Alias:<alias-name>
+        ```
     -  Alias for Pre-installed Windows command  
     
     Let's say we wanted to change the alias for Changing the execution policy for the current user. Open the file located in your $PROFILE variable ( check the above inline comments for further info on what this variable is ). 
