@@ -10,15 +10,14 @@
 
 ## Environment Variables 
 
-### List Environment Variables 
-
-```bash
-Get-Childitem env: 
-```
-
-### Environment Variables & PATHS 
-
 The commands below are used to modify existing Environment Variables.
+
+### Command Snippets 
+
+- List Environment Variables 
+    ```bash
+    Get-Childitem env: 
+    ```
 
 - Permanantly append Variable to path 
     ```bash 
@@ -75,4 +74,39 @@ The commands below are used to modify existing Environment Variables.
     $env:path += ";C:\Program Files\GnuWin32\bin" 
     ```
 
+---
+
+## Powershell configuration 
+
+- Change Keybinds to Bash like keybinds 
+    
+    1. Check if `$PROFILE` variable exists 
+        ```bash
+        echo $PROFILE
+        ```
+    
+    2. Open file in path listed in `echo $PROFILE`, in this case i'm using Vim but you can use any editor you like  
+        ```bash
+        vim $PROFILE
+        ```
+
+    3. Then , paste the following code into the file 
+        ```bash
+        # Load PSReadLine (should already be loaded in most cases)
+        Import-Module PSReadLine
+
+        # Map Bash-like key bindings
+        Set-PSReadLineKeyHandler -Chord Ctrl+a -Function BeginningOfLine       # Move to start of line
+        Set-PSReadLineKeyHandler -Chord Ctrl+e -Function EndOfLine             # Move to end of line
+        Set-PSReadLineKeyHandler -Chord Ctrl+k -Function KillLine              # Delete text from cursor to end of line
+        Set-PSReadLineKeyHandler -Chord Ctrl+u -Function BackwardDeleteLine    # Delete text from cursor to beginning of line
+        Set-PSReadLineKeyHandler -Chord Ctrl+w -Function BackwardKillWord      # Delete previous word
+        Set-PSReadLineKeyHandler -Chord Ctrl+y -Function Yank                  # Paste the last cut text
+        Set-PSReadLineKeyHandler -Chord Ctrl+l -Function ClearScreen           # Clear screen
+        ```
+
+    
+> The $PROFILE variable is a variable that contains the path to your windows "profile".ps1 , it can be named anything 
+> but this is where you would keep all your custom configurations. In my case the variable contains the path of : 
+> `C:\Users\username\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1`
 
