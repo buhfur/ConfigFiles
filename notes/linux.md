@@ -1786,10 +1786,6 @@ sudo rfkill unblock all
     ```
     > to detach , press CTRL + P followed by CTRL + Q
 
-- Change configuration of apache web container
-    ```bash
-    ```
-
 - Create Docker container using pulled image 
     ```bash
     docker run -d --name <container-name> <image-name>:<tag>
