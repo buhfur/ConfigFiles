@@ -95,88 +95,75 @@ $ ln -s /home/ryan/something.py /opt/scripts/something.py
 mkdir "directory_$(date +%Y%m%d_%H%M%S)"
 ```
 
-**enable vi keybinds for bash**
+- Kill all processes using specifed port 
+    ```bash
+    lsof -t -i :<port> | xargs kill -9 
+    ```
+- enable vi keybinds for bash
+    ```bash
+    set -o vi 
+    ```
 
-```bash
-set -o vi 
-```
+- find bash shortcuts
+    ```bash
+    man readline
+    ```
 
-**find bash shortcuts**
+- Remove file with hyphens in the name
+    ```bash
+    rm -- -filename
+    ```
 
-```bash
-man readline
-```
+    ```bash
+    rm ./--filename
+    ```
 
-**Remove file with hyphens in the name**
+- Start comand as background job
+    ```bash
+    command &
+    ```
 
-```bash
-rm -- -filename
-```
-
-or 
-
-```bash
-rm ./--filename
-```
-
-**Start comand as background job**
-
-```bash
-command &
-```
-
-Add an ampersand at the end of the command 
-
-Type jobs to view your background tasks
-
-use ```bash
-fg 
-``` by itself to bring the most recently started background job to the foreground of the console. From there you can stop the job using Ctrl-Z or Ctrl-C
-
-**Change file extension of all files in directory**
-
-```bash
-rename 's/\.foo$/.bar/' *.foo
-```
-
-replace foo with the current extension , replace bar with the new ext.
+> Add an ampersand at the end of the command 
 
 
-**Show keycode for keybind**
+- Change file extension of all files in directory
+    ```bash
+    rename 's/\.foo$/.bar/' *.foo
+    ```
 
-If you're using Xorg as your display server, xev should already be installed. This tool let's you see what keycode goes to what key.
+> replace foo with the current extension , replace bar with the new ext.
 
-```bash
-xev
-``` 
 
-After finding the keycode, run this command below. Substitute \<KEYCODE\> with the numerical keycode you retrieve from xev.
+- Show keycode for keybind
+    ```bash
+    xev
+    ``` 
+> If you're using Xorg as your display server, xev should already be installed. This tool let's you see what keycode goes to what key.  After finding the keycode, run this command below. Substitute \<KEYCODE\> with the numerical keycode you retrieve from xev.
 
-```bash
-xmodmap -pk | grep <KEYCODE>
-```
+    ```bash
+    xmodmap -pk | grep <KEYCODE>
+    ```
 
-**Show info about hard drives connected**
+- Show info about hard drives connected
+    ```bash
+    find /dev/disk/by-id/ -type l|xargs -I{} ls -l {}|grep -v -E '[0-9]$' |sort -k11|cut -d' ' -f9,10,11,12
+    ```
 
-```bash
-find /dev/disk/by-id/ -type l|xargs -I{} ls -l {}|grep -v -E '[0-9]$' |sort -k11|cut -d' ' -f9,10,11,12
-```
+- Show otherboard info
+    ```bash
+    dmidecode -t 2 
+    ```
 
-**Show otherboard info**
+- Disable trackpad on linux
+    ```bash
+    sudo apt-get install xinput 
+    ```
 
-```bash
-dmidecode -t 2 
-```
+    ```bash
+    xinput list
+    ```
 
-**Disable trackpad on linux**
-
-```bash
-sudo apt-get install xinput 
-```
-
-then find your touchpad with ```bash
-xinput list
-```. Alot of the time trackpads are labeled with "SynPS/x Snynaptics TouchPad". Locate the ID in the second column and do the following command below.
+Alot of the time trackpads are labeled with "SynPS/x Snynaptics TouchPad". Locate the ID in the second column and do the following command below.
 
 ```bash
 xinput --disable <ID>
@@ -430,143 +417,126 @@ tar -zcvf "$(date '+%Y-%m-%d').tar.gz"
 
 ---
 
-# Systemd 
+## Systemd 
 
-**disable unit**
+- Disable unit
 
-> Stop the service 
->
-> ```bash
-> systemctl stop <unit-name> 
-> ```
-> 
-> Disable the service :
->
-> ```bash
-> systemctl disable <unit-name>
-> ```
->
-> Stop the unit from being started manually or automatically 
->
-> ```bash
-> systemctl mask <unit-name>
-> ```
->
+    > Stop the service 
+    >
+    > ```bash
+    > systemctl stop <unit-name> 
+    > ```
+    > 
+    > Disable the service :
+    >
+    > ```bash
+    > systemctl disable <unit-name>
+    > ```
+    >
+    > Stop the unit from being started manually or automatically 
+    >
+    > ```bash
+    > systemctl mask <unit-name>
+    > ```
+    >
 
-**Systemd timer unit template**
+- Systemd timer unit template
+    ```bash
+    [Unit]
+    Description=Runs My Service every hour
 
-Create this unit alongside the existing service unit in the same directory 
+    [Timer]
+    OnBootSec=10min
+    OnUnitActiveSec=1h
+    Unit=my-service.service
 
-```bash
-[Unit]
-Description=Runs My Service every hour
+    [Install]
+    WantedBy=timers.target
 
-[Timer]
-OnBootSec=10min
-OnUnitActiveSec=1h
-Unit=my-service.service
+    ```
 
-[Install]
-WantedBy=timers.target
+- Creating service files that involve X org server
 
-```
+    - If you need to create a service that depends upon an X server running , add this line under the "Unit" section 
+        ```bash
+        PartOf=graphical-session.target
+        ```
 
-**Creating service files that involve X org server**
+    - You will want to add this line under the "Install" section 
+        ```bash
+        WantedBy=xsession.target
+        ```
 
-> If you need to create a service that depends upon an X server running , add this line under the "Unit" section 
+- Boot into different target
+    ```bash
+    cd /usr/lib/systemd/system
+    ```
 
-```bash
-PartOf=graphical-session.target
-```
+    ```bash
+    grep Isolate *.target
+    ```
 
-> Also you will want to add this line under the "Install" section 
+    - Decide which target you would like to use , then run systemctl isolate 
+        ```bash
+        systemctl isolate something.target
+        ```
 
-```bash
-WantedBy=xsession.target
-```
+- Start systemd service under specific User ID
+    ```bash
+    systemctl --user service.name
+    ```
 
-**Boot into different target**
+- Change user systemd service to start on system startup
+    ```bash
+    loginctl enable-linger myuser
+    ```
 
-```bash
-cd /usr/lib/systemd/system
-```
-
-```bash
-grep Isolate *.target
-```
-
-Decide which target you would like to use , then run systemctl isolate 
-
-```bash
-systemctl isolate something.target
-```
-
-**Start systemd service under specific User ID**
-
-```bash
-systemctl --user service.name
-```
-
-**Change user systemd service to start on system startup**
-
-```bash
-loginctl enable-linger myuser
-```
-
-**Running scripts at startup**
+- Running scripts at startup
 
 There are many ways to do this , assuming you are using systemd. You can use the following methods to run a script on boot.
 
-### Rc.local
+    - Rc.local, add this line in the /etc/rc.d/rc.local file 
+        ```bash
+        sh /home/user/scriptdir/script.sh
+        ```
 
-add this line in the /etc/rc.d/rc.local file 
+## Systemd unit file 
 
-```bash
-sh /home/user/scriptdir/script.sh
-```
+- Use the template below for your script , put this inside */etc/systemd/system*
+    ```bash
+    [Unit]
+    Description=Reboot message systemd service.
 
-### systemd unit file 
+    [Service]
+    Type=simple
+    ExecStart=/bin/bash /home/ec2-user/reboot_message.sh
 
-Use the template below for your script , put this inside */etc/systemd/system*
+    [Install]
+    WantedBy=multi-user.target
+    ```
 
-```bash
-[Unit]
-Description=Reboot message systemd service.
+- Set perms for the service file 
+    ```bash
+    chmod 644 /etc/systemd/system/script.service 
+    ```
 
-[Service]
-Type=simple
-ExecStart=/bin/bash /home/ec2-user/reboot_message.sh
-
-[Install]
-WantedBy=multi-user.target
-```
-
-Set perms for the service file 
-
-```bash
-chmod 644 /etc/systemd/system/script.service 
-```
-
-Then enable the service file in systemd 
-
-```bash
-systemctl enable script.service 
-```
+- Enable the service file in systemd 
+    ```bash
+    systemctl enable script.service 
+    ```
 
 
-### Crontab 
+## Crontab 
 
-edit the crontab file 
+- Edit the crontab file 
+    ```bash
+    crontab -e 
+    ```
 
-```bash
-crontab -e 
-```
-
-To run the script on reboot, use the template below 
-
-```bash
-@reboot sh /home/user/reboot_message.sh
-```
+- To run the script on reboot, use the template below 
+    ```bash
+    @reboot sh /home/user/reboot_message.sh
+    ```
 
 **WARNING : Not all versions of cron support the '@reboot' option**
 
@@ -1038,66 +1008,55 @@ And after that you're done !
 
 # Firewalld 
 
-**View all available services**
+- View all available services
+    ```bash
+    firewall-cmd --get-services
+    ```
 
-```bash
-firewall-cmd --get-services
-```
+- Get default zone
+    ```bash
+    firewall-cmd --get-default-zone
+    ```
 
+- Get available zones
+    ```bash
+    firewall-cmd --get-zones
+    ```
 
-**Get default zone**
+- List services
+    ```bash
+    firewall-cmd --list-services
+    ```
 
-```bash
-firewall-cmd --get-default-zone
-```
+- List services enabled in zone
+    ```bash
+    firewall-cmd --list-all --zone=public
+    ```
 
-**Get available zones**
+- Add port to firewalld permanently
+    ```bash
+    firewall-cmd --add-port=2020/tcp --permanent
+    ```
 
-```bash
-firewall-cmd --get-zones
-```
+- Add service to firewalld
+    ```bash
+    firewall-cmd --add-service=vnc-server --permanent
+    ```
 
-**List services**
+- Reload firewalld
+    ```bash
+    firewall-cmd --reload
+    ```
 
-```bash
-firewall-cmd --list-services
-```
+- Write configs to runtime
+    ```bash
+    firewall-cmd --runtime-to-permanent
+    ```
 
-**List services enabled in zone**
-
-```bash
-firewall-cmd --list-all --zone=public
-```
-
-**Add port to firewalld permanently**
-
-```bash
-firewall-cmd --add-port=2020/tcp --permanent
-```
-
-**Add service to firewalld**
-
-```bash
-firewall-cmd --add-service=vnc-server --permanent
-```
-
-**Reload firewalld**
-
-```bash
-firewall-cmd --reload
-```
-
-**Write configs to runtime**
-
-```bash
-firewall-cmd --runtime-to-permanent
-```
-
-**Add source IP**
-
-```bash
-firewall-cmd --add-source=<ipaddress/netmask>
-```
+- Add source IP
+    ```bash
+    firewall-cmd --add-source=<ipaddress/netmask>
+    ```
 
 
 ---
@@ -1814,22 +1773,38 @@ sudo rfkill unblock all
     ```
     > to detach , press CTRL + P followed by CTRL + Q
 
-- Change configuration of apache web container
+- Create Docker container using pulled image 
     ```bash
+    docker run -d --name <container-name> <image-name>:<tag>
     ```
 
+> -d : runs the container in detached mode ( background )
+
 - list docker networks
+    ```bash
+    sudo docker network ls
+    ```
 
-```bash
-sudo docker network ls
-```
+- Delete all docker containers
+    ```bash
+    docker rm vf $(docker ps -a -q)
+    ```
 
+<<<<<<< HEAD
 - delete all docker containers
+=======
+- View contents of Docker image after pulling 
+    ```bash
+    docker inspect <image-name>:<tag>
+    ```
+>>>>>>> b82baba07c9dfc0865dce3eb9ae672dcffbee2f3
 
-```bash
-docker rm vf $(docker ps -a -q)
-```
+- Add bind mount to docker container
+    ```bash
+    docker run -v /var/something/something:/var/container/something something  
+    ```
 
+<<<<<<< HEAD
 -  Add bind mount to docker container
     ```bash
     docker run -v /var/something/something:/var/container/something something  
@@ -1847,6 +1822,9 @@ docker rm vf $(docker ps -a -q)
    ``` 
 - Connect container to protonvpn container using Docker Compose 
 In your compose.yml file , add the following 
+=======
+> You can use the "-v" option when making bind mounts. The left operand is the file path of a directory on your local machine , the other operand is where that path will be mounted to in the containers file system
+>>>>>>> b82baba07c9dfc0865dce3eb9ae672dcffbee2f3
 
 ---
 

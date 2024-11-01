@@ -44,6 +44,7 @@ This document represents the changelog for my proxmox hypervisor
 * Added x-systemd.automount to /etc/fstab on proxmox root in an attempt to ensure the server has access before attempting to backup 
 * also added the prior mentioned fstab option to apply to pool2 as well.
 
+<<<<<<< HEAD
 # 11/32/2024 
 
 * converted deluge to a docker container 
@@ -53,3 +54,15 @@ This document represents the changelog for my proxmox hypervisor
 * bridged deluge and protonvpn docker containers together on the "torrent-bridge" network
 
 * configured incoming address on deluge container to docker bridge network IP 
+=======
+
+# 10/31/2024
+
+* Added backups pool to fstab on torrent-server , located in /mnt/backups. Credentials stored in .backupscredentials file in home of torrent-user. Restricted with 600 perms in home.
+
+* Changed perms of /home/torrent-user/.smbcredentials to 600 
+
+* Installed firewalld on torrent-server
+
+* Deleted "mnt-media.automount" and "mnt-media.mount" on torrent-server
+>>>>>>> b82baba07c9dfc0865dce3eb9ae672dcffbee2f3

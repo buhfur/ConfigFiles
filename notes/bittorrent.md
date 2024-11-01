@@ -148,6 +148,7 @@ I downloaded the torrent file for Debian 12. Upon opening the file in a text edi
 
 #### 2. How can I setup my own tracker ?
 
+For this i'm going to be creating a custom docker container for an opentracker server 
 
 ### 'original' downloader 
 
