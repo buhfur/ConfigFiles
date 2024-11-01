@@ -1790,28 +1790,34 @@ sudo rfkill unblock all
     ```bash
     ```
 
+- Create Docker container using pulled image 
+    ```bash
+    docker run -d --name <container-name> <image-name>:<tag>
+    ```
+
+> -d : runs the container in detached mode ( background )
+
 - list docker networks
+    ```bash
+    sudo docker network ls
+    ```
 
-```bash
-sudo docker network ls
-```
+- Delete all docker containers
+    ```bash
+    docker rm vf $(docker ps -a -q)
+    ```
 
-**delete all docker containers**
+- View contents of Docker image after pulling 
+    ```bash
+    docker inspect <image-name>:<tag>
+    ```
 
-```bash
-docker rm vf $(docker ps -a -q)
-```
+- Add bind mount to docker container
+    ```bash
+    docker run -v /var/something/something:/var/container/something something  
+    ```
 
-**Add bind mount to docker container**
-
-You can use the "-v" option when making bind mounts 
-
-the left operand is the file path of a directory on your local machine , the other operand is where that path will be mounted to in the containers file system
-
-
-```bash
-docker run -v /var/something/something:/var/container/something something  
-```
+> You can use the "-v" option when making bind mounts. The left operand is the file path of a directory on your local machine , the other operand is where that path will be mounted to in the containers file system
 
 ---
 
