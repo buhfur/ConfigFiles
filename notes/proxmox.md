@@ -5,9 +5,7 @@
 This document represents the changelog for my proxmox hypervisor 
 
 
-# 10/13/2024 
-
-* Added all private IP's of hosts on local network to truenas allowlist for pool1 & pool2 
+# 10/13/2024 * Added all private IP's of hosts on local network to truenas allowlist for pool1 & pool2 
 
 * Removed torrentfunk, torlock , and idope.se from Jackett indexers 
 
@@ -46,3 +44,12 @@ This document represents the changelog for my proxmox hypervisor
 * Added x-systemd.automount to /etc/fstab on proxmox root in an attempt to ensure the server has access before attempting to backup 
 * also added the prior mentioned fstab option to apply to pool2 as well.
 
+# 11/32/2024 
+
+* converted deluge to a docker container 
+
+* setup protonvpn docker container 
+
+* bridged deluge and protonvpn docker containers together on the "torrent-bridge" network
+
+* configured incoming address on deluge container to docker bridge network IP 

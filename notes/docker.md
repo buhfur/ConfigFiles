@@ -22,3 +22,18 @@ If you run `sudo docker network ls` you can see all the active netowrk connectio
 - Per the docker documentation , if you use firewalld or ufw to manage your firewall, exposed ports on docker containers bypass your firewall rules
 
 
+---
+
+## Torrent docker swarm 
+
+Lately i've been working on converting all my current services hosted on proxmox into docker containers. The idea for docker containers are the quantity of moving parts. Lately i've began to notice more and more issues with torrenting on my current setup. Currently, i'm running a sonarr, radarr, jackett, deluge, and protonvpn locally on a Debian 12 VM. On another virtual machine , jellyfin and copyparty( file sharing google drive like app ) are hosted. This structure has created a very messy configuration that i'm simply tired of dealing with. Therefore , my plan is to convert all these services into docker containers using docker compose with hopes that this **should** be easier to manage. Starting off with deluge and protonvpn, I need something to download my torrents and make sure that no one is spying on me in the process. Therefore, i've decided to run with the "gluetun" docker container for ProtonVPN as there seems to be active support for tuning it to specific VPN providers.
+
+
+- Networking the two containers 
+
+
+j
+
+
+
+

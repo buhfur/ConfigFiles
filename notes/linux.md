@@ -1824,22 +1824,29 @@ sudo rfkill unblock all
 sudo docker network ls
 ```
 
-**delete all docker containers**
+- delete all docker containers
 
 ```bash
 docker rm vf $(docker ps -a -q)
 ```
 
-**Add bind mount to docker container**
+-  Add bind mount to docker container
+    ```bash
+    docker run -v /var/something/something:/var/container/something something  
+    ```
+> You can use the "-v" option when making bind mounts 
+> the left operand is the file path of a directory on your local machine , the other operand is where that path will be mounted to in the containers file system
 
-You can use the "-v" option when making bind mounts 
-
-the left operand is the file path of a directory on your local machine , the other operand is where that path will be mounted to in the containers file system
-
-
-```bash
-docker run -v /var/something/something:/var/container/something something  
-```
+- Stop Docker compose run ( in parent directory )
+    ```bash
+    docker compose down 
+    ```
+- Stop specified docker compose run 
+   ```bash
+   docker compose -f /path/to/compose.yml down 
+   ``` 
+- Connect container to protonvpn container using Docker Compose 
+In your compose.yml file , add the following 
 
 ---
 

@@ -4,6 +4,15 @@
 **REMINDER: add notes for every change you make to a VM or setting in proxmox**
 
 - [ ] enable port forwarding for protonvpn openvpn clients thorugh 
+- [ ] convert jellyfin into docker container
+- [ ] convert adguard server into docker container
+- [ ] convert jellyfin into docker container
+- [x] convert torrent-server into docker container 
+    - [x] setup protonvpn docker container 
+        - [x] setup bridge network between protonvpn and deluge container 
+- [ ] convert sonarr into docker container 
+- [ ] convert radarr into docker container 
+- [ ] convert jackett into docker container 
 
 # Proxmox project writeup 
 
@@ -29,8 +38,7 @@
 - [x] add notes on how to paste using middle mouse button in tmux by holding shift 
 - [x] make folder for 'troubleshooting' various things 
 - [x] write post about BitTorrent and troubleshooting issues
-- [ ] add TOC to windows.md 
-- [ ] edit notes.md 
+- [x] add TOC to windows.md 
 - [ ] move all notes and project related stuff to another github page using a mkdocs 
 - [ ] write troubleshooting guide for proxmox 500 "read-only disk isssue" 
 
