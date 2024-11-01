@@ -55,4 +55,4 @@ This document represents the changelog for my proxmox hypervisor
 
 * Installed firewalld on torrent-server
 
-
+* Deleted "mnt-media.automount" and "mnt-media.mount" on torrent-server

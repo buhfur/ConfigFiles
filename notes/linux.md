@@ -95,88 +95,75 @@ $ ln -s /home/ryan/something.py /opt/scripts/something.py
 mkdir "directory_$(date +%Y%m%d_%H%M%S)"
 ```
 
-**enable vi keybinds for bash**
+- Kill all processes using specifed port 
+    ```bash
+    lsof -t -i :<port> | xargs kill -9 
+    ```
+- enable vi keybinds for bash
+    ```bash
+    set -o vi 
+    ```
 
-```bash
-set -o vi 
-```
+- find bash shortcuts
+    ```bash
+    man readline
+    ```
 
-**find bash shortcuts**
+- Remove file with hyphens in the name
+    ```bash
+    rm -- -filename
+    ```
 
-```bash
-man readline
-```
+    ```bash
+    rm ./--filename
+    ```
 
-**Remove file with hyphens in the name**
+- Start comand as background job
+    ```bash
+    command &
+    ```
 
-```bash
-rm -- -filename
-```
-
-or 
-
-```bash
-rm ./--filename
-```
-
-**Start comand as background job**
-
-```bash
-command &
-```
-
-Add an ampersand at the end of the command 
-
-Type jobs to view your background tasks
-
-use ```bash
-fg 
-``` by itself to bring the most recently started background job to the foreground of the console. From there you can stop the job using Ctrl-Z or Ctrl-C
-
-**Change file extension of all files in directory**
-
-```bash
-rename 's/\.foo$/.bar/' *.foo
-```
-
-replace foo with the current extension , replace bar with the new ext.
+> Add an ampersand at the end of the command 
 
 
-**Show keycode for keybind**
+- Change file extension of all files in directory
+    ```bash
+    rename 's/\.foo$/.bar/' *.foo
+    ```
 
-If you're using Xorg as your display server, xev should already be installed. This tool let's you see what keycode goes to what key.
+> replace foo with the current extension , replace bar with the new ext.
 
-```bash
-xev
-``` 
 
-After finding the keycode, run this command below. Substitute \<KEYCODE\> with the numerical keycode you retrieve from xev.
+- Show keycode for keybind
+    ```bash
+    xev
+    ``` 
+> If you're using Xorg as your display server, xev should already be installed. This tool let's you see what keycode goes to what key.  After finding the keycode, run this command below. Substitute \<KEYCODE\> with the numerical keycode you retrieve from xev.
 
-```bash
-xmodmap -pk | grep <KEYCODE>
-```
+    ```bash
+    xmodmap -pk | grep <KEYCODE>
+    ```
 
-**Show info about hard drives connected**
+- Show info about hard drives connected
+    ```bash
+    find /dev/disk/by-id/ -type l|xargs -I{} ls -l {}|grep -v -E '[0-9]$' |sort -k11|cut -d' ' -f9,10,11,12
+    ```
 
-```bash
-find /dev/disk/by-id/ -type l|xargs -I{} ls -l {}|grep -v -E '[0-9]$' |sort -k11|cut -d' ' -f9,10,11,12
-```
+- Show otherboard info
+    ```bash
+    dmidecode -t 2 
+    ```
 
-**Show otherboard info**
+- Disable trackpad on linux
+    ```bash
+    sudo apt-get install xinput 
+    ```
 
-```bash
-dmidecode -t 2 
-```
+    ```bash
+    xinput list
+    ```
 
-**Disable trackpad on linux**
-
-```bash
-sudo apt-get install xinput 
-```
-
-then find your touchpad with ```bash
-xinput list
-```. Alot of the time trackpads are labeled with "SynPS/x Snynaptics TouchPad". Locate the ID in the second column and do the following command below.
+Alot of the time trackpads are labeled with "SynPS/x Snynaptics TouchPad". Locate the ID in the second column and do the following command below.
 
 ```bash
 xinput --disable <ID>

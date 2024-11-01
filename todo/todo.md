@@ -11,6 +11,7 @@
 - [ ] convert jackett into container 
 - [ ] convert radarr into container 
 - [ ] convert sonarr into container 
+- [ ] manage these containers with docker compose 
 
 # Proxmox project writeup 
 
@@ -24,6 +25,7 @@
 # Torrent-server todo
 
 - [ ] find out why so many torrents have no seeds / peers to share / download file 
+
 
 # Config todo 
 
