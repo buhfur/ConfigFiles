@@ -4,6 +4,13 @@
 **REMINDER: add notes for every change you make to a VM or setting in proxmox**
 
 - [ ] enable port forwarding for protonvpn openvpn clients thorugh 
+- [ ] convert adguard into a container on torrent-server 
+- [ ] convert jellyfin into container on torrent-server
+- [ ] move copyparty container to torrent-server
+- [ ] convert deluge web client into container 
+- [ ] convert jackett into container 
+- [ ] convert radarr into container 
+- [ ] convert sonarr into container 
 
 # Proxmox project writeup 
 
@@ -13,6 +20,10 @@
 
 - [ ] Create page dedicated to each individual projects 
 - [x] create proxmox.md in projects/ directory in buhfur.github.io directory 
+
+# Torrent-server todo
+
+- [ ] find out why so many torrents have no seeds / peers to share / download file 
 
 # Config todo 
 
@@ -26,14 +37,13 @@
 
 # Notes todo 
 
-- [x] add notes on how to paste using middle mouse button in tmux by holding shift 
-- [x] make folder for 'troubleshooting' various things 
-- [x] write post about BitTorrent and troubleshooting issues
+- [ ] add notes for basic docker usage 
+- [ ] refactor the entirety of linux.md , use the same structure as windows.md 
 - [ ] add TOC to windows.md 
 - [ ] edit notes.md 
 - [ ] move all notes and project related stuff to another github page using a mkdocs 
 - [ ] write troubleshooting guide for proxmox 500 "read-only disk isssue" 
-
+- [ ] add notes about setting file permissions in linux 
 ---
 
 

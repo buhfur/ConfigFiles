@@ -430,143 +430,126 @@ tar -zcvf "$(date '+%Y-%m-%d').tar.gz"
 
 ---
 
-# Systemd 
+## Systemd 
 
-**disable unit**
+- Disable unit
 
-> Stop the service 
->
-> ```bash
-> systemctl stop <unit-name> 
-> ```
-> 
-> Disable the service :
->
-> ```bash
-> systemctl disable <unit-name>
-> ```
->
-> Stop the unit from being started manually or automatically 
->
-> ```bash
-> systemctl mask <unit-name>
-> ```
->
+    > Stop the service 
+    >
+    > ```bash
+    > systemctl stop <unit-name> 
+    > ```
+    > 
+    > Disable the service :
+    >
+    > ```bash
+    > systemctl disable <unit-name>
+    > ```
+    >
+    > Stop the unit from being started manually or automatically 
+    >
+    > ```bash
+    > systemctl mask <unit-name>
+    > ```
+    >
 
-**Systemd timer unit template**
+- Systemd timer unit template
+    ```bash
+    [Unit]
+    Description=Runs My Service every hour
 
-Create this unit alongside the existing service unit in the same directory 
+    [Timer]
+    OnBootSec=10min
+    OnUnitActiveSec=1h
+    Unit=my-service.service
 
-```bash
-[Unit]
-Description=Runs My Service every hour
+    [Install]
+    WantedBy=timers.target
 
-[Timer]
-OnBootSec=10min
-OnUnitActiveSec=1h
-Unit=my-service.service
+    ```
 
-[Install]
-WantedBy=timers.target
+- Creating service files that involve X org server
 
-```
+    - If you need to create a service that depends upon an X server running , add this line under the "Unit" section 
+        ```bash
+        PartOf=graphical-session.target
+        ```
 
-**Creating service files that involve X org server**
+    - You will want to add this line under the "Install" section 
+        ```bash
+        WantedBy=xsession.target
+        ```
 
-> If you need to create a service that depends upon an X server running , add this line under the "Unit" section 
+- Boot into different target
+    ```bash
+    cd /usr/lib/systemd/system
+    ```
 
-```bash
-PartOf=graphical-session.target
-```
+    ```bash
+    grep Isolate *.target
+    ```
 
-> Also you will want to add this line under the "Install" section 
+    - Decide which target you would like to use , then run systemctl isolate 
+        ```bash
+        systemctl isolate something.target
+        ```
 
-```bash
-WantedBy=xsession.target
-```
+- Start systemd service under specific User ID
+    ```bash
+    systemctl --user service.name
+    ```
 
-**Boot into different target**
+- Change user systemd service to start on system startup
+    ```bash
+    loginctl enable-linger myuser
+    ```
 
-```bash
-cd /usr/lib/systemd/system
-```
-
-```bash
-grep Isolate *.target
-```
-
-Decide which target you would like to use , then run systemctl isolate 
-
-```bash
-systemctl isolate something.target
-```
-
-**Start systemd service under specific User ID**
-
-```bash
-systemctl --user service.name
-```
-
-**Change user systemd service to start on system startup**
-
-```bash
-loginctl enable-linger myuser
-```
-
-**Running scripts at startup**
+- Running scripts at startup
 
 There are many ways to do this , assuming you are using systemd. You can use the following methods to run a script on boot.
 
-### Rc.local
+    - Rc.local, add this line in the /etc/rc.d/rc.local file 
+        ```bash
+        sh /home/user/scriptdir/script.sh
+        ```
 
-add this line in the /etc/rc.d/rc.local file 
+## Systemd unit file 
 
-```bash
-sh /home/user/scriptdir/script.sh
-```
+- Use the template below for your script , put this inside */etc/systemd/system*
+    ```bash
+    [Unit]
+    Description=Reboot message systemd service.
 
-### systemd unit file 
+    [Service]
+    Type=simple
+    ExecStart=/bin/bash /home/ec2-user/reboot_message.sh
 
-Use the template below for your script , put this inside */etc/systemd/system*
+    [Install]
+    WantedBy=multi-user.target
+    ```
 
-```bash
-[Unit]
-Description=Reboot message systemd service.
+- Set perms for the service file 
+    ```bash
+    chmod 644 /etc/systemd/system/script.service 
+    ```
 
-[Service]
-Type=simple
-ExecStart=/bin/bash /home/ec2-user/reboot_message.sh
-
-[Install]
-WantedBy=multi-user.target
-```
-
-Set perms for the service file 
-
-```bash
-chmod 644 /etc/systemd/system/script.service 
-```
-
-Then enable the service file in systemd 
-
-```bash
-systemctl enable script.service 
-```
+- Enable the service file in systemd 
+    ```bash
+    systemctl enable script.service 
+    ```
 
 
-### Crontab 
+## Crontab 
 
-edit the crontab file 
+- Edit the crontab file 
+    ```bash
+    crontab -e 
+    ```
 
-```bash
-crontab -e 
-```
-
-To run the script on reboot, use the template below 
-
-```bash
-@reboot sh /home/user/reboot_message.sh
-```
+- To run the script on reboot, use the template below 
+    ```bash
+    @reboot sh /home/user/reboot_message.sh
+    ```
 
 **WARNING : Not all versions of cron support the '@reboot' option**
 
@@ -1038,66 +1021,55 @@ And after that you're done !
 
 # Firewalld 
 
-**View all available services**
+- View all available services
+    ```bash
+    firewall-cmd --get-services
+    ```
 
-```bash
-firewall-cmd --get-services
-```
+- Get default zone
+    ```bash
+    firewall-cmd --get-default-zone
+    ```
 
+- Get available zones
+    ```bash
+    firewall-cmd --get-zones
+    ```
 
-**Get default zone**
+- List services
+    ```bash
+    firewall-cmd --list-services
+    ```
 
-```bash
-firewall-cmd --get-default-zone
-```
+- List services enabled in zone
+    ```bash
+    firewall-cmd --list-all --zone=public
+    ```
 
-**Get available zones**
+- Add port to firewalld permanently
+    ```bash
+    firewall-cmd --add-port=2020/tcp --permanent
+    ```
 
-```bash
-firewall-cmd --get-zones
-```
+- Add service to firewalld
+    ```bash
+    firewall-cmd --add-service=vnc-server --permanent
+    ```
 
-**List services**
+- Reload firewalld
+    ```bash
+    firewall-cmd --reload
+    ```
 
-```bash
-firewall-cmd --list-services
-```
+- Write configs to runtime
+    ```bash
+    firewall-cmd --runtime-to-permanent
+    ```
 
-**List services enabled in zone**
-
-```bash
-firewall-cmd --list-all --zone=public
-```
-
-**Add port to firewalld permanently**
-
-```bash
-firewall-cmd --add-port=2020/tcp --permanent
-```
-
-**Add service to firewalld**
-
-```bash
-firewall-cmd --add-service=vnc-server --permanent
-```
-
-**Reload firewalld**
-
-```bash
-firewall-cmd --reload
-```
-
-**Write configs to runtime**
-
-```bash
-firewall-cmd --runtime-to-permanent
-```
-
-**Add source IP**
-
-```bash
-firewall-cmd --add-source=<ipaddress/netmask>
-```
+- Add source IP
+    ```bash
+    firewall-cmd --add-source=<ipaddress/netmask>
+    ```
 
 
 ---
