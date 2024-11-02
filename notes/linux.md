@@ -459,6 +459,17 @@ Simply delete all lines in /etc/network/interfaces and re-install the package an
 
     ```
 
+- List all Systemd timers 
+    ```bash
+    systemctl list-timers --all
+    ```
+
+- Check when Systemd timer will go off
+    ```bash
+    systemctl status timer-name.timer
+    ```
+> Note: After running this command , you should see a "Trigger" section in the output. This field tells you when the timer will go off next.
+
 - Configure unit to run command when stopping / exiting 
     ```bash
     

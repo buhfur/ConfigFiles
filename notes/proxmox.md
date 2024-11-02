@@ -44,7 +44,7 @@ This document represents the changelog for my proxmox hypervisor
 * Added x-systemd.automount to /etc/fstab on proxmox root in an attempt to ensure the server has access before attempting to backup 
 * also added the prior mentioned fstab option to apply to pool2 as well.
 
-# 11/32/2024 
+# 11/1/2024 
 
 * converted deluge to a docker container 
 
@@ -53,3 +53,9 @@ This document represents the changelog for my proxmox hypervisor
 * bridged deluge and protonvpn docker containers together on the "torrent-bridge" network
 
 * configured incoming address on deluge container to docker bridge network IP 
+
+* Increased torrent-servers scsi0 disk size to 102G
+
+# 11/2/2024 
+
+
