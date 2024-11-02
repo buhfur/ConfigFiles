@@ -459,7 +459,13 @@ Simply delete all lines in /etc/network/interfaces and re-install the package an
 
     ```
 
-> Create this unit alongside the existing service unit in the same directory 
+- Configure unit to run command when stopping / exiting 
+    ```bash
+    
+    ExecStop=/path/to/command
+    ```
+
+> Note: Put this snippet under the "Service" section 
 
 - Creating service files that involve X org server
     ```bash
