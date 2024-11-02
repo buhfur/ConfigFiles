@@ -386,6 +386,16 @@ Simply delete all lines in /etc/network/interfaces and re-install the package an
 
 # Tar snippets 
 
+- Archive top level directories with tar
+    ```bash
+    sudo tar czf interfaces.tar -C / etc/network/interfaces
+    ```
+
+- Restore backup from drive
+    ```bash
+    tar --overwrite -xzvf backup.tar.gz --directory /
+    ```
+
 - List contents of archive
     ```bash
     tar -tf archive.tar
@@ -1614,29 +1624,24 @@ In your compose.yml file , add the following
 
 # Oracle SBC 
 
-**show all sip agents**
+- Show all sip agents
+    ```bash
+    sho sipd agents
+    ```
 
-```bash
-sho sipd agents
-```
-
-**show configuration for specified agent**
-
-```bash
-sho configuration session-agent <AGENT-NAME> sh 
-```
-
-
+- Show configuration for specified agent
+    ```bash
+    sho configuration session-agent <AGENT-NAME> sh 
+    ```
 
 ---
 
 # TrueNAS
 
-**restart ssh service**
-
-```bash
-midclt call service.restart "ssh"
-```
+- Restart ssh service
+    ```bash
+    midclt call service.restart "ssh"
+    ```
 
 ---
 
@@ -1657,44 +1662,7 @@ midclt call service.restart "ssh"
 
 ---
 
-# System Clipboard 
-
-While using the X window system , there are 3 distinct clipboards 
-
-
-
----
-
 # Tar 
-
-**Archive top level directories with tar**
-
-Use the '-C / xxx/xxx'
-
-For example if you want to archive the /etc/network/interfaces file 
-
-```bash
-sudo tar czf interfaces.tar -C / etc/network/interfaces
-```
-
-
-**extract archive to specified directory**
-
-```bash
-tar -xf archive.tar.xz -C / etc/something
-```
-
-if not root directory 
-
-```bash
- tar -xf archive.tar.xz -C /this/directory
-```
-
-**Restore backup from drive**
-
-```bash
-tar --overwrite -xzvf backup.tar.gz --directory /
-```
 
 
 ---
