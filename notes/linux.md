@@ -422,6 +422,17 @@ Simply delete all lines in /etc/network/interfaces and re-install the package an
     tar -xf archive.tar -C /path/to/extract/to
     ```
 
+- Extract specific file from archive( Example)
+    1. (Optional) List contents of archive 
+        ```bash
+        tar -tf archive.tar
+        ```
+    2. Extract file using path from output 
+        ```bash
+        tar -xf archive.tar /path/in/archive/to/file
+        ```
+
+
 ---
 
 # Systemd 
