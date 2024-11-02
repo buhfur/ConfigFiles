@@ -38,14 +38,12 @@ In this document I have added various bash snippets ,tips , and other useful pie
     - [NFS](#nfs)
     - [NTP](#ntp)
     - [Podman](#podman)
-    - [GRUB](#grub)
     - [User management](#user-management)
     - [Package management with DNF](#package-management-with-dnf)
     - [Logical Volume Management](#logical-volume-management)
-    - [Stratis](#stratis)
     - [CIFS](#cifs)
     - [NMAP](#nmap)
-    - [GRUB](#grub-1)
+    - [GRUB](#grub)
     - [Common errors and small fixes](#common-errors-and-small-fixes)
     - [Docker](#docker)
     - [Sed](#sed)
@@ -1275,7 +1273,90 @@ Some containers contain a "usage" line that may say how the container needs to r
 
 ---
 
-# GRUB  
+# Package management with DNF 
+
+- Add installation disk as repo
+    1. Add repo file using config-maanger
+    ```bash
+    dnf config-manager --add-repo=file:///repo/filename
+    ```
+
+    2. Then locate the repo in /etc/yum.conf.d
+
+    3. add the 'gpgcheck=0' to the file
+
+---
+
+# Logical Volume Managment 
+
+- View volume groups extent size
+    ```bash
+    vgdisplay
+    ```
+
+- Create VG with specified extent size
+    ```bash
+    vgcreate myvg /dev/sdx -s 8MiB
+    ```
+
+> Note: The example above creates a volume group with a Physical Extent size of 8-MiB
+
+
+- Create logical volume with specific size
+    ```bash
+    lvcreate -n lvdata -l 50%FREE vgdata
+
+    or 
+
+    lvcreate -n lvdata 
+    ```
+
+---
+
+# CIFS 
+
+- Enable CIFS mounts for user
+
+    -  Set the SUID perm on these binaries [ /bin/mount, /bin/umount ,/user/sbin/mount.cifs ]
+        ```bash
+        sudo chmod u+s /bin/mount /bin/umount /usr/sbin/mount.cifs
+        ```
+
+- CIFS default ports
+
+> CIFS uses ports 138 for clients , 139 & 445 for servers
+
+---
+
+# NMAP 
+
+- Scan for all IP's on your network with nmap
+    ```bash
+    nmap -sn 192.168.0.0/24
+    ```
+
+> Note: You can substitute the ip in the command above for one or multiple networks 
+> The '-sn' option tells nmap to not search for open ports 
+
+- Check if certain port is open
+    ```bash
+    nmap <ip><prefix> -p <port-number>
+    ```
+
+
+    - If you know the port the service might be using
+        ```bash
+        lsof -i :<port>
+        ```
+
+    - Using Netstat
+        ```bash
+        sudo netstat -nlp  | grep <port-number>
+        ```
+
+---
+
+# GRUB 
 
 - Reset root password without access to wheel group
 
@@ -1304,8 +1385,6 @@ Some containers contain a "usage" line that may say how the container needs to r
         ```bash
         /usr/sbin/reboot -f 
         ```
-
----
 
 # User management 
 
@@ -1427,172 +1506,44 @@ Some containers contain a "usage" line that may say how the container needs to r
     sudo usermod -l faruk -d /home/faruk -m pardus
     ```
 
----
+- Update GRUB config
+    ```bash
+    grub2-mkconfig -o /boot/grub2/grub.cfg
 
-# Package management with DNF 
+    grub2-mkconfig -o /boot/efi/EFI/almalinux/grub.cfg
 
-- Add installation disk as repo**
+    grub2-mkconfig -o /boot/efi/EFI/redhat/grub.cfg
+    ```
 
-```bash
-dnf config-manager --add-repo=file:///repo/filename
-```
 
-Then locate the repo in /etc/yum.conf.d
+- Reset root password
 
-add the 'gpgcheck=0' to the file
 
+1. Add init=/bin/sh in GRUB kernel boot args 
 
----
+2. Remount filesystem for writing 
+    ```bash
+    mount -rw -o remount /
+    ```
 
-# Logical Volume Managment 
+3. Use passwd to change pass 
+    ```bash
+    passwd root
+    ```
 
-**View volume groups extent size**
+4. Create autolabel file 
+    ```bash
+    touch /.autorelabel
+    ```
 
-```bash
-vgdisplay
-```
+## Common errors and small fixes 
 
-**Create VG with specified extent size**
+- Error: org.bluz.Error.NotReady
 
-```bash
-vgcreate myvg /dev/sdx -s 8MiB
-```
-
-The example above creates a volume group with a Physical Extent size of 8-MiB
-
-
-**Create logical volume with specific size**
-
-```bash
-lvcreate -n lvdata -l 50%FREE vgdata
-```
-
-```bash
-lvcreate -n lvdata 
-```
-
-
-
----
-
-# Stratis 
-
-Install stratis package 
-
----
-
-
-# CIFS 
-
-
-**Enable CIFS mounts for user**
-
-Set the SUID perm on these binaries 
-
-> /bin/mount
-> /bin/umount 
-> /user/sbin/mount.cifs
-
-```bash
-sudo chmod u+s /bin/mount /bin/umount /usr/sbin/mount.cifs
-```
-
-**CIFS default ports**
-
-> CIFS uses ports 138 for clients , 139 & 445 for servers
-
----
-
-# NMAP 
-
-
-**Scan for all IP's on your network with nmap**
-
-```bash
-nmap -sn 192.168.0.0/24
-```
-
-You can substitute the ip in the command above for one or multiple networks 
-
-The '-sn' option tells nmap to not search for open ports 
-
-**Check if certain port is open**
-
-```bash
-nmap <ip><prefix> -p <port-number>
-```
-
-
-**If you know the port the service might be using**
-
-```bash
-lsof -i :<port>
-```
-
-Or alternatively , you can use netstat 
-
-```bash
-sudo netstat -nlp  | grep <port-number>
-```
-
-
-
----
-
-# GRUB 
-
-**Update GRUB config**
-
-```bash
-grub2-mkconfig -o /boot/grub2/grub.cfg
-```
-```bash
-grub2-mkconfig -o /boot/efi/EFI/almalinux/grub.cfg
-```
-```bash
-grub2-mkconfig -o /boot/efi/EFI/redhat/grub.cfg
-```
-
-
-**reset root password**
-
-
-add init=/bin/sh in GRUB kernel boot args 
-
-remount filesystem for writing 
-
-```bash
-mount -rw -o remount /
-```
-
-use passwd to change pass 
-
-```bash
-passwd root
-```
-
-
-Then add /.autorelabel command for SELinux , without doing this you will not be able to login at all ! 
-
-```bash
-touch /.autorelabel
-```
-
-
----
-
-# Common errors and small fixes 
-
-
-**Error: org.bluz.Error.NotReady**
-
-You can fix this using the rfkill tool 
-
-```bash
-sudo rfkill unblock all
-```
-
-
+    - Using the rfkill tool 
+        ```bash
+        sudo rfkill unblock all
+        ```
 
 ---
 
