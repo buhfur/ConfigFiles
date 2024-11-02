@@ -289,20 +289,28 @@ the xinitrc file is used for loading additional configurations and settings when
 
 > Install numlockx and run the command above 
 
-- Permanently disable caps lock 
-    1. Install xkbset and epel-release( RHEL & Debian)
+- Using setxkbmap 
+    ```bash
+    setxkbmap -option caps:none
+    ```
+- Using localectl ( RHEL )
+    ```bash
+    sudo localectl set-x11-keymap us "" "" caps:none
+    ```
+
+- Using XKBOPTIONS ( Debian )
+    1. Open /etc/default/keyboard
         ```bash
-        git clone https://github.com/alols/xkbset.git
-        cd xkbset
-
-        make 
-        sudo make install 
-
+        vim /etc/default/keyboard
         ```
-
-    2. Then run the following command 
+    2. Modify config file 
         ```bash
-        xkbset nullify lock
+        XKBOPTIONS="caps:none"
+        ```
+    3. Apply changes
+        ```bash
+        sudo dpkg-reconfigure keyboard-configuration
+        sudo udevadm trigger --subsystem-match=input --action=change
         ```
 
 - Add aliases for ssh connections
