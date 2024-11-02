@@ -70,6 +70,17 @@ In this document I have added various bash snippets ,tips , and other useful pie
 
 ## Command & Bash snippets 
 
+
+- Redirect both STDOUT and STDERR 
+
+    ```bash
+    command &> /dev/null
+    ```
+
+    ```bash
+    command > /dev/null 2>&1
+    ```
+
 - Symbolic and hard links 
     ```bash
     ln -s TARGET LINK_NAME 
@@ -223,16 +234,15 @@ The below section should include tools and snippets from various tools i've used
 
 ## Xinitrc 
 
-the xinitrc file is used for loading additional configurations and settings when the Xorg server starts 
+> Note: The xinitrc file is used for loading additional configurations and settings when the Xorg server starts.
 
 
 - Manually disable the caps lock ( lock , not the button itself) using python script 
-
     ```bash
     python -c 'from ctypes import *; X11 = cdll.LoadLibrary("libX11.so.6"); display = X11.XOpenDisplay(None); X11.XkbLockModifiers(display, c_uint(0x0100), c_uint(2), c_uint(0)); X11.XCloseDisplay(display)'
     ```
 
-> Install numlockx and run the command above 
+> Note: Install numlockx and run the command above 
 
 - Using setxkbmap 
     ```bash
@@ -316,9 +326,7 @@ Simply delete all lines in /etc/network/interfaces and re-install the package an
 
 # ProtonVPN connections 
 
-Change the file extension to a .conf file , then copy the file over to /etc/openvpn. This will start a daemon for every connection in the directory 
-
----
+> Note: When using the pre-built OpenVPN configurations , change the file extension to a .conf file , then copy the file over to /etc/openvpn. This will start a daemon for every connection in the directory.
 
 - Setting up torrent server vm 
 
@@ -329,22 +337,7 @@ Change the file extension to a .conf file , then copy the file over to /etc/open
         sudo apt install openvpn-systemd-resolved
         ```
 
----
-
-- Redirect both STDOUT and STDERR 
-
-    ```bash
-    command &> /dev/null
-    ```
-
-    ```bash
-    command > /dev/null 2>&1
-    ```
-
----
-
-
-# Piping 
+- Piping Reference
 
 > 0> = STDIN
 >
@@ -355,10 +348,7 @@ Change the file extension to a .conf file , then copy the file over to /etc/open
 > 2> = STDERR
 
 
----
-
-
-# tar snippets 
+# Tar snippets 
 
 - List contents of archive
     ```bash
@@ -382,6 +372,10 @@ Change the file extension to a .conf file , then copy the file over to /etc/open
     tar -zcvf "$(date '+%Y-%m-%d').tar.gz" 
     ```
 
+- Extract tar archive to specific directory
+    ```bash
+    tar -xf archive.tar -C /path/to/extract/to
+    ```
 
 ---
 
