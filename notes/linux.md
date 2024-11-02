@@ -70,204 +70,149 @@ In this document I have added various bash snippets ,tips , and other useful pie
 
 ## Command & Bash snippets 
 
-### Symbolic and hard links 
-
+- Symbolic and hard links 
+    ```bash
+    ln -s TARGET LINK_NAME 
+    ```
 The best information can be found on the man page. Use man ln for further details. However, to avoid confusion, please note that the syntax is as follows: "TARGET" should be the file or directory for which you would like to create a link, while "LINK\_NAME" is the name and directory where the link will appear in the specified absolute file path. It should be noted that "TARGET" should be an absolute path to the item you want to link. However, you can use relative paths for "LINK\_NAME" if you wish. Nonetheless, I prefer using absolute paths for both to avoid making mistakes, such as misplacing the link on my system.
 
-```bash
-ln -s TARGET LINK_NAME 
-```
-#### Create symbolic link to file
+- Create symbolic link to file
+    ```bash
+    $ ln -s /home/ryan/something.py /opt/scripts/something.py
+    ```
+- Create directory with a timestamp as it's name
+    ```bash
+    timestamp=$(date +"%Y-%m-%d_%H-%M-%S")
+    ```
+
+    - Then to make the directory , use the following syntax 
+        ```bash
+        mkdir "directory_$(date +%Y%m%d_%H%M%S)"
+        ```
+
+- Enable vi keybinds for bash
+    ```bash
+    set -o vi 
+    ```
+
+- Find bash shortcuts
+    ```bash
+    man readline
+    ```
 
-```bash
-$ ln -s /home/ryan/something.py /opt/scripts/something.py
-```
-**create directory with a timestamp as it's name**
+- Remove file with hyphens in the name
+    ```bash
+    rm -- -filename
 
-> Use the following command below in a bash script 
->
-> ```bash
-> timestamp=$(date +"%Y-%m-%d_%H-%M-%S")
-> ```
->
-> Then to make the directory , use the following syntax 
-> ```bash
-mkdir "directory_$(date +%Y%m%d_%H%M%S)"
-```
+    rm ./--filename
+    ```
 
-**enable vi keybinds for bash**
+- Start comand as background job
+    ```bash
+    command &
+    ```
 
-```bash
-set -o vi 
-```
+> Note: Type `jobs` to view your background tasks
 
-**find bash shortcuts**
+- Resume suspended background 
+    ```bash
+    fg
+    ```
 
-```bash
-man readline
-```
+- Change file extension of all files in directory
+    ```bash
+    rename 's/\.foo$/.bar/' *.foo
+    ```
 
-**Remove file with hyphens in the name**
+> Note: Replace "foo" with the current extension , replace "bar" with the new ext.
 
-```bash
-rm -- -filename
-```
 
-or 
+- Show keycode for keybind
+    ```bash
+    xev
+    ``` 
 
-```bash
-rm ./--filename
-```
+> Note: If you're using Xorg as your display server, xev should already be installed. This tool let's you see what keycode goes to what key.
 
-**Start comand as background job**
+    - After finding the keycode, run this command below. Substitute \<KEYCODE\> with the numerical keycode you retrieve from xev.
+        ```bash
+        xmodmap -pk | grep <KEYCODE>
+        ```
 
-```bash
-command &
-```
+- Show info about hard drives connected
+    ```bash
+    find /dev/disk/by-id/ -type l|xargs -I{} ls -l {}|grep -v -E '[0-9]$' |sort -k11|cut -d' ' -f9,10,11,12
+    ```
 
-Add an ampersand at the end of the command 
+- Show otherboard info
+    ```bash
+    dmidecode -t 2 
+    ```
 
-Type jobs to view your background tasks
+- Disable trackpad on linux
+    ```bash
+    sudo apt-get install xinput 
+    ```
 
-use ```bash
-fg 
-``` by itself to bring the most recently started background job to the foreground of the console. From there you can stop the job using Ctrl-Z or Ctrl-C
+    1. Find the name of your touchpad
+        ```bash
+        xinput list
+        ```
+> Note: Alot of the time trackpads are labeled with "SynPS/x Snynaptics TouchPad". 
 
-**Change file extension of all files in directory**
+    2. Locate the ID in the second column using the command below.
+        ```bash
+        xinput --disable <ID>
+        ```
 
-```bash
-rename 's/\.foo$/.bar/' *.foo
-```
 
-replace foo with the current extension , replace bar with the new ext.
+- List all users on host
+    ```bash
+    compgen -u | column
+    ```
 
 
-**Show keycode for keybind**
+- Restore default .bashrc, .profile
+    ```bash
+    cat /etc/skel/[.bashrc,.profile,...] ~/.[bashrc,profile,etc...]
+    ```
 
-If you're using Xorg as your display server, xev should already be installed. This tool let's you see what keycode goes to what key.
+> Note: The default versions of these files are usually going to be stored in /etc/skel
 
-```bash
-xev
-``` 
+- Show motherboard info
+    ```bash
+    dmidecode | less
+    ```
 
-After finding the keycode, run this command below. Substitute \<KEYCODE\> with the numerical keycode you retrieve from xev.
 
-```bash
-xmodmap -pk | grep <KEYCODE>
-```
+- Get CPU info
+    ```bash
+    lscpu
+    cat /proc/cpuinfo
+    ```
 
-**Show info about hard drives connected**
+- Get disk info
+    ```bash
+    lsblk -o +MODEL,SERIAL,WWN
 
-```bash
-find /dev/disk/by-id/ -type l|xargs -I{} ls -l {}|grep -v -E '[0-9]$' |sort -k11|cut -d' ' -f9,10,11,12
-```
+    or
 
-**Show otherboard info**
+    ls -l /dev/disk/by-id
 
-```bash
-dmidecode -t 2 
-```
+    or 
 
-**Disable trackpad on linux**
+    lsblk |awk 'NR==1{print $0" DEVICE-ID(S)"}NR>1{dev=$1;printf $0" ";system("find /dev/disk/by-id -lname \"*"dev"\" -printf \" %p\"");print "";}'|grep -v -E 'part|lvm'
+    ```
 
-```bash
-sudo apt-get install xinput 
-```
 
-then find your touchpad with ```bash
-xinput list
-```. Alot of the time trackpads are labeled with "SynPS/x Snynaptics TouchPad". Locate the ID in the second column and do the following command below.
+- Reduce text entering sensitivity
 
-```bash
-xinput --disable <ID>
-```
+    1. Enter this line in your xinitrc , or just copy the xinitrc from the ~/dotfiles directory to your local .xinitrc
+        ```bash
+        xset r rate 250 60
+        ```
 
-
-**List all users on host**
-
-```bash
-compgen -u | column
-```
-
-
-**Restore default .bashrc, .profile**
-
-The default versions of these files are stored in 
-
-```bash
-/etc/skel/
-```
-
-
-**To restore these files**
-
-```bash
-source /etc/skel/.bashrc
-```
-
-or 
-
-```bash
-source /etc/skel/.profile
-```
-
-or 
-
-```bash
-source /etc/skel/.bash_logout
-```
-
-
-**Show motherboard info**
-
-```bash
-dmidecode | less
-```
-
-
-**Get CPU info** 
-
-```bash
-lscpu
-```
-
-or 
-
-```bash
-cat /proc/cpuinfo
-```
-
-
-
-**Get disk info**
-
-```bash
-lsblk -o +MODEL,SERIAL,WWN
-```
-
-or 
-
-```bash
-ls -l /dev/disk/by-id
-```
-
-or 
-
-```bash
-lsblk |awk 'NR==1{print $0" DEVICE-ID(S)"}NR>1{dev=$1;printf $0" ";system("find /dev/disk/by-id -lname \"*"dev"\" -printf \" %p\"");print "";}'|grep -v -E 'part|lvm'
-```
-
-
-**Reduce text entering sensitivity**
-
-You can either use kbdrate or xset , preferably xset as it works alot easier 
-
-Enter this line in your xinitrc , or just copy the xinitrc from the ~/dotfiles directory to your local .xinitrc
-
-```bash
-xset r rate 250 60
-```
-
+> Note: You can either use kbdrate or xset , preferably xset as it works alot easier.
 
 This will reduce the sensitivity 
 
@@ -276,7 +221,7 @@ This will reduce the sensitivity
 
 The below section should include tools and snippets from various tools i've used.
 
-# Xinitrc 
+## Xinitrc 
 
 the xinitrc file is used for loading additional configurations and settings when the Xorg server starts 
 
