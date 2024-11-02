@@ -11,8 +11,6 @@
 - [x] convert sonarr into docker container 
 - [x] convert radarr into docker container 
 - [x] convert jackett into docker container 
-- [ ] create flaresolverr container 
-- [ ] configure sonarr and radarr to new jackett setup 
 
 
 # Proxmox project writeup 

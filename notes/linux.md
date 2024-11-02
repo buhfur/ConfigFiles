@@ -1610,6 +1610,10 @@ docker rm vf $(docker ps -a -q)
 - Connect container to protonvpn container using Docker Compose 
 In your compose.yml file , add the following 
 
+- Start bash TTY in container 
+    ```bash
+    docker exec -it <container-id> /bin/bash
+    ```
 ---
 
 # Sed 
