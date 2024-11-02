@@ -3,8 +3,6 @@
 
 **REMINDER: add notes for every change you make to a VM or setting in proxmox**
 
-- [ ] enable port forwarding for protonvpn openvpn clients thorugh 
-- [ ] convert jellyfin into docker container
 - [ ] convert adguard server into docker container
 - [ ] convert jellyfin into docker container
 - [x] convert torrent-server into docker container 
@@ -15,6 +13,7 @@
 - [x] convert jackett into docker container 
 - [ ] create flaresolverr container 
 - [ ] configure sonarr and radarr to new jackett setup 
+
 
 # Proxmox project writeup 
 
@@ -59,6 +58,8 @@
         - [x] add note about how to change configuration of apache webserver container
     - [ ] generate metainfo file using mktorrent 
     
+
+- [ ] Init git repo for docker torrenting files 
 
 
 

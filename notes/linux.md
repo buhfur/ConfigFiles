@@ -281,66 +281,69 @@ The below section should include tools and snippets from various tools i've used
 the xinitrc file is used for loading additional configurations and settings when the Xorg server starts 
 
 
-**Manually disable the caps lock ( lock , not the button itself)**
+- Manually disable the caps lock ( lock , not the button itself) using python script 
 
-**Install numlockx and run this command**
+    ```bash
+    python -c 'from ctypes import *; X11 = cdll.LoadLibrary("libX11.so.6"); display = X11.XOpenDisplay(None); X11.XkbLockModifiers(display, c_uint(0x0100), c_uint(2), c_uint(0)); X11.XCloseDisplay(display)'
+    ```
 
-```bash
-python -c 'from ctypes import *; X11 = cdll.LoadLibrary("libX11.so.6"); display = X11.XOpenDisplay(None); X11.XkbLockModifiers(display, c_uint(0x0100), c_uint(2), c_uint(0)); X11.XCloseDisplay(display)'
-```
+> Install numlockx and run the command above 
+
+- Permanently disable caps lock 
+    1. Install xkbset and epel-release( RHEL & Debian)
+        ```bash
+        git clone https://github.com/alols/xkbset.git
+        cd xkbset
+
+        make 
+        sudo make install 
+
+        ```
+    ```bash
+    xkbset nullify lock
+    ```
+
+- Add aliases for ssh connections
+    1. Open SSH config in vim 
+        ```bash
+        vim ~/.ssh/config 
+        ```
+    2. In your ssh config , add two lines for each host , one being the IP and the port you want to use 
+        ```bash
+        Host xxx.xxx.x.x
+
+        Port xxx
+        ```
+
+    3. Then add the IP addresses for the ssh hosts to the /etc/hosts file with the format below 
+        ```bash
+        IPADDR     hostname
+        ```
 
 
-**Add aliases for ssh connections**
+- Create swap file
 
-Add two lines for each host , one being the IP and the port you want to use 
+    1. Use `dd` to create the file using the /dev/zero device
+        ```bash
+        dd if=/dev/zero of=/swapfile bs=1M count=100
+        ```
 
-```bash
-vim ~/.ssh/config 
-```
+    2. Convert file to swapfile
+        ```bash
+        mkswap /swapfile
+        ```
 
-Add these two lines to the ~/.ssh/config file 
+    3. Swap to the newly created swap file
+        ```bash
+        swapon /swapfile
+        ```
 
-> Host xxx.xxx.x.x
+    4. Mount the file in /etc/fstab
+        ```bash
+        /swapfile none swap defaults 0 0
+        ```
 
-> Port xxx
-
-
-Then add the IP addresses for the ssh hosts to the /etc/hosts file with the format below 
-
-```bash
-IPADDR     hostname
-```
-
-
-**Create swap file**
-
-**step 1 : use dd to create the file using the /dev/zero device**
-
-```bash
-dd if=/dev/zero of=/swapfile bs=1M count=100
-```
-
-**step 2 : convert file to swapfile**
-
-```bash
-mkswap /swapfile
-```
-
-**step 3 : swap to the newly created swap file**
-
-```bash
-swapon /swapfile
-```
-
-**step 4 : mount the file in /etc/fstab**
-
-Add this line to the bottom of your /etc/fstab file 
-
-```bash
-/swapfile none swap defaults 0 0
-```
-
-This will mount the swap file automatically after boot 
+        > Add this line to the bottom of your /etc/fstab file. This will mount the swap file automatically after boot 
 
 --- 
 
@@ -349,7 +352,7 @@ This will mount the swap file automatically after boot
 
 Below is some useful info for different services and how they can be enabled / modified.
 
-**Installing Network Manager on Debian 12**
+- Installing Network Manager on Debian 12
 
 One of the issues while installing NetworkManager lies with a preset network configuration by the system. Specifically the file /etc/network/interfaces is configured automatically and for some reason if this is present you will see an error in STDERR when installing asking you to remove the configuration if you want to use Network manager to manage any connections.
 
@@ -362,25 +365,26 @@ Change the file extension to a .conf file , then copy the file over to /etc/open
 
 ---
 
-# Setting up torrent server vm 
+- Setting up torrent server vm 
 
-Put ovpn file in /etc/openvpn 
+    1. Put ovpn file in /etc/openvpn 
 
-install openvpn-systemd-resolved and network manager
+    2. install openvpn-systemd-resolved and network manager
+        ```bash
+        sudo apt install openvpn-systemd-resolved
+        ```
 
 ---
 
-# Redirect both STDOUT and STDERR 
+- Redirect both STDOUT and STDERR 
 
-```bash
-command &> /dev/null
-```
+    ```bash
+    command &> /dev/null
+    ```
 
-or 
-
-```bash
-command > /dev/null 2>&1
-```
+    ```bash
+    command > /dev/null 2>&1
+    ```
 
 ---
 
@@ -401,208 +405,181 @@ command > /dev/null 2>&1
 
 # tar snippets 
 
-**List contents of archive**
+- List contents of archive
+    ```bash
+    tar -tf archive.tar
+    ```
 
-```bash
-tar -tf archive.tar
-```
+- Add file to archive
+    ```bash
+    tar -rf backup.tar file
+    ```
 
-**Add file to archive**
+- Backup entire system with timestamp
+    ```bash
+    tar pzvxf --exclude=mnt/ --exclude=sys/ --exclude=proc/ /backup/"$(date '+%Y-%m-%d').tar.gz" --one-file-system /
+    ```
 
-```bash
-tar -rf backup.tar file
-```
+> Note : it's a good idea to exclude sys, mnt , and proc as they can cause a backup to freeze. None of these directories should be necessary for archival anyways 
 
-**Backup entire system with timestamp**
-
-Note : it's a good idea to exclude sys, mnt , and proc as they can cause a backup to freeze. None of these directories should be necessary for archival anyways 
-
-```bash
-tar pzvxf --exclude=mnt/ --exclude=sys/ --exclude=proc/ /backup/"$(date '+%Y-%m-%d').tar.gz" --one-file-system /
-```
-
-**add timestamp to tar archive**
-
-```bash
-tar -zcvf "$(date '+%Y-%m-%d').tar.gz" 
-```
+- Add timestamp to tar archive
+    ```bash
+    tar -zcvf "$(date '+%Y-%m-%d').tar.gz" 
+    ```
 
 
 ---
 
 # Systemd 
 
-**disable unit**
 
-> Stop the service 
->
-> ```bash
-> systemctl stop <unit-name> 
-> ```
-> 
-> Disable the service :
->
-> ```bash
-> systemctl disable <unit-name>
-> ```
->
-> Stop the unit from being started manually or automatically 
->
-> ```bash
-> systemctl mask <unit-name>
-> ```
->
+-  Stop the service 
+    ```bash
+    systemctl stop <unit-name> 
+    ```
+ 
+-  Disable unit 
+    ```bash
+    systemctl disable <unit-name>
+    ```
 
-**Systemd timer unit template**
-
-Create this unit alongside the existing service unit in the same directory 
-
-```bash
-[Unit]
-Description=Runs My Service every hour
-
-[Timer]
-OnBootSec=10min
-OnUnitActiveSec=1h
-Unit=my-service.service
-
-[Install]
-WantedBy=timers.target
-
-```
-
-**Creating service files that involve X org server**
-
-> If you need to create a service that depends upon an X server running , add this line under the "Unit" section 
-
-```bash
-PartOf=graphical-session.target
-```
-
-> Also you will want to add this line under the "Install" section 
-
-```bash
-WantedBy=xsession.target
-```
-
-**Boot into different target**
-
-```bash
-cd /usr/lib/systemd/system
-```
-
-```bash
-grep Isolate *.target
-```
-
-Decide which target you would like to use , then run systemctl isolate 
-
-```bash
-systemctl isolate something.target
-```
-
-**Start systemd service under specific User ID**
-
-```bash
-systemctl --user service.name
-```
-
-**Change user systemd service to start on system startup**
-
-```bash
-loginctl enable-linger myuser
-```
-
-**Running scripts at startup**
-
-There are many ways to do this , assuming you are using systemd. You can use the following methods to run a script on boot.
-
-### Rc.local
-
-add this line in the /etc/rc.d/rc.local file 
-
-```bash
-sh /home/user/scriptdir/script.sh
-```
-
-### systemd unit file 
-
-Use the template below for your script , put this inside */etc/systemd/system*
-
-```bash
-[Unit]
-Description=Reboot message systemd service.
-
-[Service]
-Type=simple
-ExecStart=/bin/bash /home/ec2-user/reboot_message.sh
-
-[Install]
-WantedBy=multi-user.target
-```
-
-Set perms for the service file 
-
-```bash
-chmod 644 /etc/systemd/system/script.service 
-```
-
-Then enable the service file in systemd 
-
-```bash
-systemctl enable script.service 
-```
+-  Stop the unit from being started manually or automatically 
+    ```bash
+    systemctl mask <unit-name>
+    ```
 
 
-### Crontab 
+- Systemd timer unit template
+    ```bash
+    [Unit]
+    Description=Runs My Service every hour
 
-edit the crontab file 
+    [Timer]
+    OnBootSec=10min
+    OnUnitActiveSec=1h
+    Unit=my-service.service
 
-```bash
-crontab -e 
-```
+    [Install]
+    WantedBy=timers.target
 
-To run the script on reboot, use the template below 
+    ```
 
-```bash
-@reboot sh /home/user/reboot_message.sh
-```
+> Create this unit alongside the existing service unit in the same directory 
 
-**WARNING : Not all versions of cron support the '@reboot' option**
+- Creating service files that involve X org server
+    ```bash
+    PartOf=graphical-session.target
+    ```
 
-### init.d 
+> If you need to create a service that depends upon an X server running , add this line under the "Unit" section. Also you will want to add this line under the "Install" section.
 
-Make a script and put it in /etc/init.d/
+- Config for unit which requires X server to be running 
+    ```bash
+    WantedBy=xsession.target
+    ```
 
-Use the template below : 
+- Boot into different target
+    1. Search for all targets you can boot into 
+        ```bash
+        cd /usr/lib/systemd/system
 
-```bash
-! /bin/sh
-# chkconfig: 345 99 10
-case "$1" in
-  start)
-    # Executes our script
-    sudo sh /home/user/script.sh
-    ;;
-  *)
-    ;;
-esac
-exit 0
-```
+        grep Isolate *.target
+        ```
+
+    2. Decide which target you would like to use , then run systemctl isolate 
+        ```bash
+        systemctl isolate something.target
+        ```
+
+- Start systemd service under specific User ID
+    ```bash
+    systemctl --user service.name
+    ```
+
+- Change user systemd service to start on system startup
+    ```bash
+    loginctl enable-linger myuser
+    ```
+
+## Running scripts at startup
+
+
+- Using Rc.local
+    ```bash
+    sh /home/user/scriptdir/script.sh
+    ```
+
+> Add the line above in the /etc/rc.d/rc.local file 
+
+- Using  Systemd unit file 
+    ```bash
+    [Unit]
+    Description=Reboot message systemd service.
+
+    [Service]
+    Type=simple
+    ExecStart=/bin/bash /home/ec2-user/reboot_message.sh
+
+    [Install]
+    WantedBy=multi-user.target
+    ```
+> Use the template above for your script , put this inside */etc/systemd/system*
+
+- Set perms for the service file 
+    ```bash
+    chmod 644 /etc/systemd/system/script.service 
+    ```
+
+- Enable the service file in systemd 
+    ```bash
+    systemctl enable script.service 
+    ```
+
+
+- Using Crontab 
+
+1. Edit the crontab file 
+    ```bash
+    crontab -e 
+    ```
+
+2. Configure crontab to run script on reboot 
+    ```bash
+    @reboot sh /home/user/reboot_message.sh
+    ```
+
+> Note: To run the script on reboot, paste the following snippet and replace the "/home/user/reboot\_message.sh" with the path of your scripts. Please note that not all versions of cron support the '@reboot' option
+
+- Using init.d 
+
+1. Make a script and put it in /etc/init.d/ Use the template below : 
+
+    ```bash
+    !/bin/sh
+    case "$1" in
+      start)
+        # Executes our script
+        sudo sh /home/user/script.sh
+        ;;
+      *)
+        ;;
+    esac
+    exit 0
+    ```
 
 ---
 
-# xrandr 
+## xrandr 
 
 Put xrandr configurations in ~/.xprofile 
 
 
 
-### move monitor to the right of another 
-
-```bash
-xrandr --output <DISPLAY-OUTPUT-1> --right-of <DISPLAY-TWO-2> 
-```
+- Move monitor to the right of another 
+    ```bash
+    xrandr --output <DISPLAY-OUTPUT-1> --right-of <DISPLAY-TWO-2> 
+    ```
+> Note : if you're unsure which display output to use, run the `xrandr` command once to see all available displays to choose
 
 
 ### change refresh rate of monitor 
