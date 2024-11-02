@@ -299,9 +299,11 @@ the xinitrc file is used for loading additional configurations and settings when
         sudo make install 
 
         ```
-    ```bash
-    xkbset nullify lock
-    ```
+
+    2. Then run the following command 
+        ```bash
+        xkbset nullify lock
+        ```
 
 - Add aliases for ssh connections
     1. Open SSH config in vim 
