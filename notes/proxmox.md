@@ -58,4 +58,6 @@ This document represents the changelog for my proxmox hypervisor
 
 # 11/2/2024 
 
+* Removed torrent-server & jellyfin Vm's 
 
+* Created media-server vm 

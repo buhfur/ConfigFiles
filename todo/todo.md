@@ -12,6 +12,13 @@
 - [x] convert radarr into docker container 
 - [x] convert jackett into docker container 
 
+- [ ] Create new debian vm for docker containers
+    - [ ] configure ssh
+    - [ ] install docker
+    - [ ] clone docker-media-server repo
+    - [ ] create /root/docker-dns-server repo on github
+    - [ ] add github token to VM 
+
 
 # Proxmox project writeup 
 

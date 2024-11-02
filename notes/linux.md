@@ -15,7 +15,7 @@ In this document I have added various bash snippets ,tips , and other useful pie
     - [Setting up torrent server vm](#setting-up-torrent-server-vm)
     - [Redirect both STDOUT and STDERR](#redirect-both-stdout-and-stderr)
     - [Piping](#piping)
-    - [Tar snippets](#tar-snippets)
+    - [Tar](#tar)
     - [Systemd](#systemd)
     - [Rc.local](#rclocal)
     - [systemd unit file](#systemd-unit-file)
@@ -52,7 +52,6 @@ In this document I have added various bash snippets ,tips , and other useful pie
     - [Grep](#grep)
     - [Find](#find)
     - [System Clipboard](#system-clipboard)
-    - [Tar](#tar)
     - [Unzip](#unzip)
     - [Display Management](#display-management)
     - [Git](#git)
@@ -384,7 +383,7 @@ Simply delete all lines in /etc/network/interfaces and re-install the package an
 > 2> = STDERR
 
 
-# Tar snippets 
+# Tar
 
 - Archive top level directories with tar
     ```bash
@@ -1679,11 +1678,6 @@ In your compose.yml file , add the following
     ```bash
     grep -rni "string" * 
     ```
-
-
----
-
-# Tar 
 
 
 ---
