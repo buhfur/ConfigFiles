@@ -70,6 +70,22 @@ In this document I have added various bash snippets ,tips , and other useful pie
 
 ## Command & Bash snippets 
 
+- Bash difference between $() and ${}
+
+> "${}" : Used for referencing variables in a script 
+
+    - Example 
+        ```bash
+        echo ${var} something
+        ```
+
+> "$()" : Used for running commands in a subshell 
+
+    - Example 
+        ```bash
+        echo "Path $(basename /home/user/Downloads)
+        ```
+
 
 - Redirect both STDOUT and STDERR 
 
@@ -231,6 +247,28 @@ This will reduce the sensitivity
 # System Tools and 3rd party utilities command snippets
 
 The below section should include tools and snippets from various tools i've used.
+
+## Find 
+
+
+- List files with specified extension
+    ```bash
+    find . -name \*.md
+    ```
+
+> Note: Replace "." with the directory you are searching in and replace "md" with the extension you are trying to search for. 
+
+- Use find to only list dotfiles 
+    ```bash
+    find . -maxdepth 1 -type f -name ".*" 
+    ```
+
+- Change extensions of all files in dir
+    ```bash
+    find . -name '*.txt' -exec sh -c 'mv "$0" "${0%.txt}.txt_bak"' {} \;
+    ```
+
+> Note: Replace .txt with the current ext and replace .txt\_bak with the ext you are trying to set it to 
 
 ## Xinitrc 
 
@@ -518,85 +556,42 @@ Simply delete all lines in /etc/network/interfaces and re-install the package an
 
 ---
 
-## xrandr 
+# Xrandr 
 
-Put xrandr configurations in ~/.xprofile 
+- Configuration 
 
-
+> Note: Put xrandr configurations in ~/.xprofile 
 
 - Move monitor to the right of another 
     ```bash
     xrandr --output <DISPLAY-OUTPUT-1> --right-of <DISPLAY-TWO-2> 
     ```
+
 > Note : if you're unsure which display output to use, run the `xrandr` command once to see all available displays to choose
 
 
-### change refresh rate of monitor 
+- Change refresh rate of monitor 
+    ```bash
+    xrandr --output <DISPLAY-OUTPUT> --mode <DISPLAY-RESOLUTION> --rate <REF-RATE> 
+    ```
 
-```bash
-xrandr --output <DISPLAY-OUTPUT> --mode <DISPLAY-RESOLUTION> --rate <REF-RATE> 
-```
-
-Put this line in the ~/.xprofile file for configuration on startup ( happens late in the boot process ) 
-
+> Note: Put this line in the ~/.xprofile file for configuration on startup ( happens late in the boot process ) 
 
 
-## Change background picture with feh 
 
-create a ~/.fehbg file with your feh command 
+- Change background picture with feh 
 
-```bash
-feh --bg-fill /home/user/something.jpg
-```
+    1. Set wallpaper with Feh 
+        ```bash
+        feh --bg-fill /home/user/something.jpg
+        ```
 
-Then put this line in your ~/.xinitrc file 
+    2. Then put this line in your ~/.xinitrc file 
+        ```bash
+        ~/.fehbg &
+        ```
 
-```bash
-~/.fehbg &
-```
-
-## bash difference between $() and ${}
-
-"${}" :
-- used for referencing variables in a script 
-
-```bash
-echo ${var} something
-```
-
-"$()" : 
-- used for running commands in a subshell 
-
-```bash
-echo "Path $(basename /home/user/Downloads)
-```
-
-
-## use find to only list dotfiles 
-
-```bash
-find . -maxdepth 1 -type f -name ".*" 
-```
-
-
-## Change extensions of all files in dir
-
-```bash
-find . -name '*.txt' -exec sh -c 'mv "$0" "${0%.txt}.txt_bak"' {} \;
-```
-
-Replace .txt with the current ext and replace .txt_bak with the ext you are trying to set it to 
-
-
-## add text to specific line with sed 
-
-For this example I wanted to update a bunch of openvpn config files to change only one line , being the 'auth-user-pass' and put in the location where my creds are stored 
-
-Below is the command I used 
-
-```bash
-sed -e '/auth-user-pass/ s/$/ \/opt\/scripts\/login.conf/' ./*
-```
+> Note: create a ~/.fehbg file with your feh command 
 
 
 # nmcli & Networking 
@@ -1778,11 +1773,16 @@ In your compose.yml file , add the following
 
 # Sed 
 
-**replace /bin/sh with /bin/bash for all files in a dir**
 
-```bash
-sed -i 's/\#!\/bin\/sh/\#!\/bin\/bash/g' *
-```
+- Add text to specific line with sed 
+    ```bash
+    sed -e '/auth-user-pass/ s/$/ \/opt\/scripts\/login.conf/' ./*
+    ```
+
+- Replace /bin/sh with /bin/bash for all files in a dir
+    ```bash
+    sed -i 's/\#!\/bin\/sh/\#!\/bin\/bash/g' *
+    ```
 
 
 --- 
@@ -1817,32 +1817,17 @@ midclt call service.restart "ssh"
 
 # Grep 
 
-**grep for specific file extension**
+- Grep for specific file extension
+    ```bash
+    grep ".*\.md
+    ```
 
-```bash
-grep ".*\.md
-```
+> Note: Replace "md" with whichever extension you are trying to grep for.
 
-Replace "md" with whichever extension you are trying to grep for.
-
-**Grep for certain word in entire directory**
-
-```bash
-grep -rni "string" * 
-```
-
-
----
-
-# Find 
-
-**List files with specified extension**
-
-```bash
-find . -name \*.md
-```
-
-Replace "." with the directory you are searching in and replace "md" with the extension you are trying to search for. 
+- Grep for certain word in entire directory
+    ```bash
+    grep -rni "string" * 
+    ```
 
 
 ---
