@@ -120,3 +120,30 @@ There are some differences between the two protocols and how they treat the ethe
 You can see a picture of a 802.1Q frame below 
 
 ![packet](images/802.png)
+
+
+---
+
+# Proxies
+
+- What is a Reverse Proxy ? 
+
+* Forwards requests from servers to clients
+
+* Hides IP of server.
+
+* Reduce latency through caching
+
+* Can compress outgoing requests , reducing bandwidth
+
+* DDoS mitigation 
+
+* Load balancing 
+
+> Note: A reverse proxy is a proxy that sits between a client and a server. The reverse proxy forwards requests from a server to a client. 
+
+
+
+- What is a Proxy?
+
+> Note: A regular proxy sits between a client and server and forwards requests from the client to the server.

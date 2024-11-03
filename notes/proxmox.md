@@ -61,3 +61,6 @@ This document represents the changelog for my proxmox hypervisor
 * Removed torrent-server & jellyfin Vm's 
 
 * Created media-server vm 
+
+* Configured media-server vm to use 5192 for ssh connections 
+

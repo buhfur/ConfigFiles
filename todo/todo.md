@@ -13,11 +13,13 @@
 - [x] convert jackett into docker container 
 
 - [ ] Create new debian vm for docker containers
-    - [ ] configure ssh
-    - [ ] install docker
-    - [ ] clone docker-media-server repo
+    - [x] configure ssh
+        - [x] copy redhat ssh token over to media-server
+    - [x] install docker
+    - [x] clone docker-media-server repo
     - [ ] create /root/docker-dns-server repo on github
     - [ ] add github token to VM 
+    - [ ] add protonvpn openvpn password to compose.yml file 
 
 
 # Proxmox project writeup 
