@@ -21,6 +21,11 @@
     - [ ] add github token to VM 
     - [ ] add protonvpn openvpn password to compose.yml file 
 
+- [ ] configure and setup firewall 
+    - [x] remove interface 1 & interface 5 from internal hardware switch
+    - [ ] configure management interface 
+    - [ ] configure static IP 
+
 
 # Proxmox project writeup 
 

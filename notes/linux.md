@@ -631,11 +631,10 @@ Simply delete all lines in /etc/network/interfaces and re-install the package an
 
 # nmcli & Networking 
 
-- Show all open net conns
+- Bring up interface manually using ip tool
     ```bash
-    sudo netstat -nlp
+    sudo ip link <interface> up 
     ```
-
 - Show service being used by specific port
     ```bash
     lsof -i tcp:80
@@ -1939,17 +1938,41 @@ This section is dedicated to my notes around the filsystem hierarchy standard th
 
 ### Home Notes 
 
-* Any scripts located in `````bash
-/home/<user>/bin
-````` will be automatically added to the users PATH.   
+* Any scripts located in /home/<user>/bin will be automatically added to the users PATH.   
+
 * You may configure an NFS share to store and serve the home directory for users on your local network
 
 See the snippet below : 
 
-```
+```bash
 # set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 ```
+
+---
+
+# Serial Communication
+
+- No /dev/ttyUSBx showing for connected serial cable 
+    1. Check if proper drivers are loaded 
+        ```bash
+        lsmod | grep -E 'ch341|ftdi_sio'
+        ```
+    2. If output from previous command is blank , load drivers using modprobe
+        ```bash
+        sudo modprobe ch341
+        sudo modprobe ftdi_sio
+        ```
+    3. Install usbutils package
+        ```bash
+        sudo apt install usbutils
+        ```
+    4. run dmesg and re-plug cable 
+        ```bash
+        dmesg | tail -n 20
+        ```
+
+
 
