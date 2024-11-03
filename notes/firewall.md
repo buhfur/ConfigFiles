@@ -40,3 +40,15 @@
 * Changed hostname to "buhfur-fortigate" in Settings 
 
 * Changed gateway on eno1 connection on local host to "192.168.4.34"
+
+# Fixing local internet 
+
+For some reason my router encounters issues when playing around with the DHCP settings. After disabling bridge mode my eero started showing the infamous red light
+
+- Steps taken to resolve
+
+* unplugged ONT cable from modem  
+
+* Power cycled modem 
+
+> Note : When I mean "modem" i'm talking about the eero router
