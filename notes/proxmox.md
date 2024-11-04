@@ -64,3 +64,14 @@ This document represents the changelog for my proxmox hypervisor
 
 * Configured media-server vm to use 5192 for ssh connections 
 
+# 11/4/2024
+
+* truenas ip set to : 192.168.3.192
+
+* media-server ip set to : 192.168.3.191
+
+* dns-server ip set to : 192.168.3.190
+
+* Updated fstab to new truenas IP 
+
+

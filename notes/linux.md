@@ -631,6 +631,7 @@ Simply delete all lines in /etc/network/interfaces and re-install the package an
 
 # nmcli & Networking 
 
+
 - Change subnet mask of existing connection using nmcli 
 
 - Bring up interface manually using ip tool
@@ -698,6 +699,23 @@ Simply delete all lines in /etc/network/interfaces and re-install the package an
 - After chaning any properties to a connection you must re-activate the connection
     ```bash
     nmcli con up <con-name> 
+    ```
+
+---
+
+# Packet Capturing 
+
+- Capture traffic on specified interface using tshark 
+    ```bash
+    tshark -i <interface> 
+    ```
+- Capture & Save traffic on specified interface using tshark
+    ```bash
+    tshark -i <interface> -w capture.pcap
+    ```
+- View capture from file 
+    ```bash
+    tshark -r capture.pcap
     ```
 
 ---
