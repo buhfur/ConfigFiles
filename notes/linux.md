@@ -631,6 +631,8 @@ Simply delete all lines in /etc/network/interfaces and re-install the package an
 
 # nmcli & Networking 
 
+- Change subnet mask of existing connection using nmcli 
+
 - Bring up interface manually using ip tool
     ```bash
     sudo ip link <interface> up 

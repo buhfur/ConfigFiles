@@ -26,6 +26,9 @@
     - [ ] configure management interface 
     - [ ] configure static IP 
 
+- [ ] Draw network diagram for planned firewall installation  on paper 
+    - [ ] use network diagram tool to make diagram for home network
+
 
 # Proxmox project writeup 
 

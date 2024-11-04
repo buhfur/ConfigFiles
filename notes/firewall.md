@@ -1,6 +1,7 @@
 
+# Fortigate Firewall configuration 
 
-# Fortigate Firewall Configuration
+## Fortigate Firewall Configuration
 
 * Configured eero router DHCP/NAT seting to "bridge" mode 
 
@@ -10,7 +11,7 @@
 
 * Changed internal5 role to DMZ
 
-* Moved cable on fortigate  port 5 to Port 2 on dumb switch
+* Moved cable on fortigate internal5 to port 5 on dumb switch
 
 * Added HTTPS , SSH , PING to Administrative Acess section for internal5 
 
@@ -41,7 +42,32 @@
 
 * Changed gateway on eno1 connection on local host to "192.168.4.34"
 
-# Fixing local internet 
+* Created new IPv4 policy under Policy & Objects -> IPv4 Policy 
+
+* Connected fortigate internal2 to port 4 on dumb switch 
+
+## IPv4 Policy 
+
+* Changed Name to "LAN to WAN "
+
+* Set incoming interface to internal 
+
+* Set outgoing interface to wan1 
+
+* Set Source to "all" 
+
+* Set Destination to "all"
+
+* Schedule was pre-configured to "always"
+
+* Set Service to "ALL"
+
+* Action was pre-configured to "ACCEPT"
+
+* NAT was already enabled 
+
+
+## Fixing local internet 
 
 For some reason my router encounters issues when playing around with the DHCP settings. After disabling bridge mode my eero started showing the infamous red light
 
@@ -52,3 +78,25 @@ For some reason my router encounters issues when playing around with the DHCP se
 * Power cycled modem 
 
 > Note : When I mean "modem" i'm talking about the eero router
+
+## Accessing Fortigate webui using nmcli 
+
+1. Open TUI 
+
+2. edit existing ethernet connection 
+
+3. Under addresses in IPv4 Configuration , Add an IP within the subnet of the WebUI's subnet , in this case , the IP configured for the WebUI is 172.16.0.254 , I added the 172.16.0.10/24 to the existing IP's. View the screenshot below of my current config shown in nmtui 
+
+![pic-of-config](images/nmtui-config.png)
+
+> Note: You don't need a separate gateway or additional route added to access the webui , all you need to do is add the internal IP in the same subnet as the webui. 
+
+## Questions 
+
+### Should I use the router for DHCP or the firewall ?
+
+Generally this would be fine for smaller to mid size networks. For larger networks this may not be advantageous as this would put more load on the firewall. 
+
+
+
+
