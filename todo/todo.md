@@ -74,8 +74,10 @@
     - [ ] generate metainfo file using mktorrent 
     
 
-- [ ] Init git repo for docker torrenting files 
 
+- [x] change background of i3 desktop 
+- [x] allow proxmox webui to be accessed from public IP 
+- [x] allow firewall to be acccessed from public IP ( sorta ) 
 
 
 

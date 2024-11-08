@@ -66,6 +66,11 @@
 
 * NAT was already enabled 
 
+* Added new virtual IP for proxmox server on fortigate 
+
+
+
+
 
 ## Fixing local internet 
 
@@ -90,6 +95,8 @@ For some reason my router encounters issues when playing around with the DHCP se
 ![pic-of-config](images/nmtui-config.png)
 
 > Note: You don't need a separate gateway or additional route added to access the webui , all you need to do is add the internal IP in the same subnet as the webui. 
+
+## Forwarding proxmox webui port to be accessible from outside network 
 
 ## Questions 
 
