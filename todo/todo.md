@@ -81,7 +81,16 @@
 
 
 
+# Today
 
+- [ ] setup blog for project updates 
+    * [ ] write blog post about firewall installation and configuration 
+
+- [ ] change ip's on all vm's to fit inside the 192.168.3.0/22 network
+
+- [ ] setup adguard home dns server as docker container 
+
+- [ ] setup minecraft server for minecraft 1.21
 
 
 

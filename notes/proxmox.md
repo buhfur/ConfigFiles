@@ -75,3 +75,6 @@ This document represents the changelog for my proxmox hypervisor
 * Updated fstab to new truenas IP 
 
 
+# 11/9/2024 
+
+* changed ip of ens18 connection on redhat vm , changed to 192.168.3.104/22

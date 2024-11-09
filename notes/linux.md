@@ -1775,13 +1775,22 @@ inxi -Gxx | grep compositor
 
 # Git 
 
-**ignore vim swap files**
+- Ignore vim swap files
+    ```bash
+    *~
+    ```
 
-Add this to your .gitignore 
+> Note: Add this to your .gitignore and commit changes 
 
-```bash
-*~
-```
+- Cache ( store ) git credentials 
+    ```bash
+    git config credential.helper store
+    ```
+
+- Reset all changes made on branch to HEAD
+    ```bash
+    git reset --hard HEAD
+    ```
 
 # Xorg 
 
