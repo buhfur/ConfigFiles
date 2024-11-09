@@ -61,8 +61,8 @@ In this document I have added various bash snippets ,tips , and other useful pie
     - [Ranger](#ranger)
     - [Markdown](#markdown)
     - [Youtube downloading](#youtube-downloading)
-    - [FHS](#fhs)
-        - [/home](#home)
+    - [Serial Communication](#serial-communication)
+    - [Jekyll](#jekyll)
 
 
 ## Command & Bash snippets 
@@ -1957,31 +1957,6 @@ yt-dlp --verbose --skip-download --write-subs --write-auto-subs --sub-lang en --
 
 ---
 
-# FHS 
-
-This section is dedicated to my notes around the filsystem hierarchy standard that's used widely among most linux distributions. These may contain pure info or snippets that may help me along with configuring a system and knowing where to allocate certain files. Each section will be divided by the named directory. 
-
-
-## /home
-
-
-### Home Notes 
-
-* Any scripts located in /home/<user>/bin will be automatically added to the users PATH.   
-
-* You may configure an NFS share to store and serve the home directory for users on your local network
-
-See the snippet below : 
-
-```bash
-# set PATH so it includes user's private bin if it exists
-if [ -d "$HOME/bin" ] ; then
-    PATH="$HOME/bin:$PATH"
-fi
-```
-
----
-
 # Serial Communication
 
 - No /dev/ttyUSBx showing for connected serial cable 
@@ -2002,6 +1977,10 @@ fi
         ```bash
         dmesg | tail -n 20
         ```
+
+---
+
+# Jekyll
 
 
 

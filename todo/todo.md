@@ -83,6 +83,8 @@
 
 # Today
 
+- [ ] move documentation from ryanm.dev to dedicated github pages blog site
+
 - [ ] setup blog for project updates 
     * [ ] write blog post about firewall installation and configuration 
 
