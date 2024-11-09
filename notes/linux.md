@@ -1998,3 +1998,4 @@ yt-dlp --verbose --skip-download --write-subs --write-auto-subs --sub-lang en --
         bundle exec jekyll serve
         ```
 
+> Note : Site should be available at `http://localhost:4000`
