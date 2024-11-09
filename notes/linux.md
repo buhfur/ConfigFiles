@@ -1983,4 +1983,18 @@ yt-dlp --verbose --skip-download --write-subs --write-auto-subs --sub-lang en --
 # Jekyll
 
 
+- Generate Jekyll template project 
+    ```bash
+    jekyll new <name-of-project>
+    ```
+
+- Host Jekyll site locally
+    1. cd to project directory and install Dependencies
+        ```bash
+        bundle install 
+        ```
+    2. Start Jekyll server and host locally 
+        ```bash
+        bundle exec jekyll serve
+        ```
 
