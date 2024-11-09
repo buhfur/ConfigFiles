@@ -68,7 +68,15 @@
 
 * Added new virtual IP for proxmox server on fortigate 
 
+## Port forwarding 
 
+I believe I understand now why I was having issues connecting to my local hosts with forwarded ports. In the setup I was configuring the external IP to the public WAN IP given by my ISP. This was WRONG. The reason for this is that currently the fortigate is NOT acting as a DHCP server, relying on my router for that instead. Because of this the requests to forwarded ports using the public WAN IP went nowhere. 
+
+
+- What I did to fix it 
+    * Configured the External IP to the IP shown on my router for the fortigate. I forwarded the ports mapped on the fortigate to the private LAN IP shown on my local network. That way the requests will reach the public IP , which will then forward the requests matching the forwarded ports to the internal NAT IP ( 192.168.4.146 ) which will then be forwarded properly through the fortigate to their respective hosts. I've attached a screenshot of the configuration options I used to set all this up.
+
+![pic-ref](virt-ip-setup.png)
 
 
 
