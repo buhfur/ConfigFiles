@@ -94,6 +94,8 @@
 
 - [ ] setup minecraft server for minecraft 1.21
 
+- [ ] configure fortigate to secure wifi 
 
+- [ ] install latest ubuntu distro on skylars pc 
 
   

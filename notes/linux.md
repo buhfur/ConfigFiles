@@ -964,7 +964,6 @@ Simply delete all lines in /etc/network/interfaces and re-install the package an
     firewall-cmd --get-services
     ```
 
-
 - Get default zone
     ```bash
     firewall-cmd --get-default-zone
@@ -973,6 +972,11 @@ Simply delete all lines in /etc/network/interfaces and re-install the package an
 - Get available zones
     ```bash
     firewall-cmd --get-zones
+    ```
+
+- View all ports for specific zone ( with formatted output ) 
+    ```bash
+    firewall-cmd --zone=<zone-name> --list-ports | tr ' ' '\n' | column
     ```
 
 - List services
