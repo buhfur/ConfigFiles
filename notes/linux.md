@@ -101,6 +101,20 @@ When setting up swap files , the size of the partition used for a swap file depe
 
 * If your system has 8-16 GB of ram , the swap file size should be 0.5-1 times the amount of ram 
 
+## UEFI & Legacy BIOS mode 
+
+- Check if you're booted into UEFI using /sys/firmware 
+    ```bash
+    ls /sys/firmware/efi 
+    ```
+- Check if you're booted into UEFI using efibootmgr ( only works in UEFI mode )
+    ```bash
+    sudo efibootmgr
+    ```
+
+> Note: If you see any contents in the /sys/firmware/efi directory , then you will know you are currently using UEFI mode 
+
+
 # Command & Bash snippets 
 
 - Bash difference between $() and ${}
