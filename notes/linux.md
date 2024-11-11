@@ -7,6 +7,7 @@ In this document I have added various bash snippets ,tips , and other useful pie
 
 # Table of contents 
 
+- [System Info](#system-info)
 - [Command & Bash snippets](#command--bash-snippets)
 - [System Tools and 3rd party utilities command snippets](#system-tools-and-3rd-party-utilities-command-snippets)
 - [Xinitrc](#xinitrc)
@@ -57,7 +58,50 @@ In this document I have added various bash snippets ,tips , and other useful pie
 - [Zsh](#zsh)
     - [Installing Zsh](#installing-zsh)
 
-## Command & Bash snippets 
+# System info 
+
+## System Memory 
+
+- Using /proc/meminfo  
+    ```bash
+    cat /proc/meminfo 
+    ```
+
+- Using free 
+    ```bash
+    free -h
+    ```
+
+- Using vmstat 
+    ```bash
+    vmstat -s
+    ```
+- Using dmidecode 
+    ```bash
+    sudo dmidecode -t memory 
+    ```
+
+- Using inxi 
+    1. install inxi 
+        ```bash
+        sudo apt install inxi 
+        ```
+    2. Run following command 
+        ```bash
+        inxi -m 
+        ```
+
+## Swap files 
+
+When setting up swap files , the size of the partition used for a swap file depends on the size of the host systems memory. 
+
+* If your system has 2 GB or less , the swap file should be 2-4 times the amount of ram 
+
+* If your system has 4-8 GB of ram , the swap file size only needs to be 1-2 times the amount of RAM 
+
+* If your system has 8-16 GB of ram , the swap file size should be 0.5-1 times the amount of ram 
+
+# Command & Bash snippets 
 
 - Bash difference between $() and ${}
 
@@ -232,6 +276,7 @@ The best information can be found on the man page. Use man ln for further detail
 
 This will reduce the sensitivity 
 
+---
 
 # System Tools and 3rd party utilities command snippets
 
