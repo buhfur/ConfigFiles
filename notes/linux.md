@@ -58,26 +58,35 @@ In this document I have added various bash snippets ,tips , and other useful pie
 - [Zsh](#zsh)
     - [Installing Zsh](#installing-zsh)
 
+# Package managers 
+
+## Apt  
+
+- Query PPA for packages 
+    ```bash
+    apt-cache search <package-name>
+    ```
+- Query PPA for NVIDIA package 
+    ```bash
+    apt-cache search nvidia
+    ```
+
+
+## RHEL 
+
+To be continued 
+
+--- 
+
 # System info 
 
-## Using nvidia-390-kernel 
+## Downgrading kernel 
 
-1. Download the ppa from this user here 
-    ![Link here](https://launchpad.net/~dtl131/+archive/ubuntu/nvidiaexp) 
+* Install Image, Headers , and generic Headers for the kernel version you are choosing 
 
-2. Remove previous nvidia installations to save you 2 hours of headache
-    ```bash
-    sudo apt purge nvidia-* && sudo apt autoremove && sudo apt update &&
-    ```
-3. Install ppa 
-    ```bash
-    sudo add-apt-repository ppa:dtl131/nvidiaexp
-    sudo apt update
-    ```
-4. Install driver 
-    ```bash
-    sudo apt install nvidia-driver-390 
-    ```
+* Install all 3 files , last time I was downgrading an ubuntu 24.04 distro using Kernel Version : 6.8.0-48-generic down to 5.8.5
+
+* Update grub config 
 
 ## System Memory 
 
@@ -136,6 +145,10 @@ When setting up swap files , the size of the partition used for a swap file depe
 
 # Command & Bash snippets 
 
+- Write iso image to usb 
+    ```bash
+    sudo dd if=/path/to/distro.iso of=/dev/sdX bs=4M status=progress oflag=sync
+    ```
 - Bash difference between $() and ${}
 
 > "${}" : Used for referencing variables in a script 
@@ -295,6 +308,22 @@ The best information can be found on the man page. Use man ln for further detail
     or 
 
     lsblk |awk 'NR==1{print $0" DEVICE-ID(S)"}NR>1{dev=$1;printf $0" ";system("find /dev/disk/by-id -lname \"*"dev"\" -printf \" %p\"");print "";}'|grep -v -E 'part|lvm'
+    ```
+
+
+
+- Get UUID of drive 
+    ```bash
+    lsblk -f 
+
+    or 
+
+    sudo blkid
+
+    or 
+
+    vim /etc/fstab
+
     ```
 
 
@@ -1487,6 +1516,31 @@ Some containers contain a "usage" line that may say how the container needs to r
 ---
 
 # GRUB 
+
+- Enable os-prober
+    1. Open grub config on local host 
+        ```bash
+        sudo vim /etc/default/grub
+        ```
+    2. Add the following line to the end of the file 
+        ```bash
+        GRUB_DISABLE_OS_PROBER=false
+        ```
+    3. Once you are done , update grub config ( Ubuntu )
+        ```bash
+        sudo update-grub
+        ```
+- Error : "Unable to mount root fs on unknown block"
+
+1. Check grub config for image 
+Check the configuration of the target in the grub menu , if the root filesystem is pointed to a "/dev/sda" drive,  this is likely the issue. In general you want to use UUID's as they are hard coded identifiers for each specific drive. 
+
+2. Update GRUB config
+
+Find the UUID of the drive where your root filesystem is mounted, add this UUID into your grub config under "GRUB\_CMDLINE\_LINUX\_DEFAULT" or "GRUB\_CMDLINE\_LINUX". Replace the value within with the UUID of the drive.
+
+
+> Note : os-prober is disabled by default on ubuntu for security, this is most likely why your grub is not showing your windows installation if you're dual booting. 
 
 - Reset root password without access to wheel group
 
