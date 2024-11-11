@@ -57,12 +57,15 @@ In this document I have added various bash snippets ,tips , and other useful pie
     - [Git](#git)
     - [Xorg](#xorg)
     - [Rclone](#rclone)
+    - [ChatGPT CLI](#chat-gpt-cli)
     - [Du](#du)
     - [Ranger](#ranger)
     - [Markdown](#markdown)
     - [Youtube downloading](#youtube-downloading)
     - [Serial Communication](#serial-communication)
     - [Jekyll](#jekyll)
+    - [ChatGPT CLI](#chatgpt-cli)  
+    - [Rust](#rust)
 
 
 ## Command & Bash snippets 
@@ -2003,3 +2006,21 @@ yt-dlp --verbose --skip-download --write-subs --write-auto-subs --sub-lang en --
         ```
 
 > Note : Site should be available at `http://localhost:4000`
+
+---
+
+# ChatGPT CLI
+
+- Installation script 
+    ```bash
+    curl -L -o chatgpt https://github.com/kardolus/chatgpt-cli/releases/latest/download/chatgpt-linux-amd64 && chmod +x chatgpt && sudo mv chatgpt /usr/local/bin/
+    ```
+
+---
+
+# Rust
+
+- Install Rust 
+    ```bash
+    curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+    ```
