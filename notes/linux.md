@@ -66,7 +66,8 @@ In this document I have added various bash snippets ,tips , and other useful pie
     - [Jekyll](#jekyll)
     - [ChatGPT CLI](#chatgpt-cli)  
     - [Rust](#rust)
-
+    - [Zsh](#zsh)
+        - [Installing Zsh](#installing-zsh)
 
 ## Command & Bash snippets 
 
@@ -2024,3 +2025,28 @@ yt-dlp --verbose --skip-download --write-subs --write-auto-subs --sub-lang en --
     ```bash
     curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
     ```
+
+---
+
+# Zsh 
+
+## Install ZSH 
+
+- Using curl 
+    ```bash
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    ```
+
+- Using wget 
+    ```bash
+    sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    ```
+
+- Using fetch 
+    ```bash
+    sh -c "$(fetch -o - https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    ```
+
+
+> Note: All of this was taken from the README.md for Zsh on their Github. I'll paste a link below for easy reference
+> ![Link here](https://github.com/ohmyzsh/ohmyzsh)
