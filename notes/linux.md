@@ -1783,6 +1783,10 @@ inxi -Gxx | grep compositor
 
 # Git 
 
+- Change URL used for "origin" remote 
+    ```bash
+    git remote set-url origin <link-here> 
+    ```
 - Ignore vim swap files
     ```bash
     *~
