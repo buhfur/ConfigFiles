@@ -60,6 +60,25 @@ In this document I have added various bash snippets ,tips , and other useful pie
 
 # System info 
 
+## Using nvidia-390-kernel 
+
+1. Download the ppa from this user here 
+    ![Link here](https://launchpad.net/~dtl131/+archive/ubuntu/nvidiaexp) 
+
+2. Remove previous nvidia installations to save you 2 hours of headache
+    ```bash
+    sudo apt purge nvidia-* && sudo apt autoremove && sudo apt update &&
+    ```
+3. Install ppa 
+    ```bash
+    sudo add-apt-repository ppa:dtl131/nvidiaexp
+    sudo apt update
+    ```
+4. Install driver 
+    ```bash
+    sudo apt install nvidia-driver-390 
+    ```
+
 ## System Memory 
 
 - Using /proc/meminfo  

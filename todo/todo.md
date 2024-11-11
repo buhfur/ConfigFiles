@@ -85,14 +85,16 @@
 
 - [x] move documentation from ryanm.dev to dedicated github pages blog site
     - [ ] change each file to use the same syntax for the jekyll just-the-docs template  
-- [ ] install ubuntu on skylars pc 
-    - [ ] add instructions for checking system memory  to linux.md
+- [x] install ubuntu on skylars pc 
+    - [ ] setup RDP into skylar-pc  
+    - [ ] install nvidia drivers 
+
+- [ ] setup minecraft server for minecraft 1.21
 
 - [x] change ip's on all vm's to fit inside the 192.168.3.0/22 network
 
 - [ ] setup adguard home dns server as docker container 
 
-- [ ] setup minecraft server for minecraft 1.21
 
 - [ ] configure fortigate to secure wifi 
 
