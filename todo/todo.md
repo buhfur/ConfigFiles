@@ -83,12 +83,12 @@
 
 # Today
 
-- [ ] move documentation from ryanm.dev to dedicated github pages blog site
+- [x] move documentation from ryanm.dev to dedicated github pages blog site
+    - [ ] change each file to use the same syntax for the jekyll just-the-docs template  
+- [ ] install ubuntu on skylars pc 
+    - [ ] add instructions for checking system memory  to linux.md
 
-- [ ] setup blog for project updates 
-    * [ ] write blog post about firewall installation and configuration 
-
-- [ ] change ip's on all vm's to fit inside the 192.168.3.0/22 network
+- [x] change ip's on all vm's to fit inside the 192.168.3.0/22 network
 
 - [ ] setup adguard home dns server as docker container 
 
@@ -97,5 +97,6 @@
 - [ ] configure fortigate to secure wifi 
 
 - [ ] install latest ubuntu distro on skylars pc 
-
   
+- [ ] setup blog for project updates 
+    * [ ] write blog post about firewall installation and configuration 
