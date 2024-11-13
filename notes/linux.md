@@ -46,7 +46,6 @@ In this document I have added various bash snippets ,tips , and other useful pie
 - [Git](#git)
 - [Xorg](#xorg)
 - [Rclone](#rclone)
-- [ChatGPT CLI](#chat-gpt-cli)
 - [Du](#du)
 - [Ranger](#ranger)
 - [Markdown](#markdown)
@@ -80,6 +79,25 @@ To be continued
 
 # System info 
 
+## Create drive for mounting usb using fdisk 
+
+- For UEFI systems 
+    * Partition Table : GPT 
+    * Partition Type : EFI System Partition
+    * Filesystem: FAT32 
+
+- For BIOS systems 
+    * Partition Table : MBR 
+    * Partition Type : Primary 
+    * Filesystem: FAT32 or ext4 (FAT32 preferred ) 
+
+- For everything else 
+    * Partition Table : MBR 
+    * Partition Type : Primary 
+    * Filesystem: FAT32 
+
+
+    
 ## Downgrading kernel 
 
 * Install Image, Headers , and generic Headers for the kernel version you are choosing 
@@ -344,6 +362,12 @@ This will reduce the sensitivity
 
 The below section should include tools and snippets from various tools i've used.
 
+## Minecraft 
+
+- Download location for minecraft shader packs 
+
+    - If you're using UltimMC , 
+        `/home/$USER/UltimMC/instances/1.21.3/.minecraft/shaderpacks`
 ## Find 
 
 
@@ -1517,6 +1541,7 @@ Some containers contain a "usage" line that may say how the container needs to r
 
 # GRUB 
 
+- Re-add windows to grub 2 boot menu 
 - Enable os-prober
     1. Open grub config on local host 
         ```bash

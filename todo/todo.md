@@ -89,14 +89,13 @@
     - [ ] setup RDP into skylar-pc  
     - [ ] install nvidia drivers 
 
-- [ ] setup minecraft server for minecraft 1.21
+- [x] setup minecraft server for minecraft 1.21
 
 - [x] change ip's on all vm's to fit inside the 192.168.3.0/22 network
 
 - [ ] setup adguard home dns server as docker container 
 
-
-- [ ] configure fortigate to secure wifi 
+- [ ] configure fortigate to secure wifi ( Might be removed ) 
 
 - [ ] install latest ubuntu distro on skylars pc 
   
