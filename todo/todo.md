@@ -3,8 +3,7 @@
 
 **REMINDER: add notes for every change you make to a VM or setting in proxmox**
 
-- [ ] convert adguard server into docker container
-- [ ] convert jellyfin into docker container
+- [x] convert jellyfin into docker container
 - [x] convert torrent-server into docker container 
     - [x] setup protonvpn docker container 
         - [x] setup bridge network between protonvpn and deluge container 
@@ -12,32 +11,21 @@
 - [x] convert radarr into docker container 
 - [x] convert jackett into docker container 
 
-- [ ] Create new debian vm for docker containers
+- [x] Create new debian vm for docker containers
     - [x] configure ssh
         - [x] copy redhat ssh token over to media-server
     - [x] install docker
     - [x] clone docker-media-server repo
-    - [ ] create /root/docker-dns-server repo on github
-    - [ ] add github token to VM 
-    - [ ] add protonvpn openvpn password to compose.yml file 
 
-- [ ] configure and setup firewall 
+- [x] configure and setup firewall 
     - [x] remove interface 1 & interface 5 from internal hardware switch
-    - [ ] configure management interface 
-    - [ ] configure static IP 
+    - [x] configure management interface 
+    - [x] configure static IP 
 
 - [ ] Draw network diagram for planned firewall installation  on paper 
     - [ ] use network diagram tool to make diagram for home network
 
-
-# Proxmox project writeup 
-
-- [x] create projects.md which serves as the directory for referencing other projects 
-    - [ ] attach pictures and brief description for each project in projects.md 
-    - [ ] add link to each project page under it's picture and brief description.
-
-- [ ] Create page dedicated to each individual projects 
-- [x] create proxmox.md in projects/ directory in buhfur.github.io directory 
+- [ ] setup proxmox backup server 
 
 # Config todo 
 
@@ -57,7 +45,11 @@
 - [x] add TOC to windows.md 
 - [ ] move all notes and project related stuff to another github page using a mkdocs 
 - [ ] write troubleshooting guide for proxmox 500 "read-only disk isssue" 
+- [ ] setup blog for project updates 
+    * [ ] write blog post about firewall installation and configuration 
 
+- [x] move documentation from ryanm.dev to dedicated github pages blog site
+    - [ ] change each file to use the same syntax for the jekyll just-the-docs template  
 ---
 
 
@@ -83,21 +75,21 @@
 
 # Today
 
-- [x] move documentation from ryanm.dev to dedicated github pages blog site
-    - [ ] change each file to use the same syntax for the jekyll just-the-docs template  
-- [x] install ubuntu on skylars pc 
-    - [ ] setup RDP into skylar-pc  
-    - [ ] install nvidia drivers 
+- [ ] setup cronjob to backup minecraft server 
+    - [ ] setup backup systemd unit 
+    - [ ] setup backup systemd timer unit
 
-- [x] setup minecraft server for minecraft 1.21
+- [x] setup jellyfin docker container
+    - [ ] configure "user" on jellyfin 
+    - [x] setup reverse proxy for jellyfin 
+    - [ ] forward jellyfin port on eero router to fortigate IP 
+    - [ ] configure port forward rule on fortigate 
 
-- [x] change ip's on all vm's to fit inside the 192.168.3.0/22 network
+- [ ] configure radarr , sonarr, jackett for deluge client 
 
-- [ ] setup adguard home dns server as docker container 
+- [ ] setup adguard home container 
+- [ ] enable wake on LAN on buhfur-pc in UEFI menu 
 
-- [ ] configure fortigate to secure wifi ( Might be removed ) 
+    - [ ] configure port forwarding rule on fortigate 
+    - [ ] forward wake-on-lan port on router 
 
-- [ ] install latest ubuntu distro on skylars pc 
-  
-- [ ] setup blog for project updates 
-    * [ ] write blog post about firewall installation and configuration 
