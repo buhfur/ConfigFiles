@@ -19,6 +19,7 @@ In this document I have added various bash snippets ,tips , and other useful pie
 - [Tar](#tar)
 - [Systemd](#systemd)
 - [xrandr](#xrandr)
+- [Packet Capturing](#packet-capturing)
 - [nmcli & Networking](#nmcli--networking)
 - [SELinux](#selinux)
 - [DNF](#dnf)
@@ -828,6 +829,7 @@ Simply delete all lines in /etc/network/interfaces and re-install the package an
 
 # Packet Capturing 
 
+## Tshark 
 - Capture traffic on specified interface using tshark 
     ```bash
     tshark -i <interface> 
@@ -839,6 +841,22 @@ Simply delete all lines in /etc/network/interfaces and re-install the package an
 - View capture from file 
     ```bash
     tshark -r capture.pcap
+    ```
+- Search for specific port in capture 
+    ```bash
+    tshark -r path_to_file.pcap -Y "tcp.port == 6881 || tcp.port == 6889 || tcp.port == 51413"
+    ```
+## TCPDUMP
+
+- Search for specific port in capture 
+    ```bash
+    sudo tcpdump -r path_to_file.pcap 'tcp port 6881 or tcp port 6889 or tcp port 51413'
+    ```
+
+    To specify a port range 
+
+    ```bash
+    sudo tcpdump -r path_to_file.pcap 'tcp portrange 6881-6991'
     ```
 
 ---
@@ -1757,6 +1775,22 @@ Find the UUID of the drive where your root filesystem is mounted, add this UUID 
 ---
 
 # Docker 
+
+- Connect docker container to network 
+    ```bash
+    docker network connect <network-name> <container-name-or-id>
+    ```
+- View docker network configuration 
+
+    ```bash
+    docker network inspect <container-id-or-name>
+    ```
+
+- Create docker network 
+    ```bash
+    docker network create <network-name>
+    ```
+
 
 - Re-Attach to docker container
     ```bash

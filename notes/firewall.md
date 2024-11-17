@@ -72,6 +72,12 @@
 
 * Added new virtual IP for proxmox server on fortigate 
 
+* Added new virtual IP for jellyfin-reverse-proxy 
+
+* Created new IPv4 policy for jellyfin-reverse proxy 
+
+* Configured IPv4 policy for jellyfin-reverse-proxy to only allow http service 
+
 ## Port forwarding 
 
 I believe I understand now why I was having issues connecting to my local hosts with forwarded ports. In the setup I was configuring the external IP to the public WAN IP given by my ISP. This was WRONG. The reason for this is that currently the fortigate is NOT acting as a DHCP server, relying on my router for that instead. Because of this the requests to forwarded ports using the public WAN IP went nowhere. 
