@@ -46,6 +46,10 @@
 
 * Connected fortigate internal2 to port 4 on dumb switch 
 
+* Created specific service for proxmox web ui and jellyyfin web ui 
+
+* Changed services in Virtual Ip's from "ALL" to "proxmox-webui" and "jellyfin-webui" respectively 
+
 ## IPv4 Policy 
 
 * Changed Name to "LAN to WAN "
