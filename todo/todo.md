@@ -93,3 +93,7 @@
     - [ ] configure port forwarding rule on fortigate 
     - [ ] forward wake-on-lan port on router 
 
+
+- [ ] backup 'lounsbury242@gmail.com Backup authentication codes.txt' to buhfur-pc  and ENCRYPT ( HIGH PRIORITY )
+
+
