@@ -104,6 +104,21 @@
 
 ## Backup work today 
 
-- [ ] create systemd units for backing up minecraft server 
-- [ ] enable wake on lan on buhfurpc 
+- [x] create script for backing up minecraft server
+    - [x] create systemd timer unit for backing up minecraft server 
+    - [x] create systemd unit for running backup script 
+
+- [x] create protonvpn container to act as proxy for deluge container in same compose file  
+- [ ] backup solution for vm's on hypervisor ?
+    - [ ] setup raspberry pi at home to act as urbackup server ?  
+    - [ ] try out UrBackup docker container on media-server? 
+
+- [ ] setup adguard container 
+
+- [x] try setting up reverse proxy for jellyfin again ? 
+
+- [ ] setup traktarr to enable adding new watchlists easier 
+
+- [ ] setup cable rack when I get home 
+
 
