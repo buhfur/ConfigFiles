@@ -73,7 +73,15 @@
 
 
 
-# Today
+# Today at work 
+
+- [ ] backup 'lounsbury242@gmail.com Backup authentication codes.txt' to buhfur-pc  and ENCRYPT ( HIGH PRIORITY )
+- [ ] setup wake on lan on buhfur pc , UEFI settings are already enabled 
+- [ ] configure radarr , sonarr , jackett to work and start downloading shiet 
+
+
+
+# Today  at home 
 
 - [ ] setup cronjob to backup minecraft server 
     - [ ] setup backup systemd unit 
@@ -94,6 +102,8 @@
     - [ ] forward wake-on-lan port on router 
 
 
-- [ ] backup 'lounsbury242@gmail.com Backup authentication codes.txt' to buhfur-pc  and ENCRYPT ( HIGH PRIORITY )
+## Backup work today 
 
+- [ ] create systemd units for backing up minecraft server 
+- [ ] enable wake on lan on buhfurpc 
 

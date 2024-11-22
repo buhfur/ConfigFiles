@@ -756,6 +756,7 @@ Simply delete all lines in /etc/network/interfaces and re-install the package an
 # nmcli & Networking 
 
 
+
 - Change subnet mask of existing connection using nmcli 
 
 - Bring up interface manually using ip tool
@@ -830,11 +831,12 @@ Simply delete all lines in /etc/network/interfaces and re-install the package an
 # Packet Capturing 
 
 ## Tshark 
-- Capture traffic on specified interface using tshark 
+
+- Capture traffic on specified interface 
     ```bash
     tshark -i <interface> 
     ```
-- Capture & Save traffic on specified interface using tshark
+- Capture & Save traffic on specified interface to a file
     ```bash
     tshark -i <interface> -w capture.pcap
     ```
@@ -846,6 +848,7 @@ Simply delete all lines in /etc/network/interfaces and re-install the package an
     ```bash
     tshark -r path_to_file.pcap -Y "tcp.port == 6881 || tcp.port == 6889 || tcp.port == 51413"
     ```
+
 ## TCPDUMP
 
 - Search for specific port in capture 
@@ -857,6 +860,11 @@ Simply delete all lines in /etc/network/interfaces and re-install the package an
 
     ```bash
     sudo tcpdump -r path_to_file.pcap 'tcp portrange 6881-6991'
+    ```
+
+- Check if Wake-on-LAN port is open 
+    ```bash
+    tcpdump -i <interface-name> udp port 9 
     ```
 
 ---

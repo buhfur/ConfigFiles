@@ -37,3 +37,4 @@ Welcome to my website ! Here I host a collection of all my notes which mainly in
 28. [Windows](notes/windows.md)
 29. [Bash](notes/bash.md)
 30. [Linux File Permissions](notes/linux_file_permissions.md)
+31. [Bash](notes/bash.md)
