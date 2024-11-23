@@ -83,17 +83,17 @@
 
 # Today  at home 
 
-- [ ] setup cronjob to backup minecraft server 
-    - [ ] setup backup systemd unit 
-    - [ ] setup backup systemd timer unit
+- [x] setup cronjob to backup minecraft server 
+    - [x] setup backup systemd unit 
+    - [x] setup backup systemd timer unit
 
 - [x] setup jellyfin docker container
     - [ ] configure "user" on jellyfin 
     - [x] setup reverse proxy for jellyfin 
-    - [ ] forward jellyfin port on eero router to fortigate IP 
     - [ ] configure port forward rule on fortigate 
 
-- [ ] configure radarr , sonarr, jackett for deluge client 
+- [x] configure radarr , sonarr, jackett for deluge client 
+    - [ ] add watchlists to sonarr , radarr , jackett 
 
 - [ ] setup adguard home container 
 - [ ] enable wake on LAN on buhfur-pc in UEFI menu 
@@ -101,13 +101,14 @@
     - [ ] configure port forwarding rule on fortigate 
     - [ ] forward wake-on-lan port on router 
 
+- [x] research solutions to control thermal take fan controller on linux 
+    - [ ] create lite windows 10 virtual machine and install Thermal Take RGB Plus  
+    - [ ] see if this can turn the LED's on the fans off , or at least to something else 
 
-## Backup work today 
 
-- [x] create script for backing up minecraft server
-    - [x] create systemd timer unit for backing up minecraft server 
-    - [x] create systemd unit for running backup script 
+## Project work at the office  
 
+- [ ] checkup on the minecraft backup script 
 - [x] create protonvpn container to act as proxy for deluge container in same compose file  
 - [ ] backup solution for vm's on hypervisor ?
     - [ ] setup raspberry pi at home to act as urbackup server ?  
@@ -115,10 +116,9 @@
 
 - [ ] setup adguard container 
 
-- [x] try setting up reverse proxy for jellyfin again ? 
-
-- [ ] setup traktarr to enable adding new watchlists easier 
-
-- [ ] setup cable rack when I get home 
+- [ ] copy dotfiles from redhat host to dotfiles github repo 
+- [ ] change root shell to zsh 
+    - [ ] install ohmyzsh on sparevm 
 
 
+- [ ] finish dotfile symbolic link script at home 

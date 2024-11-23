@@ -69,3 +69,11 @@ wine stores the registry keys in teh ~/.wine directory. file is located at /home
 
 WINE was saying that a windows app tried to load a kernel mode driver . Wine doesn't support Windows Kernel Drivers directly cause it doesn't WANT to replicate the windows kernel. Most of what it does is translate Windows API calls to POSIX system 
 calls. 
+
+
+# why doesn't wine support usb drivers? 
+
+* windows uses it's own usb stack which and translating the two would take signifigant modifications to the kernel 
+
+
+
