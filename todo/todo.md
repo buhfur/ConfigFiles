@@ -106,7 +106,7 @@
     - [ ] see if this can turn the LED's on the fans off , or at least to something else 
 
 
-## Backup work today 
+## Project work at the office  
 
 - [ ] checkup on the minecraft backup script 
 - [x] create protonvpn container to act as proxy for deluge container in same compose file  
@@ -116,8 +116,9 @@
 
 - [ ] setup adguard container 
 
-- [x] try setting up reverse proxy for jellyfin again ? 
 - [ ] copy dotfiles from redhat host to dotfiles github repo 
 - [ ] change root shell to zsh 
-    - [ ] install ohmyzsh 
+    - [ ] install ohmyzsh on sparevm 
 
+
+- [ ] finish dotfile symbolic link script at home 
