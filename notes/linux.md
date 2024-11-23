@@ -164,6 +164,7 @@ When setting up swap files , the size of the partition used for a swap file depe
 
 # Command & Bash snippets 
 
+
 - Write iso image to usb 
     ```bash
     sudo dd if=/path/to/distro.iso of=/dev/sdX bs=4M status=progress oflag=sync
@@ -2097,18 +2098,32 @@ du -k *
 >
 > 
 
-**List largest files in current directory**
+- List largest files in current directory
 
 ```bash
 du . | sort -nr | head -n10
 ```
 
-**List largest directories in current directory**
+- List largest directories in current directory
 
 ```bash
 du -s * | sort -nr | head -n10
 ```
 
+- List disk size of all dotfiles 
+    ```bash
+    du -sh .??*
+    ```
+- Exclude files below a certain size threshhold 
+    ```bash
+    du -t 1K
+    ```
+- Exclude files above a certain size threshhold 
+    ```bash
+    du -t -1K
+    ```
+
+> Note : Read the Du manual under the SIZE section for valid formats for the threshhold size
 
 ---
 
