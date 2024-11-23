@@ -9,3 +9,4 @@ This is where I keep my todo lists for tracking what i'm working on. These aren'
 
 1. [Todo](todo/todo.md)
 2. [Wowtodo](todo/wowtodo.md)
+3. [Minecraft TODO](todo/minecraft-todo.md)
