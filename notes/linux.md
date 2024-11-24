@@ -1971,6 +1971,10 @@ inxi -Gxx | grep compositor
 
 # Git 
 
+- Clone specifc remote branch to local 
+    ```bash
+    git clone -b branch-name <repo-url>
+    ```
 - Delete remote branch on local machine 
     ```bash
     git push origin --delete branch-name 
