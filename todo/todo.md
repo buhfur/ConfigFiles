@@ -130,6 +130,7 @@
 
 - [ ] setup dotfiles script and configure branches for buhfurpc , sparevm , and all the other Vm's 
 
+- [ ] change timer on minecraft backup script to be at 6 AM est 
 
 ## Dumb stuff 
 
