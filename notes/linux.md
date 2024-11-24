@@ -1971,6 +1971,10 @@ inxi -Gxx | grep compositor
 
 # Git 
 
+- Get remote branches from git repo 
+    ```bash
+    git ls-remote --heads <repo-url>
+    ```
 - Clone specifc remote branch to local 
     ```bash
     git clone -b branch-name <repo-url>
