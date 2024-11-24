@@ -81,7 +81,43 @@
 
 
 
-# Today  at home 
+
+
+
+### Currently working 
+
+- [ ] configure dotfiles on buhfurpc & redhat vm 
+    - [ ] vim plugins for "" [] {} and '' completion ?
+        - [ ] install smart-pairs plugin 
+
+- [ ] configure dark mode for xfce4 on sparevm ? 
+
+    - [ ] vim plugins for git ? 
+- [ ] copy minecraft saves to google drive as precautionary measure 
+
+- [ ] backup solution for vm's on hypervisor ?
+    - [ ] research different tools and put entries in backup.md in projects  
+
+--- 
+
+### Queue  
+
+- [!] finish dotfile symbolic link script at work today  
+    - [x] research what parameter expansion is in bash scripting 
+    - [ ] complete script to create symbolic links from the repo to the users home 
+
+- [x] checkup on the minecraft backup script 
+    - [x] find out how to tear down compose from systemd unit 
+    - [x] add WorkingDirectory field to systemd unit 
+    - [ ] cloud based redundancy for minecraft server saves ?
+
+
+- [ ] setup adguard container 
+
+- [ ] setup dotfiles script and configure branches for buhfurpc , sparevm , and all the other Vm's 
+
+- [ ] change timer on minecraft backup script to be at 6 AM est 
+
 
 - [ ] enable xbox controller support for minecraft on skylar-pc  
     - [ ] if xpad doesn't work , install xboxdrv
@@ -110,38 +146,8 @@
     - [ ] create lite windows 10 virtual machine and install Thermal Take RGB Plus  
     - [ ] see if this can turn the LED's on the fans off , or at least to something else 
 
-
-## Project work at the office  
-
-
-- [!] finish dotfile symbolic link script at work today  
-    - [x] research what parameter expansion is in bash scripting 
-    - [ ] complete script to create symbolic links from the repo to the users home 
-
-- [x] checkup on the minecraft backup script 
-    - [x] find out how to tear down compose from systemd unit 
-    - [x] add WorkingDirectory field to systemd unit 
-    - [ ] cloud based redundancy for minecraft server saves 
-
-- [ ] backup solution for vm's on hypervisor ?
-    - [ ] research different tools and put entries in backup.md in projects  
-
-- [ ] setup adguard container 
-
-- [ ] setup dotfiles script and configure branches for buhfurpc , sparevm , and all the other Vm's 
-
-- [ ] change timer on minecraft backup script to be at 6 AM est 
-
-## Dumb stuff 
-
-
-- [ ] configure zsh plugins 
-    - [x] install zsh-autocomplete plugin in zsh config. 
-    - [?] install zsh syntax highlighting plugin 
-        - [ ] replace zsh-autocomplete with zsh-completions 
-        - [x] setup zinit for plugins 
-        - [ ] install zsh-completions through zinit 
-        - [x] enable fzf plugin 
+- [ ] configure zsh plugins on sparevm 
+- [ ] configure zsh plugins on buhfur-pc 
 
 
 

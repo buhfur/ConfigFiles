@@ -1971,6 +1971,10 @@ inxi -Gxx | grep compositor
 
 # Git 
 
+- Delete remote branch on local machine 
+    ```bash
+    git push origin --delete branch-name 
+    ```
 - Create new local branch and add to remote 
     ```bash
     git checkout -b <branch-name> 
