@@ -1971,6 +1971,10 @@ inxi -Gxx | grep compositor
 
 # Git 
 
+- Get upstream URL for local branch 
+    ```bash
+    git rev-parse --abbrev-ref --symbolic-full-name @{u}
+    ```
 - Get remote branches from git repo 
     ```bash
     git ls-remote --heads <repo-url>
