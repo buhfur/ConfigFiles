@@ -349,3 +349,9 @@ echo "This is an error message." >&2
 - Redirect `stderr` to log files for debugging.
 
 These techniques can help make your Bash scripts more robust and capable of handling unexpected conditions.
+
+---
+
+## 11. Parameter expansion in bash 
+
+Parameter expansion allows you to modify and manipulate the values of variables.

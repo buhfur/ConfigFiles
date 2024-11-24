@@ -83,6 +83,11 @@
 
 # Today  at home 
 
+- [ ] enable xbox controller support for minecraft on skylar-pc  
+    - [ ] if xpad doesn't work , install xboxdrv
+
+
+
 - [x] setup cronjob to backup minecraft server 
     - [x] setup backup systemd unit 
     - [x] setup backup systemd timer unit
@@ -108,17 +113,36 @@
 
 ## Project work at the office  
 
-- [ ] checkup on the minecraft backup script 
-- [x] create protonvpn container to act as proxy for deluge container in same compose file  
+
+- [!] finish dotfile symbolic link script at work today  
+    - [x] research what parameter expansion is in bash scripting 
+    - [ ] complete script to create symbolic links from the repo to the users home 
+
+- [x] checkup on the minecraft backup script 
+    - [x] find out how to tear down compose from systemd unit 
+    - [x] add WorkingDirectory field to systemd unit 
+    - [ ] cloud based redundancy for minecraft server saves 
+
 - [ ] backup solution for vm's on hypervisor ?
-    - [ ] setup raspberry pi at home to act as urbackup server ?  
-    - [ ] try out UrBackup docker container on media-server? 
+    - [ ] research different tools and put entries in backup.md in projects  
 
 - [ ] setup adguard container 
 
-- [ ] copy dotfiles from redhat host to dotfiles github repo 
-- [ ] change root shell to zsh 
-    - [ ] install ohmyzsh on sparevm 
+- [ ] setup dotfiles script and configure branches for buhfurpc , sparevm , and all the other Vm's 
 
 
-- [ ] finish dotfile symbolic link script at home 
+## Dumb stuff 
+
+
+- [ ] configure zsh plugins 
+    - [x] install zsh-autocomplete plugin in zsh config. 
+    - [?] install zsh syntax highlighting plugin 
+        - [ ] replace zsh-autocomplete with zsh-completions 
+        - [x] setup zinit for plugins 
+        - [ ] install zsh-completions through zinit 
+        - [x] enable fzf plugin 
+
+
+
+    
+
