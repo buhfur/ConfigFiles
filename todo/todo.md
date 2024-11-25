@@ -31,7 +31,6 @@
 
 - [x] enable middle mouse pasting in tmux 
     - [x] see notes todo for tmux notes 
-- [x] allow mouse scrolling through Vim while using tmux 
 - [ ] make polybar show on all monitors
 - [ ] connect bluetooth earbuds to main desktop 
     - [ ] find out why pulse audio is not showing earbuds as output device. 
@@ -86,10 +85,6 @@
 
 ### Currently working 
 
-- [x] configure dotfiles on buhfurpc & redhat vm 
-    - [x] vim plugins for "" [] {} and '' completion ?
-
-
 - [ ] copy minecraft saves to google drive as precautionary measure 
 
 - [ ] backup solution for vm's on hypervisor ?
@@ -99,6 +94,7 @@
 
 ### Queue  
 
+- [ ] fix scroll wheel on corsair mouse 
 
 - [ ] create repo for docker containers on media-server
     - [ ] add docker container 
