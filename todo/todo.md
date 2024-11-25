@@ -86,13 +86,10 @@
 
 ### Currently working 
 
-- [ ] configure dotfiles on buhfurpc & redhat vm 
-    - [ ] vim plugins for "" [] {} and '' completion ?
-        - [ ] install smart-pairs plugin 
+- [x] configure dotfiles on buhfurpc & redhat vm 
+    - [x] vim plugins for "" [] {} and '' completion ?
 
-- [ ] configure dark mode for xfce4 on sparevm ? 
 
-    - [ ] vim plugins for git ? 
 - [ ] copy minecraft saves to google drive as precautionary measure 
 
 - [ ] backup solution for vm's on hypervisor ?
@@ -102,10 +99,9 @@
 
 ### Queue  
 
-- [!] finish dotfile symbolic link script at work today  
-    - [x] research what parameter expansion is in bash scripting 
-    - [ ] complete script to create symbolic links from the repo to the users home 
 
+- [ ] create repo for docker containers on media-server
+    - [ ] add docker container 
 - [x] checkup on the minecraft backup script 
     - [x] find out how to tear down compose from systemd unit 
     - [x] add WorkingDirectory field to systemd unit 
