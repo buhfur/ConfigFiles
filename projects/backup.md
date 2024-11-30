@@ -2,15 +2,14 @@
 
 # backup solutions for home self hosted network 
 
-# What do I need to backup 
+## What do I need to backup 
 
-- Proxmox virtual machines 
+- Proxmox virtual machines : VM snapshots 
 
-- Truenas shares 
+- Truenas : /mnt/pool1/backups /mnt/pool2/server 
 
-- buhfur-pc 
+- buhfur-pc @ skylar-pc : /home/ directories 
 
-- skylar-pc 
 
 - skylar-pc windows 
 
@@ -19,20 +18,56 @@
 - media-server docker containers 
 
 
-# What do I want ? 
+## What do I want ? 
 
 * backup tool that can create incremental backups of proxmox VM's 
+* Fast write / read speeds 
+
+- What makes up a backup tool ? 
+    * backup rotation scheme :
+        * Backup rotation is the act of storing backup data to a computer to some form of computer media (tapes, hard disks, NVME drives ?).
+        * A backup rotation scheme can specify how long a backup of data should be retained and how the backup should be used 
+        * Scheme defines how and when each removable storage is used 
+
+--- 
+
+# Known backup rotation schemes 
+
+## FIFO : oldest backups are overwritten with newest backup ? 
+
+- pros : 
+
+    * long chain of daily backups 
+
+    * good for when backed up data before rotation period is irrelevant  
+
+- cons:
+
+    * susceptible to data loss, errors on existing media will be duped 
+
+## Grandfather-father-son (GFS)
+
+### General info 
+
+* daily,weekly,monthly intervals of archived data 
+
+* daily backups are rotated using FIFO scheme on a 3 month basis 
+
+* weekly backups are rotated on a bi-yearly
+
+* monthly backups are rotated on a yearly basis  
+
+- pros : 
+    * rotations can be configured for different periods 
 
 
-# Where would the backups live 
 
-The backups would primarily live on the TrueNAS network drive, however i'm not so comfortable with the stability of my shared drive. It's very limited storage wise and i'm planning on moving all volumes to an off host RAID enclosure to utilize the dozens of spare  1 TB hard drives I have just rotting in my closet 
+# Disaster recovery plan 
+
+how should I design my disaster recovery plan for the backups ?
 
 
-
-## Redundancy 
-
-* rclone backups from shared drive / hosts to google drive or some hosted solution which I don't really like as one of my main goals with these projects are to reduce reliance on proprietary cloud providers. 
+* Use backups from off-site cloud storage 
 
 
 

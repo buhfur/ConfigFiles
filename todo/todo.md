@@ -29,23 +29,12 @@
 
 # Config todo 
 
-- [x] enable middle mouse pasting in tmux 
-    - [x] see notes todo for tmux notes 
 - [ ] make polybar show on all monitors
 - [ ] connect bluetooth earbuds to main desktop 
     - [ ] find out why pulse audio is not showing earbuds as output device. 
 - [ ] install protonvpn client on buhfurpc 
 
 # Notes todo 
-
-- [x] add notes on how to paste using middle mouse button in tmux by holding shift 
-- [x] make folder for 'troubleshooting' various things 
-- [x] write post about BitTorrent and troubleshooting issues
-- [x] add TOC to windows.md 
-- [ ] move all notes and project related stuff to another github page using a mkdocs 
-- [ ] write troubleshooting guide for proxmox 500 "read-only disk isssue" 
-- [ ] setup blog for project updates 
-    * [ ] write blog post about firewall installation and configuration 
 
 - [x] move documentation from ryanm.dev to dedicated github pages blog site
     - [ ] change each file to use the same syntax for the jekyll just-the-docs template  
@@ -83,18 +72,38 @@
 
 
 
-### Currently working 
+### Todays current tasks 
 
-- [ ] copy minecraft saves to google drive as precautionary measure 
+- [ ] find out why torrents are not downloading on deluge docker container 
+- [x] encrypt firefox passwords on backup drive 
 
-- [ ] backup solution for vm's on hypervisor ?
-    - [ ] research different tools and put entries in backup.md in projects  
+- [ ] send minecraft world backups to cloud provider using rclone  
+    - [ ] compress minecraft backups for rclone to the smallest you can 
+        - [ ] try out zstd 
+    - [ ] configure rclone on media-server root user 
+    - [ ] create separate systemd timer and unit for running the script and triggering the unit 
+    - [ ] add these notes to README.md on docker-minecraft-server
+
+
+
+- [x] check GPU usage while idle ? 
+    - [ ] malware scanner 
+        - [ ] install lynis
+    - [ ] rootkit scanner 
+        - [ ] look up how you detect a rootkit is running 
+    
 
 --- 
 
 ### Queue  
 
-- [ ] fix scroll wheel on corsair mouse 
+- [ ] find backup solution for all hosts on my network 
+- [ ] install second minecraft server for creative mode 
+- [ ] install firmware update for fortigate after backing up config 
+- [ ] setup blog on github pages 
+- [ ] setup adguard container 
+- [ ] backup solution for TrueNAS backup shared pool 
+- [ ] export passwords from firefox to CSV and save on backup drive 
 
 - [ ] create repo for docker containers on media-server
     - [ ] add docker container 
@@ -103,12 +112,6 @@
     - [x] add WorkingDirectory field to systemd unit 
     - [ ] cloud based redundancy for minecraft server saves ?
 
-
-- [ ] setup adguard container 
-
-- [ ] setup dotfiles script and configure branches for buhfurpc , sparevm , and all the other Vm's 
-
-- [ ] change timer on minecraft backup script to be at 6 AM est 
 
 
 - [ ] enable xbox controller support for minecraft on skylar-pc  
@@ -143,5 +146,7 @@
 
 
 
-    
+# future TODO when I get the time / money 
+
+- [ ] new router to create static route
 

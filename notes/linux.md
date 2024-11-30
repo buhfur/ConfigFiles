@@ -57,7 +57,7 @@ In this document I have added various bash snippets ,tips , and other useful pie
 - [Rust](#rust)
 - [Zsh](#zsh)
     - [Installing Zsh](#installing-zsh)
-
+- [Password encryption](#password-encryption)
 # Package managers 
 
 ## Apt  
