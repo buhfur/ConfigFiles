@@ -16,19 +16,20 @@
 - buhfur-pc windows 
 
 - media-server docker containers 
+    - minecraft world backups 
 
+- game saves 
 
 ## What do I want ? 
 
-* backup tool that can create incremental backups of proxmox VM's 
-* Fast write / read speeds 
-
-- What makes up a backup tool ? 
-    * backup rotation scheme :
-        * Backup rotation is the act of storing backup data to a computer to some form of computer media (tapes, hard disks, NVME drives ?).
-        * A backup rotation scheme can specify how long a backup of data should be retained and how the backup should be used 
-        * Scheme defines how and when each removable storage is used 
-
+* backup rotation scheme 
+* hashing for verification 
+* Disaster recovery using offsite hosting  
+* home drives of hosts , vm snapshots from proxmox 
+* distributed 
+* incremental backups ( can restore to specific backup indexed by date )
+* installs systemd units after configuration  
+* separate host which is activated by Wake-on-lan when it's time to archive 
 --- 
 
 # Known backup rotation schemes 
@@ -62,15 +63,16 @@
 
 
 
-# Disaster recovery plan 
-
-how should I design my disaster recovery plan for the backups ?
+---
 
 
-* Use backups from off-site cloud storage 
+# Minecraft server backup 
 
+* debian host has 2 systemd units with an accompnying timer unit which runs a script from the docker containers working directory. 
 
+* At 6 AM daily EST , the backup-minecraft.service unit is triggered by backup-minecraft.timer 
 
+* There are two additional systemd units for off site backups. Backups will be copied over to my personal google drive for backing up the entire directory of backups. The unit will use rclone for copying the contents of the compressed archive of daily minecraft backups. Both units will be named "backup-minecraft-server-cloud.service" "backup-minecraft-server-cloud.timer" respectively
 
 
 
